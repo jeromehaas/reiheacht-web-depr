@@ -18,7 +18,6 @@ const textBlocks = (state = initialState, action) => {
     case 'UPDATE':
       return {
         ...state, 
-        
       }
   }
   return {
