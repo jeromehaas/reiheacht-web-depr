@@ -1,4 +1,3 @@
-import { createGlobalStyle } from 'styled-components';
 import  GlobalStyle from '@/styles/GlobalStyle';
 import React, { Fragment } from 'react';
 
