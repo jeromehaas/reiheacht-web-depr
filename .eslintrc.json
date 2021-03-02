@@ -20,7 +20,8 @@
         "@typescript-eslint"
     ],
     "rules": {
-      "@typescript-eslint/indent": ["error", 2],
+      "indent": ["err", 2],
+      "@typescript-eslint/indent": ["err", 2],
       "no-use-before-define": "off",
       "@typescript-eslint/no-use-before-define": ["error"]
     }
