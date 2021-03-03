@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    font-family: 'Helvetica 65 Medium', serif
 }
 
 *::-webkit-scrollbar {
@@ -60,6 +61,40 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+/* @font-face {
+  font-family: "Helvetica55";
+  src: url("/fonts/Helvetica55Roman.ttf");
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap; */
+}
+
+@font-face {
+    font-family: 'Helvetica 55 Roman';
+    src: url('/fonts/HelveticaNeue-Roman.eot');
+    src: url('/fonts/HelveticaNeue-Roman.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/HelveticaNeue-Roman.woff2') format('woff2'),
+        url('/fonts/HelveticaNeue-Roman.woff') format('woff'),
+        url('/fonts/HelveticaNeue-Roman.ttf') format('truetype'),
+        url('/fonts/HelveticaNeue-Roman.svg#HelveticaNeue-Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica 65 Medium';
+    src: url('/fonts/HelveticaNeue-Medium.eot');
+    src: url('/fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
+        url('/fonts/HelveticaNeue-Medium.woff2') format('woff2'),
+        url('/fonts/HelveticaNeue-Medium.woff') format('woff'),
+        url('/fonts/HelveticaNeue-Medium.ttf') format('truetype'),
+        url('/fonts/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 
 `;
