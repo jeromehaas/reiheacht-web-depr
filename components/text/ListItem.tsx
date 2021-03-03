@@ -1,17 +1,20 @@
 import React from 'react';
 import styled from 'styled-components';
 
-interface Props { }
+interface Props {
+  children: React.ReactNode;
+}
 
 const StyledListItem = styled.li`
   
 `;
-const ListItem: React.FunctionComponent<Props> = () => {
+const ListItem: React.FunctionComponent<Props> = ({ children }) => {
 
 
   return (
-    <>
-    </>
+    <StyledListItem>
+      {children}
+    </StyledListItem>
   );
 
 }

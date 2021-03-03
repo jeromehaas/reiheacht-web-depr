@@ -9,6 +9,7 @@ const Variables = {
   spacingSmall: '7.5', 
   spacingMedium: '15px',
   spacingBig: '30px',
+  titleLineHeight: '115%'
 }
 
 export default Variables;

@@ -8,7 +8,9 @@ interface Props {
 const StyledH1 = styled.h1`
  color: ${p => p.theme.white};
  font-size: 75px; 
+ line-height: ${p => p.theme.titleLineHeight};
 `;
+
 const H1: React.FunctionComponent<Props> = ({ children }) => {
 
 
