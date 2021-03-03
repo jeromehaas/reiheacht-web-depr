@@ -11,7 +11,7 @@ const StyledParagraph = styled.p`
   font-family: 'Helvetica 55 Roman';
   color: ${p => p.theme.white}; 
   line-height: 160%;
-
+  margin: 0 ${p => p.theme.spacingBig} ${p => p.theme.spacingBig} 0;
 `;
 const Paragraph: React.FunctionComponent<Props> = ({ children }) => {
 

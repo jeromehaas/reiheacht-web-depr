@@ -9,11 +9,11 @@ import Button from '@/components/buttons/Button';
 interface Props { }
 
 const textBlockContent = {
-  title: <H2>Perfekte Aussicht, <br /> aus der besten <Highlight>reihe</Highlight>.</H2>,
-  paragraph: <Paragraph>Dein Spitzenprogramm – zurücklehnen und geniessen.</Paragraph>
+  title: <H2>Dein <Highlight>Team</Highlight>.</H2>,
+  paragraph: <Paragraph>Wir warten auf dein Startsignal.</Paragraph>
 }
 
-const Projects: React.FunctionComponent<Props> = () => {
+const Employees: React.FunctionComponent<Props> = () => {
 
 
   return (
@@ -24,4 +24,4 @@ const Projects: React.FunctionComponent<Props> = () => {
 
 }
 
-export default Projects;
+export default Employees;
