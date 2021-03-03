@@ -8,7 +8,7 @@ interface Props {
 
 const StyledSection = styled.div`
   width: 100%;
-  margin-bottom: ${p => p.theme.spacingBig}
+  margin-bottom: 150px;
 `;
 
 const Section: React.FunctionComponent<Props> = ({ children }) => {

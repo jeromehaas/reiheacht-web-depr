@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const HorizontalLine = styled.i`
   width: 0;
-  height: auto;
+  height: 100%;
   background-color: transparent;
   position: relative;
   display: block;
-  padding: 20px 0;
+  padding: ${p => p.theme.spacingBig} 0 35px 0;
 
   &::after {
     content: ' ';
