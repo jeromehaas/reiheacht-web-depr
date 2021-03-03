@@ -1,7 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import PageWrapper from '@/components/layout/PageWrapper';
-import Section from '@/components/layout/Section';
+import Start from '@/components/sections/Start';
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageWrapper>
-        <Section>
+        <Start>
           hello world
-        </Section>
+        </Start>
       </PageWrapper>
     </div>
   );
