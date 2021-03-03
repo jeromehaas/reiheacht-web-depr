@@ -1,6 +1,7 @@
 import React from 'react';
 import Head from 'next/head';
 import PageWrapper from '@/components/layout/PageWrapper';
+import Navigation from '@/components/partials/Navigation';
 import Start from '@/components/sections/Start';
 import Services from '@/components/sections/Services';
 import Projects from '@/components/sections/Projects';
@@ -15,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <PageWrapper>
+        <Navigation />
         <Start />
         <Services />
         <Projects />
