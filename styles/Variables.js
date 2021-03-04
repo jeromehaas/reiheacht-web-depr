@@ -12,7 +12,7 @@ const Variables = {
   titleLineHeight: '115%',
   buttonFontSize: '20px',
   buttonFontFamily: "'Helvetica 55 Roman'",
-  standardTransition: 'all 0.2s ease',
+  standardTransition: 'all 0.2s ease-in-out',
 }
 
 export default Variables;
