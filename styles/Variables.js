@@ -1,5 +1,5 @@
 const Variables = {
-  maxWidth: '1440px',
+  maxWidth: '1840px',
   blue: '#0374B6',
   orange: '#C23E27',
   orangeHover: '#A13725',

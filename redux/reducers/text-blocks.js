@@ -1,6 +1,6 @@
 const initialState = {
   start: {
-    visible: false
+    visible: true
   },
   services: {
     visible: false
@@ -15,9 +15,10 @@ const initialState = {
 
 const textBlocks = (state = initialState, action) => {
   switch (action.type) {
-    case 'UPDATE':
+    case 'UPDATE_TEXT_BLOCKS':
       return {
         ...state, 
+        start: { visible: true}
       }
   }
   return {

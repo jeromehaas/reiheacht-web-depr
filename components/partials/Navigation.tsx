@@ -18,6 +18,7 @@ const DesktopNavigation = styled.nav`
     position: fixed;
     top: -60px;
     height: 60px;
+    z-index: 15;
     color: white !important;
     animation-name: moveDown;
     animation-duration: 1s;  
@@ -78,7 +79,7 @@ const MobileNavigation = styled.nav`
     animation-direction: forwards;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
-    z-index: 10;
+    z-index: 15;
 
     @keyframes moveDown {
       from {top: -60px;}
