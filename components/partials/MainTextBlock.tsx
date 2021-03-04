@@ -6,7 +6,6 @@ import Paragraph from '@/components/text/Paragraph';
 import styled from 'styled-components';
 import { useInView, InView } from 'react-intersection-observer';
 import { useSelector, useDispatch } from 'react-redux';
-import { start } from 'repl';
 import { updateTextBlocks } from 'redux/actions';
 import { prependOnceListener } from 'process';
 import Button from '@/components/buttons/Button';
@@ -28,12 +27,14 @@ const MoveDownWrapper = styled.div`
     }
 `;
 
-interface Props { }
+interface Props {
+  section: String;
+}
 
-const MainTextBlock: React.FunctionComponent<Props> = () => {
+const MainTextBlock: React.FunctionComponent<Props> = ({ section }) => {
 
   const dispatch = useDispatch();
-  const isVisible = useSelector((state) => state.textBlocks.start.visible);
+  const isVisible = useSelector((state) => state.textBlocks[section].visible);
 
   return (
     <MoveDownWrapper className={isVisible ? 'active' : ''}>
