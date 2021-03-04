@@ -4,7 +4,10 @@ import Link from 'next/link';
 
 interface Props {
   content: String;
-  link: String;
+  link: String; 
+  animated: Boolean;
+  className: String;
+  customDelay?: String;
 }
 
 const StyledButton = styled.button`
@@ -18,7 +21,18 @@ const StyledButton = styled.button`
   outline: none;
   margin: 0 ${p => p.theme.spacingBig} ${p => p.theme.spacingBig} 0;
   transition: ${p => p.theme.standardTransition};
-   
+  opacity: ${p => p.animated ? 0 : 1};
+  position: relative;
+
+  &.active {
+      animation: ${p => p.customDelay ? `1s ease-in-out ${p.customDelay} 1 forwards moveUp` : '1s ease-in-out 5s 1 forwards moveUp'};
+    }
+
+    @keyframes moveUp {
+      from {top: 60px; opacity: 0;}
+      to {top: 0px; opacity: 1;}
+    }
+
   a {
     color: ${p => p.theme.white};
     text-decoration: none;
@@ -32,10 +46,10 @@ const StyledButton = styled.button`
   `;
 
 
-const Button: React.FunctionComponent<Props> = ({ content, link }) => {
+const Button: React.FunctionComponent<Props> = ({ content, link, animated, className, customDelay }) => {
 
   return (
-    <StyledButton>
+    <StyledButton animated className={className} customDelay={customDelay}>
       <Link href={link}>
         <a>{content}</a>
       </Link>

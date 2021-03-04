@@ -1,7 +1,15 @@
-const SHOW_TILES = 'SHOW_SERVICE_TILES';
+const UPDATE_TEXT_BLOCKS = 'UPDATE_TEXT_BLOCKS';
+const updateTextBlocks = (type) => (dispatch) => {
+  dispatch({
+    type: UPDATE_TEXT_BLOCKS,
+    payload: type
+  });
+};
+
+const SHOW_TILES = 'SHOW_TILES';
 const showTiles = (type) => (dispatch) => {
   dispatch({
-    type: SHOW_SERVICE_TILES,
+    type: SHOW_TILES,
     payload: type
   });
 };
@@ -29,6 +37,7 @@ const updateNotifier = () => (dispatch) => {
 };
 
 export {
+  updateTextBlocks,
   showTiles,
   updateTilesElements,
   updatePosition,
