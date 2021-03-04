@@ -12,8 +12,8 @@ const Start: React.FunctionComponent<Props> = () => {
 
 
   return (
-    <Section>
-      <MainTextBlock />
+    <Section hero={true}>
+      <MainTextBlock section={'start'} />
       {/* <Button content={'Sitzplatz buchen'} link='/' />
       <Button content={'Projekte'} link='/' />   */}
     </Section>
