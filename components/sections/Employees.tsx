@@ -6,7 +6,7 @@ import Highlight from '@/components/text/Highlight';
 import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock'
 import Button from '@/components/buttons/Button';
-import TileSet from '@/components/partials/tileSet'
+import TileSet from '@/components/partials/TileSet'
 
 interface Props { }
 
