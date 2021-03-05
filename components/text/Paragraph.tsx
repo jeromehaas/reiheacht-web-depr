@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 interface Props {
   children: React.ReactNode;
-  animated: Boolean;
+  animated?: Boolean;
   className: String;
 }
 
@@ -29,7 +29,7 @@ const StyledParagraph = styled.p`
 const Paragraph: React.FunctionComponent<Props> = ({ children, animated, className }) => {
 
   return (
-    <StyledParagraph className={className} animated>
+    <StyledParagraph className={className} animated={animated}>
       {children}
     </StyledParagraph>
   );

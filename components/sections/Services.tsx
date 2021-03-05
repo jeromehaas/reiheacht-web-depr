@@ -34,7 +34,7 @@ const tileContent = [
     overlayColor: '#C23E27'
   },
   {
-    image: '/illustrations/services/storytelling.svg',
+    image: '/illustrations/services/web.svg',
     alt: 'Design',
     title: <H3>Design</H3>,
     description: <ul> <ListItem>Illustration</ListItem> <ListItem>Layout</ListItem>  <ListItem>Webdesign</ListItem> </ul>,
