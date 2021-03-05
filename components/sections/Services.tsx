@@ -57,8 +57,9 @@ const tileContent = [
 ] 
 
 const textBlockContent = {
+  section: 'services',
   title: <H2>Erwecke deine <br /> Idee zum <Highlight>Leben</Highlight>.</H2>,
-  paragraph: <Paragraph>Das tun wir den ganzen Tag – und wir lieben es.</Paragraph>
+  text: <Paragraph>Das tun wir den ganzen Tag – und wir lieben es.</Paragraph>
 }
 
 const Services: React.FunctionComponent<Props> = () => {

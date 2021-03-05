@@ -8,6 +8,9 @@ const initialState = {
   projects: {
     visible: false
   },
+  employees: {
+    visible: false
+  },
   contact: {
     visible: false
   }
@@ -18,7 +21,7 @@ const textBlocks = (state = initialState, action) => {
     case 'UPDATE_TEXT_BLOCKS':
       return {
         ...state, 
-        start: { visible: true}
+        ...action.payload
       }
   }
   return {

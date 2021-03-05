@@ -12,7 +12,7 @@ const content = {
   section: 'start',
   title: <>hier beginnt <br />die </>,
   carouselItems: ['Magie', 'Idee', 'Zusammenarbeit'],
-  text: <Paragraph>reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Lösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst. <br /> Wir bewegen alles und jeden – setz dich in die reiheacht.</Paragraph>,
+  text: <>reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Lösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst. <br /> Wir bewegen alles und jeden – setz dich in die reiheacht.</>,
   buttons: [
     { content: 'Sitzplatz buchen', link: '#', delay: '5s' },
     { content: 'Projekte', link: '#', delay: '5.25s' }
