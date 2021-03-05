@@ -36,10 +36,19 @@ const updateNotifier = () => (dispatch) => {
   });
 };
 
+const TOGGLE_MOBILE_NAVIGATION = 'TOGGLE_MOBILE_NAVIGATION';
+const toggleMobileNavigation = (currentStatus) => (dispatch) =>  {
+  dispatch({
+    type: TOGGLE_MOBILE_NAVIGATION,
+    payload: currentStatus
+  });
+}
+
 export {
   updateTextBlocks,
   showTiles,
   updateTilesElements,
   updatePosition,
   updateNotifier,
+  toggleMobileNavigation
 };

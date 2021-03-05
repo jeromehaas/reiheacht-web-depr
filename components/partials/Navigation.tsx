@@ -2,11 +2,11 @@ import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import Limiter from '../layout/Limiter';
 import Link from 'next/link';
-import Lottie from 'react-lottie';
-import * as animationData from '../../public/animations/hamburger.json';
-import { Link as Anchor } from 'react-scroll'
-
-
+import { Lottie } from '@crello/react-lottie';
+import animationData from '../../public/animations/hamburger.json';
+import { Link as Anchor } from 'react-scroll';
+import { useSelector, useDispatch } from 'react-redux';
+import { toggleMobileNavigation } from 'redux/actions';
 
 const DesktopNavigation = styled.nav`
   position: relative; 
@@ -165,6 +165,11 @@ interface Props { }
 
 const Navigation: React.FunctionComponent<Props> = () => {
 
+  const dispatch = useDispatch();
+  const mobileMenuIsVisible = useSelector((state) => state.navigation.mobile.isVisible)
+
+  console.log(mobileMenuIsVisible)
+
   return (
     <>
       <DesktopNavigation>
@@ -195,13 +200,17 @@ const Navigation: React.FunctionComponent<Props> = () => {
                   <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
                 </a>
               </Link>
+              <div onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
               <Lottie
-                options={defaultOptions}
-                width={50}
-                height={50}
-                style={{ margin: 0 }} isStopped={false} isPaused={false}
-                direction={1}
-              />
+                  config={{ animationData: animationData, autoplay: false }}
+                  playingState={'playing'}
+                  speed={2}
+                  width={'70px'}
+                  height={'70px'}
+                  style={{ margin: 0 }}
+                  direction={mobileMenuIsVisible === true ? 1 : -1}
+                />
+                </div>
             </div>
           </Limiter>
         </div>
