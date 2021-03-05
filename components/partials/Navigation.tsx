@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import Limiter from '../layout/Limiter';
 import Link from 'next/link';
 import Lottie from 'react-lottie';
 import * as animationData from '../../public/animations/hamburger.json';
+import { Link as Anchor } from 'react-scroll'
+
 
 
 const DesktopNavigation = styled.nav`
@@ -129,29 +131,25 @@ const MobileNavigation = styled.nav`
 
 const navigationItems = [
   {
-    text: 'Home',
-    link: '#'
+    text: 'Start',
+    link: 'start'
   },
   {
     text: 'Leistungen',
-    link: '#'
+    link: 'services'
   },
   {
     text: 'Projekte',
-    link: '#'
+    link: 'projects'
   },
   {
     text: 'Agentur',
-    link: '#'
+    link: 'employees'
   },
   {
     text: 'Kontakt',
-    link: '#'
-  },
-  {
-    text: 'Blog',
-    link: '#'
-  },
+    link: 'contact'
+  }
 ]
 
 const defaultOptions = {
@@ -167,7 +165,6 @@ interface Props { }
 
 const Navigation: React.FunctionComponent<Props> = () => {
 
-
   return (
     <>
       <DesktopNavigation>
@@ -175,15 +172,16 @@ const Navigation: React.FunctionComponent<Props> = () => {
           <Limiter>
             <div className="container">
               <div className="linkWrapper">
-                {navigationItems.map((item, index) => (
-                  <a className={'link'} key={index}>{item.text}</a>
-                ))}
+                <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={500}>Start</Anchor>
+                <Anchor className={'link'} to={'services'} spy={true} smooth={true} duration={500}>Leistungen</Anchor>
+                <Anchor className={'link'} to={'projects'} spy={true} smooth={true} duration={500}>Projekte</Anchor>
+                <Anchor className={'link'} to={'employees'} spy={true} smooth={true} duration={500}>Agentur</Anchor>
+                <Anchor className={'link'} to={'contact'} spy={true} smooth={true} duration={500}>Kontakt</Anchor>
+                <Link href="/blog"><a className={'link'}>Blog</a></Link>
               </div>
-              <Link href={'#'}>
-                <a>
-                  <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
-                </a>
-              </Link>
+              <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={500}>
+                <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
+              </Anchor>
             </div>
           </Limiter>
         </div>
@@ -192,7 +190,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
         <div className="bar">
           <Limiter>
             <div className="container">
-              <Link href={'#'}>
+              <Link href={'#start'}>
                 <a>
                   <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
                 </a>
@@ -208,9 +206,12 @@ const Navigation: React.FunctionComponent<Props> = () => {
           </Limiter>
         </div>
         <div className="linkWrapper">
-          {navigationItems.map((item, index) => (
-            <a className={'link'} key={index}>{item.text}</a>
-          ))}
+          <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={500}>Start</Anchor>
+          <Anchor className={'link'} to={'services'} spy={true} smooth={true} duration={500}>Leistungen</Anchor>
+          <Anchor className={'link'} to={'projects'} spy={true} smooth={true} duration={500}>Projekte</Anchor>
+          <Anchor className={'link'} to={'employees'} spy={true} smooth={true} duration={500}>Agentur</Anchor>
+          <Anchor className={'link'} to={'contact'} spy={true} smooth={true} duration={500}>Kontakt</Anchor>
+          <Link href="/blog"><a className={'link'}>Blog</a></Link>
         </div>
       </MobileNavigation>
     </>

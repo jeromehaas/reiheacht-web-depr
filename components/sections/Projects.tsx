@@ -66,7 +66,7 @@ const Projects: React.FunctionComponent<Props> = () => {
 
 
   return (
-    <Section>
+    <Section id={'projects'}>
       <TextBlock content={textBlockContent} />
       <TileSet tiles={tileContent} />
     </Section>

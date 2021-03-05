@@ -11,13 +11,14 @@ const StyledSection = styled.div`
   width: 100%;
   min-height: ${p => p.hero ? 'calc(100vh - 330px)' : 'unset'};
   margin-bottom: 150px;
+  padding-top: 80px;
 `;
 
-const Section: React.FunctionComponent<Props> = ({ children, hero }) => {
+const Section: React.FunctionComponent<Props> = ({ children, hero, id }) => {
 
   return (
-    <Limiter>
-      <StyledSection hero>
+    <Limiter id={id}>
+      <StyledSection hero >
         {children}
       </StyledSection>
     </Limiter>
