@@ -66,7 +66,7 @@ const Services: React.FunctionComponent<Props> = () => {
 
 
   return (
-    <Section>
+    <Section id={'services'}>
       <TextBlock content={textBlockContent} />
       <TileSet tiles={tileContent} />
     </Section>

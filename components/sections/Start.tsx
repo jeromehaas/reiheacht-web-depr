@@ -22,7 +22,7 @@ const content = {
 const Start: React.FunctionComponent<Props> = () => {
 
   return (
-    <Section hero={true}>
+    <Section hero={true} id={'start'}>
       <MainTextBlock content={content} />
     </Section>
   );

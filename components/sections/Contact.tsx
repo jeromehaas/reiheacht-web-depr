@@ -18,7 +18,7 @@ const Contact: React.FunctionComponent<Props> = () => {
 
 
   return (
-    <Section>
+    <Section id={'contact'}>
       <TextBlock content={textBlockContent} />
     </Section>
   );

@@ -40,7 +40,7 @@ const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
         onChange={(isVisible) => { dispatch(updateTextBlocks({ [content.section]: { visible: isVisible } })) }}
         active={true}
         partialVisibility={true}
-        offset={{ top: 200 }} >
+        offset={{ top: 0, bottom: 0 }} >
         <Fragment>
           {content.title}
           <HorizontalLine />

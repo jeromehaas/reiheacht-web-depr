@@ -45,7 +45,7 @@ const Employees: React.FunctionComponent<Props> = () => {
 
 
   return (
-    <Section>
+    <Section id={'employees'}>
       <TextBlock content={textBlockContent} />
       <TileSet tiles={tileContent} />
     </Section>
