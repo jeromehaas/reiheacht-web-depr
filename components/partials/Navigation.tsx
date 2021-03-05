@@ -7,6 +7,7 @@ import animationData from '../../public/animations/hamburger.json';
 import { Link as Anchor } from 'react-scroll';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleMobileNavigation } from 'redux/actions';
+import cx from 'classnames';
 
 const DesktopNavigation = styled.nav`
   position: relative; 
@@ -109,12 +110,18 @@ const MobileNavigation = styled.nav`
     position: fixed;
     top: -100vh;
     width: 100%;
-    height: 0vh;
+    height: 100vh;
     overflow: hidden;
     background-color: ${p => p.theme.darkGrey};
     align-items: center;
     z-index: 5;
     padding-top: 75px;
+    transition: all 1s ease-in-out;
+
+  &.active {
+    top: 0vh;
+  }
+
   }
 
   .link {
@@ -177,14 +184,14 @@ const Navigation: React.FunctionComponent<Props> = () => {
           <Limiter>
             <div className="container">
               <div className="linkWrapper">
-                <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={500}>Start</Anchor>
-                <Anchor className={'link'} to={'services'} spy={true} smooth={true} duration={500}>Leistungen</Anchor>
-                <Anchor className={'link'} to={'projects'} spy={true} smooth={true} duration={500}>Projekte</Anchor>
-                <Anchor className={'link'} to={'employees'} spy={true} smooth={true} duration={500}>Agentur</Anchor>
-                <Anchor className={'link'} to={'contact'} spy={true} smooth={true} duration={500}>Kontakt</Anchor>
+                <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={1000}>Start</Anchor>
+                <Anchor className={'link'} to={'services'} spy={true} smooth={true} duration={1000}>Leistungen</Anchor>
+                <Anchor className={'link'} to={'projects'} spy={true} smooth={true} duration={1000}>Projekte</Anchor>
+                <Anchor className={'link'} to={'employees'} spy={true} smooth={true} duration={1000}>Agentur</Anchor>
+                <Anchor className={'link'} to={'contact'} spy={true} smooth={true} duration={1000}>Kontakt</Anchor>
                 <Link href="/blog"><a className={'link'}>Blog</a></Link>
               </div>
-              <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={500}>
+              <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={1000}>
                 <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
               </Anchor>
             </div>
@@ -195,11 +202,9 @@ const Navigation: React.FunctionComponent<Props> = () => {
         <div className="bar">
           <Limiter>
             <div className="container">
-              <Link href={'#start'}>
-                <a>
+              <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={1000}>
                   <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
-                </a>
-              </Link>
+              </Anchor>
               <div onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
               <Lottie
                   config={{ animationData: animationData, autoplay: false }}
@@ -214,12 +219,12 @@ const Navigation: React.FunctionComponent<Props> = () => {
             </div>
           </Limiter>
         </div>
-        <div className="linkWrapper">
-          <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={500}>Start</Anchor>
-          <Anchor className={'link'} to={'services'} spy={true} smooth={true} duration={500}>Leistungen</Anchor>
-          <Anchor className={'link'} to={'projects'} spy={true} smooth={true} duration={500}>Projekte</Anchor>
-          <Anchor className={'link'} to={'employees'} spy={true} smooth={true} duration={500}>Agentur</Anchor>
-          <Anchor className={'link'} to={'contact'} spy={true} smooth={true} duration={500}>Kontakt</Anchor>
+        <div className={cx("linkWrapper", mobileMenuIsVisible === true ? 'active' : '')}>
+          <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Start</Anchor>
+          <Anchor className={'link'} to={'services'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Leistungen</Anchor>
+          <Anchor className={'link'} to={'projects'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Projekte</Anchor>
+          <Anchor className={'link'} to={'employees'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Agentur</Anchor>
+          <Anchor className={'link'} to={'contact'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Kontakt</Anchor>
           <Link href="/blog"><a className={'link'}>Blog</a></Link>
         </div>
       </MobileNavigation>
