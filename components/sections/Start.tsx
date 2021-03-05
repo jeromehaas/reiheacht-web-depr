@@ -10,12 +10,9 @@ interface Props { }
 
 const Start: React.FunctionComponent<Props> = () => {
 
-
   return (
     <Section hero={true}>
-      <MainTextBlock section={'start'} />
-      {/* <Button content={'Sitzplatz buchen'} link='/' />
-      <Button content={'Projekte'} link='/' />   */}
+      <MainTextBlock section={'start'} buttons={[{ content: 'Sitzplatz buchen', link: '#', delay: '5s' }, { content: 'Projekte', link: '#', delay: '5.25s' }]} />
     </Section>
   );
 

@@ -29,9 +29,10 @@ const MoveDownWrapper = styled.div`
 
 interface Props {
   section: String;
+  buttons: any;
 }
 
-const MainTextBlock: React.FunctionComponent<Props> = ({ section }) => {
+const MainTextBlock: React.FunctionComponent<Props> = ({ section, buttons }) => {
 
   const dispatch = useDispatch();
   const isVisible = useSelector((state) => state.textBlocks[section].visible);
@@ -49,8 +50,10 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ section }) => {
       </InView >
       <HorizontalLine className={isVisible ? 'active' : ''} animated={true} />
       <Paragraph animated={true} className={isVisible ? 'active' : ''} > reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Lösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst. <br /> Wir bewegen alles und jeden – setz dich in die reiheacht.</Paragraph>
-      <Button link={'#'} content={'hello'} animated={true} className={isVisible ? 'active' : ''} />
-      <Button link={'#'} content={'hello'} animated={true} className={isVisible ? 'active' : ''} customDelay={'5.25s'} />
+      {buttons.map((button) => (
+        <Button link={button.link} content={button.content} animated={true} className={isVisible ? 'active' : ''} customDelay={button.delay} />
+      ))}
+
     </MoveDownWrapper>
   );
 
