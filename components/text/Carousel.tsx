@@ -8,10 +8,27 @@ const StyledCarousel = styled.span`
   display: inline-block;
   position: relative;
   height:  80px;
-  margin-left: 20px;
-  width: 610px;
+  width: calc(100% - 130px);
   overflow: hidden;
   vertical-align: middle;
+
+  @media (max-width: 1000px) {
+    width: calc(100% - 95px);;
+  }
+
+  @media (max-width: 600px) {
+    width: calc(100% - 0px);
+  }
+
+  @media (max-width: 550px) {
+    width: calc(100% - 70px);
+  }
+
+  @media (max-width: 450px) {
+    width: calc(100% - 0px);
+    height:  80px;
+  }
+
 `;
 
 const CarouselWrapper = styled.div`
@@ -30,6 +47,26 @@ const CarouselWrapper = styled.div`
       65% {top: -95px;}
       100% {top: -193px;}
     }
+
+    @media (max-width: 1000px) {
+      top: 10px;
+      @keyframes carousel {
+      0% {top: 10px;}
+      35% {top: -65px;}
+      65% {top: -65px;}
+      100% {top: -140px;}
+    }
+
+    @media (max-width: 550px) {
+      top: 21px;
+      @keyframes carousel {
+      0% {top: 21px;}
+      35% {top: -34px;}
+      65% {top: -34px;}
+      100% {top: -90px;}
+    }
+ }
+
 `;
 
 const CarouselItem = styled.span`
