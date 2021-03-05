@@ -9,7 +9,6 @@ interface Props {
 
 const StyledSection = styled.div`
   width: 100%;
-  min-height: ${p => p.hero ? 'calc(100vh - 330px)' : 'unset'};
   margin-bottom: 150px;
   padding-top: 80px;
 `;

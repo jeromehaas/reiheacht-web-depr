@@ -175,8 +175,6 @@ const Navigation: React.FunctionComponent<Props> = () => {
   const dispatch = useDispatch();
   const mobileMenuIsVisible = useSelector((state) => state.navigation.mobile.isVisible)
 
-  console.log(mobileMenuIsVisible)
-
   return (
     <>
       <DesktopNavigation>
