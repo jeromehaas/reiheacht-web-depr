@@ -9,9 +9,9 @@ import Button from '@/components/buttons/Button';
 interface Props { }
 
 const textBlockContent = {
+  section: 'contact',
   title: <H2>Sag <Highlight>Hallo</Highlight>!</H2>,
-  paragraph: <Paragraph>Wir morsen zwar sehr gut, es gibt jedoch einfachere Wege, uns zu kontaktieren. <br /> <br />
-  Wir freuen uns.</Paragraph>
+  text: <Paragraph>Wir morsen zwar sehr gut, es gibt jedoch einfachere Wege, uns zu kontaktieren. <br /> <br />Wir freuen uns.</Paragraph>
 }
 
 const Contact: React.FunctionComponent<Props> = () => {

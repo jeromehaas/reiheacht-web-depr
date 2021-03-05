@@ -11,11 +11,6 @@ const StyledTileSet = styled.div`
   flex-wrap: wrap;
   overflow: hidden;
   line-height: 0;
-
-  .tile {
-
-  }
-
 `;
 
 const TileSet: React.FunctionComponent<Props> = ({ tiles }) => {
@@ -24,7 +19,7 @@ const TileSet: React.FunctionComponent<Props> = ({ tiles }) => {
     <StyledTileSet>
       {tiles.map((tile, index) => (
         <Tile key={index} content={tile} className={'tile'}>hello</Tile>
-      ))}
+        ))}
     </StyledTileSet>
   );
 

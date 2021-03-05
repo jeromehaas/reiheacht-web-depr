@@ -11,8 +11,9 @@ import TileSet from '@/components/partials/TileSet'
 interface Props { }
 
 const textBlockContent = {
+  section: 'employees',
   title: <H2>Dein <Highlight>Team</Highlight>.</H2>,
-  paragraph: <Paragraph>Wir warten auf dein Startsignal.</Paragraph>
+  text: <Paragraph>Wir warten auf dein Startsignal.</Paragraph>
 }
 
 const tileContent = [

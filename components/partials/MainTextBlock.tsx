@@ -28,30 +28,29 @@ const MoveDownWrapper = styled.div`
 `;
 
 interface Props {
-  section: String;
-  buttons: any;
+  content: any
 }
 
-const MainTextBlock: React.FunctionComponent<Props> = ({ section, buttons }) => {
+const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => {
 
   const dispatch = useDispatch();
-  const isVisible = useSelector((state) => state.textBlocks[section].visible);
+  const isVisible = useSelector((state) => state.textBlocks[content.section].visible);
 
   return (
     <MoveDownWrapper className={isVisible ? 'active' : ''}>
       <InView onChange={() => dispatch(updateTextBlocks({ start: { visible: true } }))}>
         {({ inView, ref, entry }) => (
           <div ref={ref}>
-            <H1>Hier beginnt <br /> die
-              <Carousel className={isVisible ? 'active' : ''} items={['Magie', 'Idee', 'Zusammenarbeit']} />
+            <H1>{content.title}
+              <Carousel className={isVisible ? 'active' : ''} items={content.carouselItems} />
             </H1>
           </div>
         )}
       </InView >
       <HorizontalLine className={isVisible ? 'active' : ''} animated={true} />
-      <Paragraph animated={true} className={isVisible ? 'active' : ''} > reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Lösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst. <br /> Wir bewegen alles und jeden – setz dich in die reiheacht.</Paragraph>
-      {buttons.map((button) => (
-        <Button link={button.link} content={button.content} animated={true} className={isVisible ? 'active' : ''} customDelay={button.delay} />
+      <Paragraph animated={true} className={isVisible ? 'active' : ''} >{content.text}</Paragraph>
+      {content.buttons.map((button, index) => (
+        <Button key={index} link={button.link} content={button.content} animated={true} className={isVisible ? 'active' : ''} customDelay={button.delay} />
       ))}
 
     </MoveDownWrapper>
