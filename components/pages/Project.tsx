@@ -36,7 +36,8 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => {
           {children}
           {content.outro.title}
           <HorizontalLine className={'active'} animated={false} />
-          {content.outro.text}
+          {content.outro.button}
+
 
         </Section>
         <CloseTriangle position={'bottom'} />

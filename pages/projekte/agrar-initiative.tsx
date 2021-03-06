@@ -4,6 +4,7 @@ import H2 from '@/components/text/H2';
 import Paragraph from '@/components/text/Paragraph';
 import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
+import Button from '@/components/buttons/Button';
 
 interface Props { }
 
@@ -13,8 +14,8 @@ const content = {
     text: <Paragraph>Für die kommende Agrarinitiative im Juni 2021 hat uns der Schweizer Bauernverband damit beauftragt verschiedene Illustrationen und  Animationen für Ihre Kampagne zu erstellen.Zur Kommunikation werden  verschiedene Medienkanäle wie Print, Video und Webbanner eingesetzt.</Paragraph>
   },
   outro: {
-    title: <H2>Erwecke deine <br /> Idee zum <Highlight>Leben</Highlight>.</H2>,
-    text: <Paragraph>Das tun wir den ganzen Tag – und wir lieben es.</Paragraph>
+    title: <H2>Du möchtest deine Idee <br /> auch zum Leben  <Highlight>erwecken</Highlight>?</H2>,
+    button: <Button link={'/hello'} content={'Hello'} animated={true} className={'active'} customDelay={'3s'} />
   }
 
 }
