@@ -11,6 +11,8 @@ const Variables = {
   spacingBig: '30px',
   titleLineHeight: '115%',
   buttonFontSize: '20px',
+  helvetica55: 'Helvetica 55 Roman',
+  helvetica56: 'Helvetica 65 Medium',
   buttonFontFamily: "'Helvetica 55 Roman'",
   standardTransition: 'all 0.2s ease-in-out',
 }

@@ -5,6 +5,7 @@ import Highlight from '@/components/text/Highlight';
 import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock'
 import Button from '@/components/buttons/Button';
+import ContactForm from '@/components/partials/ContactForm';
 
 interface Props { }
 
@@ -20,6 +21,7 @@ const Contact: React.FunctionComponent<Props> = () => {
   return (
     <Section id={'contact'}>
       <TextBlock content={textBlockContent} />
+      <ContactForm />
     </Section>
   );
 

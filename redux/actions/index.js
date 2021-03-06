@@ -44,11 +44,65 @@ const toggleMobileNavigation = (currentStatus) => (dispatch) =>  {
   });
 }
 
+const UPDATE_CONTACTFORM_NAME = 'UPDATE_CONTACTFORM_NAME';
+const updateContactFormName = (value) => {
+  return (dispatch) => {
+    dispatch({
+      type: UPDATE_CONTACTFORM_NAME,
+      payload: value
+    });
+  }
+}
+
+const UPDATE_CONTACTFORM_EMAIL = 'UPDATE_CONTACTFORM_EMAIL';
+const updateContactFormEmail = (value) => {
+  return (dispatch) => {
+    dispatch({
+      type: UPDATE_CONTACTFORM_EMAIL,
+      payload: value
+    });
+  }
+}
+
+const UPDATE_CONTACTFORM_PHONE = 'UPDATE_CONTACTFORM_PHONE';
+const updateContactFormPhone = (value) => {
+  return (dispatch) => {
+    dispatch({
+      type: UPDATE_CONTACTFORM_PHONE,
+      payload: value
+    });
+  }
+}
+
+const UPDATE_CONTACTFORM_MESSAGE = 'UPDATE_CONTACTFORM_MESSAGE';
+const updateContactFormMessage = (value) => {
+  return (dispatch) => {
+    dispatch({
+      type: UPDATE_CONTACTFORM_MESSAGE,
+      payload: value
+    });
+  }
+}
+
+const SUBMIT_CONTACT_FORM = 'SUBMIT_CONTACT_FORM';
+const submitContactForm = () => {
+  return (dispatch) => {
+    dispatch({
+      type: SUBMIT_CONTACT_FORM
+    })
+  }
+}
+
 export {
   updateTextBlocks,
   showTiles,
   updateTilesElements,
   updatePosition,
   updateNotifier,
-  toggleMobileNavigation
+  toggleMobileNavigation,
+  updateContactFormName,
+  updateContactFormEmail,
+  updateContactFormPhone,
+  updateContactFormMessage,
+  submitContactForm
 };
