@@ -26,10 +26,10 @@ const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
 
   return (
 
-    
+
     <Reveal keyframes={moveDown} triggerOnce={true}>
         {content.title}
-      <HorizontalLine animated={false} className={'active'} />
+        <HorizontalLine animated={false} className={'active'} />
         {content.text}
     </Reveal>
 

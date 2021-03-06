@@ -1,10 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import H3 from '@/components/text/H3';
-
-interface Props {
-  content: any
-}
+import Link from 'next/link';
 
 const StyledTile = styled.div`
   width: 33.333%;
@@ -58,23 +55,42 @@ const StyledTile = styled.div`
       top: 0px;
     }
   }
-
 `;
 
+
+interface Props {
+  content: any
+}
+
 const Tile: React.FunctionComponent<Props> = ({ content }) => {
+
 
   return (
     <StyledTile>
       <div className="initial">
         <img src={content.image} alt={content.alt} />
       </div>
-      <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
-        {content.title}
-        {content.description}
-      </div>
+
+      {content.link ? (
+        <Link href={content.link}>
+          <a>
+            <div className="overlay" style={{ backgroundColor: content.overlayColor }} >
+            {content.title}
+            {content.description}
+          </div>
+          </a>
+        </Link>
+      ) : (
+        <div className="overlay" style={{ backgroundColor: content.overlayColor }} >
+          {content.title}
+          {content.description}
+        </div>
+      )}
+
+
     </StyledTile>
   );
-
+  
 }
 
 export default Tile;
