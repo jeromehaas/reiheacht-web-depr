@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Limiter from '../layout/Limiter';
 import Link from 'next/link';
 import { Lottie } from '@crello/react-lottie';
-import animationData from '../../public/animations/hamburger.json';
+import hamburger from '../../public/animations/hamburger.json';
 import { Link as Anchor } from 'react-scroll';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleMobileNavigation } from 'redux/actions';
@@ -162,7 +162,7 @@ const navigationItems = [
 const defaultOptions = {
   loop: false,
   autoplay: false,
-  animationData: animationData.default,
+  animationData: hamburger.default,
   rendererSettings: {
     preserveAspectRatio: 'xMidYMid slice'
   }
@@ -205,7 +205,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
               </Anchor>
               <div onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
               <Lottie
-                  config={{ animationData: animationData, autoplay: false }}
+                  config={{ animationData: hamburger, autoplay: false }}
                   playingState={'playing'}
                   speed={2}
                   width={'70px'}

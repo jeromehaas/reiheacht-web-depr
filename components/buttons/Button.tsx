@@ -49,7 +49,7 @@ const StyledButton = styled.button`
 const Button: React.FunctionComponent<Props> = ({ content, link, animated, className, customDelay }) => {
 
   return (
-    <StyledButton animated className={className} customDelay={customDelay}>
+    <StyledButton animated={animated} className={className} customDelay={customDelay}>
       <Link href={link}>
         <a>{content}</a>
       </Link>

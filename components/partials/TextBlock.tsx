@@ -24,14 +24,12 @@ interface Props {
 
 const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
 
-  const dispatch = useDispatch();
-  const isVisible = useSelector((state) => state.textBlocks[content.section].visible);
-
   return (
+
 
     <Reveal keyframes={moveDown} triggerOnce={true}>
         {content.title}
-      <HorizontalLine animated={false} className={'active'} />
+        <HorizontalLine animated={false} className={'active'} />
         {content.text}
     </Reveal>
 
