@@ -9,6 +9,7 @@ const PageWrapper = styled.div`
   min-height: 100vh;
   background-color: ${p => p.theme.darkGrey};
   margin-bottom: -150px;
+  position: relative;
 `;
 
 export default PageWrapper;
