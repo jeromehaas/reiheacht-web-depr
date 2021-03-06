@@ -4,7 +4,7 @@ import H2 from '@/components/text/H2';
 import H3 from '@/components/text/H3';
 import Highlight from '@/components/text/Highlight';
 import Paragraph from '@/components/text/Paragraph';
-import TextBlock from '@/components/partials/TextBlock'
+import TextBlock from '@/components/partials/TextBlock';
 import Button from '@/components/buttons/Button';
 import ListItem from '@/components/text/ListItem';
 import TileSet from '@/components/partials/TileSet';

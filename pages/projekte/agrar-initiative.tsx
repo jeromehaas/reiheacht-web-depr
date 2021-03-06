@@ -5,6 +5,7 @@ import Paragraph from '@/components/text/Paragraph';
 import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
 import Button from '@/components/buttons/Button';
+import Link from 'next/link';
 
 interface Props { }
 
@@ -15,7 +16,7 @@ const content = {
   },
   outro: {
     title: <H2>Du möchtest deine Idee <br /> auch zum Leben  <Highlight>erwecken</Highlight>?</H2>,
-    button: <Button link={'/hello'} content={'Hello'} animated={true} className={'active'} customDelay={'3s'} />
+    button: <Button link={'/#contact'} content={'Sitzplatz buchen'} animated={true} className={'active'} customDelay={'3s'} />
   }
 
 }
