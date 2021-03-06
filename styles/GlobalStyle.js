@@ -63,13 +63,6 @@ table {
   border-spacing: 0;
 }
 
-/* @font-face {
-  font-family: "Helvetica55";
-  src: url("/fonts/Helvetica55Roman.ttf");
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap; */
-}
 
 @font-face {
     font-family: 'Helvetica 55 Roman';
