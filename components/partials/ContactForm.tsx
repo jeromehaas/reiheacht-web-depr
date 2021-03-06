@@ -75,8 +75,6 @@ const ContactForm: React.FunctionComponent<Props> = () => {
   const form = useSelector((state) => state.contactForm);
   const isSent = useSelector((state) => state.contactForm.isSent);
 
-  console.log(form);
-
   const inputHandler = (event, type) => {
     switch (type) {
       case 'name': { dispatch(updateContactFormName(event.target.value)); break; }
