@@ -12,7 +12,7 @@ const rootReducer = combineReducers({
   textBlocks,
   tiles,
   navigation,
-  contactForm
+  contactForm,
 });
 
 export default rootReducer;

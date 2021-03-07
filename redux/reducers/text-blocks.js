@@ -1,32 +1,34 @@
 const initialState = {
   start: {
-    visible: true
+    visible: true,
   },
   services: {
-    visible: false
+    visible: false,
   },
   projects: {
-    visible: false
+    visible: false,
   },
   employees: {
-    visible: false
+    visible: false,
   },
   contact: {
-    visible: false
-  }
-}
+    visible: false,
+  },
+};
 
 const textBlocks = (state = initialState, action) => {
   switch (action.type) {
     case 'UPDATE_TEXT_BLOCKS':
       return {
-        ...state, 
-        ...action.payload
-      }
+        ...state,
+        ...action.payload,
+      };
+    default: {
+      return {
+        ...state,
+      };
+    }
   }
-  return {
-    ...state
-  }
-}
+};
 
 export default textBlocks;

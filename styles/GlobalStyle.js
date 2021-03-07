@@ -35,6 +35,12 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+*::selection {
+    background-color: rgba(3, 116, 182, 0.99);
+    color: #ffffff;
+    opacity: 0.99;
+}
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
   display: block;
