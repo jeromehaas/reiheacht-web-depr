@@ -12,17 +12,12 @@ const StyledBackButton = styled.button`
   height: 50px;  
 `;
 
-
-const BackButton: React.FunctionComponent<Props> = ({ content, link }) => {
-
-  return (
-    <StyledBackButton>
-      <Link>
-        <a href={link}>{content}</a>
-      </Link>
-    </StyledBackButton>
-  );
-
-}
+const BackButton: React.FunctionComponent<Props> = ({ content, link }) => (
+  <StyledBackButton>
+    <Link>
+      <a href={link}>{content}</a>
+    </Link>
+  </StyledBackButton>
+);
 
 export default BackButton;

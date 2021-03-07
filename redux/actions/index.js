@@ -2,7 +2,7 @@ const UPDATE_TEXT_BLOCKS = 'UPDATE_TEXT_BLOCKS';
 const updateTextBlocks = (type) => (dispatch) => {
   dispatch({
     type: UPDATE_TEXT_BLOCKS,
-    payload: type
+    payload: type,
   });
 };
 
@@ -10,7 +10,7 @@ const SHOW_TILES = 'SHOW_TILES';
 const showTiles = (type) => (dispatch) => {
   dispatch({
     type: SHOW_TILES,
-    payload: type
+    payload: type,
   });
 };
 
@@ -18,7 +18,7 @@ const UPDATE_TILES_ELEMENTS = 'UPDATE_TILES_ELEMENTS';
 const updateTilesElements = (element) => (dispatch) => {
   dispatch({
     type: UPDATE_TILES_ELEMENTS,
-    payload: element
+    payload: element,
   });
 };
 
@@ -37,61 +37,51 @@ const updateNotifier = () => (dispatch) => {
 };
 
 const TOGGLE_MOBILE_NAVIGATION = 'TOGGLE_MOBILE_NAVIGATION';
-const toggleMobileNavigation = (currentStatus) => (dispatch) =>  {
+const toggleMobileNavigation = (currentStatus) => (dispatch) => {
   dispatch({
     type: TOGGLE_MOBILE_NAVIGATION,
-    payload: currentStatus
+    payload: currentStatus,
   });
-}
+};
 
 const UPDATE_CONTACTFORM_NAME = 'UPDATE_CONTACTFORM_NAME';
-const updateContactFormName = (value) => {
-  return (dispatch) => {
-    dispatch({
-      type: UPDATE_CONTACTFORM_NAME,
-      payload: value
-    });
-  }
-}
+const updateContactFormName = (value) => (dispatch) => {
+  dispatch({
+    type: UPDATE_CONTACTFORM_NAME,
+    payload: value,
+  });
+};
 
 const UPDATE_CONTACTFORM_EMAIL = 'UPDATE_CONTACTFORM_EMAIL';
-const updateContactFormEmail = (value) => {
-  return (dispatch) => {
-    dispatch({
-      type: UPDATE_CONTACTFORM_EMAIL,
-      payload: value
-    });
-  }
-}
+const updateContactFormEmail = (value) => (dispatch) => {
+  dispatch({
+    type: UPDATE_CONTACTFORM_EMAIL,
+    payload: value,
+  });
+};
 
 const UPDATE_CONTACTFORM_PHONE = 'UPDATE_CONTACTFORM_PHONE';
-const updateContactFormPhone = (value) => {
-  return (dispatch) => {
-    dispatch({
-      type: UPDATE_CONTACTFORM_PHONE,
-      payload: value
-    });
-  }
-}
+const updateContactFormPhone = (value) => (dispatch) => {
+  dispatch({
+    type: UPDATE_CONTACTFORM_PHONE,
+    payload: value,
+  });
+};
 
 const UPDATE_CONTACTFORM_MESSAGE = 'UPDATE_CONTACTFORM_MESSAGE';
-const updateContactFormMessage = (value) => {
-  return (dispatch) => {
-    dispatch({
-      type: UPDATE_CONTACTFORM_MESSAGE,
-      payload: value
-    });
-  }
-}
+const updateContactFormMessage = (value) => (dispatch) => {
+  dispatch({
+    type: UPDATE_CONTACTFORM_MESSAGE,
+    payload: value,
+  });
+};
 
 const SUBMIT_CONTACT_FORM = 'SUBMIT_CONTACT_FORM';
-const submitContactForm = () => {
-  return (dispatch) => {
-    dispatch({
-      type: SUBMIT_CONTACT_FORM
-    })
-  }
-}
+const submitContactForm = () => (dispatch) => {
+  dispatch({
+    type: SUBMIT_CONTACT_FORM,
+  });
+};
 
 export {
   updateTextBlocks,
@@ -104,5 +94,5 @@ export {
   updateContactFormEmail,
   updateContactFormPhone,
   updateContactFormMessage,
-  submitContactForm
+  submitContactForm,
 };

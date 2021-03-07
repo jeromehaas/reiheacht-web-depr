@@ -6,7 +6,7 @@ const Variables = {
   white: '#FFFFFF',
   darkGrey: '#1C1C1C',
   borderRadius: '10px',
-  spacingSmall: '7.5px', 
+  spacingSmall: '7.5px',
   spacingMedium: '15px',
   spacingBig: '30px',
   titleLineHeight: '115%',
@@ -15,6 +15,6 @@ const Variables = {
   helvetica56: 'Helvetica 65 Medium',
   buttonFontFamily: "'Helvetica 55 Roman'",
   standardTransition: 'all 0.2s ease-in-out',
-}
+};
 
 export default Variables;
