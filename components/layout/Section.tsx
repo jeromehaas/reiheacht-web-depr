@@ -19,7 +19,7 @@ const Section: React.FunctionComponent<Props> = ({ children, hero, id }) => {
 
   return (
     <Limiter id={id}>
-      <StyledSection hero >
+      <StyledSection hero={hero} >
         {children}
       </StyledSection>
     </Limiter>
