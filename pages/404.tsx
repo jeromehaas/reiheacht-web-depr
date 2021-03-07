@@ -37,7 +37,10 @@ const StyledPageNotFound = styled.div`
   }
 
   .astronaut {
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 `;
 
@@ -56,7 +59,6 @@ const PageNotFound: React.FunctionComponent<Props> = () => {
         playingState={'playing'}
         speed={1}
         width={'100%'}
-        height={'auto'}
         direction={1}
       />
       <div className="message">

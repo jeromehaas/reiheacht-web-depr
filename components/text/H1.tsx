@@ -10,17 +10,24 @@ const StyledH1 = styled.h1`
  font-size: 75px; 
  line-height: ${p => p.theme.titleLineHeight};
 
- @media (max-width: 1000px) {
-  font-size: 55px;
+ @media (max-width: 800px) {
+  font-size: 60px;
  }
 
- @media (max-width: 550px) {
-  font-size: 35px;
+ @media (max-width: 700px) {
+  font-size: 50px;
+ }
+
+ @media (max-width: 500px) {
+  font-size: 40px;
+ }
+
+ @media (max-width: 400px) {
+  font-size: 30px;
  }
 `;
 
 const H1: React.FunctionComponent<Props> = ({ children }) => {
-
 
   return (
     <StyledH1>

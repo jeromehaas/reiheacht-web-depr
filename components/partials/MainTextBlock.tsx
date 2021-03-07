@@ -10,7 +10,7 @@ import { updateTextBlocks } from 'redux/actions';
 import { prependOnceListener } from 'process';
 import Button from '@/components/buttons/Button';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
-import Carousel from '@/components/text/Carousel';
+import Carousel from '@/components/animations/Carousel';
 
 const MoveDownWrapper = styled.div`
   position: relative;
