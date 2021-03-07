@@ -18,7 +18,7 @@ const tileContent = [
     title: <H3>Schweizer Bauernverband</H3>,
     description: <Paragraph>Extreme Agrarinitiative</Paragraph>,
     overlayColor: '#9EA600',
-    link: '/projekte/extreme-agrarinitiative'
+    link: '/projekte/#'
   },
   {
     image: '/illustrations/projects/osterkampagne.png',
