@@ -5,7 +5,6 @@ import Paragraph from '@/components/text/Paragraph';
 import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
 import Button from '@/components/buttons/Button';
-import Link from 'next/link';
 
 interface Props { }
 
@@ -13,6 +12,12 @@ const content = {
   intro: {
     title: <H2>Von der Skizze bis zur Animation<Highlight>.</Highlight></H2>,
     text: <Paragraph>Für die kommende Agrarinitiative im Juni 2021 hat uns der Schweizer Bauernverband damit beauftragt verschiedene Illustrationen und  Animationen für Ihre Kampagne zu erstellen.Zur Kommunikation werden  verschiedene Medienkanäle wie Print, Video und Webbanner eingesetzt.</Paragraph>
+  },
+  projectOverview: {
+    imageLink: '/logos/projects/schweizer-bauernverband.svg',
+    imageAlt: 'Schweizer Bauernverband',
+    title: 'Agrar-Initiative.',
+    text: 'Design, Illustration & Animation'
   },
   outro: {
     title: <H2>Du möchtest deine Idee <br /> auch zum Leben  <Highlight>erwecken</Highlight>?</H2>,

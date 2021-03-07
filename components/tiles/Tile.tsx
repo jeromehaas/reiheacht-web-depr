@@ -4,11 +4,19 @@ import H3 from '@/components/text/H3';
 import Link from 'next/link';
 
 const StyledTile = styled.div`
-  width: 33.333%;
+  width: calc(100% / 3);
   height: 100%;
   /* background-color: ${p => p.theme.orange};  */
   overflow: hidden;
   position: relative;
+
+  @media (max-width: 850px) {
+    width: calc(100% / 2);
+  }
+
+  @media (max-width: 550px) {
+    width: calc(100% / 1);
+  }
 
 
   .initial {
