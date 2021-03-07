@@ -11,7 +11,7 @@ import styled from 'styled-components';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import ProjectOverview from '@/components/partials/ProjectOverview';
 import Spacer from '@/components/layout/Spacer';
-
+import Head from 'next/head';
 
 interface Props {
   children: React.ReactNode;
@@ -21,7 +21,22 @@ interface Props {
 const Project: React.FunctionComponent<Props> = ({ children, content }) => {
 
   return (
-    <>
+    <div>
+      <Head>
+        <title>Create Next App</title>
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preload" href="/fonts/HelveticaNeue-Medium.ttf" as="font" crossOrigin="" />
+        <link rel="preload" href="/fonts/HelveticaNeue-Roman.ttf" as="font" crossOrigin="" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+        <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2775b7" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
+        <meta name="theme-color" content="#ffffff"></meta>
+      </Head>
       <PageWrapper>
 
         <CloseTriangle position={'top'} />
@@ -34,10 +49,10 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => {
           <Spacer marginBottom={'40px'} />
 
           <ProjectOverview content={{
-            imageLink: '/logos/projects/schweizer-bauernverband.svg',
-            imageAlt: 'Schweizer Bauernverband',
-            title: 'Agrar-Initiative.',
-            text: 'Design, Illustration & Animation'
+            imageLink: content.projectOverview.imageLink,
+            imageAlt: content.projectOverview.imageAlt,
+            title: content.projectOverview.title,
+            text: content.projectOverview.text
           }} />
 
           <Spacer marginBottom={'40px'} />
@@ -52,7 +67,7 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => {
         </Section>
         <CloseTriangle position={'bottom'} />
       </PageWrapper>
-    </>
+    </div>
   );
 
 }

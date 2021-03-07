@@ -13,52 +13,52 @@ interface Props { }
 
 const tileContent = [
   {
-    image: '/illustrations/services/idea.svg',
+    image: '/illustrations/projects/extreme-agrarinitiative.png',
     alt: 'Schweizer Bauernverband',
     title: <H3>Schweizer Bauernverband</H3>,
-    description: <Paragraph>Agrarinitiative</Paragraph>,
+    description: <Paragraph>Extreme Agrarinitiative</Paragraph>,
     overlayColor: '#9EA600',
-    link: '/projekte/agrar-initiative'
+    link: '/projekte/extreme-agrarinitiative'
   },
   {
-    image: '/illustrations/services/storytelling.svg',
+    image: '/illustrations/projects/osterkampagne.png',
     alt: 'GalloSuisse',
     title: <H3>GalloSuisse</H3>,
     description: <Paragraph>Osterkampagne</Paragraph>,
     overlayColor: '#C70103',
-    link: '/projekte/agrar-initiative'
+    link: '/projekte/osterkampagne'
   },
   {
-    image: '/illustrations/services/illustration.svg',
+    image: '/illustrations/projects/trinkwasserinitiative.png',
     alt: 'Schweizer Bauernverband',
     title: <H3>Schweizer Bauernverband</H3>,
-    description: <Paragraph>Agrarinitiative</Paragraph>,
+    description: <Paragraph>Trinkwasserinitiative</Paragraph>,
     overlayColor: '#9EA600',
-    link: '/projekte/agrar-initiative'
+    link: '/projekte/trinkwasserinitiative'
   },
   {
-    image: '/illustrations/services/storytelling.svg',
+    image: '/illustrations/projects/smartphone-schnitzeljagd.png',
     alt: 'Design',
-    title: <H3>Design</H3>,
-    description: <Paragraph>Agrarinitiative</Paragraph>,
+    title: <H3>Swisslocaltravel</H3>,
+    description: <Paragraph>Smartphone-Schnitzeljagd</Paragraph>,
     overlayColor: '#FC0031',
-    link: '/projekte/agrar-initiative'
+    link: '/projekte/smartphone-schnitzeljagd'
   },
   {
-    image: '/illustrations/services/sound.svg',
+    image: '/illustrations/projects/tierhaltung.png',
     alt: 'Schweizer Bauernverband',
     title: <H3>Schweizer Bauernverband</H3>,
-    description: <Paragraph>Agrarinitiative</Paragraph>,
+    description: <Paragraph>Tierhaltung</Paragraph>,
     overlayColor: '#9EA600',
-    link: '/projekte/agrar-initiative'
+    link: '/projekte/#'
   },
   {
-    image: '/illustrations/services/film.svg',
+    image: '/illustrations/projects/agrarinitiative.png',
     alt: 'GalloSuisse',
     title: <H3>GalloSuisse</H3>,
     description: <Paragraph>Osterkampagne</Paragraph>,
     overlayColor: '#C70103',
-    link: '/projekte/agrar-initiative'
+    link: '/projekte/agrarinitiative'
   },
 ] 
 

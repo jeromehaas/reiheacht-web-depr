@@ -10,23 +10,23 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <H2>Im Einklang, mit deinem Produkt.<Highlight>.</Highlight></H2>,
-    text: <Paragraph>In Zusammenarbeit mit der swisslocaltravel durften wir einen Trailer für ihre Familienschnitzeljagd umsetzen. Die Herausforderung bestand darin, dass der Trailer das günstige Familienangebot widerspiegelt. Design und Illustrationen wurden von von der swisslocaltravel bereitgestellt. </Paragraph>
+    title: <H2>Dein Erklärfilm, auf dich zugeschnitten<Highlight>.</Highlight></H2>,
+    text: <Paragraph>Für die im Juni 2021 anstehende Trinkwasserinitiative durften wir zwei animierte Erklärfilme zu den Auswirkungen der Trinkwasserinitiative realisieren, welche überwiegend auf ihrer Webseite sowie Youtube eingesetzt werden. Damit sich diese Videos von den bisherigen Erklärfilmen abheben, haben wir hier einen neuen Stil kreiert.</Paragraph>
   },
   projectOverview: {
     imageLink: '/logos/projects/schweizer-bauernverband.svg',
     imageAlt: 'Schweizer Bauernverband',
-    title: 'Smartphone-Schnitzeljagd.',
-    text: 'Animation'
+    title: 'Trinkwasserinitiative.',
+    text: 'Storyboard, Design, Illustration & Animation'
   },
   outro: {
-    title: <H2>Darfs ein passender Trailer für dein <Highlight>Produkt</Highlight>?</H2>,
+    title: <H2>Ebenfalls an einem massgeschneidertem Erklärfilm <Highlight>interessiert</Highlight>?</H2>,
     button: <Button link={'/#contact'} content={'Sitzplatz buchen'} animated={true} className={'active'} customDelay={'3s'} />
   }
 
 }
 
-const AgrarInitiative: React.FunctionComponent<Props> = () => {
+const TrinkwasserInitiative: React.FunctionComponent<Props> = () => {
 
 
   return (
@@ -37,4 +37,4 @@ const AgrarInitiative: React.FunctionComponent<Props> = () => {
 
 }
 
-export default AgrarInitiative;
+export default TrinkwasserInitiative;
