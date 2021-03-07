@@ -1,12 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import H3 from '@/components/text/H3';
+import { H3 } from '@/components/text/Titles';
 import Link from 'next/link';
 
 const StyledTile = styled.div`
   width: calc(100% / 3);
   height: 100%;
-  /* background-color: ${p => p.theme.orange};  */
   overflow: hidden;
   position: relative;
 
@@ -49,18 +48,21 @@ const StyledTile = styled.div`
     transition: ${p => p.theme.standardTransition};
   }
 
-  h3 {
-    margin-bottom: 15px;
-    line-height: 1.3;
-  }
+  h3 { margin-bottom: 15px; }
 
-  li {
+  h3, li, p  {
     line-height: 1;
+    opacity: 0;
+    transition: all 0.6s ease;
   }
 
   &:hover {
     .overlay {
       top: 0px;
+
+      h3, li, p {
+      opacity: 1 !important;
+      }
     }
   }
 `;

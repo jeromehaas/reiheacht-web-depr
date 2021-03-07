@@ -48,6 +48,10 @@ ol, ul {
   list-style: none;
 }
 
+a {
+  cursor: pointer;
+}
+
 blockquote, q {
   quotes: none;
 }

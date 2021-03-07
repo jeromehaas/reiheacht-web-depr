@@ -48,7 +48,7 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => {
       <HorizontalLine className={isVisible ? 'active' : ''} animated={true} />
       <Paragraph animated={true} className={isVisible ? 'active' : ''} >{content.text}</Paragraph>
       {content.buttons.map((button, index) => (
-        <Button key={index} link={button.link} content={button.content} animated={true} className={isVisible ? 'active' : ''} customDelay={'0s'} />
+        <Button key={index} link={button.link} content={button.content} animated={true} className={isVisible ? 'active' : ''} customDelay={`${5 + (index / 2)}s`} />
       ))}
 
     </MoveDownWrapper>
