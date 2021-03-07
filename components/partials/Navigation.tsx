@@ -217,8 +217,8 @@ const Navigation: React.FunctionComponent<Props> = () => {
                   config={{ animationData: hamburger, autoplay: false }}
                   playingState={'playing'}
                   speed={2}
-                  width={'70px'}
-                  height={'70px'}
+                  width={'40px'}
+                  height={'40px'}
                   style={{ margin: 0 }}
                   direction={mobileMenuIsVisible === true ? 1 : -1}
                 />
