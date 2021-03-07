@@ -228,7 +228,14 @@ const Navigation: React.FunctionComponent<Props> = () => {
         </div>
         <div className={cx("linkWrapper", mobileMenuIsVisible === true ? 'active' : '')}>
           {navigationItems.map((item, index) => (
-            <Linker key={index} type={item.type} target={item.link}>{item.child}</Linker>
+            <Linker
+              key={index}
+              type={item.type}
+              target={item.link}
+              delay={1000}
+              onClickFunction={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}
+            > {item.child}
+            </Linker>
           ))}
         </div>
       </MobileNavigation>

@@ -23,17 +23,17 @@ interface Props {
   target: String;
 }
 
-const Linker: React.FunctionComponent<Props> = ({ type, children, target }) => {
+const Linker: React.FunctionComponent<Props> = ({ type, children, target, onClickFunction, delay }) => {
 
 
   const renderLink = (type) => {
     switch (type) {
       case 'link':
-        return <Link href={target}><a className={'link'}>{children}</a></Link>
+        return <Link href={target}><a className={'link'} delay={delay} onClick={onClickFunction}>{children}</a></Link>
       case 'anchor':
-        return <Anchor className={'link'} to={target} spy={true} smooth={true} duration={1000}>{children}</Anchor>
+        return <Anchor className={'link'} to={target} spy={true} smooth={true} duration={1000} delay={delay} onClick={onClickFunction}>{children}</Anchor>
       default:
-        return <Anchor className={'link'} to={target} spy={true} smooth={true} duration={1000}>{children}</Anchor>
+        return <Anchor className={'link'} to={target} spy={true} smooth={true} duration={1000} delay={delay} onClick={onClickFunction}>{children}</Anchor>
     }
   }
 
