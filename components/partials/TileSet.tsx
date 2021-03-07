@@ -2,7 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Tile from '@/components/tiles/Tile';
 
-interface Props { }
+interface Props {
+  tiles: any[];
+}
 
 const StyledTileSet = styled.div`
   width: 100%;
@@ -18,7 +20,7 @@ const TileSet: React.FunctionComponent<Props> = ({ tiles }) => {
   return (
     <StyledTileSet>
       {tiles.map((tile, index) => (
-        <Tile key={index} content={tile} className={'tile'}>hello</Tile>
+        <Tile key={index} content={tile}>hello</Tile>
         ))}
     </StyledTileSet>
   );

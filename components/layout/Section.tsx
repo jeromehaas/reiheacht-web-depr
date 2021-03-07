@@ -5,6 +5,7 @@ import styled from 'styled-components';
 interface Props {
   children: React.ReactNode;
   hero?: Boolean;
+  id: String;
 }
 
 const StyledSection = styled.div`

@@ -8,6 +8,7 @@ import { Link as Anchor } from 'react-scroll';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleMobileNavigation } from 'redux/actions';
 import cx from 'classnames';
+import Linker from '@/components/buttons/Link';
 
 const DesktopNavigation = styled.nav`
   position: relative; 
@@ -52,6 +53,7 @@ const DesktopNavigation = styled.nav`
   .link {
     margin-right: 30px;
     color: ${p => p.theme.white};
+    text-decoration: none;
   }
 
   @media (max-width: 1000px) {
@@ -138,24 +140,34 @@ const MobileNavigation = styled.nav`
 
 const navigationItems = [
   {
-    text: 'Start',
-    link: 'start'
+    child: 'Start',
+    link: 'start',
+    type: 'anchor'
   },
   {
-    text: 'Leistungen',
-    link: 'services'
+    child: 'Leistungen',
+    link: 'services',
+    type: 'anchor'
   },
   {
-    text: 'Projekte',
-    link: 'projects'
+    child: 'Projekte',
+    link: 'projects',
+    type: 'anchor'
   },
   {
-    text: 'Agentur',
-    link: 'employees'
+    child: 'Agentur',
+    link: 'employees',
+    type: 'anchor'
   },
   {
-    text: 'Kontakt',
-    link: 'contact'
+    child: 'Kontakt',
+    link: 'contact',
+    type: 'anchor'
+  },
+  {
+    child: 'Blog',
+    link: '/blog',
+    type: 'link'
   }
 ]
 
@@ -182,16 +194,13 @@ const Navigation: React.FunctionComponent<Props> = () => {
           <Limiter>
             <div className="container">
               <div className="linkWrapper">
-                <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={1000}>Start</Anchor>
-                <Anchor className={'link'} to={'services'} spy={true} smooth={true} duration={1000}>Leistungen</Anchor>
-                <Anchor className={'link'} to={'projects'} spy={true} smooth={true} duration={1000}>Projekte</Anchor>
-                <Anchor className={'link'} to={'employees'} spy={true} smooth={true} duration={1000}>Agentur</Anchor>
-                <Anchor className={'link'} to={'contact'} spy={true} smooth={true} duration={1000}>Kontakt</Anchor>
-                <Link href="/blog"><a className={'link'}>Blog</a></Link>
+                {navigationItems.map((item, index) => (
+                  <Linker key={index} type={item.type} target={item.link}>{item.child}</Linker>
+                ))}
               </div>
-              <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={1000}>
+              <Linker type={'anchor'} target={'start'}>
                 <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
-              </Anchor>
+              </Linker>
             </div>
           </Limiter>
         </div>
@@ -218,12 +227,9 @@ const Navigation: React.FunctionComponent<Props> = () => {
           </Limiter>
         </div>
         <div className={cx("linkWrapper", mobileMenuIsVisible === true ? 'active' : '')}>
-          <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Start</Anchor>
-          <Anchor className={'link'} to={'services'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Leistungen</Anchor>
-          <Anchor className={'link'} to={'projects'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Projekte</Anchor>
-          <Anchor className={'link'} to={'employees'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Agentur</Anchor>
-          <Anchor className={'link'} to={'contact'} spy={true} smooth={true} duration={1000} delay={1000} onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>Kontakt</Anchor>
-          <Link href="/blog"><a className={'link'}>Blog</a></Link>
+          {navigationItems.map((item, index) => (
+            <Linker key={index} type={item.type} target={item.link}>{item.child}</Linker>
+          ))}
         </div>
       </MobileNavigation>
     </>

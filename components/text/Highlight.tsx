@@ -6,15 +6,15 @@ interface Props {
 }
 
 const StyledHighlight = styled.span`
-  color: ${p => p.theme.blue};
+  color: ${p => p.color ? p.color : p.theme.blue};
   display: inline-block;
 `;
 
-const Highlight: React.FunctionComponent<Props> = ({ children }) => {
+const Highlight: React.FunctionComponent<Props> = ({ children, color }) => {
 
 
   return (
-    <StyledHighlight>
+    <StyledHighlight color={color}>
       {children}
     </StyledHighlight>
   );
