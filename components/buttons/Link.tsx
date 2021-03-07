@@ -7,11 +7,11 @@ const Wrapper = styled.span`
     .link {
      padding: 20px 0;
      color: ${p => p.theme.white} !important;
-     cursor: pointer;
+     cursor: pointer !important;
     
     a {
      color: ${p => p.theme.white} !important;
-     cursor: pointer;
+     cursor: pointer !important;
     }
     }
 
