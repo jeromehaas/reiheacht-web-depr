@@ -8,7 +8,7 @@ interface Props {
 }
 
 const StyledParagraph = styled.p`
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Helvetica 55 Roman';
   color: ${p => p.theme.white}; 
   line-height: 160%;
