@@ -1,5 +1,5 @@
 import React from 'react';
-import H2 from '@/components/text/H2';
+import { H2 } from '@/components/text/Titles';
 import Paragraph from '@/components/text/Paragraph'
 import PageWrapper from '@/components/layout/PageWrapper';
 import HighLight from '@/components/text/Highlight';

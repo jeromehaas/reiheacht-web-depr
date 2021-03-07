@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Paragraph from '@/components/text/Paragraph';
 import VerticalLine from '@/components/shapes/VerticalLine';
-import H3 from '@/components/text/H3';
+import { H3 } from '@/components/text/Titles';
 
 const StyledProjectOverview = styled.div`
   width: 100%;

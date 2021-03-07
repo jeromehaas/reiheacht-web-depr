@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
-import H1 from '../text/H1'
-import H2 from '../text/H2'
-import Highlight from '../text/Highlight'
+import { H1 } from '@/components/text/Titles'
 import Paragraph from '@/components/text/Paragraph';
 import styled from 'styled-components';
 import { useInView, InView } from 'react-intersection-observer';

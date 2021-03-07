@@ -1,13 +1,11 @@
 import React, { Fragment } from 'react';
-import H2 from '../text/H2'
-import Highlight from '../text/Highlight'
+
 import HorizontalLine from '../shapes/HorizontalLine';
 import Paragraph from '../text/Paragraph';
 import styled from 'styled-components';
 import { useSelector, useDispatch } from 'react-redux';
 import { updateTextBlocks } from 'redux/actions';
 import VisibilitySensor from 'react-visibility-sensor';
-import H1 from '../text/H1';
 import { useState, useEffect } from 'react';
 import { Slide } from "react-awesome-reveal";
 import Reveal from "react-awesome-reveal";
