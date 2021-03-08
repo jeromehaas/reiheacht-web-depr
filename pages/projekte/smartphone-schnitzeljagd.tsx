@@ -10,31 +10,34 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <H2>Im Einklang, mit deinem Produkt.<Highlight>.</Highlight></H2>,
-    text: <Paragraph>In Zusammenarbeit mit der swisslocaltravel durften wir einen Trailer für ihre Familienschnitzeljagd umsetzen. Die Herausforderung bestand darin, dass der Trailer das günstige Familienangebot widerspiegelt. Design und Illustrationen wurden von von der swisslocaltravel bereitgestellt. </Paragraph>
+    title: <H2>
+      Im Einklang, mit deinem Produkt.
+      <Highlight>.</Highlight>
+    </H2>,
+    text: <Paragraph>In Zusammenarbeit mit der swisslocaltravel durften wir einen Trailer für ihre Familienschnitzeljagd umsetzen. Die Herausforderung bestand darin, dass der Trailer das günstige Familienangebot widerspiegelt. Design und Illustrationen wurden von von der swisslocaltravel bereitgestellt. </Paragraph>,
   },
   projectOverview: {
     imageLink: '/logos/projects/schweizer-bauernverband.svg',
     imageAlt: 'Schweizer Bauernverband',
     title: 'Smartphone-Schnitzeljagd.',
-    text: 'Animation'
+    text: 'Animation',
   },
   outro: {
-    title: <H2>Darfs ein passender Trailer für dein <Highlight>Produkt</Highlight>?</H2>,
-    button: <Button link={'/#contact'} content={'Sitzplatz buchen'} animated={true} className={'active'} customDelay={'3s'} />
-  }
+    title: <H2>
+      Darfs ein passender Trailer für dein
+      {' '}
+      <Highlight>Produkt</Highlight>
+      ?
+    </H2>,
+    button: <Button link="/#contact" content="Sitzplatz buchen" animated className="active" customDelay="3s" />,
+  },
 
-}
+};
 
-const AgrarInitiative: React.FunctionComponent<Props> = () => {
-
-
-  return (
-    <Project content={content}>
-      <Video link={"https://player.vimeo.com/video/519844178"} />
-    </Project>
-  );
-
-}
+const AgrarInitiative: React.FunctionComponent<Props> = () => (
+  <Project content={content}>
+    <Video link="https://player.vimeo.com/video/520907425" />
+  </Project>
+);
 
 export default AgrarInitiative;
