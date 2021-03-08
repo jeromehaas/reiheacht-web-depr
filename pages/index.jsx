@@ -13,7 +13,8 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>reiheacht</title>
+        <title>reiheacht - Hier begintn die Zusammenarbeit.</title>
+        <meta name="description" content="Animation | Storytelling| Design | Illustration | Web | Werbefilm" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="preload" href="/fonts/HelveticaNeue-Medium.ttf" as="font" crossOrigin="" />
         <link rel="preload" href="/fonts/HelveticaNeue-Roman.ttf" as="font" crossOrigin="" />
@@ -26,6 +27,7 @@ export default function Home() {
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Head>
       <PageWrapper>
         <Navigation />
