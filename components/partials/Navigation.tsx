@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Lottie } from '@crello/react-lottie';
 import { Link as Anchor } from 'react-scroll';
 import { useSelector, useDispatch, RootStateOrAny } from 'react-redux';
-import { toggleMobileNavigation } from 'redux/actions';
+import { toggleMobileNavigation, updateCurrentPosition } from 'redux/actions';
+
 import cx from 'classnames';
 import Linker from '@/components/buttons/Link';
 import hamburger from '../../public/animations/hamburger.json';
@@ -140,31 +141,37 @@ const navigationItems = [
   {
     child: 'Home',
     link: 'home',
+    section: 'home',
     type: 'anchor',
   },
   {
     child: 'Leistungen',
     link: 'services',
+    section: 'services',
     type: 'anchor',
   },
   {
     child: 'Projekte',
     link: 'projects',
+    section: 'projects',
     type: 'anchor',
   },
   {
     child: 'Agentur',
     link: 'employees',
+    section: 'employees',
     type: 'anchor',
   },
   {
     child: 'Kontakt',
     link: 'contact',
+    section: 'contact',
     type: 'anchor',
   },
   {
     child: 'Blog',
     link: '/blog',
+    section: 'blog',
     type: 'link',
   },
 ];
@@ -174,6 +181,8 @@ interface Props { }
 const Navigation: React.FunctionComponent<Props> = () => {
   const dispatch = useDispatch();
   const mobileMenuIsVisible = useSelector((state: RootStateOrAny) => state.navigation.mobile.isVisible);
+  const currentPosition = useSelector((state: RootStateOrAny) => state.currentPosition);
+  console.log(currentPosition);
 
   return (
     <>
@@ -183,7 +192,16 @@ const Navigation: React.FunctionComponent<Props> = () => {
             <div className="container">
               <div className="linkWrapper">
                 {navigationItems.map((item, index) => (
-                  <Linker key={index} delay={0} type={item.type} target={item.link}>{item.child}</Linker>
+                  <Linker
+                    key={index}
+                    delay={0}
+                    type={item.type}
+                    target={item.link}
+                    className={currentPosition === item.section ? 'current' : null}
+                    onClickFunction={() => dispatch(updateCurrentPosition(item.section))}
+                  >
+                    {item.child}
+                  </Linker>
                 ))}
               </div>
               <Linker type="anchor" target="start" delay={0}>
@@ -221,6 +239,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
               type={item.type}
               target={item.link}
               delay={1000}
+              className={currentPosition === item.section ? 'current' : null}
               onClickFunction={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}
             >
               {' '}

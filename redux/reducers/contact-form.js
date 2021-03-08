@@ -36,6 +36,7 @@ const contactForm = ((state = initialState, action) => {
         message: '',
         isSent: true,
       };
+      s;
     default: {
       return {
         ...state,

@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useDispatch, useSelector, RootStateOrAn } from 'react-redux';
-import { updateTextBlocks } from 'redux/actions';
+import { updateCurrentPosition } from 'redux/actions';
 import VisibilitySensor from 'react-visibility-sensor';
 import Reveal, { Slide } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
@@ -20,13 +20,12 @@ interface Props {
 
 const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
   const dispatch = useDispatch();
-  const isVisible = useSelector((state: RootStateOrAny) => state.textBlocks[content.section].visible);
 
   return (
 
-    <Reveal keyframes={moveDown} triggerOnce>
+    <Reveal keyframes={moveDown} triggerOnce fraction={1}>
 
-      <InView onChange={() => dispatch(updateTextBlocks({ [content.section]: { visible: true } }))}>
+      <InView onChange={() => dispatch(updateCurrentPosition(content.section))}>
         {({ ref }) => (
           <div ref={ref}>
             {content.title}
