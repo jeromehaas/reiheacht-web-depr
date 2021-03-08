@@ -26,10 +26,8 @@ const CarouselWrapper = styled.div`
   flex-direction: column;
   position: absolute;
   top: -5px;
-
-  &.active {
   animation: 2s ease-in-out 2s 1 forwards carousel;
-  }
+
 
   @keyframes carousel {
       0% {top: -5px;}
@@ -98,8 +96,8 @@ interface Props {
 }
 
 const Carousel: React.FunctionComponent<Props> = () => (
-  <StyledCarousel className="active">
-    <CarouselWrapper className="active">
+  <StyledCarousel>
+    <CarouselWrapper>
       {carouselItems.map((item) => (
         <CarouselItem key={item}>
           {item}

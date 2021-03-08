@@ -8,6 +8,8 @@ import { updateTextBlocks } from 'redux/actions';
 import Button from '@/components/buttons/Button';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Carousel from '@/components/animations/Carousel';
+import Reveal from 'react-awesome-reveal';
+import { keyframes } from '@emotion/react';
 
 const MoveDownWrapper = styled.div`
   position: relative;
@@ -24,6 +26,11 @@ const MoveDownWrapper = styled.div`
     }
 `;
 
+const moveDown = keyframes`
+  from {top: -60px; opacity: 0.1; position: relative;}
+  to {top: 0px; opacity: 1; position: relative;}
+`;
+
 interface Props {
   content: any
 }
@@ -33,24 +40,24 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => {
   const isVisible = useSelector((state: RootStateOrAny) => state.textBlocks[content.section].visible);
 
   return (
-    <MoveDownWrapper className={isVisible ? 'active' : ''}>
+    <Reveal keyframes={moveDown} triggerOnce>
       <InView onChange={() => dispatch(updateTextBlocks({ start: { visible: true } }))}>
-        {({ inView, ref, entry }) => (
+        {({ ref }) => (
           <div ref={ref}>
             <H1>
               {content.title}
-              <Carousel className={isVisible ? 'active' : ''} items={content.carouselItems} />
+              <Carousel className="active" items={content.carouselItems} />
             </H1>
           </div>
         )}
       </InView>
-      <HorizontalLine className={isVisible ? 'active' : ''} animated />
+      <HorizontalLine className="active" animated />
       <Paragraph animated className={isVisible ? 'active' : ''}>{content.text}</Paragraph>
       {content.buttons.map((button, index) => (
         <Button key={index} link={button.link} content={button.content} animated className={isVisible ? 'active' : ''} customDelay={`${5 + (index / 2)}s`} />
       ))}
 
-    </MoveDownWrapper>
+    </Reveal>
   );
 };
 

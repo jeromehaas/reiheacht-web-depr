@@ -138,8 +138,8 @@ const MobileNavigation = styled.nav`
 
 const navigationItems = [
   {
-    child: 'Start',
-    link: 'start',
+    child: 'Home',
+    link: 'home',
     type: 'anchor',
   },
   {

@@ -1,5 +1,5 @@
 const initialState = {
-  start: {
+  home: {
     visible: true,
   },
   services: {
@@ -20,7 +20,7 @@ const textBlocks = (state = initialState, action) => {
   switch (action.type) {
     case 'UPDATE_TEXT_BLOCKS':
       return {
-        ...state,
+        ...initialState,
         ...action.payload,
       };
     default: {
