@@ -1,15 +1,13 @@
-import React, { Fragment } from 'react';
-
-import HorizontalLine from '../shapes/HorizontalLine';
-import Paragraph from '../text/Paragraph';
+import React, { Fragment, useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch, useSelector, RootStateOrAn } from 'react-redux';
 import { updateTextBlocks } from 'redux/actions';
 import VisibilitySensor from 'react-visibility-sensor';
-import { useState, useEffect } from 'react';
-import { Slide } from "react-awesome-reveal";
-import Reveal from "react-awesome-reveal";
-import { keyframes } from "@emotion/react";
+import Reveal, { Slide } from 'react-awesome-reveal';
+import { keyframes } from '@emotion/react';
+import { InView } from 'react-intersection-observer';
+import Paragraph from '../text/Paragraph';
+import HorizontalLine from '../shapes/HorizontalLine';
 
 const moveDown = keyframes`
   from {top: -60px; opacity: 0.1; position: relative;}
@@ -21,19 +19,25 @@ interface Props {
 }
 
 const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
+  const dispatch = useDispatch();
+  const isVisible = useSelector((state: RootStateOrAny) => state.textBlocks[content.section].visible);
 
   return (
 
+    <Reveal keyframes={moveDown} triggerOnce>
 
-    <Reveal keyframes={moveDown} triggerOnce={true}>
-        {content.title}
-        <HorizontalLine animated={false} className={'active'} />
-        {content.text}
+      <InView onChange={() => dispatch(updateTextBlocks({ [content.section]: { visible: true } }))}>
+        {({ ref }) => (
+          <div ref={ref}>
+            {content.title}
+            <HorizontalLine animated={false} className="active" />
+            {content.text}
+          </div>
+        )}
+      </InView>
+
     </Reveal>
-
-
-  )
-
-}
+  );
+};
 
 export default TextBlock;
