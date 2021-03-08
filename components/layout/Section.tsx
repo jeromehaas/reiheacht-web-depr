@@ -10,7 +10,7 @@ interface Props {
 
 const StyledSection = styled.div`
   width: 100%;
-  padding: 80px 0;
+  padding-top: 120px;
   min-height: ${(p) => (p.hero ? 'calc(100vh - 60px - 80px - 80px)' : null)}
 `;
 
