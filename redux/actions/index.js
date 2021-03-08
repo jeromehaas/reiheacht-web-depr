@@ -83,6 +83,14 @@ const submitContactForm = () => (dispatch) => {
   });
 };
 
+const UPDATE_CURRENT_POSITION = 'UPDATE_CURRENT_POSITION';
+const updateCurrentPosition = (value) => (dispatch) => {
+  dispatch({
+    type: UPDATE_CURRENT_POSITION,
+    payload: value,
+  });
+};
+
 export {
   updateTextBlocks,
   showTiles,
@@ -95,4 +103,5 @@ export {
   updateContactFormPhone,
   updateContactFormMessage,
   submitContactForm,
+  updateCurrentPosition,
 };
