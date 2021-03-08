@@ -8,7 +8,7 @@ const Wrapper = styled.span`
     .link {
      padding: 20px 0;
      color: ${(p) => p.theme.white};
-     transition: all 0.1s ease;
+     transition: all 0.25s ease 0.5s;
     
     a {
      color: ${(p) => p.theme.white};
