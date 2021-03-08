@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 interface Props {
-  content: String;
-  link: String;
+  content: string;
+  link: string;
 }
 
 const StyledBackButton = styled.button`
@@ -14,8 +14,8 @@ const StyledBackButton = styled.button`
 
 const BackButton: React.FunctionComponent<Props> = ({ content, link }) => (
   <StyledBackButton>
-    <Link>
-      <a href={link}>{content}</a>
+    <Link href={link}>
+      <a>{content}</a>
     </Link>
   </StyledBackButton>
 );
