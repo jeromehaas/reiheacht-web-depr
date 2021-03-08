@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, Fragment } from 'react';
 import Head from 'next/head';
 import PageWrapper from '@/components/layout/PageWrapper';
 import Navigation from '@/components/partials/Navigation';
@@ -8,8 +8,31 @@ import Projects from '@/components/sections/Projects';
 import Employees from '@/components/sections/Employees';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/partials/Footer';
+import Paragraph from '@/components/text/Paragraph';
+import Button from '@/components/buttons/Button';
+import { Lottie } from '@crello/react-lottie';
+import introAnimation from '../public/animations/intro.json';
 
-export default function Home() {
+function useLocalStorage(defaultValue, key) {
+  const [value, setValue] = useState(defaultValue);
+
+  React.useEffect(() => {
+    const localStorageValue = window.localStorage.getItem(key);
+    if (localStorageValue !== null) {
+      setValue(JSON.parse(localStorageValue));
+    }
+  }, [key]);
+
+  React.useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  }, [key, value]);
+
+  return [value, setValue];
+}
+
+const Home = () => {
+  const [animationPlayed, setAnimationPlayed] = useLocalStorage('true', 'animationWasPlayed');
+
   return (
     <div>
       <Head>
@@ -30,14 +53,33 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
       </Head>
       <PageWrapper>
-        <Navigation />
-        <Start />
-        <Services />
-        <Projects />
-        <Employees />
-        <Contact />
-        <Footer />
+
+        {animationPlayed !== true ? (
+          <Lottie
+            config={{ animationData: introAnimation, loop: false, autoplay: true }}
+            playingState="playing"
+            speed={1}
+            width="100%"
+            height="100vh"
+            direction={1}
+            lottieEventListeners={[
+              { callback: () => setAnimationPlayed(true), name: 'complete' },
+            ]}
+          />
+        ) : (
+          <>
+            <Navigation />
+            <Start />
+            <Services />
+            <Projects />
+            <Employees />
+            <Contact />
+            <Footer />
+          </>
+        )}
       </PageWrapper>
     </div>
   );
-}
+};
+
+export default Home;
