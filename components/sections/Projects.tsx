@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
-import { H2 } from '@/components/text/Titles';
-import { H3 } from '@/components/text/Titles';
+import { H2, H3 } from '@/components/text/Titles';
+
 import Highlight from '@/components/text/Highlight';
 import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock';
@@ -18,7 +18,7 @@ const tileContent = [
     title: <H3>Schweizer Bauernverband</H3>,
     description: <Paragraph>Extreme Agrarinitiative</Paragraph>,
     overlayColor: '#9EA600',
-    link: '/projekte/#'
+    link: '/projekte/#',
   },
   {
     image: '/illustrations/projects/osterkampagne.png',
@@ -26,7 +26,7 @@ const tileContent = [
     title: <H3>GalloSuisse</H3>,
     description: <Paragraph>Osterkampagne</Paragraph>,
     overlayColor: '#C70103',
-    link: '/projekte/osterkampagne'
+    link: '/projekte/osterkampagne',
   },
   {
     image: '/illustrations/projects/trinkwasserinitiative.png',
@@ -34,7 +34,7 @@ const tileContent = [
     title: <H3>Schweizer Bauernverband</H3>,
     description: <Paragraph>Trinkwasserinitiative</Paragraph>,
     overlayColor: '#9EA600',
-    link: '/projekte/trinkwasserinitiative'
+    link: '/projekte/trinkwasserinitiative',
   },
   {
     image: '/illustrations/projects/smartphone-schnitzeljagd.png',
@@ -42,7 +42,7 @@ const tileContent = [
     title: <H3>Swisslocaltravel</H3>,
     description: <Paragraph>Smartphone-Schnitzeljagd</Paragraph>,
     overlayColor: '#FC0031',
-    link: '/projekte/smartphone-schnitzeljagd'
+    link: '/projekte/smartphone-schnitzeljagd',
   },
   {
     image: '/illustrations/projects/tierhaltung.png',
@@ -50,7 +50,7 @@ const tileContent = [
     title: <H3>Schweizer Bauernverband</H3>,
     description: <Paragraph>Tierhaltung</Paragraph>,
     overlayColor: '#9EA600',
-    link: '/projekte/#'
+    link: '/projekte/#',
   },
   {
     image: '/illustrations/projects/agrarinitiative.png',
@@ -58,26 +58,30 @@ const tileContent = [
     title: <H3>GalloSuisse</H3>,
     description: <Paragraph>Osterkampagne</Paragraph>,
     overlayColor: '#C70103',
-    link: '/projekte/agrarinitiative'
+    link: '/projekte/agrarinitiative',
   },
-] 
+];
 
 const textBlockContent = {
   section: 'projects',
-  title: <H2>Perfekte Aussicht, <br /> aus der besten <Highlight>reihe</Highlight>.</H2>,
+  title: <H2>
+    Perfekte Aussicht,
+    {' '}
+    <br />
+    {' '}
+    aus der besten
+    {' '}
+    <Highlight>reihe</Highlight>
+    .
+  </H2>,
   text: <Paragraph>Dein Spitzenprogramm – zurücklehnen und geniessen.</Paragraph>,
-}
+};
 
-const Projects: React.FunctionComponent<Props> = () => {
-
-
-  return (
-    <Section id={'projects'}>
-      <TextBlock content={textBlockContent} />
-      <TileSet tiles={tileContent} />
-    </Section>
-  );
-
-}
+const Projects: React.FunctionComponent<Props> = () => (
+  <Section id="projects">
+    <TextBlock content={textBlockContent} />
+    <TileSet tiles={tileContent} />
+  </Section>
+);
 
 export default Projects;
