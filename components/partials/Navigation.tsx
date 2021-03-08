@@ -1,14 +1,13 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import Limiter from '../layout/Limiter';
-import Link from 'next/link';
 import { Lottie } from '@crello/react-lottie';
-import hamburger from '../../public/animations/hamburger.json';
 import { Link as Anchor } from 'react-scroll';
-import { useSelector, useDispatch } from 'react-redux';
+import { useSelector, useDispatch, RootStateOrAny } from 'react-redux';
 import { toggleMobileNavigation } from 'redux/actions';
 import cx from 'classnames';
 import Linker from '@/components/buttons/Link';
+import hamburger from '../../public/animations/hamburger.json';
+import Limiter from '../layout/Limiter';
 
 const DesktopNavigation = styled.nav`
   position: relative; 
@@ -17,7 +16,7 @@ const DesktopNavigation = styled.nav`
   
   .bar {    
     width: 100%;
-    background-color: ${p => p.theme.darkGrey};
+    background-color: ${(p) => p.theme.darkGrey};
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     position: fixed;
     top: -60px;
@@ -52,7 +51,7 @@ const DesktopNavigation = styled.nav`
 
   .link {
     margin-right: 30px;
-    color: ${p => p.theme.white};
+    color: ${(p) => p.theme.white};
     text-decoration: none;
   }
 
@@ -69,7 +68,7 @@ const MobileNavigation = styled.nav`
 
   .bar {
     width: 100%;
-    background-color: ${p => p.theme.darkGrey};
+    background-color: ${(p) => p.theme.darkGrey};
     box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
     position: fixed;
     top: -75px;
@@ -114,7 +113,7 @@ const MobileNavigation = styled.nav`
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: ${p => p.theme.darkGrey};
+    background-color: ${(p) => p.theme.darkGrey};
     align-items: center;
     z-index: 5;
     padding-top: 75px;
@@ -128,7 +127,7 @@ const MobileNavigation = styled.nav`
 
   .link {
     padding: 20px 0;
-    color: ${p => p.theme.white};
+    color: ${(p) => p.theme.white};
   }
 
 
@@ -137,69 +136,58 @@ const MobileNavigation = styled.nav`
   }
 `;
 
-
 const navigationItems = [
   {
     child: 'Start',
     link: 'start',
-    type: 'anchor'
+    type: 'anchor',
   },
   {
     child: 'Leistungen',
     link: 'services',
-    type: 'anchor'
+    type: 'anchor',
   },
   {
     child: 'Projekte',
     link: 'projects',
-    type: 'anchor'
+    type: 'anchor',
   },
   {
     child: 'Agentur',
     link: 'employees',
-    type: 'anchor'
+    type: 'anchor',
   },
   {
     child: 'Kontakt',
     link: 'contact',
-    type: 'anchor'
+    type: 'anchor',
   },
   {
     child: 'Blog',
     link: '/blog',
-    type: 'link'
-  }
-]
-
-const defaultOptions = {
-  loop: false,
-  autoplay: false,
-  animationData: hamburger.default,
-  rendererSettings: {
-    preserveAspectRatio: 'xMidYMid slice'
-  }
-};
+    type: 'link',
+  },
+];
 
 interface Props { }
 
 const Navigation: React.FunctionComponent<Props> = () => {
-
   const dispatch = useDispatch();
-  const mobileMenuIsVisible = useSelector((state) => state.navigation.mobile.isVisible)
+  const mobileMenuIsVisible = useSelector((state: RootStateOrAny) => state.navigation.mobile.isVisible);
 
   return (
     <>
       <DesktopNavigation>
-        <div className='bar'>
+        <div className="bar">
           <Limiter>
             <div className="container">
               <div className="linkWrapper">
                 {navigationItems.map((item, index) => (
-                  <Linker key={index} type={item.type} target={item.link}>{item.child}</Linker>
+                  <Linker key={index} delay={0} type={item.type} target={item.link}>{item.child}</Linker>
                 ))}
               </div>
-              <Linker type={'anchor'} target={'start'}>
-                <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
+              <Linker type="anchor" target="start" delay={0}>
+                <img className="logo" src="/logos/logo_white.svg" alt="reiheacht" />
               </Linker>
             </div>
           </Limiter>
@@ -209,24 +197,24 @@ const Navigation: React.FunctionComponent<Props> = () => {
         <div className="bar">
           <Limiter>
             <div className="container">
-              <Anchor className={'link'} to={'start'} spy={true} smooth={true} duration={1000}>
-                  <img className={'logo'} src="/logos/logo_white.svg" alt="reiheacht" />
+              <Anchor className="link" to="start" spy smooth duration={1000}>
+                <img className="logo" src="/logos/logo_white.svg" alt="reiheacht" />
               </Anchor>
               <div onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
-              <Lottie
+                <Lottie
                   config={{ animationData: hamburger, autoplay: false }}
-                  playingState={'playing'}
+                  playingState="playing"
                   speed={2}
-                  width={'40px'}
-                  height={'40px'}
+                  width="40px"
+                  height="40px"
                   style={{ margin: 0 }}
                   direction={mobileMenuIsVisible === true ? 1 : -1}
                 />
-                </div>
+              </div>
             </div>
           </Limiter>
         </div>
-        <div className={cx("linkWrapper", mobileMenuIsVisible === true ? 'active' : '')}>
+        <div className={cx('linkWrapper', mobileMenuIsVisible === true ? 'active' : '')}>
           {navigationItems.map((item, index) => (
             <Linker
               key={index}
@@ -234,14 +222,15 @@ const Navigation: React.FunctionComponent<Props> = () => {
               target={item.link}
               delay={1000}
               onClickFunction={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}
-            > {item.child}
+            >
+              {' '}
+              {item.child}
             </Linker>
           ))}
         </div>
       </MobileNavigation>
     </>
   );
-
-}
+};
 
 export default Navigation;

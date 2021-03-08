@@ -1,10 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useInView, InView } from 'react-intersection-observer';
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux';
 
 const StyledCarousel = styled.span`
-  color: ${p => p.theme.blue};
+  color: ${(p) => p.theme.blue};
   display: inline-block;
   position: relative;
   height:  1em;
@@ -19,7 +18,6 @@ const StyledCarousel = styled.span`
   @media (max-width: 600px) {
     width: calc(100% - 0px);
   }
-
 
 `;
 
@@ -85,7 +83,7 @@ const CarouselItem = styled.span`
 `;
 
 const Dot = styled.span`
-  color: ${p => p.theme.white}
+  color: ${(p) => p.theme.white}
 `;
 
 const carouselItems = [
@@ -99,22 +97,17 @@ interface Props {
   items: String[];
 }
 
-const Carousel: React.FunctionComponent<Props> = ({ className, items }) => {
-
-  const [ref, inView, entry] = useInView();
-  const dispatch = useDispatch();
-  const isVisible = useSelector((state) => state.textBlocks.start.visible);
-
-  return (
-    <StyledCarousel className={isVisible ? 'active' : ''}>
-      <CarouselWrapper className={isVisible ? 'active' : ''}>
-        {items.map((item, index) => (
-          <CarouselItem key={index}>{item}<Dot>.</Dot></CarouselItem>
-        ))}
-      </CarouselWrapper>
-    </StyledCarousel>
-  );
-
-}
+const Carousel: React.FunctionComponent<Props> = () => (
+  <StyledCarousel className="active">
+    <CarouselWrapper className="active">
+      {carouselItems.map((item) => (
+        <CarouselItem key={item}>
+          {item}
+          <Dot>.</Dot>
+        </CarouselItem>
+      ))}
+    </CarouselWrapper>
+  </StyledCarousel>
+);
 
 export default Carousel;

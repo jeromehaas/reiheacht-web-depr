@@ -14,24 +14,19 @@ const PlayerWrapper = styled.div`
 `;
 
 interface Props {
-  link: String;
+  link: string;
 }
 
-
-const Video: React.FunctionComponent<Props> = ({ link }) => {
-
-  return (
-    <PlayerWrapper>
-      <ReactPlayer
-        url={link}
-        className='react-player'
-        controls={true}
-        width='100%'
-        height='100%'
-      />
-    </PlayerWrapper>
-  );
-
-}
+const Video: React.FunctionComponent<Props> = ({ link }) => (
+  <PlayerWrapper>
+    <ReactPlayer
+      url={link}
+      className="react-player"
+      controls
+      width="100%"
+      height="100%"
+    />
+  </PlayerWrapper>
+);
 
 export default Video;
