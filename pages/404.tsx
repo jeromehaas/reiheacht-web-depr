@@ -13,8 +13,8 @@ const StyledPageNotFound = styled.div`
   width: 100%;
   overflow: hidden;
   background-image: url('/illustrations/page-not-found/space-background.svg') !important; 
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat: repeat;
+  background-size: 1000px;
   position: relative;
 
   .message {
@@ -25,17 +25,51 @@ const StyledPageNotFound = styled.div`
   }
 
   .moon {
-    position: absolute;
-    bottom: 0;
+     position: absolute;
+     bottom: 0;
   }
 
-  .world {
+
+  .fourZeroFour {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    clip-path: circle(32%);
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+
+
+    .wrapper {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 400px;
+
+      .world {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        display: block;
+        width: 50%;
+        transform: translate(-50%, -50%);
+        clip-path: circle(32%);
+      }
+
+      .text {
+        position: absolute;
+        display: block;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+      }
+
+    }
+
   }
+
+
 
   .astronaut {
     position: absolute;
@@ -48,7 +82,7 @@ const StyledPageNotFound = styled.div`
 interface Props { }
 
 const PageNotFound: React.FunctionComponent<Props> = () => (
-  <StyledPageNotFound>
+  <>
     <Head>
       <title>reiheacht - Hier begintn die Zusammenarbeit.</title>
       <meta name="description" content="Animation | Storytelling| Design | Illustration | Web | Werbefilm" />
@@ -66,26 +100,34 @@ const PageNotFound: React.FunctionComponent<Props> = () => (
       <meta name="theme-color" content="#ffffff" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     </Head>
-    <img className="moon" src="/illustrations/page-not-found/moon.svg" alt="Mond" />
-    <img src="/illustrations/page-not-found/world.gif" alt="" className="world" />
-    <Lottie
-      config={{ animationData: astronaut, loop: true, autoplay: true }}
-      playingState="playing"
-      speed={1}
-      width="100%"
-      direction={1}
-    />
-    <div className="message">
-      <H2>
-        Oops, hier gehörst
-        <br />
-        {' '}
-        du nicht hin.
-      </H2>
-      <Spacer marginBottom="20px" />
-      <Button link="/" content="Bring mich zurück!" />
-    </div>
-  </StyledPageNotFound>
+
+    <StyledPageNotFound>
+      <img className="moon" src="/illustrations/page-not-found/moon.svg" alt="Mond" />
+      <div className="fourZeroFour">
+        <div className="wrapper">
+          <img className="world" src="/illustrations/page-not-found/world.gif" alt="World" />
+          <img className="text" src="/illustrations/page-not-found/404.svg" alt="404" />
+        </div>
+      </div>
+      <Lottie
+        config={{ animationData: astronaut, loop: true, autoplay: true }}
+        playingState="playing"
+        speed={1}
+        width="100%"
+        direction={1}
+      />
+      <div className="message">
+        <H2>
+          Oops, hier gehörst
+          <br />
+          {' '}
+          du nicht hin.
+        </H2>
+        <Spacer marginBottom="20px" />
+        <Button link="/" content="Bring mich zurück!" />
+      </div>
+    </StyledPageNotFound>
+  </>
 );
 
 export default PageNotFound;
