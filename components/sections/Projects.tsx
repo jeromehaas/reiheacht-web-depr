@@ -12,22 +12,22 @@ import TileSet from '@/components/partials/TileSet';
 interface Props { }
 
 const tileContent = [
-  {
-    image: '/illustrations/projects/extreme-agrarinitiative.png',
-    alt: 'Schweizer Bauernverband',
-    title: <H3>Schweizer Bauernverband</H3>,
-    description: <Paragraph>Extreme Agrarinitiative</Paragraph>,
-    overlayColor: '#9EA600',
-    link: '/projekte/#',
-  },
-  {
-    image: '/illustrations/projects/osterkampagne.png',
-    alt: 'GalloSuisse',
-    title: <H3>GalloSuisse</H3>,
-    description: <Paragraph>Osterkampagne</Paragraph>,
-    overlayColor: '#C70103',
-    link: '/projekte/osterkampagne',
-  },
+  // {
+  //   image: '/illustrations/projects/extreme-agrarinitiative.png',
+  //   alt: 'Schweizer Bauernverband',
+  //   title: <H3>Schweizer Bauernverband</H3>,
+  //   description: <Paragraph>Extreme Agrarinitiative</Paragraph>,
+  //   overlayColor: '#9EA600',
+  //   link: '/projekte/#',
+  // },
+  // {
+  //   image: '/illustrations/projects/osterkampagne.png',
+  //   alt: 'GalloSuisse',
+  //   title: <H3>GalloSuisse</H3>,
+  //   description: <Paragraph>Osterkampagne</Paragraph>,
+  //   overlayColor: '#C70103',
+  //   link: '/projekte/osterkampagne',
+  // },
   {
     image: '/illustrations/projects/trinkwasserinitiative.png',
     alt: 'Schweizer Bauernverband',
@@ -37,12 +37,12 @@ const tileContent = [
     link: '/projekte/trinkwasserinitiative',
   },
   {
-    image: '/illustrations/projects/tierhaltung.png',
+    image: '/illustrations/projects/sbv-div.png',
     alt: 'Schweizer Bauernverband',
     title: <H3>Schweizer Bauernverband</H3>,
-    description: <Paragraph>Tierhaltung</Paragraph>,
+    description: <Paragraph>SBV div</Paragraph>,
     overlayColor: '#9EA600',
-    link: '/projekte/#',
+    link: '/projekte/sbv-div',
   },
   {
     image: '/illustrations/projects/smartphone-schnitzeljagd.png',
@@ -66,14 +66,11 @@ const textBlockContent = {
   section: 'projects',
   title: <H2>
     Perfekte Aussicht,
-    {' '}
-    <br />
-    {' '}
     aus der besten
     {' '}
     <Highlight>reihe</Highlight>
     .
-         </H2>,
+  </H2>,
   text: <Paragraph>Dein Spitzenprogramm – zurücklehnen und geniessen.</Paragraph>,
 };
 

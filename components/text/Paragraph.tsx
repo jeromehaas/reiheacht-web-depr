@@ -12,6 +12,7 @@ const StyledParagraph = styled.p`
   font-family: 'Helvetica 55 Roman';
   color: ${(p) => p.theme.white};
   line-height: 160%;
+  max-width: 600px;
   opacity: ${(p) => (p.animated ? 0 : 1)};
   margin: 0 ${(p) => p.theme.spacingBig} ${(p) => p.theme.spacingBig} 0;
 
