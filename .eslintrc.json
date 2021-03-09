@@ -29,7 +29,8 @@
     ],
     "rules": {
       "@typescript-eslint/indent": ["error", 2],
-      "max-len": [2, {"code": 200, "ignoreUrls": true}],
+      "react/jsx-one-expression-per-line": "off",
+      "max-len": [2, {"code": 400, "ignoreUrls": true}],
       "no-use-before-define": "off",
       "import/no-unresolved": "off",
       "@typescript-eslint/no-use-before-define": ["error"],

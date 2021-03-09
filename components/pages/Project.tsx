@@ -17,15 +17,15 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
     <Head>
       <title>reiheacht - Hier begintn die Zusammenarbeit.</title>
       <meta name="description" content="Animation | Storytelling| Design | Illustration | Web | Werbefilm" />
+      <link rel="preload" href="../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff2" as="font" crossOrigin="" />
+      <link rel="preload" href="../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff" as="font" crossOrigin="" />
+      <link rel="preload" href="../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.ttf" as="font" crossOrigin="" />
+      <link rel="preload" href="../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.eot" as="font" crossOrigin="" />
+      <link rel="preload" href="../fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff2" as="font" crossOrigin="" />
+      <link rel="preload" href="../fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff" as="font" crossOrigin="" />
+      <link rel="preload" href="../fonts/helvetica-neue/HelveticaNeueLTStd-Md.ttf" as="font" crossOrigin="" />
+      <link rel="preload" href="../fonts/helvetica-neue/HelveticaNeueLTStd-Md.eot" as="font" crossOrigin="" />
       <link rel="icon" href="/favicon.ico" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff2" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Roman.ttf" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Roman.eot" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff2" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Md.ttf" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Md.eot" as="font" crossOrigin="" />
       <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
       <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
       <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
@@ -40,14 +40,13 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
     <PageWrapper>
 
       <CloseTriangle position="top" />
-      <Spacer marginBottom="40px" />
+      <Spacer marginBottom="30px" />
 
       <Section>
         {content.intro.title}
-        <Spacer marginBottom="40px" />
+        <Spacer marginBottom="30px" />
         {content.intro.text}
-        <Spacer marginBottom="40px" />
-
+        <Spacer marginBottom="30px" />
         <ProjectOverview content={{
           imageLink: content.projectOverview.imageLink,
           imageAlt: content.projectOverview.imageAlt,
@@ -55,15 +54,13 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
           text: content.projectOverview.text,
         }}
         />
-
-        <Spacer marginBottom="40px" />
+        <Spacer marginBottom="30px" />
         {children}
-        <Spacer marginBottom="40px" />
+        <Spacer marginBottom="60px" />
         {content.outro.title}
         <HorizontalLine className="active" animated={false} />
         {content.outro.button}
-        <Spacer marginBottom="140px" />
-
+        <Spacer marginBottom="130px" />
       </Section>
       <CloseTriangle position="bottom" />
     </PageWrapper>

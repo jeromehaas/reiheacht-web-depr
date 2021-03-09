@@ -6,9 +6,9 @@ interface Props {
 }
 
 const H1 = styled.h1`
- color: ${p => p.theme.white};
+ color: ${(p) => p.theme.white};
  font-size: 75px; 
- line-height: ${p => p.theme.titleLineHeight};
+ line-height: ${(p) => p.theme.titleLineHeight};
 
  @media (max-width: 800px) {
   font-size: 60px;
@@ -28,9 +28,10 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled.h2`
-  color: ${p => p.theme.white};
+  color: ${(p) => p.theme.white};
  font-size: 50px; 
- line-height: ${p => p.theme.titleLineHeight};
+ line-height: ${(p) => p.theme.titleLineHeight};
+ max-width: 470px;
 
  @media (max-width: 800px) {
   font-size: 50px;
@@ -51,9 +52,9 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h3`
-  color: ${p => p.theme.white};
+  color: ${(p) => p.theme.white};
   font-size: 25px;
-  line-height: ${p => p.theme.titleLineHeight};
+  line-height: ${(p) => p.theme.titleLineHeight};
 
   @media (max-width: 800px) {
   font-size: 25px;
@@ -74,9 +75,9 @@ const H3 = styled.h3`
 `;
 
 const H4 = styled.h4`
-  color: ${p => p.theme.white};
+  color: ${(p) => p.theme.white};
   font-size: 20px;   
-  line-height: ${p => p.theme.titleLineHeight};
+  line-height: ${(p) => p.theme.titleLineHeight};
 
   @media (max-width: 800px) {
   font-size: 20px;
@@ -100,5 +101,5 @@ export {
   H1,
   H2,
   H3,
-  H4
-}
+  H4,
+};
