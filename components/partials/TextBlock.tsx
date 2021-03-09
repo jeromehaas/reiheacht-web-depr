@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import styled from 'styled-components';
-import { useDispatch, useSelector, RootStateOrAn } from 'react-redux';
+import { useDispatch, useSelector, RootStateOrAny } from 'react-redux';
 import { updateCurrentPosition } from 'redux/actions';
 import VisibilitySensor from 'react-visibility-sensor';
 import Reveal, { Slide } from 'react-awesome-reveal';

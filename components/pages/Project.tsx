@@ -8,7 +8,7 @@ import Spacer from '@/components/layout/Spacer';
 import Head from 'next/head';
 
 interface Props {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   content: any
 }
 

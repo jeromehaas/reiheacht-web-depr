@@ -73,29 +73,28 @@ table {
   border-spacing: 0;
 }
 
-
 @font-face {
     font-family: 'Helvetica 55 Roman';
-    src: url('/fonts/HelveticaNeue-Roman.eot');
-    src: url('/fonts/HelveticaNeue-Roman.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/HelveticaNeue-Roman.woff2') format('woff2'),
-        url('/fonts/HelveticaNeue-Roman.woff') format('woff'),
-        url('/fonts/HelveticaNeue-Roman.ttf') format('truetype'),
-        url('/fonts/HelveticaNeue-Roman.svg#HelveticaNeue-Roman') format('svg');
-    font-weight: normal;
+    src: url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.eot');
+    src: url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
+        url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+        url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff') format('woff'),
+        url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.ttf') format('truetype'),
+        url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md') format('svg');
+    font-weight: 500;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
     font-family: 'Helvetica 65 Medium';
-    src: url('/fonts/HelveticaNeue-Medium.eot');
-    src: url('/fonts/HelveticaNeue-Medium.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/HelveticaNeue-Medium.woff2') format('woff2'),
-        url('/fonts/HelveticaNeue-Medium.woff') format('woff'),
-        url('/fonts/HelveticaNeue-Medium.ttf') format('truetype'),
-        url('/fonts/HelveticaNeue-Medium.svg#HelveticaNeue-Medium') format('svg');
-    font-weight: 500;
+    src: url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.eot');
+    src: url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
+        url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff') format('woff'),
+        url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.ttf') format('truetype'),
+        url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman') format('svg');
+    font-weight: normal;
     font-style: normal;
     font-display: swap;
 }
