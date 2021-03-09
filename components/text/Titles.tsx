@@ -6,7 +6,7 @@ interface Props {
 }
 
 const H1 = styled.h1`
- color: ${(p) => p.theme.white};
+  color: ${(p) => (p.color === 'darkGrey' ? p.theme.darkGrey : p.theme.white)};;
  font-size: 75px; 
  line-height: ${(p) => p.theme.titleLineHeight};
 
@@ -28,7 +28,7 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled.h2`
-  color: ${(p) => p.theme.white};
+  color: ${(p) => (p.color === 'darkGrey' ? p.theme.darkGrey : p.theme.white)};;
  font-size: 50px; 
  line-height: ${(p) => p.theme.titleLineHeight};
  max-width: 470px;
@@ -52,7 +52,7 @@ const H2 = styled.h2`
 `;
 
 const H3 = styled.h3`
-  color: ${(p) => p.theme.white};
+  color: ${(p) => (p.color === 'darkGrey' ? p.theme.darkGrey : p.theme.white)};
   font-size: 25px;
   line-height: ${(p) => p.theme.titleLineHeight};
 
@@ -75,7 +75,7 @@ const H3 = styled.h3`
 `;
 
 const H4 = styled.h4`
-  color: ${(p) => p.theme.white};
+  color: ${(p) => (p.color === 'darkGrey' ? p.theme.darkGrey : p.theme.white)};;
   font-size: 20px;   
   line-height: ${(p) => p.theme.titleLineHeight};
 

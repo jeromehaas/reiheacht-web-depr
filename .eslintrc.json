@@ -30,7 +30,7 @@
     "rules": {
       "@typescript-eslint/indent": ["error", 2],
       "react/jsx-one-expression-per-line": "off",
-      "max-len": [2, {"code": 400, "ignoreUrls": true}],
+      "max-len": [2, {"code": 1500, "ignoreUrls": true}],
       "no-use-before-define": "off",
       "import/no-unresolved": "off",
       "@typescript-eslint/no-use-before-define": ["error"],
