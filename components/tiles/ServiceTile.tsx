@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { H3 } from '@/components/text/Titles';
 import Link from 'next/link';
 
-const StyledTile = styled.div`
+const StyledServiceTile = styled.div`
   width: calc(100% / 3);
   height: 100%;
   overflow: hidden;
@@ -70,8 +70,8 @@ interface Props {
   content: any
 }
 
-const Tile: React.FunctionComponent<Props> = ({ content }) => (
-  <StyledTile>
+const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
+  <StyledServiceTile>
     <div className="initial">
       <img src={content.image} alt={content.alt} />
     </div>
@@ -80,7 +80,7 @@ const Tile: React.FunctionComponent<Props> = ({ content }) => (
       {content.description}
     </div>
 
-  </StyledTile>
+  </StyledServiceTile>
 );
 
-export default Tile;
+export default ServiceTile;

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Tile from '@/components/tiles/Tile';
 import EmployeeTile from '@/components/tiles/EmployeeTile';
+import ProjectTile from '@/components/tiles/ProjectTile';
+import ServiceTile from '@/components/tiles/ServiceTile';
 
 const StyledTileSet = styled.div`
     width: 100%;
@@ -14,10 +16,22 @@ const StyledTileSet = styled.div`
 
 const renderSwitch = (tiles, type) => {
   switch (type) {
-    case 'employee':
+    case 'employees':
       return (
         tiles.map((tile, index) => (
           <EmployeeTile key={index} content={tile}>hello</EmployeeTile>
+        ))
+      );
+    case 'projects':
+      return (
+        tiles.map((tile, index) => (
+          <ProjectTile key={index} content={tile}>hello</ProjectTile>
+        ))
+      );
+    case 'services':
+      return (
+        tiles.map((tile, index) => (
+          <ServiceTile key={index} content={tile}>hello</ServiceTile>
         ))
       );
     default:

@@ -182,7 +182,6 @@ const Navigation: React.FunctionComponent<Props> = () => {
   const dispatch = useDispatch();
   const mobileMenuIsVisible = useSelector((state: RootStateOrAny) => state.navigation.mobile.isVisible);
   const currentPosition = useSelector((state: RootStateOrAny) => state.currentPosition);
-  console.log(currentPosition);
 
   return (
     <>

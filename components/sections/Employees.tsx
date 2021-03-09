@@ -17,7 +17,7 @@ const textBlockContent = {
     {' '}
     <Highlight>Team</Highlight>
     .
-  </H2>,
+         </H2>,
   text: <Paragraph>Wir warten auf dein Startsignal.</Paragraph>,
 
 };
@@ -61,7 +61,7 @@ const tileContent = [
 const Employees: React.FunctionComponent<Props> = () => (
   <Section id="employees">
     <TextBlock content={textBlockContent} />
-    <TileSet tiles={tileContent} type="employee" />
+    <TileSet tiles={tileContent} type="employees" />
   </Section>
 );
 
