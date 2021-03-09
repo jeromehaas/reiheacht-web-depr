@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Limiter from '@/components/layout/Limiter';
 import SocialMediaButton from '@/components/buttons/SocialMediaButton';
 import Linker from '@/components/buttons/Link';
+import Spacer from '@/components/layout/Spacer';
 import Paragraph from '../text/Paragraph';
 
 const StyledFooter = styled.footer`
@@ -15,6 +16,13 @@ const StyledFooter = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 875px) {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+  }
+
   }
 
   .whiteLine {
@@ -24,17 +32,15 @@ const StyledFooter = styled.footer`
     margin: 15px 0;
   }
 
-  .address {
-    padding: 20px 0;
-  }
-
   .addressItem {
     color: ${(p) => p.theme.white};
     display: inline-block;
-    border-right: 1px solid ${(p) => p.theme.white};
-    padding: 0 10px;
     font-size: 12px;
-    line-height: 1;
+    line-height: 1.5;
+
+    @media (max-width: 875px) {
+      display: block;
+  }
 
     &:first-child {
       padding-left: 0;
@@ -49,7 +55,7 @@ const StyledFooter = styled.footer`
   .legalItem {
     color: ${(p) => p.theme.white};
     display: inline-block;
-    padding: 0 10px;
+    margin-right: 10px;
     font-size: 12px;
     line-height: 1
   }
@@ -95,6 +101,7 @@ const Footer: React.FunctionComponent<Props> = () => (
           <Linker type="link" className="legalItem" target="/legal/terms-and-conditions">AGB</Linker>
         </div>
       </div>
+      <Spacer marginBottom="15px" />
     </Limiter>
   </StyledFooter>
 );

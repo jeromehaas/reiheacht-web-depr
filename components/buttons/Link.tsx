@@ -6,7 +6,6 @@ import cx from 'classnames';
 
 const Wrapper = styled.span`
     .link {
-     padding: 20px 0;
      color: ${(p) => p.theme.white};
      transition: all 0.25s ease 0.5s;
      text-decoration: none !important;
