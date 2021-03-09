@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { H3 } from '@/components/text/Titles';
 import Link from 'next/link';
 
-const StyledTile = styled.div`
+const StyledProjectTile = styled.div`
   width: calc(100% / 3);
   height: 100%;
   overflow: hidden;
@@ -64,23 +64,28 @@ const StyledTile = styled.div`
       }
     }
   }
+
 `;
 
 interface Props {
   content: any
 }
 
-const Tile: React.FunctionComponent<Props> = ({ content }) => (
-  <StyledTile>
+const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
+  <StyledProjectTile>
     <div className="initial">
       <img src={content.image} alt={content.alt} />
     </div>
-    <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
-      {content.title}
-      {content.description}
-    </div>
+    <Link href={content.link}>
+      <a>
+        <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
+          {content.title}
+          {content.description}
+        </div>
+      </a>
+    </Link>
 
-  </StyledTile>
+  </StyledProjectTile>
 );
 
-export default Tile;
+export default ProjectTile;
