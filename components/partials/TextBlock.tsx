@@ -6,6 +6,7 @@ import VisibilitySensor from 'react-visibility-sensor';
 import Reveal, { Slide } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
 import { InView } from 'react-intersection-observer';
+import Spacer from '@/components/layout/Spacer';
 import Paragraph from '../text/Paragraph';
 import HorizontalLine from '../shapes/HorizontalLine';
 
@@ -31,6 +32,7 @@ const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
             {content.title}
             <HorizontalLine animated={false} className="active" />
             {content.text}
+            <Spacer marginBottom="30px" />
           </div>
         )}
       </InView>

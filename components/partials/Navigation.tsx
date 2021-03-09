@@ -13,7 +13,6 @@ import Limiter from '../layout/Limiter';
 const DesktopNavigation = styled.nav`
   position: relative; 
   height: 60px;
-  margin-bottom: 150px;
   
   .bar {    
     width: 100%;

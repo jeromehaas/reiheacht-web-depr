@@ -10,6 +10,7 @@ import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Carousel from '@/components/animations/Carousel';
 import Reveal from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
+import Spacer from '@/components/layout/Spacer';
 
 const MoveDownWrapper = styled.div`
   position: relative;
@@ -40,7 +41,7 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => {
   const isVisible = useSelector((state: RootStateOrAny) => state.textBlocks[content.section].visible);
 
   return (
-    <Reveal keyframes={moveDown} triggerOnce>
+    <Reveal keyframes={moveDown} triggerOnce fraction={1}>
       <InView onChange={() => dispatch(updateTextBlocks({ start: { visible: true } }))}>
         {({ ref }) => (
           <div ref={ref}>
@@ -53,6 +54,7 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => {
       </InView>
       <HorizontalLine className="active" animated />
       <Paragraph animated className={isVisible ? 'active' : ''}>{content.text}</Paragraph>
+      <Spacer marginBottom="30px" />
       {content.buttons.map((button, index) => (
         <Button key={index} link={button.link} content={button.content} animated className={isVisible ? 'active' : ''} customDelay={`${5 + (index / 2)}s`} />
       ))}
