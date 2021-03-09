@@ -45,7 +45,7 @@ const StyledTile = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    transition: ${p => p.theme.standardTransition};
+    transition: ${(p) => p.theme.standardTransition};
   }
 
   h3 { margin-bottom: 15px; }
@@ -67,40 +67,33 @@ const StyledTile = styled.div`
   }
 `;
 
-
 interface Props {
   content: any
 }
 
-const Tile: React.FunctionComponent<Props> = ({ content }) => {
+const Tile: React.FunctionComponent<Props> = ({ content }) => (
+  <StyledTile>
+    <div className="initial">
+      <img src={content.image} alt={content.alt} />
+    </div>
 
-
-  return (
-    <StyledTile>
-      <div className="initial">
-        <img src={content.image} alt={content.alt} />
-      </div>
-
-      {content.link ? (
-        <Link href={content.link}>
-          <a>
-            <div className="overlay" style={{ backgroundColor: content.overlayColor }} >
+    {content.link ? (
+      <Link href={content.link}>
+        <a>
+          <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
             {content.title}
             {content.description}
           </div>
-          </a>
-        </Link>
-      ) : (
-        <div className="overlay" style={{ backgroundColor: content.overlayColor }} >
-          {content.title}
-          {content.description}
-        </div>
-      )}
+        </a>
+      </Link>
+    ) : (
+        <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
+        {content.title}
+        {content.description}
+      </div>
+    )}
 
-
-    </StyledTile>
-  );
-  
-}
+  </StyledTile>
+);
 
 export default Tile;
