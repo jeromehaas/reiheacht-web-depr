@@ -6,7 +6,7 @@ interface Props {
 }
 
 const StyledListItem = styled.li`
-  color: ${p => p.theme.white};
+  color: ${(p) => p.theme.white};
   position: relative;
   margin: 0 0 10px 15px;
   
@@ -20,19 +20,14 @@ const StyledListItem = styled.li`
     width: 5px;
     height: 5px;
     border-radius: 50%;
-    background-color: ${p => p.theme.white}
+    background-color: ${(p) => p.theme.white}
   }
 `;
 
-const ListItem: React.FunctionComponent<Props> = ({ children }) => {
-
-
-  return (
-    <StyledListItem>
-      {children}
-    </StyledListItem>
-  );
-
-}
+const ListItem: React.FunctionComponent<Props> = ({ children }) => (
+  <StyledListItem>
+    {children}
+  </StyledListItem>
+);
 
 export default ListItem;

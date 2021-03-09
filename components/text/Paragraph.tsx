@@ -9,12 +9,11 @@ interface Props {
 
 const StyledParagraph = styled.p`
   font-size: 18px;
-  font-family: 'Helvetica 65 Medium';
-  color: ${(p) => p.theme.white};
+  font-family: ${(p) => (p.bold ? 'Helvetica 65 Medium' : 'Helvetica 55 Roman')};
+  color: ${(p) => (p.color === 'darkGrey' ? p.theme.darkGrey : p.theme.white)};
   line-height: 160%;
   max-width: 600px;
   opacity: ${(p) => (p.animated ? 0 : 1)};
-  margin: 0 ${(p) => p.theme.spacingBig} ${(p) => p.theme.spacingBig} 0;
 
     &.active {
       animation: 0.5s ease-in-out 4.5s 1 forwards appear;
@@ -27,8 +26,10 @@ const StyledParagraph = styled.p`
 
 `;
 
-const Paragraph: React.FunctionComponent<Props> = ({ children, animated, className }) => (
-  <StyledParagraph className={className} animated={animated}>
+const Paragraph: React.FunctionComponent<Props> = ({
+  children, animated, className, color, bold,
+}) => (
+  <StyledParagraph className={className} animated={animated} color={color} bold={bold}>
     {children}
   </StyledParagraph>
 );
