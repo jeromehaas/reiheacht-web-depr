@@ -9,7 +9,7 @@ interface Props {
 
 const StyledParagraph = styled.p`
   font-size: 18px;
-  font-family: 'Helvetica 55 Roman';
+  font-family: 'Helvetica 65 Medium';
   color: ${(p) => p.theme.white};
   line-height: 160%;
   max-width: 600px;

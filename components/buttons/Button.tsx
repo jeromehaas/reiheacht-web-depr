@@ -37,7 +37,7 @@ const StyledButton = styled.button`
     color: ${(p) => p.theme.white};
     text-decoration: none;
     font-size: ${(p) => p.theme.buttonFontSize};
-    font-family: ${(p) => p.theme.buttonFontFamily};
+    font-family: 'Helvetica 65 Medium';
   }
 
   &:hover {
