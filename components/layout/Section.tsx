@@ -11,7 +11,12 @@ interface Props {
 const StyledSection = styled.div`
   width: 100%;
   padding-top: 150px;
-  min-height: ${(p) => (p.hero ? 'calc(100vh - 60px - 80px)' : null)}
+  min-height: ${(p) => (p.hero ? 'calc(100vh - 60px - 80px)' : null)};
+
+  @media (max-width: 800px) {
+    padding-top: 60px;
+  }
+
 `;
 
 const Section: React.FunctionComponent<Props> = ({ children, hero, id }) => (

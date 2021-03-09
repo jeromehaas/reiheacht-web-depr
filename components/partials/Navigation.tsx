@@ -64,7 +64,6 @@ const DesktopNavigation = styled.nav`
 const MobileNavigation = styled.nav`
   display: none;
   height: 75px;
-  margin-bottom: 150px;
 
   .bar {
     width: 100%;
