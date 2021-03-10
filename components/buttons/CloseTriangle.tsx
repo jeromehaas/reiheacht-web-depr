@@ -25,7 +25,8 @@ const Wrapper = styled.i`
 `;
 
 interface Props {
-  position: String;
+  position: string;
+  color?: string;
 }
 
 const CloseTriangle: React.FunctionComponent<Props> = ({ position, color }) => (
