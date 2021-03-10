@@ -9,6 +9,7 @@ import {
   updateContactFormMessage,
   submitContactForm,
 } from '@/redux/actions/index';
+import { sendMail } from '../../services/mail';
 import sendButton from '../../public/animations/send-button.json';
 
 const StyledContactForm = styled.form`
@@ -84,6 +85,7 @@ const ContactForm: React.FunctionComponent<Props> = () => {
 
   const formHandler = (event) => {
     event.preventDefault();
+    sendMail(name, email, phone, message);
     dispatch(submitContactForm());
   };
 
