@@ -1,16 +1,17 @@
 const BASE_URL = 'https://devcube.io';
 
-const sendMail = (firstname, lastname, email, message) => {
+const sendMail = (name, email, phone, message) => {
   try {
     return fetch(`${BASE_URL}/reiheacht`, {
-      heders: {
+      method: 'POST',
+      headers: {
         'Content-Type': 'application/json',
         Accept: 'application/json',
       },
       body: JSON.stringify({
-        firstname,
-        lastname,
+        name,
         email,
+        phone,
         message,
       }),
     });
