@@ -75,7 +75,7 @@ const blogPosts = [
     title: 'Warum profesionelle Sprecher einsetzen?',
     text: 'Das kann man doch selbst machen.',
     date: '26.01.2021',
-    link: '/blog/2021-01-26',
+    link: '/blog/posts/1',
   },
   {
     image: '/images/blog/block-mock-image.jpg',
@@ -127,7 +127,7 @@ const Imprint: React.FunctionComponent<Props> = () => (
       <Fade>
         <H2 color="darkGrey">Trends & News aus der reihe<Highlight>acht</Highlight>.</H2>
         <HorizontalLine className="active" />
-        <Linker target="/" type="link">
+        <Linker target={latestPost.link} type="link">
           <TopPost>
             <div className="image">
               <img src={latestPost.image} alt={latestPost.imageAlt} />
