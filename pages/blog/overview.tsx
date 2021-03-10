@@ -17,10 +17,17 @@ const TopPost = styled.div`
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15), 0px -2px 2px rgba(0, 0, 0, 0.15);
     margin-bottom: 30px;
 
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+
     .image {
       width: 50%;
       height: 100%;
 
+      @media (max-width: 800px) {
+        width: 100%;
+      }
 
     }
       
@@ -34,14 +41,29 @@ const TopPost = styled.div`
     .text {
       width: 50%;
       padding: 30px;
+
+      @media (max-width: 800px) {
+        width: 100%;
+      }
     }
-    
+
+;
+
+
 `;
 
 const PostContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 30px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
  `;
 
 const Post = styled.div`
