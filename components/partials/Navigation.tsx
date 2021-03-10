@@ -4,6 +4,7 @@ import { Lottie } from '@crello/react-lottie';
 import { Link as Anchor } from 'react-scroll';
 import { useSelector, useDispatch, RootStateOrAny } from 'react-redux';
 import { toggleMobileNavigation, updateCurrentPosition } from 'redux/actions';
+import { H2 } from '@/components/text/Titles';
 
 import cx from 'classnames';
 import Linker from '@/components/buttons/Link';
@@ -118,15 +119,32 @@ const MobileNavigation = styled.nav`
     padding-top: 75px;
     transition: all 1s ease-in-out;
 
-  &.active {
-    top: 0vh;
-  }
+    &.active {
+      top: 0vh;
+      overflow: scroll;
+    }
 
   }
 
   .link {
-    padding: 20px 0;
-    color: ${(p) => p.theme.white};
+    color: inherited;
+    margin: 10px;
+    padding: 5px;
+    font-size: 30px;
+    display: inline-block;
+
+    @media (max-height: 700px) {
+      margin: 5px;
+      padding: 5px;
+      font-size: 20px;
+    }
+
+    @media (max-height: 450px) {
+      margin: 5px;
+      padding: 5px;
+      font-size: 15px;
+    }
+
   }
 
 
@@ -212,7 +230,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
         <div className="bar">
           <Limiter>
             <div className="container">
-              <Anchor className="link" to="start" spy smooth duration={1000}>
+              <Anchor to="home" spy smooth duration={1000}>
                 <img className="logo" src="/logos/logo_white.svg" alt="reiheacht" />
               </Anchor>
               <div onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
@@ -239,8 +257,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
               className={currentPosition === item.section ? 'current' : null}
               onClickFunction={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}
             >
-              {' '}
-              {item.child}
+              <span className="link">{item.child}</span>
             </Linker>
           ))}
         </div>

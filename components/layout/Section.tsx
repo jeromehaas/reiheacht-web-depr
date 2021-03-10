@@ -14,7 +14,7 @@ const StyledSection = styled.div`
   min-height: ${(p) => (p.hero ? 'calc(100vh - 60px - 80px)' : null)};
 
   @media (max-width: 800px) {
-    padding-top: 60px;
+    padding-top: 100px;
   }
 
 `;

@@ -14,7 +14,8 @@ const Wrapper = styled.span`
      color: ${(p) => p.theme.white};
     }
 
-    &.active {
+    &.active,
+    &.active span {
       color: ${(p) => p.theme.orange} !important;
     }
     }
