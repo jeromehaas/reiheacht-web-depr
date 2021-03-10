@@ -10,6 +10,7 @@ import {
   submitContactForm,
 } from '@/redux/actions/index';
 import sendButton from '../../public/animations/send-button.json';
+import { sednMail } from '';
 
 const StyledContactForm = styled.form`
   width: 100%;
