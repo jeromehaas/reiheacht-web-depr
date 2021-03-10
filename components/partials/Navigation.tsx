@@ -5,6 +5,7 @@ import { Link as Anchor } from 'react-scroll';
 import { useSelector, useDispatch, RootStateOrAny } from 'react-redux';
 import { toggleMobileNavigation, updateCurrentPosition } from 'redux/actions';
 import { H2 } from '@/components/text/Titles';
+import Reveal, { Fade } from 'react-awesome-reveal';
 
 import cx from 'classnames';
 import Linker from '@/components/buttons/Link';
@@ -118,13 +119,7 @@ const MobileNavigation = styled.nav`
     z-index: 5;
     padding-top: 75px;
     transition: all 1s ease-in-out;
-
-    &.active {
-      top: 0vh;
-      overflow: scroll;
-    }
-
-  }
+    color: red;
 
   .link {
     color: inherited;
@@ -146,6 +141,15 @@ const MobileNavigation = styled.nav`
     }
 
   }
+    
+  &.active {
+    top: 0vh;
+    overflow: scroll;
+    color: blue;
+  }
+
+}
+
 
 
   @media (max-width: 1000px) {
@@ -248,18 +252,20 @@ const Navigation: React.FunctionComponent<Props> = () => {
           </Limiter>
         </div>
         <div className={cx('linkWrapper', mobileMenuIsVisible === true ? 'active' : '')}>
-          {navigationItems.map((item, index) => (
-            <Linker
-              key={index}
-              type={item.type}
-              target={item.link}
-              delay={1000}
-              className={currentPosition === item.section ? 'current' : null}
-              onClickFunction={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}
-            >
-              <span className="link">{item.child}</span>
-            </Linker>
-          ))}
+          <Fade cascade damping={0.2}>
+            {navigationItems.map((item, index) => (
+              <Linker
+                key={index}
+                type={item.type}
+                target={item.link}
+                delay={1000}
+                className={currentPosition === item.section ? 'current' : null}
+                onClickFunction={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}
+              >
+                <span className="link">{item.child}</span>
+              </Linker>
+            ))}
+          </Fade>
         </div>
       </MobileNavigation>
     </>
