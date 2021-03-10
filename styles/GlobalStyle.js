@@ -7,7 +7,23 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    font-family: 'Helvetica 65 Medium', serif
+    font-family: 'Helvetica 65 Medium', serif;
+    .noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+  -webkit-user-select: none;
+}
+
+img {
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
 }
 
 *::-webkit-scrollbar {

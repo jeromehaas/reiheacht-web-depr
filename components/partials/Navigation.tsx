@@ -190,7 +190,7 @@ const navigationItems = [
   },
   {
     child: 'Blog',
-    link: '/blog',
+    link: '/blog/overview',
     section: 'blog',
     type: 'link',
   },
@@ -223,7 +223,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                   </Linker>
                 ))}
               </div>
-              <Linker type="anchor" target="start" delay={0}>
+              <Linker type="anchor" target="home" delay={0}>
                 <img className="logo" src="/logos/logo_white.svg" alt="reiheacht" />
               </Linker>
             </div>
@@ -254,6 +254,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
         <div className={cx('linkWrapper', mobileMenuIsVisible === true ? 'active' : '')}>
           <Fade cascade damping={0.2}>
             {navigationItems.map((item, index) => (
+
               <Linker
                 key={index}
                 type={item.type}
@@ -267,6 +268,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
             ))}
           </Fade>
         </div>
+
       </MobileNavigation>
     </>
   );
