@@ -75,12 +75,11 @@ table {
 
 @font-face {
     font-family: 'Helvetica 55 Roman';
-    src: url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.eot');
-    src: url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
-        url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff2') format('woff2'),
-        url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff') format('woff'),
-        url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.ttf') format('truetype'),
-        url('fonts/helvetica-neue/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md') format('svg');
+    src: local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Md.eot?#iefix') format('embedded-opentype'),
+        local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff2') format('woff2'),
+        local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff') format('woff'),
+        local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Md.ttf') format('truetype'),
+        local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md') format('svg');
     font-weight: 500;
     font-style: normal;
     font-display: swap;
@@ -88,12 +87,11 @@ table {
 
 @font-face {
     font-family: 'Helvetica 65 Medium';
-    src: url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.eot');
-    src: url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.eot?#iefix') format('embedded-opentype'),
-        url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
-        url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff') format('woff'),
-        url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.ttf') format('truetype'),
-        url('fonts/helvetica-neue/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman') format('svg');
+    src: local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.eot?#iefix') format('embedded-opentype'),
+        local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff2') format('woff2'),
+        local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff') format('woff'),
+        local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.ttf') format('truetype'),
+        local('fonts/helvetica-neue'), url('../fonts/helvetica-neue/HelveticaNeueLTStd-Roman.svg#HelveticaNeueLTStd-Roman') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
