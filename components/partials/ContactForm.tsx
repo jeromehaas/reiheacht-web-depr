@@ -85,7 +85,6 @@ const ContactForm: React.FunctionComponent<Props> = () => {
 
   const formHandler = (event) => {
     event.preventDefault();
-    console.log(name, email, phone, message);
     sendMail(name, email, phone, message);
     dispatch(submitContactForm());
   };
