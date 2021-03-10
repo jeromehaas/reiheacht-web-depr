@@ -5,6 +5,8 @@ interface Props {
   children: React.ReactNode;
   animated?: Boolean;
   className?: String;
+  color?: string;
+  bold?: string;
 }
 
 const StyledParagraph = styled.p`

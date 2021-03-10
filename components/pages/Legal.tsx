@@ -9,7 +9,7 @@ import Head from 'next/head';
 
 interface Props {
   children?: React.ReactNode;
-  content: any
+  content?: any
 }
 
 const Legal: React.FunctionComponent<Props> = ({ children, content }) => (
