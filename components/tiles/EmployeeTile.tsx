@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import { H3 } from '@/components/text/Titles';
-// import Link from 'next/link';
 import Linker from '@/components/buttons/Link';
 
 const StyledEmployeeTile = styled.div`
@@ -23,6 +22,7 @@ const StyledEmployeeTile = styled.div`
     height: 100%;
     display: block;
     position: relative;
+
     img {
       width: 100%;
       height: 100%;
@@ -47,7 +47,7 @@ const StyledEmployeeTile = styled.div`
     left: 0; 
     width: 100%;
     height: 80px;
-    padding: 20px;
+    padding: 15px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;

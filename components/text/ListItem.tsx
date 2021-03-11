@@ -9,16 +9,18 @@ const StyledListItem = styled.li`
   color: ${(p) => p.theme.white};
   position: relative;
   margin: 0 0 10px 15px;
-  
+  line-height: 20px;
+  font-size: 20px;
+
   &::before {
     content: ' ';
     display: inline-block;
     margin-right: 5px;
     position: absolute;
-    top: 5px;
+    top: 2.5px;
     left: -15px;
-    width: 5px;
-    height: 5px;
+    width: 7px;
+    height: 7px;
     border-radius: 50%;
     background-color: ${(p) => p.theme.white}
   }
