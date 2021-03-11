@@ -7,6 +7,7 @@ import Reveal, { Slide } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
 import { InView } from 'react-intersection-observer';
 import Spacer from '@/components/layout/Spacer';
+import { H2, H3, H4 } from '@/components/text/Text';
 import Paragraph from '../text/Paragraph';
 import HorizontalLine from '../shapes/HorizontalLine';
 
@@ -29,9 +30,9 @@ const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
       <InView onChange={() => dispatch(updateCurrentPosition(content.section))}>
         {({ ref }) => (
           <div ref={ref}>
-            {content.title}
+            <H2>{content.title}</H2>
             <HorizontalLine animated={false} className="active" />
-            {content.text}
+            <Paragraph>{content.text}</Paragraph>
             <Spacer marginBottom="30px" />
           </div>
         )}

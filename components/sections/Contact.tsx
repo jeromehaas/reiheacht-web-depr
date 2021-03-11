@@ -29,8 +29,8 @@ interface Props { }
 
 const textBlockContent = {
   section: 'contact',
-  title: <H2>Sag <Highlight>Hallo</Highlight>!</H2>,
-  text: <Paragraph>Wir morsen zwar sehr gut, es gibt jedoch einfachere Wege, uns zu kontaktieren.<br />Wir freuen uns.</Paragraph>,
+  title: <>Sag <Highlight>Hallo</Highlight>!</>,
+  text: <>Wir morsen zwar sehr gut, es gibt jedoch einfachere Wege, uns zu kontaktieren.<br /> <br />Wir freuen uns.</>,
 };
 
 const Contact: React.FunctionComponent<Props> = () => (
@@ -38,7 +38,6 @@ const Contact: React.FunctionComponent<Props> = () => (
     <Section id="contact">
       <TextBlock content={textBlockContent} />
       <div className="wrapper">
-
         <ContactForm />
         <Logo />
       </div>
