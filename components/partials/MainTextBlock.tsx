@@ -1,5 +1,5 @@
 import React from 'react';
-import { H1 } from '@/components/text/Titles';
+import { H1 } from '@/components/text/Text';
 import Paragraph from '@/components/text/Paragraph';
 import styled from 'styled-components';
 import { InView } from 'react-intersection-observer';
