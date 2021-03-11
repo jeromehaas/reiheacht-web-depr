@@ -15,79 +15,43 @@ const tileContent = [
   {
     image: '/illustrations/services/idea.svg',
     alt: 'Idee & Konzept',
-    title: <H3>Idee & Konzept</H3>,
-    description: '',
+    title: 'Idee & Konzept',
+    description: [],
     overlayColor: '#C23E27',
   },
   {
     image: '/illustrations/services/storytelling.svg',
     alt: 'Storytelling',
-    title: <H3>Storytelling</H3>,
-    description: <ul>
-      {' '}
-      <ListItem>Drehbuch</ListItem>
-      {' '}
-      <ListItem>Storyboard</ListItem>
-      {' '}
-    </ul>,
+    title: 'Storytelling',
+    description: ['Drehbuch', 'Storyboard'],
     overlayColor: '#C23E27',
   },
   {
     image: '/illustrations/services/illustration.svg',
     alt: 'Film',
-    title: <H3>Film</H3>,
-    description: <ul>
-      {' '}
-      <ListItem>Animation</ListItem>
-      {' '}
-      <ListItem>Erklärfilm</ListItem>
-      {' '}
-      <ListItem>Werbefilm</ListItem>
-      {' '}
-      <ListItem>Imagefilm</ListItem>
-      {' '}
-    </ul>,
+    title: 'Film',
+    description: ['Erklärfilm', 'Werbefilm', 'Imagefilm'],
     overlayColor: '#C23E27',
   },
   {
     image: '/illustrations/services/web.svg',
     alt: 'Design',
-    title: <H3>Design</H3>,
-    description: <ul>
-      {' '}
-      <ListItem>Illustration</ListItem>
-      {' '}
-      <ListItem>Layout</ListItem>
-      {' '}
-      <ListItem>Webdesign</ListItem>
-      {' '}
-    </ul>,
+    title: 'Design',
+    description: ['Illustration', 'Layout', 'Webdesign'],
     overlayColor: '#C23E27',
   },
   {
     image: '/illustrations/services/sound.svg',
     alt: 'Sound design',
-    title: <H3>Sound design</H3>,
-    description: <ul>
-      {' '}
-      <ListItem>Voice Over</ListItem>
-      {' '}
-      <ListItem>Soundeffekte</ListItem>
-      {' '}
-    </ul>,
+    title: 'Sound design',
+    description: ['Voice Over', 'Soundeffekte'],
     overlayColor: '#C23E27',
   },
   {
     image: '/illustrations/services/film.svg',
     alt: 'Film',
-    title: <H3>Film</H3>,
-    description: <ul>
-      {' '}
-      <ListItem>Social Media</ListItem>
-      {' '}
-      <ListItem>Webentwicklung</ListItem>
-      {' '}
-    </ul>,
+    title: 'Film',
+    description: ['Social Media', 'Webentwicklung'],
     overlayColor: '#C23E27',
   },
 ];
@@ -106,7 +70,7 @@ const textBlockContent = {
 const Services: React.FunctionComponent<Props> = () => (
   <Section id="services">
     <TextBlock content={textBlockContent} />
-    <TileSet tiles={tileContent} />
+    <TileSet tiles={tileContent} type="services" />
   </Section>
 );
 
