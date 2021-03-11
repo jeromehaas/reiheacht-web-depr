@@ -14,7 +14,7 @@ import sendButton from '../../public/animations/send-button.json';
 
 const StyledContactForm = styled.form`
   width: 100%;
-  max-width: 600px;
+  max-width: 500px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 5fr auto;
@@ -24,6 +24,14 @@ const StyledContactForm = styled.form`
     "email phone"
     "message message"
     "button button";
+
+    @media (max-width: 1100px) {
+      max-width: 750px;
+    }
+
+    @media (max-width: 800px) {
+      max-width: 100%;
+    }
 
     @media (max-width: 700px) {
       grid-template-columns: 1fr;
