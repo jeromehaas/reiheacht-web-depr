@@ -5,9 +5,9 @@ import Reveal, { Slide } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
 import ListItem from '@/components/text/ListItem';
 
-const moveDown = keyframes`
-  from {top: 40px; color: transparent; position: relative;}
-  to {top: 5px; opacity: 1; position: relative;}
+const moveUp = keyframes`
+  from {top: 40px;  position: relative;}
+  to {top: 5px; position: relative;}
 `;
 
 const StyledServiceTile = styled.div`
@@ -20,7 +20,7 @@ const StyledServiceTile = styled.div`
     width: 100%;
     height: 100%;
     display: block;
-    position: relative;
+    /* position: relative; */
 
     img {
       width: 100%;
@@ -36,7 +36,6 @@ const StyledServiceTile = styled.div`
     .overlay {
       bottom: 0;
       height: 100%;
-      background-color: green;
     }
 
     .textWrapper {
@@ -44,7 +43,6 @@ const StyledServiceTile = styled.div`
       margin-top: -20px;
 
     .listItems {
-        /* padding: 15px; */
         max-height: unset;
         opacity: 1;
       }
@@ -59,6 +57,7 @@ const StyledServiceTile = styled.div`
 
   @media (max-width: 550px) {
     width: calc(100% / 1);
+    margin-top: 30px;
   }
 
 
@@ -70,7 +69,7 @@ const StyledServiceTile = styled.div`
     left: 0; 
     width: 100%;
     height: 80px;
-    transition: all 0.5s ease
+    transition: all 0.7s ease
   }
 
 
@@ -80,7 +79,7 @@ const StyledServiceTile = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: center;
-      transition: all 0.5s ease;
+      transition: all 0.7s ease;
 
       .title {
         height: 80px;
@@ -93,7 +92,7 @@ const StyledServiceTile = styled.div`
       .listItems {
         padding: 0 15px;
         height: 0px;
-        transition: all 1.0s ease;
+        transition: all 0.7s ease;
         opacity: 0;
 
       }
@@ -120,7 +119,7 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
 
         <div className="listItems">
           <ul>
-            <Reveal keyframes={moveDown} duration={900} damping={2} fraction={0}>
+            <Reveal keyframes={moveUp} duration={700} damping={2} fraction={0}>
               {content.description.map((item, index) => (
                 <ListItem key={index}>
                   {item}

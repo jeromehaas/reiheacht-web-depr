@@ -15,6 +15,7 @@ const StyledEmployeeTile = styled.div`
 
   @media (max-width: 550px) {
     width: calc(100% / 1);
+    margin-top: 30px;
   }
 
   .initial {

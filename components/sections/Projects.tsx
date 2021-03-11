@@ -31,32 +31,32 @@ const tileContent = [
   {
     image: '/illustrations/projects/trinkwasserinitiative.png',
     alt: 'Schweizer Bauernverband',
-    title: <H3>Schweizer Bauernverband</H3>,
-    description: <Paragraph>Trinkwasserinitiative</Paragraph>,
+    title: 'Schweizer Bauernverband',
+    description: 'Trinkwasserinitiative',
     overlayColor: '#9EA600',
     link: '/projekte/trinkwasserinitiative',
   },
   {
     image: '/illustrations/projects/sbv-div.png',
     alt: 'Schweizer Bauernverband',
-    title: <H3>Schweizer Bauernverband</H3>,
-    description: <Paragraph>SBV div</Paragraph>,
+    title: 'Schweizer Bauernverband',
+    description: 'SBV div',
     overlayColor: '#9EA600',
     link: '/projekte/sbv-div',
   },
   {
     image: '/illustrations/projects/smartphone-schnitzeljagd.png',
     alt: 'Design',
-    title: <H3>Swisslocaltravel</H3>,
-    description: <Paragraph>Smartphone-Schnitzeljagd</Paragraph>,
+    title: 'Swisslocaltravel',
+    description: 'Smartphone-Schnitzeljagd',
     overlayColor: '#FC0031',
     link: '/projekte/smartphone-schnitzeljagd',
   },
   {
     image: '/illustrations/projects/agrarinitiative.png',
     alt: 'GalloSuisse',
-    title: <H3>GalloSuisse</H3>,
-    description: <Paragraph>Agrarinitiative</Paragraph>,
+    title: 'GalloSuisse',
+    description: 'Agrarinitiative',
     overlayColor: '#C70103',
     link: '/projekte/agrarinitiative',
   },
@@ -64,13 +64,7 @@ const tileContent = [
 
 const textBlockContent = {
   section: 'projects',
-  title: <H2>
-    Perfekte Aussicht,
-    aus der besten
-    {' '}
-    <Highlight>reihe</Highlight>
-    .
-  </H2>,
+  title: <H2>Perfekte Aussicht, aus der besten <Highlight>reihe</Highlight>.</H2>,
   text: <Paragraph>Dein Spitzenprogramm – zurücklehnen und geniessen.</Paragraph>,
 };
 
