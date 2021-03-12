@@ -57,8 +57,8 @@ const StyledContactForm = styled.form`
       position: absolute;
       top: 15px;
       color: ${(p) => p.theme.darkGrey};
-      font-family: ${(p) => p.theme.helvetica55};
       font-size: 20px;
+      font-family: 'Helvetica Neue 55 Roman', serif;
     }
   }
 

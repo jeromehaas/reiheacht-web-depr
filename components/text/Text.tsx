@@ -96,6 +96,7 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
   ${sharedTitleStyle};
+  font-family: 'Helvetica Neue 55 Roman', serif;
   font-size: 25px;
 
   @media (max-width: 800px) {
@@ -118,6 +119,7 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
   ${sharedTitleStyle};
+  font-family: 'Helvetica Neue 55 Roman', serif;
   font-size: 20px;   
 
   @media (max-width: 800px) {
@@ -204,7 +206,7 @@ const P = styled.p`
   max-width: 600px;
   opacity: 1;
   line-height: 1.5;
-  font-family: 'Helvetica Neue 55 Roman';
+  font-family: 'Helvetica Neue 55 Roman', serif;
   ${getParagraphColor};
   ${getParagraphSize};
   ${checkParagraphAnimated};

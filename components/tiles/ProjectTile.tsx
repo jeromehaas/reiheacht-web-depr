@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H3 } from '@/components/text/Titles';
+import { H3, P } from '@/components/text/Text';
 import Link from 'next/link';
 import Image from '@/components/partials/Image';
-import Paragraph from '@/components/text/Paragraph';
 import { keyframes } from '@emotion/react';
 import Reveal, { Slide } from 'react-awesome-reveal';
 import Spacer from '@/components/layout/Spacer';
@@ -97,7 +96,7 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
             <Reveal keyframes={moveUp} duration={700} damping={2} fraction={0}>
               <H3>{content.title}</H3>
               <Spacer marginBottom="15px" />
-              <Paragraph>{content.description}</Paragraph>
+              <P>{content.description}</P>
             </Reveal>
           </div>
         </div>

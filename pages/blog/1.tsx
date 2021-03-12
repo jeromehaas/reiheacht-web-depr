@@ -1,17 +1,16 @@
 import React from 'react';
 import PageWrapper from '@/components/layout/PageWrapper';
-import Blog from '@/components/pages/Legal';
+import Blog from '@/components/pages/Blog';
 import {
-  H1, H2, H3, H4,
-} from '@/components/text/Titles';
+  H1, H2, H3, H4, P,
+} from '@/components/text/Text';
 import Highlight from '@/components/text/Highlight';
 import Image from '@/components/partials/Image';
 import styled from 'styled-components';
-import Paragraph from '@/components/text/Paragraph';
 import Spacer from '@/components/layout/Spacer';
 import SocialMediaButton from '@/components/buttons/SocialMediaButton';
 
-const RichText = styled(Paragraph)`
+const RichText = styled(P)`
   
 `;
 
@@ -39,7 +38,7 @@ const SocialMediaWrapper = styled.div`
 interface Props { }
 
 const Post: React.FunctionComponent<Props> = () => (
-  <Blog>
+  <Blog closeTriangleTarget="/blog/overview">
     <Image src="/images/blog/block-mock-image.jpg" alt="Mock Blog" />
     <Spacer marginBottom="30px" />
     <H2 color="darkGrey"><Highlight>Interview mit Virginia Reis.</Highlight></H2>

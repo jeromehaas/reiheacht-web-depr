@@ -13,15 +13,15 @@ interface Props {
   content?: any
 }
 
-const Blog: React.FunctionComponent<Props> = ({ children, content }) => (
+const Blog: React.FunctionComponent<Props> = ({ children, closeTriangleTarget }) => (
   <div>
     <PageWrapper color="white">
-      <CloseTriangle position="top" color="blue" />
+      <CloseTriangle position="top" color="blue" target={closeTriangleTarget} />
       <Spacer marginBottom="30px" />
       <Section>
         {children}
       </Section>
-      <CloseTriangle position="bottom" color="blue" />
+      <CloseTriangle position="bottom" color="blue" target={closeTriangleTarget} />
     </PageWrapper>
   </div>
 );

@@ -1,9 +1,10 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
-import { H2, H3, H4 } from '@/components/text/Titles';
+import {
+  H2, H3, H4, P,
+} from '@/components/text/Text';
 
 import Highlight from '@/components/text/Highlight';
-import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock';
 import Button from '@/components/buttons/Button';
 import TileSet from '@/components/partials/TileSet';
@@ -21,7 +22,7 @@ const tileContent = [
     image: '/images/employees/mock-persona-male.png',
     alt: 'Marc Sen',
     title: <H4>Marc Sen</H4>,
-    description: <Paragraph>Gründer & Motion Designer</Paragraph>,
+    description: <P>Gründer & Motion Designer</P>,
     email: 'marc.sen@reiheacht.ch',
     overlayColor: '#0374B6',
   },
@@ -29,7 +30,7 @@ const tileContent = [
     image: '/images/employees/mock-persona-female.png',
     alt: 'Ramona Basmaci',
     title: <H4>Ramona Basmaci</H4>,
-    description: <Paragraph>Buchhaltung & HR </Paragraph>,
+    description: <P>Buchhaltung & HR </P>,
     email: 'ramona.basmaci@reiheacht.ch',
     overlayColor: '#0374B6',
   },
@@ -37,7 +38,7 @@ const tileContent = [
     image: '/images/employees/mock-persona-female.png',
     alt: 'Julia Sen',
     title: <H4>Julia Sen</H4>,
-    description: <Paragraph>Sachbearbeiterin</Paragraph>,
+    description: <P>Sachbearbeiterin</P>,
     email: 'julia.sen@reiheacht.ch ',
     overlayColor: '#0374B6',
   },
@@ -45,7 +46,7 @@ const tileContent = [
     image: '/images/employees/mock-persona-male.png',
     alt: 'Jérôme Haas',
     title: <H4>Jérôme Haas</H4>,
-    description: <Paragraph>Web-Entwickler</Paragraph>,
+    description: <P>Web-Entwickler</P>,
     email: 'jerome.haas@reiheacht.ch ',
     overlayColor: '#0374B6',
   },

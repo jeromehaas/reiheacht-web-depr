@@ -1,6 +1,8 @@
 import React from 'react';
-import Blog from '@/components/pages/Legal';
-import { H2, H3, H4 } from '@/components/text/Titles';
+import Blog from '@/components/pages/Blog';
+import {
+  H2, H3, H4, P,
+} from '@/components/text/Text';
 import Spacer from '@/components/layout/Spacer';
 import Highlight from '@/components/text/Highlight';
 import styled from 'styled-components';
@@ -145,7 +147,7 @@ interface Props { }
 const Imprint: React.FunctionComponent<Props> = () => (
   <>
 
-    <Blog>
+    <Blog closeTriangleTarget="/">
       <Fade>
         <H2 color="darkGrey">Trends & News aus der reihe<Highlight>acht</Highlight>.</H2>
         <HorizontalLine className="active" />
@@ -155,11 +157,11 @@ const Imprint: React.FunctionComponent<Props> = () => (
               <img src={latestPost.image} alt={latestPost.imageAlt} />
             </div>
             <div className="text">
-              <Paragraph><Highlight>{latestPost.caption}</Highlight></Paragraph>
+              <P><Highlight>{latestPost.caption}</Highlight></P>
               <Spacer marginBottom="10px" />
               <H3 color="darkGrey">{latestPost.title}</H3>
               <Spacer marginBottom="10px" />
-              <Paragraph color="darkGrey">{latestPost.text}</Paragraph>
+              <P color="darkGrey">{latestPost.text}</P>
             </div>
           </TopPost>
         </Linker>
@@ -175,9 +177,9 @@ const Imprint: React.FunctionComponent<Props> = () => (
                   <img src={post.image} alt={post.imageAlt} />
                 </div>
                 <div className="text">
-                  <Paragraph><Highlight>{post.caption}</Highlight></Paragraph>
+                  <P><Highlight>{post.caption}</Highlight></P>
                   <H4 color="darkGrey">{post.title}</H4>
-                  <Paragraph color="darkGrey">{post.text}</Paragraph>
+                  <P color="darkGrey">{post.text}</P>
                   <p style={{ alignSelf: 'flex-end', fontSize: '12px', color: '#1c1c1c' }}>{post.date}</p>
                 </div>
               </Linker>
