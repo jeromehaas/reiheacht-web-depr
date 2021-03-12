@@ -7,7 +7,7 @@ import cx from 'classnames';
 const Wrapper = styled.span`
     .link {
      color: ${(p) => p.theme.white};
-     transition: all 0.25s ease 0.5s;
+     transition: all 0.25s ease;
      text-decoration: none !important;
      font-family: 'Helvetica Neue 55 Roman', serif;
     
