@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Paragraph from '@/components/text/Paragraph';
 import VerticalLine from '@/components/shapes/VerticalLine';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
-import { H3 } from '@/components/text/Titles';
+import { H3, P } from '@/components/text/Text';
 
 const StyledProjectOverview = styled.div`
 
@@ -82,7 +82,7 @@ const ProjectOverview: React.FunctionComponent<Props> = ({ content }) => (
       <VerticalLine />
       <div className="text-content">
         <H3>{content.title}</H3>
-        <Paragraph>{content.text}</Paragraph>
+        <P>{content.text}</P>
       </div>
     </div>
 
@@ -93,7 +93,7 @@ const ProjectOverview: React.FunctionComponent<Props> = ({ content }) => (
       <HorizontalLine className="active" animated={false} />
       <div className="text-content">
         <H3>{content.title}</H3>
-        <Paragraph>{content.text}</Paragraph>
+        <P>{content.text}</P>
       </div>
     </div>
 

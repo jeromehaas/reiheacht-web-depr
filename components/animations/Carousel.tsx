@@ -40,7 +40,7 @@ const CarouselWrapper = styled.div`
   flex-direction: column;
   position: absolute;
   top: -5px;
-  /* animation: 2s ease-in-out 2s 1 forwards carousel; */
+  animation: 2s ease-in-out 2s 1 forwards carousel;
   font-family: 'Helvetica Neue 85 Heavy';
 
 

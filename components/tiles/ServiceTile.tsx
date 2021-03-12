@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H3 } from '@/components/text/Titles';
+import { H3, P } from '@/components/text/Text';
 import Reveal, { Slide } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
 import ListItem from '@/components/text/ListItem';

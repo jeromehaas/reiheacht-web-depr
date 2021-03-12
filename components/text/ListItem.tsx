@@ -11,6 +11,7 @@ const StyledListItem = styled.li`
   margin: 0 0 10px 15px;
   line-height: 20px;
   font-size: 20px;
+  font-family: 'Helvetica Neue 55 Roman', serif;
 
   &::before {
     content: ' ';
