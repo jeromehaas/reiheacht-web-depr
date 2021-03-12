@@ -5,7 +5,6 @@ import { H2 } from '@/components/text/Titles';
 import Button from '@/components/buttons/Button';
 import Spacer from '@/components/layout/Spacer';
 import { Lottie } from '@crello/react-lottie';
-import Head from 'next/head';
 import astronaut from '../public/animations/astronaut.json';
 
 const StyledPageNotFound = styled.div`
@@ -83,30 +82,6 @@ interface Props { }
 
 const PageNotFound: React.FunctionComponent<Props> = () => (
   <>
-    <Head>
-      <title>reiheacht - Hier begintn die Zusammenarbeit.</title>
-      <meta name="description" content="Animation | Storytelling| Design | Illustration | Web | Werbefilm" />
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff2" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Roman.woff" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Roman.ttf" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Roman.eot" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff2" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Md.woff" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Md.ttf" as="font" crossOrigin="" />
-      <link rel="preload" href="/fonts/helvetica-neue/HelveticaNeueLTStd-Md.eot" as="font" crossOrigin="" />
-      <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
-      <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
-      <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
-      <link rel="manifest" href="/favicon/site.webmanifest" />
-      <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#2775b7" />
-      <link rel="shortcut icon" href="/favicon/favicon.ico" />
-      <meta name="msapplication-TileColor" content="#ffffff" />
-      <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
-      <meta name="theme-color" content="#ffffff" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    </Head>
-
     <StyledPageNotFound>
       <img className="moon" src="/illustrations/page-not-found/moon.svg" alt="Mond" />
       <div className="fourZeroFour">
@@ -130,7 +105,7 @@ const PageNotFound: React.FunctionComponent<Props> = () => (
           du nicht hin.
         </H2>
         <Spacer marginBottom="20px" />
-        <Button link="/" content="Bring mich zurück!" />
+        <Button target="/" type="link" text="Bring mich zurück!" />
       </div>
     </StyledPageNotFound>
   </>
