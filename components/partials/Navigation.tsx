@@ -52,7 +52,7 @@ const DesktopNavigation = styled.nav`
   }
 
   .link {
-    margin-right: 30px;
+    margin-right: 50px;
     color: ${(p) => p.theme.white};
     text-decoration: none;
   }

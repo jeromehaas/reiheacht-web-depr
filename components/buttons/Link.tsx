@@ -9,9 +9,11 @@ const Wrapper = styled.span`
      color: ${(p) => p.theme.white};
      transition: all 0.25s ease 0.5s;
      text-decoration: none !important;
+     font-family: 'Helvetica Neue 55 Roman', serif;
     
     a {
      color: ${(p) => p.theme.white};
+     font-family: 'Helvetica Neue 55 Roman', serif;
     }
 
     &.active,
