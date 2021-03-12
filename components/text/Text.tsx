@@ -173,14 +173,23 @@ const getParagraphSize = ({ size }) => {
     case 'normal':
       return css`
       font-size: 20px;
+      @media (max-width: 525px) {
+        font-size: 15px;
+      }
       `;
     case 'big':
       return css`
       font-size: 25px;
+      @media (max-width: 525px) {
+        font-size: 20px;
+      }
       `;
     default:
       return css`
-      font-size: 20px;
+       font-size: 25px;;
+      @media (max-width: 525px) {
+        font-size: 20px;
+      }
       `;
   }
 };
@@ -202,10 +211,10 @@ const checkParagraphAnimated = ({ animate, delay }) => {
 };
 
 const P = styled.p`
-  font-size: 20px;
+  font-size: 25px;
   max-width: 600px;
   opacity: 1;
-  line-height: 1.5;
+  line-height: 1.6;
   font-family: 'Helvetica Neue 55 Roman', serif;
   ${getParagraphColor};
   ${getParagraphSize};
