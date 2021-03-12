@@ -7,7 +7,7 @@ const GlobalStyle = createGlobalStyle`
     outline: none;
     -ms-overflow-style: none;
     scrollbar-width: none;
-    font-family: 'Helvetica Neue 55 Roman', serif;
+    /* font-family: 'Helvetica Neue 55 Roman', serif; */
     
     .noSelect {
     -webkit-touch-callout: none;
