@@ -52,7 +52,7 @@ const DesktopNavigation = styled.nav`
   }
 
   .link {
-    margin-right: 30px;
+    margin-right: 50px;
     color: ${(p) => p.theme.white};
     text-decoration: none;
   }
@@ -119,7 +119,7 @@ const MobileNavigation = styled.nav`
     z-index: 5;
     padding-top: 75px;
     transition: all 1s ease-in-out;
-    color: red;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 
   .link {
     color: inherited;
