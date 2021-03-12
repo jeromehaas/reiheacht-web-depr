@@ -10,8 +10,9 @@ const H1 = styled.h1`
  font-size: 75px; 
  line-height: ${(p) => p.theme.titleLineHeight};
 
- @media (max-width: 800px) {
+ @media (max-width: 900px) {
   font-size: 60px;
+  border: 10px solid blue;
  }
 
  @media (max-width: 700px) {
@@ -23,7 +24,7 @@ const H1 = styled.h1`
  }
 
  @media (max-width: 400px) {
-  font-size: 30px;
+  font-size: 50px;
  }
 `;
 

@@ -6,7 +6,7 @@ interface Props { }
 
 const content = {
   section: 'home',
-  title: <>Hier beginnt<br />die<span style={{ marginRight: '25px' }} /></>,
+  title: <>Hier beginnt<br />die<span style={{ marginRight: '15px' }} /></>,
   carouselItems: ['Magie', 'Idee', 'Zusammenarbeit'],
   text: <>reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Lösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst.<br />Wir bewegen alles und jeden – setz dich in die reiheacht.</>,
   buttons: [

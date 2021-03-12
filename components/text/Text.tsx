@@ -36,27 +36,33 @@ const sharedTitleStyle = css`
 const H1 = styled.h1`
   ${sharedTitleStyle};
   font-size: 75px; 
-  margin-right: 20px;
+  margin-right: 0px;
   font-family: 'Helvetica Neue 85 Heavy';
+  /* font-family: ${(p) => p.theme.fontHeavy}; */
 
- @media (max-width: 800px) {
+ @media (max-width: 900px) {
   ${sharedTitleStyle};
   font-size: 60px;
  }
 
- @media (max-width: 700px) {
+ @media (max-width: 720px) {
   ${sharedTitleStyle};
   font-size: 50px;
  }
 
- @media (max-width: 500px) {
+ @media (max-width: 620px) {
   ${sharedTitleStyle};
   font-size: 40px;
  }
 
- @media (max-width: 400px) {
+ @media (max-width: 525px) {
   ${sharedTitleStyle};
   font-size: 30px;
+ }
+
+ @media (max-width: 420px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
  }
 `;
 
@@ -64,21 +70,26 @@ const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 50px; 
   max-width: 450px;
+  font-family: 'Helvetica Neue 85 Heavy';
 
- @media (max-width: 800px) {
+  @media (max-width: 720px) {
+  ${sharedTitleStyle};
   font-size: 50px;
  }
 
- @media (max-width: 700px) {
+ @media (max-width: 620px) {
+  ${sharedTitleStyle};
   font-size: 40px;
  }
 
- @media (max-width: 500px) {
+ @media (max-width: 525px) {
+  ${sharedTitleStyle};
   font-size: 30px;
  }
 
- @media (max-width: 400px) {
-  font-size: 30px;
+ @media (max-width: 420px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
  }
 
 `;
