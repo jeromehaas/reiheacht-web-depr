@@ -14,13 +14,13 @@ const Wrapper = styled.i`
   ${({ direction }) => direction === 'top'
     && css`
       top: -15px;
-    `}
+    `};
  
   ${({ direction }) => direction === 'bottom'
     && css`
       bottom: -15px;
-      transform: rotate(180deg)
-    `}
+      transform: rotate(180deg);
+    `};
 
 `;
 

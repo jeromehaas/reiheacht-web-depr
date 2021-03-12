@@ -1,5 +1,5 @@
 import React from 'react';
-import { H1 } from '@/components/text/Text';
+import { H1, P } from '@/components/text/Text';
 import Paragraph from '@/components/text/Paragraph';
 import Button from '@/components/buttons/Button';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
@@ -21,7 +21,7 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => (
   <Reveal keyframes={moveDown} triggerOnce fraction={1}>
     <H1>{content.title}<Carousel className="active" items={content.carouselItems} /></H1>
     <HorizontalLine className="active" animated />
-    <Paragraph animated className="active">{content.text}</Paragraph>
+    <P animate delay="4.5s">{content.text}</P>
     <Space height="30px" />
     {content.buttons.map((button, index) => (
       <Button key={index} target={button.target} text={button.text} animate delay={button.delay} />

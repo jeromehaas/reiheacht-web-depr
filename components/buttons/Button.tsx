@@ -6,16 +6,15 @@ interface Props {
   content: string;
   link: string;
   animated?: Boolean;
-  className?: string;
   customDelay?: string;
 }
 
 const checkAnimated = ({ animate, delay }) => {
-  if (animate) {
+  if (animate && delay) {
     return css`
       transition: ${(p) => p.theme.standardTransition};
-      opacity: ${(p) => (p.animate ? 0 : 1)};
-      animation: ${(p) => (`1s ease-in-out ${delay} 1 forwards moveUp`)};
+      opacity: 0;
+      animation: ${(`1s ease-in-out ${delay} 1 forwards moveUp`)};
 
       @keyframes moveUp {
         from {top: 60px; opacity: 0;}
@@ -60,8 +59,6 @@ const StyledButton = styled.button`
   margin: 0 30px 30px 0;
   ${checkAnimated};
   ${getColor};
-
-
 
   a {
     color: ${(p) => p.theme.white};

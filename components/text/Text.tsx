@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 
 interface Props { }
 
-const getColor = ({ theme, color }) => {
+const getTitleColor = ({ theme, color }) => {
   switch (color) {
     case 'white':
       return css`
@@ -29,9 +29,8 @@ const getColor = ({ theme, color }) => {
 };
 
 const sharedTitleStyle = css`
-  ${getColor}
-  line-height: 1.5;
-  max-width:
+  ${getTitleColor}
+  line-height: 1.25;
 `;
 
 const H1 = styled.h1`
@@ -124,7 +123,78 @@ const H4 = styled.h4`
  @media (max-width: 400px) {
   font-size: 20px;
  }
+ `;
 
+const getParagraphColor = ({ theme, color }) => {
+  switch (color) {
+    case 'white':
+      return css`
+        color: ${theme.white};
+      `;
+    case 'blue':
+      return css`
+        color: ${theme.blue};
+      `;
+    case 'darkGrey':
+      return css`
+        color: ${theme.darkGrey};
+      `;
+    case 'orange':
+      return css`
+        color: ${theme.orange};
+      `;
+    default:
+      return css`
+        color: ${theme.white};
+      `;
+  }
+};
+
+const getParagraphSize = ({ size }) => {
+  switch (size) {
+    case 'small':
+      return css`
+      font-size: 15px;
+      `;
+    case 'normal':
+      return css`
+      font-size: 20px;
+      `;
+    case 'big':
+      return css`
+      font-size: 25px;
+      `;
+    default:
+      return css`
+      font-size: 20px;
+      `;
+  }
+};
+
+const checkParagraphAnimated = ({ animate, delay }) => {
+  if (animate && delay) {
+    return css`
+      transition: ${(p) => p.theme.standardTransition};
+      opacity: 0;
+      animation: ${`0.5s ease-in-out ${delay} 1 forwards appear}`};
+
+      @keyframes appear {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
+    }
+
+   `;
+  }
+};
+
+const P = styled.p`
+  font-size: 20px;
+  max-width: 600px;
+  opacity: 1;
+  line-height: 1.5;
+  ${getParagraphColor};
+  ${getParagraphSize};
+  ${checkParagraphAnimated};
 `;
 
 export {
@@ -132,4 +202,5 @@ export {
   H2,
   H3,
   H4,
+  P,
 };
