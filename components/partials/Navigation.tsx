@@ -119,7 +119,7 @@ const MobileNavigation = styled.nav`
     z-index: 5;
     padding-top: 75px;
     transition: all 1s ease-in-out;
-    color: red;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
 
   .link {
     color: inherited;
