@@ -1,6 +1,7 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import Link from 'next/link';
+import Linker from '@/components/buttons/Link';
 
 interface Props {
   content: string;
@@ -76,9 +77,9 @@ const Button: React.FunctionComponent<Props> = ({
   text, target, animate, delay, color,
 }) => (
   <StyledButton animate={animate} delay={delay} color={color}>
-    <Link href={target}>
-      <a>{text}</a>
-    </Link>
+    <Linker type="anchor" target={target}>
+      {text}
+    </Linker>
   </StyledButton>
 );
 
