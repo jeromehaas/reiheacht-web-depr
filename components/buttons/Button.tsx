@@ -4,11 +4,11 @@ import Link from 'next/link';
 import Linker from '@/components/buttons/Link';
 
 interface Props {
-  content: string;
-  link: string;
   target: string;
   text: string;
   type: string;
+  delay?: string;
+  color?: string;
   animate?: Boolean;
   customDelay?: string;
 }

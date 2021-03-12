@@ -9,7 +9,10 @@ const getDimensions = ({ width, height }) => css`
 const StyledSpace = styled.div`
   ${getDimensions};
 `;
-interface Props { }
+interface Props {
+  height?: string;
+  width?: string;
+}
 
 const Space: React.FunctionComponent<Props> = ({ height, width }) => (
   <StyledSpace height={height} width={width} />
