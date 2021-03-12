@@ -1,6 +1,7 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
 import MainTextBlock from '@/components/partials/MainTextBlock';
+import Scroller from '@/components/animations/Scroller';
 
 interface Props { }
 
@@ -18,6 +19,7 @@ const content = {
 const Start: React.FunctionComponent<Props> = () => (
   <Section hero id="home">
     <MainTextBlock content={content} />
+    <Scroller />
   </Section>
 );
 
