@@ -6,6 +6,8 @@ import HorizontalLine from '@/components/shapes/HorizontalLine';
 import ProjectOverview from '@/components/partials/ProjectOverview';
 import Spacer from '@/components/layout/Spacer';
 import Head from 'next/head';
+import { H2, P } from '@/components/text/Text';
+import Button from '@/components/buttons/Button';
 
 interface Props {
   children?: React.ReactNode;
@@ -43,9 +45,9 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
       <Spacer marginBottom="30px" />
 
       <Section>
-        {content.intro.title}
+        <H2>{content.intro.title}</H2>
         <Spacer marginBottom="30px" />
-        {content.intro.text}
+        <P>{content.intro.text}</P>
         <Spacer marginBottom="30px" />
         <ProjectOverview content={{
           imageLink: content.projectOverview.imageLink,
@@ -57,9 +59,9 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
         <Spacer marginBottom="30px" />
         {children}
         <Spacer marginBottom="60px" />
-        {content.outro.title}
+        <H2>{content.outro.title}</H2>
         <HorizontalLine className="active" animated={false} />
-        {content.outro.button}
+        <Button type="link" target="/" text="Sitzplatz buchen" />
         <Spacer marginBottom="130px" />
       </Section>
       <CloseTriangle position="bottom" />

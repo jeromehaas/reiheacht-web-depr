@@ -1,7 +1,7 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
-import { H2, H3 } from '@/components/text/Titles';
-
+// import { H2, H3 } from '@/components/text/Titles';
+import { H2 } from '@/components/text/Text';
 import Highlight from '@/components/text/Highlight';
 import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock';
@@ -58,13 +58,8 @@ const tileContent = [
 
 const textBlockContent = {
   section: 'services',
-  title: <H2>
-    Erwecke deine Idee zum
-    {' '}
-    <Highlight>Leben</Highlight>
-    .
-         </H2>,
-  text: <Paragraph>Das tun wir den ganzen Tag – und wir lieben es.</Paragraph>,
+  title: <>Erwecke deine Idee zum <Highlight>Leben</Highlight>.</>,
+  text: <>Das tun wir den ganzen Tag – und wir lieben es.</>,
 };
 
 const Services: React.FunctionComponent<Props> = () => (

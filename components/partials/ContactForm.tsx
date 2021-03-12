@@ -45,14 +45,20 @@ const StyledContactForm = styled.form`
     }
 
   input, textarea {
-    padding: 10px;
+    padding: 15px;
     border: none;
     outline: none;
     border-radius: 5px;
+    position: relative;
+    font-family: ${(p) => p.theme.helvetica55};
+     font-size: 20px;
 
     &::placeholder {
+      position: absolute;
+      top: 15px;
       color: ${(p) => p.theme.darkGrey};
-      font-family: ${(p) => p.theme.helvetica55}
+      font-family: ${(p) => p.theme.helvetica55};
+      font-size: 20px;
     }
   }
 

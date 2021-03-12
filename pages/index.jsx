@@ -11,7 +11,6 @@ import Footer from '@/components/partials/Footer';
 import Paragraph from '@/components/text/Paragraph';
 import Button from '@/components/buttons/Button';
 import { Lottie } from '@crello/react-lottie';
-import Spacer from '@/components/layout/Spacer';
 import introAnimation from '../public/animations/intro.json';
 
 function useLocalStorage(defaultValue, key) {

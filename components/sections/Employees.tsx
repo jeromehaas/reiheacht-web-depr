@@ -12,14 +12,8 @@ interface Props { }
 
 const textBlockContent = {
   section: 'employees',
-  title: <H2>
-    Dein
-    {' '}
-    <Highlight>Team</Highlight>
-    .
-         </H2>,
-  text: <Paragraph>Wir warten auf dein Startsignal.</Paragraph>,
-
+  title: <>Dein <Highlight>Team</Highlight>.</>,
+  text: <>Wir warten auf dein Startsignal.</>,
 };
 
 const tileContent = [

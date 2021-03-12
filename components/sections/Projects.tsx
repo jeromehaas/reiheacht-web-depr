@@ -64,8 +64,8 @@ const tileContent = [
 
 const textBlockContent = {
   section: 'projects',
-  title: <H2>Perfekte Aussicht, aus der besten <Highlight>reihe</Highlight>.</H2>,
-  text: <Paragraph>Dein Spitzenprogramm – zurücklehnen und geniessen.</Paragraph>,
+  title: <>Perfekte Aussicht, aus der besten <Highlight>reihe</Highlight>.</>,
+  text: <>Dein Spitzenprogramm – zurücklehnen und geniessen.</>,
 };
 
 const Projects: React.FunctionComponent<Props> = () => (

@@ -10,11 +10,8 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <H2>
-      Ein Ei kommt selten allei
-      <Highlight>.</Highlight>
-    </H2>,
-    text: <Paragraph>Importeier nehmen in der Schweiz mehr und mehr zu. Deshalb hat uns GalloSuisse gebeten Ihnen verschiedene Ideen für zu präsentieren.</Paragraph>,
+    title: <>Ein Ei kommt selten allei<Highlight>.</Highlight></>,
+    text: <>Importeier nehmen in der Schweiz mehr und mehr zu. Deshalb hat uns GalloSuisse gebeten Ihnen verschiedene Ideen für zu präsentieren.</>,
   },
   projectOverview: {
     imageLink: '/logos/projects/gallosuisse.svg',
@@ -23,13 +20,7 @@ const content = {
     text: 'Idee, Design, Illustration',
   },
   outro: {
-    title: <H2>
-      Möchtest du auch eine eigene
-      {' '}
-      <Highlight>Welt</Highlight>
-      ?
-    </H2>,
-    button: <Button link="/#contact" content="Sitzplatz buchen" animated className="active" customDelay="3s" />,
+    title: <>Möchtest du auch eine eigene <Highlight>Welt</Highlight>?</>,
   },
 
 };

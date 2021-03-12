@@ -1,43 +1,74 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Link from 'next/link';
+import Linker from '@/components/buttons/Link';
 
 interface Props {
   content: string;
   link: string;
-  animated?: Boolean;
-  className?: string;
+  target: string;
+  text: string;
+  type: string;
+  animate?: Boolean;
   customDelay?: string;
 }
 
+const checkAnimated = ({ animate, delay }) => {
+  if (animate && delay) {
+    return css`
+      transition: ${(p) => p.theme.standardTransition};
+      opacity: 0;
+      animation: ${(`1s ease-in-out ${delay} 1 forwards moveUp`)};
+
+      @keyframes moveUp {
+        from {top: 60px; opacity: 0;}
+        to {top: 0px; opacity: 1;}
+      }
+
+    `;
+  }
+};
+
+const getColor = ({ color, theme }) => {
+  switch (color) {
+    case 'orange':
+      return css`
+        background-color: ${theme.orange};
+      `;
+    case 'blue':
+      return css`
+        background-color: ${theme.blue};
+      `;
+    case 'white':
+      return css`
+        background-color: ${theme.white};
+        color: ${theme.darkGrey};
+      `;
+    default:
+      return css`
+      background-color: ${theme.orange};
+      `;
+  }
+};
+
 const StyledButton = styled.button`
+  position: relative;
   width: auto;
   display: inline-block;
   min-width: 200px;
-  padding: ${(p) => p.theme.spacingSmall} ${(p) => p.theme.spacingMedium}; 
-  background-color: ${(p) => p.theme.orange};
-  border-radius: ${(p) => p.theme.borderRadius};
+  padding: 10px 15px;
+  border-radius: 5px;
   border: none;
   outline: none;
-  margin: 0 ${(p) => p.theme.spacingBig} ${(p) => p.theme.spacingBig} 0;
-  transition: ${(p) => p.theme.standardTransition};
-  opacity: ${(p) => (p.animated ? 0 : 1)};
-  position: relative;
-
-  &.active {
-      animation: ${(p) => (p.customDelay ? `1s ease-in-out ${p.customDelay} 1 forwards moveUp` : '1s ease-in-out 5s 1 forwards moveUp')};
-    }
-
-    @keyframes moveUp {
-      from {top: 60px; opacity: 0;}
-      to {top: 0px; opacity: 1;}
-    }
+  margin: 0 30px 30px 0;
+  ${checkAnimated};
+  ${getColor};
 
   a {
     color: ${(p) => p.theme.white};
     text-decoration: none;
-    font-size: ${(p) => p.theme.buttonFontSize};
-    font-family: 'Helvetica 65 Medium';
+    font-size: 20px;
+    line-height: 1.5;
   }
 
   &:hover {
@@ -46,12 +77,12 @@ const StyledButton = styled.button`
   `;
 
 const Button: React.FunctionComponent<Props> = ({
-  content, link, animated, className, customDelay,
+  text, target, animate, delay, color, type,
 }) => (
-  <StyledButton animated={animated} className={className} customDelay={customDelay}>
-    <Link href={link}>
-      <a>{content}</a>
-    </Link>
+  <StyledButton animate={animate} delay={delay} color={color}>
+    <Linker type={type} target={target}>
+      {text}
+    </Linker>
   </StyledButton>
 );
 
