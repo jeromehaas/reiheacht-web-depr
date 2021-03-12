@@ -35,8 +35,9 @@ const sharedTitleStyle = css`
 
 const H1 = styled.h1`
   ${sharedTitleStyle};
- font-size: 75px; 
- margin-right: 20px;
+  font-size: 75px; 
+  margin-right: 20px;
+  font-family: 'Helvetica Neue 85 Heavy';
 
  @media (max-width: 800px) {
   ${sharedTitleStyle};
@@ -192,6 +193,7 @@ const P = styled.p`
   max-width: 600px;
   opacity: 1;
   line-height: 1.5;
+  font-family: 'Helvetica Neue 55 Roman';
   ${getParagraphColor};
   ${getParagraphSize};
   ${checkParagraphAnimated};

@@ -27,6 +27,7 @@ const CarouselWrapper = styled.div`
   position: absolute;
   top: 5px;
   animation: 2s ease-in-out 2s 1 forwards carousel;
+  font-family: 'Helvetica Neue 85 Heavy';
 
 
   @keyframes carousel {
@@ -78,6 +79,7 @@ const CarouselItem = styled.span`
   display: block;
   line-height: 1;
   margin-bottom: 20px;
+  font-family: 'Helvetica Neue 85 Heavy';
 `;
 
 const Dot = styled.span`
