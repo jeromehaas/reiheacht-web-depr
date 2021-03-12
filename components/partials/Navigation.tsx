@@ -241,7 +241,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                 <Lottie
                   config={{ animationData: hamburger, autoplay: false }}
                   playingState="playing"
-                  speed={2}
+                  speed={1}
                   width="40px"
                   height="40px"
                   style={{ margin: 0 }}

@@ -97,7 +97,7 @@ const blogPosts = [
     title: 'Warum profesionelle Sprecher einsetzen?',
     text: 'Das kann man doch selbst machen.',
     date: '26.01.2021',
-    link: '/blog/posts/1',
+    link: '/blog/1',
   },
   {
     image: '/images/blog/block-mock-image.jpg',
@@ -106,7 +106,7 @@ const blogPosts = [
     title: 'Warum profesionelle Sprecher einsetzen?',
     text: 'Das kann man doch selbst machen.',
     date: '26.01.2021',
-    link: '/blog/2021-01-26',
+    link: '/blog/1',
   },
   {
     image: '/images/blog/block-mock-image.jpg',
@@ -115,7 +115,7 @@ const blogPosts = [
     title: 'Warum profesionelle Sprecher einsetzen?',
     text: 'Das kann man doch selbst machen.',
     date: '26.01.2021',
-    link: '/blog/2021-01-26',
+    link: '/blog/1',
   },
   {
     image: '/images/blog/block-mock-image.jpg',
@@ -124,7 +124,7 @@ const blogPosts = [
     title: 'Warum profesionelle Sprecher einsetzen?',
     text: 'Das kann man doch selbst machen.',
     date: '26.01.2021',
-    link: '/blog/2021-01-26',
+    link: '/blog/1',
   },
   {
     image: '/images/blog/block-mock-image.jpg',
@@ -133,7 +133,7 @@ const blogPosts = [
     title: 'Warum profesionelle Sprecher einsetzen?',
     text: 'Das kann man doch selbst machen.',
     date: '26.01.2021',
-    link: '/blog/2021-01-26',
+    link: '/blog/1',
   },
 ];
 
@@ -170,15 +170,15 @@ const Imprint: React.FunctionComponent<Props> = () => (
           {allPosts.map((post, index) => (
 
             <Post key={index}>
-              <Linker target="/" type="link">
-                <div className="image">
-                  <img src="/images/blog/block-mock-image.jpg" alt="" />
+              <Linker target={post.link} type="link">
+                <div className={post.image}>
+                  <img src={post.image} alt={post.imageAlt} />
                 </div>
                 <div className="text">
-                  <Paragraph><Highlight>Interview</Highlight></Paragraph>
-                  <H4 color="darkGrey">Warum professionelle Sprecher einsetzen?</H4>
-                  <Paragraph color="darkGrey">Interview</Paragraph>
-                  <p style={{ alignSelf: 'flex-end', fontSize: '12px', color: '#1c1c1c' }}>26.01.2021</p>
+                  <Paragraph><Highlight>{post.caption}</Highlight></Paragraph>
+                  <H4 color="darkGrey">{post.title}</H4>
+                  <Paragraph color="darkGrey">{post.text}</Paragraph>
+                  <p style={{ alignSelf: 'flex-end', fontSize: '12px', color: '#1c1c1c' }}>{post.date}</p>
                 </div>
               </Linker>
             </Post>

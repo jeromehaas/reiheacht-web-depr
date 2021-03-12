@@ -24,7 +24,7 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => (
     <P animate delay="4.5s">{content.text}</P>
     <Space height="30px" />
     {content.buttons.map((button, index) => (
-      <Button key={index} target={button.target} text={button.text} animate delay={button.delay} />
+      <Button key={index} type="anchor" target={button.target} text={button.text} animate delay={button.delay} />
     ))}
   </Reveal>
 );
