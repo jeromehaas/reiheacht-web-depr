@@ -31,11 +31,13 @@ const getColor = ({ theme, color }) => {
 const sharedTitleStyle = css`
   ${getColor}
   line-height: 1.5;
+  max-width:
 `;
 
 const H1 = styled.h1`
   ${sharedTitleStyle};
  font-size: 75px; 
+ margin-right: 20px;
 
  @media (max-width: 800px) {
   ${sharedTitleStyle};
@@ -61,6 +63,7 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 50px; 
+  max-width: 470px;
 
  @media (max-width: 800px) {
   font-size: 50px;

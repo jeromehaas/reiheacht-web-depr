@@ -6,24 +6,12 @@ interface Props { }
 
 const content = {
   section: 'home',
-  title: <>
-    Hier beginnt
-    {' '}
-    <br />
-    die
-    {' '}
-  </>,
+  title: <>Hier beginnt<br />die<span style={{ marginRight: '25px' }} /></>,
   carouselItems: ['Magie', 'Idee', 'Zusammenarbeit'],
-  text: <>
-    reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Lösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst.
-    {' '}
-    <br />
-    {' '}
-    Wir bewegen alles und jeden – setz dich in die reiheacht.
-  </>,
+  text: <>reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Lösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst.<br />Wir bewegen alles und jeden – setz dich in die reiheacht.</>,
   buttons: [
-    { content: 'Sitzplatz buchen', link: '#', delay: '5s' },
-    { content: 'Projekte', link: '#', delay: '5.25s' },
+    { text: 'Sitzplatz buchen', target: '#', delay: '5s' },
+    { text: 'Projekte', target: '#', delay: '5.25s' },
   ],
 };
 
