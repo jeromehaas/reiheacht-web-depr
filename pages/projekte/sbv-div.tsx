@@ -11,8 +11,8 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <H2>Eine ganze Welt, nur für dich<Highlight>.</Highlight></H2>,
-    text: <Paragraph>Für verschiedene Erklärfilme zum Thema Schweizer Landwirtschaft haben wir für  den Schweizer Bauernverband eine einzigartige illustrierte Welt voller Tiere und Menschen kreiert, welche jederzeit nach Bedarf modifiziert und erweitert werden kann. Neben den Erklärfilmen werden die Illustrationen auch für Print und andere Medien eingesetzt.</Paragraph>,
+    title: <>Eine ganze Welt, nur für dich<Highlight>.</Highlight></>,
+    text: <>Für verschiedene Erklärfilme zum Thema Schweizer Landwirtschaft haben wir für  den Schweizer Bauernverband eine einzigartige illustrierte Welt voller Tiere und Menschen kreiert, welche jederzeit nach Bedarf modifiziert und erweitert werden kann. Neben den Erklärfilmen werden die Illustrationen auch für Print und andere Medien eingesetzt.</>,
   },
   projectOverview: {
     imageLink: '/logos/projects/schweizer-bauernverband.svg',
@@ -21,8 +21,7 @@ const content = {
     text: 'Storyboard, Design, Illustration & Animation',
   },
   outro: {
-    title: <H2>Möchtest du auch deine eigene <Highlight>Welt</Highlight>?</H2>,
-    button: <Button link="/#contact" content="Sitzplatz buchen" animated className="active" customDelay="3s" />,
+    title: <>Möchtest du auch deine eigene <Highlight>Welt</Highlight>?</>,
   },
 
 };

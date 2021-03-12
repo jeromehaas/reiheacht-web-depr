@@ -62,7 +62,7 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 50px; 
-  max-width: 470px;
+  max-width: 450px;
 
  @media (max-width: 800px) {
   font-size: 50px;

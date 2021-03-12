@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from '@/components/pages/Project';
-import { H2 } from '@/components/text/Titles';
+import { H2 } from '@/components/text/Text';
 import Paragraph from '@/components/text/Paragraph';
 import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
@@ -11,8 +11,8 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <H2>Dein Erklärfilm, auf dich zugeschnitten<Highlight>.</Highlight></H2>,
-    text: <Paragraph>Für die im Juni 2021 anstehende Trinkwasserinitiative durften wir zwei animierte Erklärfilme zu den Auswirkungen der Trinkwasserinitiative realisieren, welche überwiegend auf ihrer Webseite sowie Youtube eingesetzt werden. Damit sich diese Videos von den bisherigen Erklärfilmen abheben, haben wir hier einen neuen Stil kreiert.</Paragraph>,
+    title: <>Dein Erklärfilm, auf dich zugeschnitten<Highlight>.</Highlight></>,
+    text: <>Für die im Juni 2021 anstehende Trinkwasserinitiative durften wir zwei animierte Erklärfilme zu den Auswirkungen der Trinkwasserinitiative realisieren, welche überwiegend auf ihrer Webseite sowie Youtube eingesetzt werden. Damit sich diese Videos von den bisherigen Erklärfilmen abheben, haben wir hier einen neuen Stil kreiert.</>,
   },
   projectOverview: {
     imageLink: '/logos/projects/schweizer-bauernverband.svg',
@@ -21,8 +21,7 @@ const content = {
     text: 'Storyboard, Design, Illustration & Animation',
   },
   outro: {
-    title: <H2>Ebenfalls an einem massgeschneidertem Erklärfilm <Highlight>interessiert</Highlight>?</H2>,
-    button: <Button link="/#contact" content="Sitzplatz buchen" animated className="active" customDelay="3s" />,
+    title: <>Ebenfalls an einem massgeschneidertem Erklärfilm <Highlight>interessiert</Highlight>?</>,
   },
 };
 
