@@ -40,7 +40,7 @@ const StyledServiceTile = styled.div`
 
     .textWrapper {
       height: 100%;
-      margin-top: -20px;
+      /* margin-top: -20px; */
 
     .listItems {
         max-height: unset;
