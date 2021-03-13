@@ -10,7 +10,8 @@ import Reveal, { Fade } from 'react-awesome-reveal';
 
 interface Props {
   children?: React.ReactNode;
-  content?: any
+  content?: any;
+  closeTriangleTarget?: string;
 }
 
 const Blog: React.FunctionComponent<Props> = ({ children, closeTriangleTarget }) => (

@@ -1,13 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { H3 } from '@/components/text/Titles';
 import Linker from '@/components/buttons/Link';
+import { Lottie } from '@crello/react-lottie';
+import employeeAnimation from '../../public/animations/employee.json';
 
 const StyledEmployeeTile = styled.div`
   width: calc(100% / 3);
   height: 100%;
   overflow: hidden;
   position: relative;
+  
 
   @media (max-width: 850px) {
     width: calc(100% / 2);
@@ -33,12 +36,14 @@ const StyledEmployeeTile = styled.div`
   }
 
   .background-animation {
-    background-color: white !important;
+    background-color: white;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+
+
   }  
 
   .overlay {
@@ -105,28 +110,49 @@ interface Props {
   content: any
 }
 
-const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => (
-  <StyledEmployeeTile>
+const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
+  const [animationState, setAnimationState] = useState('inactive');
 
-    <div className="background-animation" />
+  return (
 
-    <div className="initial">
-      <img src={content.image} alt={content.alt} />
-    </div>
+    <StyledEmployeeTile
+      onMouseEnter={() => setAnimationState('active')}
+      onMouseLeave={() => setAnimationState('inactive')}
+    >
 
-    <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
-      <div className="text-wrapper">
-        {content.title}
-        {content.description}
+      <div
+        className="background-animation"
+
+      />
+      <Lottie
+        config={{ animationData: employeeAnimation, autoplay: false }}
+        playingState="playing"
+        speed={1}
+        width="100%"
+        height="100%"
+        style={{
+          position: 'absolute', top: '0', left: '0', bottom: '0', right: '0',
+        }}
+        direction={animationState === 'active' ? 1 : -1}
+      />
+
+      <div className="initial">
+        <img src={content.image} alt={content.alt} />
       </div>
-      <div className="icon-wrapper">
-        <a href={`mailto:${content.email}`}>
-          <img src="/icons/other/email.svg" alt="Email" />
-        </a>
+
+      <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
+        <div className="text-wrapper">
+          {content.title}
+          {content.description}
+        </div>
+        <div className="icon-wrapper">
+          <a href={`mailto:${content.email}`}>
+            <img src="/icons/other/email.svg" alt="Email" />
+          </a>
+        </div>
       </div>
-    </div>
 
-  </StyledEmployeeTile>
-);
-
+    </StyledEmployeeTile>
+  );
+};
 export default EmployeeTile;

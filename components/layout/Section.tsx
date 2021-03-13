@@ -11,6 +11,7 @@ interface Props {
 const StyledSection = styled.div`
   width: 100%;
   padding-top: 150px;
+  position: relative;
   min-height: ${(p) => (p.hero ? 'calc(100vh - 60px)' : null)};
 
   @media (max-width: 800px) {
