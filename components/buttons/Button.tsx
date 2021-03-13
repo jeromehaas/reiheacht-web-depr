@@ -54,13 +54,13 @@ const getColor = ({ color, theme }) => {
 const StyledButton = styled.button`
   position: relative;
   width: auto;
-  display: inline-block;
   min-width: 200px;
   padding: 10px 15px;
   border-radius: 5px;
   border: none;
   outline: none;
   margin: 0 30px 30px 0;
+  float: left;
   ${checkAnimated};
   ${getColor};
 
