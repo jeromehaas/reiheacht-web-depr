@@ -15,18 +15,25 @@ const StyledScroller = styled.div`
     bottom: 0;
     margin: 0 auto;
     width: 100%;
+    opacity: 0;
+    animation: appear 1s forwards 6s;
 
   img {
     width: 45px;
     padding: 15px;
-    animation: pulse 2s infinite;
+    animation: pulse 2s infinite 5s;
   }
 
   @keyframes pulse {
   0% { transform: translate(0, 0) }
   50% { transform: translate(0, 10px) }
   100% { transform: translate(0, 0)} }
-`;
+
+  @keyframes appear {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+  }
+  `;
 
 interface Props { }
 
