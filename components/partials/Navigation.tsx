@@ -188,12 +188,12 @@ const navigationItems = [
     section: 'contact',
     type: 'anchor',
   },
-  {
-    child: 'Blog',
-    link: '/blog/overview',
-    section: 'blog',
-    type: 'link',
-  },
+  // {
+  //   child: 'Blog',
+  //   link: '/blog/overview',
+  //   section: 'blog',
+  //   type: 'link',
+  // },
 ];
 
 interface Props { }
