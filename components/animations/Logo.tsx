@@ -42,8 +42,8 @@ const StyledLogo = styled.div`
 
 const Logo: React.FunctionComponent<Props> = () => (
   <StyledLogo>
-    <img className="eyes" src="/animations/logo_eyes.svg" />
-    <img className="head" src="/animations/logo_head.svg" />
+    <img className="eyes" src="/animations/logo_eyes.svg" alt="eyes" />
+    <img className="head" src="/animations/logo_head.svg" alt="head" />
   </StyledLogo>
 
 );
