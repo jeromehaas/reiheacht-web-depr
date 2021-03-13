@@ -20,7 +20,7 @@ const content = {
 const Start: React.FunctionComponent<Props> = () => (
   <Section hero id="home">
     <MainTextBlock content={content} />
-    <Space height="150px" />
+    <Space height="250px" />
     <Scroller />
   </Section>
 );
