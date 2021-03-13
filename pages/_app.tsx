@@ -43,6 +43,7 @@ const App: React.FunctionComponent<Props> = ({ Component, pageProps }) => (
         <meta name="msapplication-config" content="/favicon/browserconfig.xml" />
         <meta name="theme-color" content="#ffffff" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <script src="https://cdn.vhx.tv/assets/player.js" />
       </Head>
       <Component {...pageProps} />
     </ThemeProvider>

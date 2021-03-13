@@ -7,10 +7,14 @@ import Linker from '@/components/buttons/Link';
 const StyledScroller = styled.div`
 
  display: flex;
- flex-direction: column;
-justify-content: center;
-align-items: center;
+      flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 30px;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
 
   img {
     width: 45px;

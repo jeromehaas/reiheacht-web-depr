@@ -8,6 +8,7 @@ const getDimensions = ({ width, height }) => css`
 
 const StyledSpace = styled.div`
   ${getDimensions};
+  display: block;
 `;
 interface Props {
   height?: string;

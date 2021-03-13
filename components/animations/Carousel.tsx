@@ -12,23 +12,23 @@ const StyledCarousel = styled.span`
   vertical-align: middle;
 
   @media (max-width: 900px) {
-    width: 530px;
+    width: 590px;
   }
 
   @media (max-width: 720px) {
-    width: 440px;
+    width: 510px;
   }
 
   @media (max-width: 620px) {
-    width: 355px;
+    width: 410px;
   }
 
   @media (max-width: 525px) {
-    width: 265px;
+    width: 320px;
   }
 
   @media (max-width: 420px) {
-    width: 220px;
+    width: 250px;
   }
 
 
