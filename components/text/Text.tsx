@@ -69,7 +69,7 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 50px; 
-  max-width: 450px;
+  max-width: 660px;
   font-family: 'Helvetica Neue 85 Heavy';
 
   @media (max-width: 720px) {

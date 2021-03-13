@@ -58,7 +58,7 @@ const tileContent = [
 
 const textBlockContent = {
   section: 'services',
-  title: <>Erwecke deine Idee zum <Highlight>Leben</Highlight>.</>,
+  title: <>Erwecke deine Idee <br />zum <Highlight>Leben</Highlight>.</>,
   text: <>Das tun wir den ganzen Tag – und wir lieben es.</>,
 };
 
