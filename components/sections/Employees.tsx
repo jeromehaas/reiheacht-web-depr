@@ -28,14 +28,6 @@ const tileContent = [
   },
   {
     image: '/images/employees/mock-persona-female.png',
-    alt: 'Ramona Basmaci',
-    title: <H4>Ramona Basmaci</H4>,
-    description: <P>Buchhaltung & HR </P>,
-    email: 'ramona.basmaci@reiheacht.ch',
-    overlayColor: '#0374B6',
-  },
-  {
-    image: '/images/employees/mock-persona-female.png',
     alt: 'Julia Sen',
     title: <H4>Julia Sen</H4>,
     description: <P>Sachbearbeiterin</P>,
