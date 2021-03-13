@@ -11,7 +11,7 @@ import Logo from '@/components/animations/Logo';
 import styled from 'styled-components';
 
 const StyledContact = styled.div`
-  
+
   .wrapper {
     display: flex;
     flex-direction: row;
