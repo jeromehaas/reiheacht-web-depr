@@ -4,7 +4,7 @@ import Limiter from '@/components/layout/Limiter';
 import SocialMediaButton from '@/components/buttons/SocialMediaButton';
 import Linker from '@/components/buttons/Link';
 import Spacer from '@/components/layout/Spacer';
-import Paragraph from '../text/Paragraph';
+import { P } from '@/components/text/Text';
 
 const StyledFooter = styled.footer`
   width: 100%;
@@ -16,13 +16,6 @@ const StyledFooter = styled.footer`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
-    @media (max-width: 875px) {
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items: flex-start;
-  }
-
   }
 
   .whiteLine {
@@ -33,36 +26,52 @@ const StyledFooter = styled.footer`
   }
 
   .addressItem {
-    color: ${(p) => p.theme.white};
     display: inline-block;
-    font-size: 12px;
-    line-height: 1.5;
-
-    @media (max-width: 875px) {
-      display: block;
-  }
-
-    &:first-child {
-      padding-left: 0;
-    }
-
-    &:last-child{
-        border: 0;
-    }
-  
+    padding: 0 10px;
+    border-right: 1px solid ${(p) => p.theme.white};
+    line-height: 1;
+    &:first-child { padding-left: 0; }
+    &:last-child{ border: 0; }
   }
 
   .legalItem {
-    color: ${(p) => p.theme.white};
     display: inline-block;
-    margin-right: 10px;
-    font-size: 12px;
-    line-height: 1
+    margin-left: 10px;
+    line-height: 1;
   }
 
   .socialMediaWrapper {
     display: flex;
     justify-content: flex-end;
+  }
+
+  @media (max-width: 1000px) {
+
+    .wrapper {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .addressItem {
+      display: block;
+      padding: 0;
+      line-height: 1.5;
+      border: 0;
+    }
+
+    .legalLinks {
+      margin-top: 15px;
+    }
+
+    .legalItem {
+      padding: 0;
+      line-height: 1.5;
+      border: 0;
+      margin-left: 0;
+      margin-right: 10px;
+    }
+
   }
 
 `;
@@ -91,7 +100,7 @@ const Footer: React.FunctionComponent<Props> = () => (
       <div className="wrapper">
         <div className="address">
           {addressItems.map((item, index) => (
-            <p key={index} className="addressItem">{item}</p>
+            <P key={index} size="small" className="addressItem">{item}</P>
           ))}
         </div>
         <div className="legal">
