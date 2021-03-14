@@ -15,22 +15,25 @@ const StyledCarousel = styled.span`
     width: 590px;
   }
 
-  @media (max-width: 720px) {
+  @media (max-width: 750px) {
     width: 510px;
   }
 
-  @media (max-width: 620px) {
+  @media (max-width: 670px) {
     width: 410px;
   }
 
-  @media (max-width: 525px) {
-    width: 320px;
+  @media (max-width: 550px) {
+    width: 340px;
   }
 
-  @media (max-width: 420px) {
-    width: 250px;
+  @media (max-width: 470px) {
+    width: 290px;
   }
 
+  @media (max-width: 415px) {
+    width: 240px;
+  }
 
 
 `;
@@ -60,7 +63,7 @@ const CarouselWrapper = styled.div`
       }
     }
 
-    @media (max-width: 720px) {
+    @media (max-width: 750px) {
       @keyframes carousel {
       0% {top: -5px;}
       35% {top: -72px;}
@@ -69,7 +72,7 @@ const CarouselWrapper = styled.div`
       }
     }
 
-    @media (max-width: 620px) {
+    @media (max-width: 670px) {
       @keyframes carousel {
       0% {top: -5px;}
       35% {top: -65px;}
@@ -78,20 +81,30 @@ const CarouselWrapper = styled.div`
     }
     }
 
-    @media (max-width: 525px) {
+    @media (max-width: 550px) {
       top: -2px;
       @keyframes carousel {
       0% {top: -2px;}
-      35% {top: -52px;}
-      65% {top: -52px;}
-      100% {top: -102px;}
+      35% {top: -57px;}
+      65% {top: -57px;}
+      100% {top: -111px;}
       }
     }
 
-    @media (max-width: 420px) {
-      top: 0px;
+    @media (max-width: 470px) {
+      top: -2px;
       @keyframes carousel {
-      0% {top: 0px;}
+      0% {top: -2px;}
+      35% {top: -51px;}
+      65% {top: -51px;}
+      100% {top: -100px;}
+      }
+    }
+
+    @media (max-width: 415px) {
+      top: -1px;
+      @keyframes carousel {
+      0% {top: -1px;}
       35% {top: -45px;}
       65% {top: -45px;}
       100% {top: -90px;}
