@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H3, P } from '@/components/text/Text';
+import { H3, H4, P } from '@/components/text/Text';
 import Link from 'next/link';
 import Image from '@/components/partials/Image';
 import { keyframes } from '@emotion/react';
@@ -76,8 +76,6 @@ const StyledProjectTile = styled.div`
     transition: all 0.7s ease
   }
 
-
-
 `;
 
 interface Props {
@@ -96,7 +94,7 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
             <Reveal keyframes={moveUp} duration={700} damping={2} fraction={0}>
               <H3>{content.title}</H3>
               <Spacer marginBottom="15px" />
-              <P>{content.description}</P>
+              <P size="small">{content.description}</P>
             </Reveal>
           </div>
         </div>
