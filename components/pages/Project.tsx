@@ -60,7 +60,7 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
         {children}
         <Spacer marginBottom="60px" />
         <H2>{content.outro.title}</H2>
-        <HorizontalLine className="active" animated={false} />
+        <HorizontalLine animated delay="0.3s" />
         <Button type="link" target="/" text="Sitzplatz buchen" />
         <Spacer marginBottom="130px" />
       </Section>
