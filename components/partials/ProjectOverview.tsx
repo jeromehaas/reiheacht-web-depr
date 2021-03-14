@@ -18,52 +18,60 @@ const StyledProjectOverview = styled.div`
     align-items: center;
     margin-bottom: 30px;
 
-    .logo {
-      height: 100%;
-    }
-      
-    img {
-      height: 100%;
-      padding: 10px 0;
-      max-width: 100%;
-    }
+      .logo {
+        height: 100%;
+      }
+        
+      img {
+        height: 100%;
+        padding: 10px 0;
+        max-width: 100%;
+      }
 
-    .text-content {
-      text-align: left;
-    }
+      .text-content {
+        text-align: left;
+      }
+
   }
 
   .mobile {
     display: none;
-  }
-
-  @media (max-width: 800px) {
-
-    .desktop {
-      display: none;
-    }
-
-    .mobile {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
     padding: 30px 0;
 
-
-      img {
-        height: 100%;
-        padding: 10px 0;
-      }
-
-      .text-content {
-        text-align: center;
-      }
-
+    .logo {
+      display: flex;
     }
 
- }
+    img {
+      /* height: 100%; */
+      max-width: 80%;
+      margin: 0 auto;
+      padding: 10px 0;
+    }
+
+    .text-content {
+      text-align: center;
+    }
+
+  }
+
+}
+
+@media (max-width: 800px) {
+
+  .desktop {
+    display: none;
+   }
+
+  .mobile {
+    display: flex;
+  }
+
+}
 
 `;
 
