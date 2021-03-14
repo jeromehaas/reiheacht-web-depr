@@ -224,7 +224,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                 ))}
               </div>
               <Linker type="anchor" target="home" delay={0}>
-                <img className="logo" src="/logos/logo_white.svg" alt="reiheacht" />
+                <img className="logo" src="/logos/logo-white.svg" alt="reiheacht" />
               </Linker>
             </div>
           </Limiter>
