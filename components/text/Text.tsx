@@ -209,8 +209,8 @@ const getParagraphSize = ({ size }) => {
   }
 };
 
-const checkParagraphAnimated = ({ animate, delay }) => {
-  if (animate && delay) {
+const checkParagraphAnimated = ({ animated, delay }) => {
+  if (animated && delay) {
     return css`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
