@@ -1,9 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H3, P } from '@/components/text/Text';
+import { H3, P, ListItem } from '@/components/text/Text';
 import Reveal, { Slide } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
-import ListItem from '@/components/text/ListItem';
 
 const moveUp = keyframes`
   from {top: 40px;  position: relative;}
@@ -86,11 +85,11 @@ const StyledServiceTile = styled.div`
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 15px;
+        padding: 15px 30px;
       }
 
       .listItems {
-        padding: 0 15px;
+        padding: 0 30px;
         height: 0px;
         transition: all 0.7s ease;
         opacity: 0;
@@ -121,7 +120,7 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
           <ul>
             <Reveal keyframes={moveUp} duration={700} damping={2} fraction={0}>
               {content.description.map((item, index) => (
-                <ListItem key={index}>
+                <ListItem size="normal" key={index}>
                   {item}
                 </ListItem>
               ))}

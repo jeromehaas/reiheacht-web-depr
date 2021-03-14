@@ -1,12 +1,11 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
-import { H2 } from '@/components/text/Text';
+import { H2, ListItem } from '@/components/text/Text';
 import Highlight from '@/components/text/Highlight';
 import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock';
 import Button from '@/components/buttons/Button';
 import TileSet from '@/components/partials/TileSet';
-import ListItem from '@/components/text/ListItem';
 
 interface Props { }
 
