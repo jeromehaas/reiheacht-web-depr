@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const StyledSocialMediaButton = styled.a`
+const StyledSocialMediaButton = styled.div`
   width: 30px;
   height: 30px;
   border-radius: 5px;
@@ -10,6 +10,7 @@ const StyledSocialMediaButton = styled.a`
   justify-content: center;
   align-items: center;
   margin: ${(p) => p.margin};
+  cursor: pointer;
   
 
   img {

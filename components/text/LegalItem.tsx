@@ -1,5 +1,5 @@
 import React from 'react';
-import Paragraph from '@/components/text/Paragraph';
+import { P, H3 } from '@/components/text/text';
 import Spacer from '@/components/layout/Spacer';
 
 interface Props {
@@ -9,8 +9,8 @@ interface Props {
 
 const LegalItem: React.FunctionComponent<Props> = ({ title, text }) => (
   <>
-    <Paragraph color="darkGrey" bold="true">{title}</Paragraph>
-    <Paragraph color="darkGrey">{text}</Paragraph>
+    <P size="normal" color="darkGrey" bold="true">{title}</P>
+    <P size="small" color="darkGrey">{text}</P>
     <Spacer marginBottom="30px" />
   </>
 );
