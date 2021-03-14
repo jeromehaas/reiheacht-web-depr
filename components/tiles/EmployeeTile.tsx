@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { H3, H4, P } from '@/components/text/Text';
 import Linker from '@/components/buttons/Link';
 import { Lottie } from '@crello/react-lottie';
-import employeeAnimation from '../../public/animations/employee.json';
+import employeeAnimationBlue from '../../public/animations/employee-blue.json';
+import employeeAnimationOrange from '../../public/animations/employee-orange.json';
 
 const StyledEmployeeTile = styled.div`
   width: calc(100% / 3);
@@ -127,7 +128,7 @@ const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
 
       />
       <Lottie
-        config={{ animationData: employeeAnimation, autoplay: false }}
+        config={{ animationData: content.animationColor === 'blue' ? employeeAnimationBlue : employeeAnimationOrange, autoplay: false }}
         playingState="playing"
         speed={1}
         width="100%"
