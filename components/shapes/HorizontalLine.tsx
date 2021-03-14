@@ -21,8 +21,9 @@ const StyledHorizontalLine = styled.i`
 `;
 
 interface Props {
-  className?: String;
-  animated?: Boolean;
+  className?: string;
+  animated?: boolean;
+  delay?: string;
 }
 
 const HorizontalLine: React.FunctionComponent<Props> = ({ className, animated, delay }) => (

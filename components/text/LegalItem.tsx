@@ -1,10 +1,10 @@
 import React from 'react';
-import { P, H3 } from '@/components/text/text';
+import { P, H3 } from '@/components/text/Text';
 import Spacer from '@/components/layout/Spacer';
 
 interface Props {
-  title: string;
-  text: string;
+  title?: any;
+  text?: any;
 }
 
 const LegalItem: React.FunctionComponent<Props> = ({ title, text }) => (

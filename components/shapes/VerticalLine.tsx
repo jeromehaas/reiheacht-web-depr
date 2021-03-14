@@ -21,8 +21,9 @@ ${({ animated, delay }) => animated === true && delay
 `;
 
 interface Props {
-  className?: String;
-  animated?: Boolean;
+  className?: string;
+  animated?: boolean;
+  delay?: string;
 }
 
 const VerticalLine: React.FunctionComponent<Props> = ({ className, animated, delay }) => (

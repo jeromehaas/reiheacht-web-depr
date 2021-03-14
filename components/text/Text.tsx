@@ -256,6 +256,13 @@ const ListItem = styled(P)`
 
 `;
 
+const HL = styled.span`
+    ${({ color, theme }) => color === 'blue'
+    && css`
+      color: ${theme.blue}
+    `}
+`;
+
 export {
   H1,
   H2,
@@ -263,4 +270,5 @@ export {
   H4,
   P,
   ListItem,
+  HL,
 };
