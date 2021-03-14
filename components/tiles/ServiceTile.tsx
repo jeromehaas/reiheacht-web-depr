@@ -58,7 +58,7 @@ const StyledServiceTile = styled.div`
     opacity: 0;
   }
 
-  p {
+  ${ListItem} {
     top: 30px;
     opacity: 0;
     position: relative;
@@ -85,13 +85,12 @@ const StyledServiceTile = styled.div`
       opacity: 1;
     }
 
-    p {
+    ${ListItem} {
       top: 5px;
-      opacity: 1;
+      opacity: 1
     }
 
 }
-
 
   @media (max-width: 850px) {
     width: calc(100% / 2);
@@ -115,20 +114,16 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
     </div>
     <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
       <div className="textWrapper">
-
         <div className="title">
           <H3>{content.title}</H3>
         </div>
-
         <div className="listItems">
           <ul>
-
             {content.description.map((item, index) => (
               <ListItem size="normal" key={index}>
                 {item}
               </ListItem>
             ))}
-
           </ul>
         </div>
 
