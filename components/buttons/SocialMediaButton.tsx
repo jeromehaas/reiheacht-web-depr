@@ -19,11 +19,11 @@ const StyledSocialMediaButton = styled.a`
 
 const renderSwitch = (type) => {
   switch (type) {
-    case 'youtube': return <img src="/icons/social-media-icons/youtube.svg" alt="Youtube" />;
-    case 'vimeo': return <img src="/icons/social-media-icons/vimeo.svg" alt="Vimeo" />;
-    case 'linkedin': return <img src="/icons/social-media-icons/linkedin.svg" alt="LinkedIn" />;
-    case 'twitter': return <img src="/icons/social-media-icons/twitter.svg" alt="Twitter" />;
-    default: return <img src="/icons/social-media-icons/youtube.svg" alt="Youtube" />;
+    case 'youtube': return <a href="https://www.youtube.com/channel/UCOYRo7GNe7B9oe1ADcnE3TA" target="_blank" rel="noopener noreferrer"><img src="/icons/social-media-icons/youtube.svg" alt="Youtube" /></a>;
+    case 'vimeo': return <a href="https://www.vimeo.com/reiheacht" target="_blank" rel="noopener noreferrer"><img src="/icons/social-media-icons/vimeo.svg" alt="Vimeo" /></a>;
+    case 'linkedin': return <a href="https://www.linkedin.com/company/reiheacht/" target="_blank" rel="noopener noreferrer"><img src="/icons/social-media-icons/linkedin.svg" alt="LinkedIn" /></a>;
+    case 'twitter': return <a href="https://twitter.com/reiheacht" target="_blank" rel="noopener noreferrer"><img src="/icons/social-media-icons/twitter.svg" alt="Twitter" /></a>;
+    default: return <a href="https://www.youtube.com/channel/UCOYRo7GNe7B9oe1ADcnE3TA" target="_blank" rel="noopener noreferrer"><img src="/icons/social-media-icons/youtube.svg" alt="Youtube" /></a>;
   }
 };
 
