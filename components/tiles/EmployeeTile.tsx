@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { H3 } from '@/components/text/Text';
+import { H3, H4, P } from '@/components/text/Text';
 import Linker from '@/components/buttons/Link';
 import { Lottie } from '@crello/react-lottie';
 import employeeAnimation from '../../public/animations/employee.json';
@@ -53,7 +53,7 @@ const StyledEmployeeTile = styled.div`
     left: 0; 
     width: 100%;
     height: 80px;
-    padding: 15px;
+    padding: 15px 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -72,15 +72,16 @@ const StyledEmployeeTile = styled.div`
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      margin-right: 15px;
 
       h4 { 
         margin-bottom: 10px; 
       }
      
-      p { 
+      /* p {
         margin: 0px;
         font-size: 14px;
-      }
+      } */
      
       h4, li, p  {
         line-height: 1;
@@ -90,7 +91,8 @@ const StyledEmployeeTile = styled.div`
     
     .icon-wrapper {
       img {
-        width: 35px;
+        width: 25px;
+
 
       @media (max-width: 350px) {
         margin-top: 10px;
@@ -142,12 +144,12 @@ const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
 
       <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
         <div className="text-wrapper">
-          {content.title}
-          {content.description}
+          <H4>{content.title}</H4>
+          <P size="small">{content.description}</P>
         </div>
         <div className="icon-wrapper">
           <a href={`mailto:${content.email}`}>
-            <img src="/icons/other/email.svg" alt="Email" />
+            <img src="/icons/other/email.svg" alt="E-Mail Icon" />
           </a>
         </div>
       </div>
