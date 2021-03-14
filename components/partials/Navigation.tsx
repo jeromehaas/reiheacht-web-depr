@@ -49,6 +49,8 @@ const DesktopNavigation = styled.nav`
 
   .logo {
     width: 125px !important;
+    margin: unset;
+    float: right;
   }
 
   .link {
@@ -57,7 +59,7 @@ const DesktopNavigation = styled.nav`
     text-decoration: none;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 850px) {
     display: none;
   }
   
@@ -103,6 +105,7 @@ const MobileNavigation = styled.nav`
 
   .logo {
     height:30px !important;
+    margin: 0 !important;
   }
 
   .linkWrapper {
@@ -152,7 +155,7 @@ const MobileNavigation = styled.nav`
 
 
 
-  @media (max-width: 1000px) {
+  @media (max-width: 850px) {
     display: block;
   }
 `;
@@ -235,7 +238,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
           <Limiter>
             <div className="container">
               <Anchor to="home" spy smooth duration={1000}>
-                <img className="logo" src="/logos/logo_white.svg" alt="reiheacht" />
+                <img className="logo" src="/logos/logo-white.svg" alt="reiheacht" />
               </Anchor>
               <div onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
                 <Lottie
