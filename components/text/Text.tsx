@@ -234,7 +234,6 @@ const P = styled.p`
   ${getParagraphColor};
   ${getParagraphSize};
   ${checkParagraphAnimated};
-
 `;
 
 const ListItem = styled(P)`
