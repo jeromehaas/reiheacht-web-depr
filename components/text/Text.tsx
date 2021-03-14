@@ -214,13 +214,13 @@ const checkParagraphAnimated = ({ animated, delay }) => {
     return css`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
-      animation: ${`0.5s ease-in-out ${delay} 1 forwards appear}`};
-
-      @keyframes appear {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+      animation: ${`0.5s ease-in-out ${delay} 1 forwards slideIn}`};
+      position: relative;
+      left: -30px;
+      @keyframes slideIn {
+        0% {opacity: 0; left: -30px; }
+        100% {opacity: 1; left: 0px; }
     }
-
    `;
   }
 };
@@ -230,16 +230,21 @@ const P = styled.p`
   max-width: 600px;
   opacity: 1;
   line-height: 1.6;
+  color: red;
   font-family: 'Helvetica Neue 55 Roman', serif;
   ${getParagraphColor};
   ${getParagraphSize};
   ${checkParagraphAnimated};
-`;
+    ${({ bold }) => bold
+    && css`
+      font-family: 'Helvetica Neue 65 Medium', serif;
+    `}
+    `;
 
 const ListItem = styled(P)`
   position: relative;
   margin: 0 0 10px 15px;
-  line-height: 20px;
+  line-height: 1.2;;
 
   &::before {
     content: ' ';
@@ -250,10 +255,22 @@ const ListItem = styled(P)`
     left: -15px;
     width: 7px;
     height: 7px;
+    line-height: 1.2;
     border-radius: 50%;
     background-color: ${(p) => p.theme.white}
   }
 
+`;
+
+const HL = styled.span`
+    ${({ color, theme }) => color === 'blue'
+    && css`
+      color: ${theme.blue}
+    `}
+      ${({ bold }) => bold
+    && css`
+  font-family: 'Helvetica Neue 65 Medium', serif;
+    `}
 `;
 
 export {
@@ -263,4 +280,5 @@ export {
   H4,
   P,
   ListItem,
+  HL,
 };

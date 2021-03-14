@@ -66,6 +66,7 @@ const StyledServiceTile = styled.div`
     &:nth-child(1) { transition-delay: 0.1s; }
     &:nth-child(2) { transition-delay: 0.2s; }
     &:nth-child(3) { transition-delay: 0.3s; }
+    &:nth-child(4) { transition-delay: 0.4s; }
   }
 
   &:hover {

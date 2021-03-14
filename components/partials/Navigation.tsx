@@ -81,7 +81,7 @@ const MobileNavigation = styled.nav`
     align-items: center;
     color: white !important;
     animation-name: moveDown;
-    animation-duration: 1s;  
+    animation-duration: 0.7s;
     animation-delay: 0.2s;
     animation-direction: forwards;
     animation-fill-mode: forwards;

@@ -16,23 +16,23 @@ const StyledCarousel = styled.span`
   }
 
   @media (max-width: 750px) {
-    width: 510px;
+    width: 520px;
   }
 
   @media (max-width: 670px) {
-    width: 410px;
+    width: 420px;
   }
 
   @media (max-width: 550px) {
-    width: 340px;
+    width: 350px;
   }
 
   @media (max-width: 470px) {
-    width: 290px;
+    width: 300px;
   }
 
   @media (max-width: 415px) {
-    width: 240px;
+    width: 250px;
   }
 
 

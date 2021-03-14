@@ -1,16 +1,16 @@
 import React from 'react';
-import Paragraph from '@/components/text/Paragraph';
+import { P, H3 } from '@/components/text/Text';
 import Spacer from '@/components/layout/Spacer';
 
 interface Props {
-  title: string;
-  text: string;
+  title?: any;
+  text?: any;
 }
 
 const LegalItem: React.FunctionComponent<Props> = ({ title, text }) => (
   <>
-    <Paragraph color="darkGrey" bold="true">{title}</Paragraph>
-    <Paragraph color="darkGrey">{text}</Paragraph>
+    <P bold size="normal" color="darkGrey" bold="true">{title}</P>
+    <P size="small" color="darkGrey">{text}</P>
     <Spacer marginBottom="30px" />
   </>
 );
