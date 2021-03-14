@@ -4,7 +4,7 @@ import { Lottie } from '@crello/react-lottie';
 import { Link as Anchor } from 'react-scroll';
 import { useSelector, useDispatch, RootStateOrAny } from 'react-redux';
 import { toggleMobileNavigation, updateCurrentPosition } from 'redux/actions';
-import { H2 } from '@/components/text/Titles';
+import { H2 } from '@/components/text/Text';
 import Reveal, { Fade } from 'react-awesome-reveal';
 
 import cx from 'classnames';

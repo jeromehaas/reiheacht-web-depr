@@ -1,6 +1,6 @@
 import React from 'react';
 import Legal from '@/components/pages/Legal';
-import { H2, H3 } from '@/components/text/Titles';
+import { H2, H3 } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
 import Spacer from '@/components/layout/Spacer';
 import ListItem from '@/components/text/ListItem';

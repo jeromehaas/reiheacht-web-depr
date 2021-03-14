@@ -1,7 +1,7 @@
 import React from 'react';
 import PageWrapper from '@/components/layout/PageWrapper';
 import styled from 'styled-components';
-import { H2 } from '@/components/text/Titles';
+import { H2 } from '@/components/text/Text';
 import Button from '@/components/buttons/Button';
 import Spacer from '@/components/layout/Spacer';
 import { Lottie } from '@crello/react-lottie';

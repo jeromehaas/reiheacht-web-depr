@@ -1,6 +1,6 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
-import { H2 } from '@/components/text/Titles';
+import { H2 } from '@/components/text/Text';
 import Highlight from '@/components/text/Highlight';
 import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock';

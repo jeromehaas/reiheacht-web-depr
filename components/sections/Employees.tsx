@@ -19,28 +19,31 @@ const textBlockContent = {
 
 const tileContent = [
   {
-    image: '/images/employees/mock-persona-male.png',
+    image: '/images/employees/marc.png',
     alt: 'Marc Sen',
-    title: <H4>Marc Sen</H4>,
-    description: <P>Gründer & Motion Designer</P>,
+    title: 'Marc Sen',
+    description: 'Gründer & Motion Designer',
     email: 'marc.sen@reiheacht.ch',
     overlayColor: '#0374B6',
+    animationColor: 'orange',
   },
   {
-    image: '/images/employees/mock-persona-female.png',
+    image: '/images/employees/julia.png',
     alt: 'Julia Sen',
-    title: <H4>Julia Sen</H4>,
-    description: <P>Sachbearbeiterin</P>,
+    title: 'Julia Sen',
+    description: 'Sachbearbeiterin',
     email: 'julia.sen@reiheacht.ch ',
     overlayColor: '#0374B6',
+    animationColor: 'orange',
   },
   {
-    image: '/images/employees/mock-persona-male.png',
+    image: '/images/employees/jerome.png',
     alt: 'Jérôme Haas',
-    title: <H4>Jérôme Haas</H4>,
-    description: <P>Web-Entwickler</P>,
+    title: 'Jérôme Haas',
+    description: 'Web-Entwickler',
     email: 'jerome.haas@reiheacht.ch ',
     overlayColor: '#0374B6',
+    animationColor: 'blue',
   },
 
 ];

@@ -121,10 +121,8 @@ const H3 = styled.h3`
  }
 
  @media (max-width: 550px) {
-  font-size: 20px;
+  font-size: 25px;
  }
-
-
 
 `;
 
@@ -239,10 +237,31 @@ const P = styled.p`
 
 `;
 
+const ListItem = styled(P)`
+  position: relative;
+  margin: 0 0 10px 15px;
+  line-height: 20px;
+
+  &::before {
+    content: ' ';
+    display: inline-block;
+    margin-right: 5px;
+    position: absolute;
+    top: 30%;
+    left: -15px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: ${(p) => p.theme.white}
+  }
+
+`;
+
 export {
   H1,
   H2,
   H3,
   H4,
   P,
+  ListItem,
 };

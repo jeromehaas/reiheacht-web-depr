@@ -1,16 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H3, P } from '@/components/text/Text';
+import { H3, H4, P } from '@/components/text/Text';
 import Link from 'next/link';
 import Image from '@/components/partials/Image';
 import { keyframes } from '@emotion/react';
-import Reveal, { Slide } from 'react-awesome-reveal';
 import Spacer from '@/components/layout/Spacer';
-
-const moveUp = keyframes`
-  from {top: 40px; position: relative;}
-  to {top: 5px; position: relative;}
-`;
 
 const StyledProjectTile = styled.div`
   width: calc(100% / 3);
@@ -18,40 +12,17 @@ const StyledProjectTile = styled.div`
   overflow: hidden;
   position: relative;
 
-
   .initial {
     width: 100%;
     height: 100%;
     display: block;
-
-    img {
-      width: 100%;
-      height: 100%;
-      display: inline-block;
-      object-fit: cover;
-    }
-
   }
 
-  &:hover {
-
-    .overlay {
-      top: 0px;
-      height: 100%;
-
-      .textWrapper {
-        opacity: 1;
-      }
-    }
-  }
-
-  @media (max-width: 850px) {
-    width: calc(100% / 2);
-  }
-
-  @media (max-width: 550px) {
-    width: calc(100% / 1);
-    margin-top: 30px;
+  img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
   }
 
   .overlay {
@@ -59,7 +30,7 @@ const StyledProjectTile = styled.div`
     top: 100%;
     right: 0;
     bottom: 0;
-    left: 0; 
+    left: 0;
     width: 100%;
     height: 100%;
     padding: 30px;
@@ -76,7 +47,51 @@ const StyledProjectTile = styled.div`
     transition: all 0.7s ease
   }
 
+  ${H3} {
+    top: 30px;
+    opacity: 0;
+    position: relative;
+    transition: all 0.7s ease;
+  }
 
+  ${P} {
+    top: 30px;
+    opacity: 0;
+    position: relative;
+    transition: all 0.7s ease 0.4s;
+  }
+
+  @media (max-width: 850px) {
+    width: calc(100% / 2);
+  }
+
+  @media (max-width: 550px) {
+    width: calc(100% / 1);
+    margin-top: 30px;
+  }
+
+  &:hover {
+
+    .overlay {
+      top: 0px;
+      height: 100%;
+    }
+
+    .textWrapper {
+      opacity: 1;
+    }
+
+    ${H3} {
+      top: 5px;
+      opacity: 1;
+    }
+
+    ${P} {
+      top: 5px;
+      opacity: 1;
+  }
+
+}
 
 `;
 
@@ -93,11 +108,9 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
       <a>
         <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
           <div className="textWrapper">
-            <Reveal keyframes={moveUp} duration={700} damping={2} fraction={0}>
-              <H3>{content.title}</H3>
-              <Spacer marginBottom="15px" />
-              <P>{content.description}</P>
-            </Reveal>
+            <H3>{content.title}</H3>
+            <Spacer marginBottom="15px" />
+            <P size="normal">{content.description}</P>
           </div>
         </div>
       </a>
