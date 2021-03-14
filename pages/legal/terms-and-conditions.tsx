@@ -1,6 +1,6 @@
 import React from 'react';
 import Legal from '@/components/pages/Legal';
-import { H2, H3 } from '@/components/text/Text';
+import { H2, H3, HL } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
 import Spacer from '@/components/layout/Spacer';
 import ListItem from '@/components/text/ListItem';
@@ -20,7 +20,7 @@ interface Props { }
 const TermsAndConditions: React.FunctionComponent<Props> = () => (
   <>
     <Legal>
-      <H2 color="darkGrey">Allgemeine Geschäftsbedingungen</H2>
+      <H2 color="darkGrey">Allgemeine Geschäftsbedingungen<HL color="blue">.</HL></H2>
       <Spacer marginBottom="60px" />
       {content.map((item, index) => (
         <LegalItem key={index} title={item.title} text={item.text} />
