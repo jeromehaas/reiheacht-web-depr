@@ -247,7 +247,7 @@ const ListItem = styled(P)`
     display: inline-block;
     margin-right: 5px;
     position: absolute;
-    top: 2.5px;
+    top: 30%;
     left: -15px;
     width: 7px;
     height: 7px;

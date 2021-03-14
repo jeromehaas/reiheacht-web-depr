@@ -4,11 +4,6 @@ import { H3, P, ListItem } from '@/components/text/Text';
 import Reveal, { Slide } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
 
-const moveUp = keyframes`
-  from {top: 40px;  position: relative;}
-  to {top: 5px; position: relative;}
-`;
-
 const StyledServiceTile = styled.div`
   width: calc(100% / 3);
   height: 100%;
@@ -19,47 +14,14 @@ const StyledServiceTile = styled.div`
     width: 100%;
     height: 100%;
     display: block;
-    /* position: relative; */
-
-    img {
-      width: 100%;
-      height: 100%;
-      display: inline-block;
-      object-fit: cover;
-    }
-
   }
 
-  &:hover {
-
-    .overlay {
-      bottom: 0;
-      height: 100%;
-    }
-
-    .textWrapper {
-      height: 100%;
-      /* margin-top: -20px; */
-
-    .listItems {
-        max-height: unset;
-        opacity: 1;
-      }
-
-    }
-
+  img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
   }
-
-  @media (max-width: 850px) {
-    width: calc(100% / 2);
-  }
-
-  @media (max-width: 550px) {
-    width: calc(100% / 1);
-    margin-top: 30px;
-  }
-
-
 
   .overlay {
     position: absolute;
@@ -72,31 +34,73 @@ const StyledServiceTile = styled.div`
   }
 
 
-    .textWrapper {
-      width: 100%;
-      height: 80px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      transition: all 0.7s ease;
+  .textWrapper {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.7s ease;
+  }
 
-      .title {
-        height: 80px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 15px 30px;
-      }
+  .title {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 30px;
+  }
 
-      .listItems {
-        padding: 0 30px;
-        height: 0px;
-        transition: all 0.7s ease;
-        opacity: 0;
+  .listItems {
+    padding: 0 30px;
+    height: 0px;
+    transition: all 0.7s ease;
+    opacity: 0;
+  }
 
-      }
+  p {
+    top: 30px;
+    opacity: 0;
+    position: relative;
+    transition: all 0.7s ease;
+    &:nth-child(1) { transition-delay: 0.1s; }
+    &:nth-child(2) { transition-delay: 0.2s; }
+    &:nth-child(3) { transition-delay: 0.3s; }
+  }
 
+  &:hover {
+
+    .overlay {
+      bottom: 0;
+      height: 100%;
     }
+
+    .textWrapper {
+      height: 100%;
+      margin-top: -15%;
+    }
+
+    .listItems {
+      max-height: unset;
+      opacity: 1;
+    }
+
+    p {
+      top: 5px;
+      opacity: 1;
+    }
+
+}
+
+
+  @media (max-width: 850px) {
+    width: calc(100% / 2);
+  }
+
+  @media (max-width: 550px) {
+    width: calc(100% / 1);
+    margin-top: 30px;
+  }
 
 `;
 
@@ -118,13 +122,13 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
 
         <div className="listItems">
           <ul>
-            <Reveal keyframes={moveUp} duration={700} damping={2} fraction={0}>
-              {content.description.map((item, index) => (
-                <ListItem size="normal" key={index}>
-                  {item}
-                </ListItem>
-              ))}
-            </Reveal>
+
+            {content.description.map((item, index) => (
+              <ListItem size="normal" key={index}>
+                {item}
+              </ListItem>
+            ))}
+
           </ul>
         </div>
 
