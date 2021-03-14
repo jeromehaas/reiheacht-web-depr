@@ -87,10 +87,10 @@ const ProjectOverview: React.FunctionComponent<Props> = ({ content }) => (
       <div className="logo">
         <img src={content.imageLink} alt={content.imageAlt} />
       </div>
-      <VerticalLine />
+      <VerticalLine animated delay="0.3s" />
       <div className="text-content">
         <H3>{content.title}</H3>
-        <P>{content.text}</P>
+        <P size="small">{content.text}</P>
       </div>
     </div>
 
@@ -98,7 +98,7 @@ const ProjectOverview: React.FunctionComponent<Props> = ({ content }) => (
       <div className="logo">
         <img src={content.imageLink} alt={content.imageAlt} />
       </div>
-      <HorizontalLine className="active" animated={false} />
+      <HorizontalLine animated delay="0.3s" />
       <div className="text-content">
         <H3>{content.title}</H3>
         <P>{content.text}</P>
