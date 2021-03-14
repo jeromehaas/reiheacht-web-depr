@@ -60,6 +60,7 @@ const StyledEmployeeTile = styled.div`
     justify-content: space-between;
     align-items: center;
     transition: ${(p) => p.theme.standardTransition};
+    background-color: ${(p) => p.theme.white};
 
     @media (max-width: 350px) {
       height: 110px;
@@ -76,7 +77,7 @@ const StyledEmployeeTile = styled.div`
       margin-right: 15px;
 
       h4 { 
-        margin-bottom: 10px; 
+        margin-bottom: 5px;
       }
      
       /* p {
@@ -92,7 +93,7 @@ const StyledEmployeeTile = styled.div`
     
     .icon-wrapper {
       img {
-        width: 25px;
+        width: 30px;
 
 
       @media (max-width: 350px) {
@@ -143,10 +144,10 @@ const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
         <img src={content.image} alt={content.alt} />
       </div>
 
-      <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
+      <div className="overlay">
         <div className="text-wrapper">
-          <H4>{content.title}</H4>
-          <P size="small">{content.description}</P>
+          <H4 color="darkGrey">{content.title}</H4>
+          <P color="darkGrey" size="small">{content.description}</P>
         </div>
         <div className="icon-wrapper">
           <a href={`mailto:${content.email}`}>

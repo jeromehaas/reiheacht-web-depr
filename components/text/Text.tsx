@@ -105,7 +105,7 @@ const H2 = styled.h2`
 
 const H3 = styled.h3`
   ${sharedTitleStyle};
-  font-family: 'Helvetica Neue 55 Roman', serif;
+  font-family: 'Helvetica Neue 65 Medium', serif;
   font-size: 25px;
 
   @media (max-width: 800px) {
@@ -128,7 +128,7 @@ const H3 = styled.h3`
 
 const H4 = styled.h4`
   ${sharedTitleStyle};
-  font-family: 'Helvetica Neue 55 Roman', serif;
+  font-family: 'Helvetica Neue 65 Medium', serif;
   font-size: 20px;   
 
   @media (max-width: 800px) {
