@@ -4,6 +4,7 @@ const initialState = {
   phone: '',
   message: '',
   isSent: false,
+  showError: false,
 };
 
 const contactForm = ((state = initialState, action) => {
@@ -35,8 +36,13 @@ const contactForm = ((state = initialState, action) => {
         phone: '',
         message: '',
         isSent: true,
+        showError: false,
       };
-      s;
+    case 'SHOW_ERROR_FORM_VALIDATION':
+      return {
+        ...state,
+        showError: action.payload,
+      };
     default: {
       return {
         ...state,

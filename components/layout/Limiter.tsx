@@ -6,7 +6,7 @@ const Limiter = styled.div`
   height: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 ${p => p.theme.spacingBig}; 
+  padding: 0 ${(p) => p.theme.spacingBig};
 `;
 
 export default Limiter;
