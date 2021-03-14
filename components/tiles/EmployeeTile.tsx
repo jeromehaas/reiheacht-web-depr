@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { H3 } from '@/components/text/Titles';
+import { H3 } from '@/components/text/Text';
 import Linker from '@/components/buttons/Link';
 import { Lottie } from '@crello/react-lottie';
 import employeeAnimation from '../../public/animations/employee.json';

@@ -1,6 +1,6 @@
 import React from 'react';
 import Project from '@/components/pages/Project';
-import { H2 } from '@/components/text/Titles';
+import { H2 } from '@/components/text/Text';
 import Paragraph from '@/components/text/Paragraph';
 import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
