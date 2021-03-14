@@ -28,7 +28,7 @@ const tileContent = [
     image: '/illustrations/services/illustration.svg',
     alt: 'Film',
     title: 'Film',
-    description: ['Erklärfilm', 'Werbefilm', 'Imagefilm'],
+    description: ['Animation', 'Erklärfilm', 'Werbefilm', 'Imagefilm'],
     overlayColor: '#C23E27',
   },
   {

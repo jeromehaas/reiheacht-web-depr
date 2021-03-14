@@ -214,11 +214,13 @@ const checkParagraphAnimated = ({ animated, delay }) => {
     return css`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
-      animation: ${`0.5s ease-in-out ${delay} 1 forwards appear}`};
+      animation: ${`0.5s ease-in-out ${delay} 1 forwards slideIn}`};
+      position: relative;
+      left: -30px;
 
-      @keyframes appear {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+      @keyframes slideIn {
+        0% {opacity: 0; left: -30px; }
+        100% {opacity: 1; left: 0px; }
     }
 
    `;
