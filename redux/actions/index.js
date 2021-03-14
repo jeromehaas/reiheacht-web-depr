@@ -91,6 +91,14 @@ const updateCurrentPosition = (value) => (dispatch) => {
   });
 };
 
+const SHOW_ERROR_FORM_VALIDATION = 'SHOW_ERROR_FORM_VALIDATION';
+const showErrorFormValidation = (value) => (dispatch) => {
+  dispatch({
+    type: SHOW_ERROR_FORM_VALIDATION,
+    payload: value,
+  });
+};
+
 export {
   updateTextBlocks,
   showTiles,
@@ -104,4 +112,5 @@ export {
   updateContactFormMessage,
   submitContactForm,
   updateCurrentPosition,
+  showErrorFormValidation,
 };

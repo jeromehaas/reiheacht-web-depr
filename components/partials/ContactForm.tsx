@@ -2,13 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { useDispatch, useSelector, RootStateOrAny } from 'react-redux';
 import { Lottie } from '@crello/react-lottie';
+import { P } from '@/components/text/Text';
 import {
   updateContactFormName,
   updateContactFormEmail,
   updateContactFormPhone,
   updateContactFormMessage,
   submitContactForm,
+  showErrorFormValidation,
 } from '@/redux/actions/index';
+import ErrorMessage from '@/components/partials/ErrorMessage';
+import cx from 'classnames';
 import { sendMail } from '../../services/mail';
 import sendButton from '../../public/animations/send-button.json';
 
@@ -23,7 +27,8 @@ const StyledContactForm = styled.form`
     "name name"
     "email phone"
     "message message"
-    "button button";
+    "button button"
+    "errorMessage errorMessage";
 
     @media (max-width: 1100px) {
       max-width: 750px;
@@ -35,13 +40,14 @@ const StyledContactForm = styled.form`
 
     @media (max-width: 700px) {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr 1fr  1fr 5fr auto;
+      grid-template-rows: 1fr 1fr  1fr 5fr auto auto;
       grid-template-areas:
       "name"
       "email" 
       "phone"
       "message"
-      "button"; 
+      "button"
+      "errorMessage";
     }
 
   input, textarea {
@@ -50,7 +56,7 @@ const StyledContactForm = styled.form`
     outline: none;
     border-radius: 5px;
     position: relative;
-    font-family: ${(p) => p.theme.helvetica55};
+    font-family: 'Helvetica Neue 55 Roman', serif;
      font-size: 20px;
 
     &::placeholder {
@@ -69,12 +75,30 @@ const StyledContactForm = styled.form`
     background-color: transparent;
   }
 
+  .errorMessage {
+    background-color: ${(p) => p.theme.white};
+    padding: 7.5px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 0px;
+    height: 0px;
+    padding: 0 15px;
+    transition: all 0.25s ease;
+    &.active {
+      font-size: 20px;
+      padding: 15px;
+      height: unset;
+    }
+  }
 
 .name { grid-area: name; }
 .email { grid-area: email; }
 .phone { grid-area: phone; }
 .message { grid-area: message; }
 .button { grid-area: button; }
+.button { grid-area: button; }
+.errorMessage { grid-area: errorMessage; }
+
 `;
 
 interface Props { }
@@ -86,6 +110,7 @@ const ContactForm: React.FunctionComponent<Props> = () => {
   const phone = useSelector((state: RootStateOrAny) => state.contactForm.phone);
   const message = useSelector((state: RootStateOrAny) => state.contactForm.message);
   const isSent = useSelector((state: RootStateOrAny) => state.contactForm.isSent);
+  const showError = useSelector((state: RootStateOrAny) => state.contactForm.showError);
 
   const inputHandler = (event: any, type: string): void => {
     switch (type) {
@@ -99,8 +124,12 @@ const ContactForm: React.FunctionComponent<Props> = () => {
 
   const formHandler = (event) => {
     event.preventDefault();
-    sendMail(name, email, phone, message);
-    dispatch(submitContactForm());
+    if (name && email && message) {
+      dispatch(submitContactForm());
+      sendMail(name, email, phone, message);
+    } else {
+      dispatch(showErrorFormValidation(true));
+    }
   };
 
   return (
@@ -109,7 +138,7 @@ const ContactForm: React.FunctionComponent<Props> = () => {
       <input type="text" className="email" placeholder="*Email" value={email} onChange={(event) => inputHandler(event, 'email')} />
       <input type="text" className="phone" placeholder="Telefonnummer" value={phone} onChange={(event) => inputHandler(event, 'phone')} />
       <textarea className="message" id="" placeholder="*Schiess los!" value={message} onChange={(event) => inputHandler(event, 'message')} />
-      <button className="button" onClick={(event) => formHandler(event)}>
+      <button className="button" type="button" onClick={(event) => formHandler(event)}>
         <Lottie
           config={{ animationData: sendButton, autoplay: false }}
           playingState={isSent ? 'playing' : 'paused'}
@@ -119,6 +148,9 @@ const ContactForm: React.FunctionComponent<Props> = () => {
           style={{ margin: '0 auto' }}
         />
       </button>
+      <div className={cx(`errorMessage ${showError ? 'active' : null}`)}>
+        <P color="darkGrey" size="small">Fülle zuerst alle *Felder aus.</P>
+      </div>
     </StyledContactForm>
   );
 };
