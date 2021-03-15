@@ -35,6 +35,8 @@
       "import/no-unresolved": "off",
       "@typescript-eslint/no-use-before-define": ["error"],
       "react/jsx-props-no-spreading": "off",
+      "consistent-return": "off",
+      "react/prop-types": "off",
       "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
       "jsx-a11y/anchor-is-valid": ["error", {        
         "components": ["Link"],        

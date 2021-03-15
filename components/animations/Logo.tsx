@@ -1,15 +1,11 @@
 import React from 'react';
-import Image from '@/components/partials/Image';
 import styled from 'styled-components';
-
-interface Props { }
 
 const StyledLogo = styled.div`
   height: 600px;
   width: 100%;
   max-height: 500px;
   position: relative;
-
 
     .head, .eyes {
       position: absolute;
@@ -31,19 +27,17 @@ const StyledLogo = styled.div`
     @media (max-width: 800px) {
       display: flex;
       height: 300px;
-
       .head, .eyes {
         padding: 60px; 
       }
-
     }
 
 `;
 
-const Logo: React.FunctionComponent<Props> = () => (
+const Logo: React.FunctionComponent = () => (
   <StyledLogo>
-    <img className="eyes" src="/animations/logo_eyes.svg" alt="eyes" />
-    <img className="head" src="/animations/logo_head.svg" alt="head" />
+    <img className="eyes" src="/animations/logo_eyes.svg" alt="Logo Augen" />
+    <img className="head" src="/animations/logo_head.svg" alt="Logo Kopf" />
   </StyledLogo>
 
 );

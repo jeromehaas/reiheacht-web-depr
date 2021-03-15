@@ -5,22 +5,21 @@ import styled from 'styled-components';
 import cx from 'classnames';
 
 const Wrapper = styled.span`
-    .link {
-     color: ${(p) => p.theme.white};
-     transition: all 0.25s ease 0.5s;
-     text-decoration: none !important;
-     font-family: 'Helvetica Neue 55 Roman', serif;
-    
-    a {
-     color: ${(p) => p.theme.white};
-     font-family: 'Helvetica Neue 55 Roman', serif;
-    }
+
+  .link, a {
+    color: ${(p) => p.theme.white};
+    transition: all 0.25s ease 0.5s;
+    text-decoration: none !important;
+    font-family: 'Helvetica Neue 55 Roman', serif;
+    font-size: 20px;
+    line-height: 1.5;
 
     &.active,
     &.active span {
       color: ${(p) => p.theme.orange} !important;
     }
-    }
+
+  }
 
 `;
 

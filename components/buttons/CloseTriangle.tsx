@@ -1,10 +1,9 @@
 import React from 'react';
 import { Lottie } from '@crello/react-lottie';
 import styled, { css } from 'styled-components';
-import Link from 'next/link';
 import Linker from '@/components/buttons/Link';
-import orangeCloseTriangleIn from '../../public/animations/orange-close-triangle-in.json';
-import blueCloseTriangleIn from '../../public/animations/blue-close-triangle-in.json';
+import orangeCloseTriangleIn from '@/public/animations/orange-close-triangle-in.json';
+import blueCloseTriangleIn from '@/public/animations/blue-close-triangle-in.json';
 
 const Wrapper = styled.i`
   position: absolute;
@@ -34,7 +33,6 @@ interface Props {
 const CloseTriangle: React.FunctionComponent<Props> = ({ position, color, target }) => (
   <Wrapper direction={position}>
     <Linker type="link" target={target || '/'}>
-
       <Lottie
         config={{ animationData: color === 'blue' ? blueCloseTriangleIn : orangeCloseTriangleIn, autoplay: true }}
         playingState="playing"
@@ -43,7 +41,6 @@ const CloseTriangle: React.FunctionComponent<Props> = ({ position, color, target
         height="80px"
         style={{ margin: '0 auto' }}
       />
-
     </Linker>
   </Wrapper>
 );
