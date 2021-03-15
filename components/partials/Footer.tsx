@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import Limiter from '@/components/layout/Limiter';
 import SocialMediaButton from '@/components/buttons/SocialMediaButton';
 import Linker from '@/components/buttons/Link';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 import { P } from '@/components/text/Text';
 
 const StyledFooter = styled.footer`
@@ -45,7 +45,7 @@ const StyledFooter = styled.footer`
     justify-content: flex-end;
   }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
 
     .wrapper {
       flex-direction: column;
@@ -84,9 +84,7 @@ const addressItems = [
   '+41 79 399 95 12',
 ];
 
-interface Props { }
-
-const Footer: React.FunctionComponent<Props> = () => (
+const Footer: React.FunctionComponent = () => (
   <StyledFooter>
     <Limiter>
       <div className="socialMediaWrapper">
@@ -96,11 +94,10 @@ const Footer: React.FunctionComponent<Props> = () => (
         <SocialMediaButton margin="0 0 0 10px" type="twitter" />
       </div>
       <div className="whiteLine" />
-
       <div className="wrapper">
         <div className="address">
-          {addressItems.map((item, index) => (
-            <P key={index} size="small" className="addressItem">{item}</P>
+          {addressItems.map((item) => (
+            <P size="small" key={item} className="addressItem">{item}</P>
           ))}
         </div>
         <div className="legal">
@@ -110,7 +107,7 @@ const Footer: React.FunctionComponent<Props> = () => (
           <Linker type="link" className="legalItem" target="/legal/terms-and-conditions">AGB</Linker>
         </div>
       </div>
-      <Spacer marginBottom="15px" />
+      <Space height="15px" />
     </Limiter>
   </StyledFooter>
 );

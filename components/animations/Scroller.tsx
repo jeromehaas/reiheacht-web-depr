@@ -6,17 +6,17 @@ import Linker from '@/components/buttons/Link';
 
 const StyledScroller = styled.div`
 
- display: flex;
-      flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px;
-    position: absolute;
-    bottom: 0;
-    margin: 0 auto;
-    width: 100%;
-    opacity: 0;
-    animation: appear 1s forwards 6s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+  width: 100%;
+  opacity: 0;
+  animation: appear 1s forwards 6s;
 
   img {
     width: 45px;
@@ -33,15 +33,13 @@ const StyledScroller = styled.div`
   0% { opacity: 0 }
   100% { opacity: 1 }
   }
-  `;
+`;
 
-interface Props { }
-
-const Scroller: React.FunctionComponent<Props> = () => (
+const Scroller: React.FunctionComponent = () => (
   <StyledScroller>
     <P size="small">Popcorn nicht vergessen.</P>
     <Linker type="anchor" target="services">
-      <Image src="/icons/arrows/arrow-down.svg" alt="arrow" />
+      <Image src="/icons/arrows/arrow-down.svg" alt="Pfeil" />
     </Linker>
   </StyledScroller>
 );

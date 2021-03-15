@@ -4,13 +4,11 @@ import { Lottie } from '@crello/react-lottie';
 import { Link as Anchor } from 'react-scroll';
 import { useSelector, useDispatch, RootStateOrAny } from 'react-redux';
 import { toggleMobileNavigation, updateCurrentPosition } from 'redux/actions';
-import { H2 } from '@/components/text/Text';
-import Reveal, { Fade } from 'react-awesome-reveal';
-
+import { Fade } from 'react-awesome-reveal';
 import cx from 'classnames';
 import Linker from '@/components/buttons/Link';
-import hamburger from '../../public/animations/hamburger.json';
-import Limiter from '../layout/Limiter';
+import hamburger from '@/public/animations/hamburger.json';
+import Limiter from 'components/layout/Limiter';
 
 const DesktopNavigation = styled.nav`
   position: relative; 
@@ -72,7 +70,7 @@ const MobileNavigation = styled.nav`
   .bar {
     width: 100%;
     background-color: ${(p) => p.theme.darkGrey};
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: ${(p) => p.theme.standardBoxShadow};
     position: fixed;
     top: -75px;
     height: 75px;
@@ -122,7 +120,7 @@ const MobileNavigation = styled.nav`
     z-index: 5;
     padding-top: 75px;
     transition: all 1s ease-in-out;
-    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    box-shadow: ${(p) => p.theme.boxShadow};
 
   .link {
     color: inherited;
@@ -148,16 +146,14 @@ const MobileNavigation = styled.nav`
   &.active {
     top: 0vh;
     overflow: scroll;
-    color: blue;
   }
 
 }
 
-
-
   @media (max-width: 850px) {
     display: block;
   }
+
 `;
 
 const navigationItems = [
@@ -240,7 +236,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
               <Anchor to="home" spy smooth duration={1000}>
                 <img className="logo" src="/logos/logo-white.svg" alt="reiheacht" />
               </Anchor>
-              <div onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
+              <div aria-hidden="true" onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
                 <Lottie
                   config={{ animationData: hamburger, autoplay: false }}
                   playingState="playing"
@@ -257,7 +253,6 @@ const Navigation: React.FunctionComponent<Props> = () => {
         <div className={cx('linkWrapper', mobileMenuIsVisible === true ? 'active' : '')}>
           <Fade cascade damping={0.2}>
             {navigationItems.map((item, index) => (
-
               <Linker
                 key={index}
                 type={item.type}
@@ -271,7 +266,6 @@ const Navigation: React.FunctionComponent<Props> = () => {
             ))}
           </Fade>
         </div>
-
       </MobileNavigation>
     </>
   );

@@ -18,12 +18,11 @@ interface Props {
 }
 
 const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
+
   const dispatch = useDispatch();
 
   return (
-
     <Reveal keyframes={moveDown} triggerOnce fraction={1}>
-
       <InView onChange={() => dispatch(updateCurrentPosition(content.section))}>
         {({ ref }) => (
           <div ref={ref}>
@@ -34,9 +33,9 @@ const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
           </div>
         )}
       </InView>
-
     </Reveal>
   );
+
 };
 
 export default TextBlock;

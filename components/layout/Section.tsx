@@ -18,7 +18,6 @@ const StyledSection = styled.div`
     padding-top: 100px;
   }
 
-
 `;
 
 const Section: React.FunctionComponent<Props> = ({ children, hero, id }) => (

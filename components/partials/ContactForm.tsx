@@ -11,7 +11,6 @@ import {
   submitContactForm,
   showErrorFormValidation,
 } from '@/redux/actions/index';
-import ErrorMessage from '@/components/partials/ErrorMessage';
 import cx from 'classnames';
 import { sendMail } from '../../services/mail';
 import sendButton from '../../public/animations/send-button.json';
@@ -101,9 +100,7 @@ const StyledContactForm = styled.form`
 
 `;
 
-interface Props { }
-
-const ContactForm: React.FunctionComponent<Props> = () => {
+const ContactForm: React.FunctionComponent = () => {
   const dispatch = useDispatch();
   const name = useSelector((state: RootStateOrAny) => state.contactForm.name);
   const email = useSelector((state: RootStateOrAny) => state.contactForm.email);

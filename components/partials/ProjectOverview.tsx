@@ -42,36 +42,33 @@ const StyledProjectOverview = styled.div`
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px -4px 4px rgba(0, 0, 0, 0.25);
     padding: 30px 0;
 
-    .logo {
+      .logo {
+        display: flex;
+      }
+
+      img {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 10px 0;
+      }
+
+      .text-content {
+        text-align: center;
+      }
+
+  }
+
+  @media (max-width: 800px) {
+
+    .desktop {
+      display: none;
+    }
+
+    .mobile {
       display: flex;
     }
 
-    img {
-      /* height: 100%; */
-      max-width: 80%;
-      margin: 0 auto;
-      padding: 10px 0;
-    }
-
-    .text-content {
-      text-align: center;
-    }
-
   }
-
-}
-
-@media (max-width: 800px) {
-
-  .desktop {
-    display: none;
-   }
-
-  .mobile {
-    display: flex;
-  }
-
-}
 
 `;
 
@@ -80,9 +77,7 @@ interface Props {
 }
 
 const ProjectOverview: React.FunctionComponent<Props> = ({ content }) => (
-
   <StyledProjectOverview>
-
     <div className="desktop">
       <div className="logo">
         <img src={content.imageLink} alt={content.imageAlt} />
@@ -93,7 +88,6 @@ const ProjectOverview: React.FunctionComponent<Props> = ({ content }) => (
         <P size="small">{content.text}</P>
       </div>
     </div>
-
     <div className="mobile">
       <div className="logo">
         <img src={content.imageLink} alt={content.imageAlt} />
@@ -104,7 +98,6 @@ const ProjectOverview: React.FunctionComponent<Props> = ({ content }) => (
         <P>{content.text}</P>
       </div>
     </div>
-
   </StyledProjectOverview>
 );
 
