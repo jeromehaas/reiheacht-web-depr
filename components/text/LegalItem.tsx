@@ -9,7 +9,7 @@ interface Props {
 
 const LegalItem: React.FunctionComponent<Props> = ({ title, text }) => (
   <>
-    <P bold size="normal" color="darkGrey" bold="true">{title}</P>
+    <P size="normal" color="darkGrey" bold="true">{title}</P>
     <P size="small" color="darkGrey">{text}</P>
     <Spacer marginBottom="30px" />
   </>
