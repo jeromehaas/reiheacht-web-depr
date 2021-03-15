@@ -24,6 +24,10 @@ const content = {
   outro: {
     title: <>Du möchtest deine Idee auch zum Leben <Highlight>erwecken</Highlight>?</>,
   },
+  switcher: {
+    nextProject: '/projekte/trinkwasserinitiative',
+    previousProject: '/smartphone-schnitzeljagd',
+  },
 
 };
 

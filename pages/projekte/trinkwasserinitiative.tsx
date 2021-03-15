@@ -23,6 +23,10 @@ const content = {
   outro: {
     title: <>Ebenfalls an einem massgeschneidertem Erklärfilm <Highlight>interessiert</Highlight>?</>,
   },
+  switcher: {
+    nextProject: '/projekte/sbv-div',
+    previousProject: '/projekte/agrarinitiative',
+  },
 };
 
 const TrinkwasserInitiative: React.FunctionComponent<Props> = () => (

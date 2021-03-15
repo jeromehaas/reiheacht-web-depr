@@ -23,12 +23,16 @@ const content = {
   outro: {
     title: <>Möchtest du auch deine eigene <Highlight>Welt</Highlight>?</>,
   },
+  switcher: {
+    nextProject: '/projekte/trinkwasserinitiative',
+    previousProject: '/projekte/smartphone-schnitzeljagd',
+  },
 
 };
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
-    <Video link="https://player.vimeo.com/video/520918592" />
+    <Video link="https://player.vimeo.com/video/520918592?width=100%&responsive=1" />
     <Spacer marginBottom="30px" />
     <Video link="https://player.vimeo.com/video/520918534" />
     <Spacer marginBottom="30px" />

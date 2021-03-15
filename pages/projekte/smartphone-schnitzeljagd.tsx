@@ -22,7 +22,10 @@ const content = {
   },
   outro: {
     title: <>Darfs ein passender Trailer für dein <Highlight>Produkt</Highlight>?</>,
-
+  },
+  switcher: {
+    nextProject: '/projekte/sbv-div',
+    previousProject: '/projekte/agrarinitiative',
   },
 
 };
