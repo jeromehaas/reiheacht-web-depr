@@ -15,6 +15,7 @@ const Variables = {
   buttonFontSize: '20px',
   buttonFontFamily: "'Helvetica 55 Roman'",
   standardTransition: 'all 0.2s ease-in-out',
+  standardBoxShadow: '0px 8px 8px rgba(0, 0, 0, 0.25)',
 
   fontRoman: 'Helvetica Neue 55 Roman',
   fontMedium: 'Helvetica Neue 65 Medium',

@@ -101,16 +101,14 @@ const CarouselItem = styled.span`
   font-family: 'Helvetica Neue 85 Heavy';
 `;
 
-const carouselItems: string[] = [
-  'Magie',
-  'Idee',
-  'Zusammenarbeit',
-];
+interface Props {
+  items: string[];
+}
 
-const Carousel: React.FunctionComponent = () => (
+const Carousel: React.FunctionComponent<Props> = ({ items }) => (
   <StyledCarousel>
     <CarouselWrapper>
-      {carouselItems.map((item) => (
+      {items.map((item) => (
         <CarouselItem key={item}>
           {item}
           <HL color="white">.</HL>

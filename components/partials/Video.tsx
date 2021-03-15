@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 import styled from 'styled-components';
-import Reveal, { Fade } from 'react-awesome-reveal';
 
 const PlayerWrapper = styled.div`
   position: relative;

@@ -4,18 +4,18 @@ import Tile from '@/components/tiles/Tile';
 import EmployeeTile from '@/components/tiles/EmployeeTile';
 import ProjectTile from '@/components/tiles/ProjectTile';
 import ServiceTile from '@/components/tiles/ServiceTile';
-import Reveal, { Slide } from 'react-awesome-reveal';
 
 const StyledTileSet = styled.div`
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      overflow: hidden;
-      line-height: 0;
-  `;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow: hidden;
+  line-height: 0;
+`;
 
 const renderSwitch = (tiles, type) => {
+
   switch (type) {
     case 'employees':
       return (
@@ -42,11 +42,12 @@ const renderSwitch = (tiles, type) => {
         ))
       );
   }
+
 };
 
 interface Props {
   tiles: any[];
-  type?: string;
+  type: string;
 }
 
 const TileSet: React.FunctionComponent<Props> = ({ tiles, type }) => (

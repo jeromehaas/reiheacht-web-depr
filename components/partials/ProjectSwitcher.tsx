@@ -20,25 +20,21 @@ const StyledProjectSwitcher = styled.div`
     width: 250px;
   }
 
-
   img {
-    max-width: 60px !important;
+    max-width: 60px;
     padding: 15px;
   }
 
   @media (max-width: 500px) {
-  ${P} {
-    font-size: 12px;
+    ${P} { font-size: 12px; }
+    img { max-width: 50px !important; }
   }
-  img {
-    max-width: 50px !important;
-  }
-  }
+
 `;
 
 interface Props {
-  previousProject?: string;
-  nextProject?: string;
+  previousProject: string;
+  nextProject: string;
 }
 
 const ProjectSwitcher: React.FunctionComponent<Props> = ({ previousProject, nextProject }) => (
@@ -51,7 +47,7 @@ const ProjectSwitcher: React.FunctionComponent<Props> = ({ previousProject, next
     </div>
     <div className="next">
       <Linker type="link" target={nextProject}>
-        <img src="/icons/arrows/arrow-right.svg" alt="right" />
+        <Image src="/icons/arrows/arrow-right.svg" alt="right" />
       </Linker>
       <P size="small">Nächstes Projekt</P>
     </div>
