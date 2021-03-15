@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
+import { HL } from '@/components/text/Text';
 
 const StyledCarousel = styled.span`
   color: ${(p) => p.theme.blue};
@@ -11,30 +11,12 @@ const StyledCarousel = styled.span`
   overflow: hidden;
   vertical-align: middle;
 
-  @media (max-width: 900px) {
-    width: 590px;
-  }
-
-  @media (max-width: 750px) {
-    width: 520px;
-  }
-
-  @media (max-width: 670px) {
-    width: 420px;
-  }
-
-  @media (max-width: 550px) {
-    width: 350px;
-  }
-
-  @media (max-width: 470px) {
-    width: 300px;
-  }
-
-  @media (max-width: 415px) {
-    width: 250px;
-  }
-
+  @media (max-width: 900px) { width: 590px; }
+  @media (max-width: 750px) { width: 520px; }
+  @media (max-width: 670px) { width: 420px; }
+  @media (max-width: 550px) { width: 350px; }
+  @media (max-width: 470px) { width: 300px; }
+  @media (max-width: 415px) { width: 250px; }
 
 `;
 
@@ -46,7 +28,6 @@ const CarouselWrapper = styled.div`
   animation: 2s ease-in-out 2s 1 forwards carousel;
   font-family: 'Helvetica Neue 85 Heavy';
 
-
   @keyframes carousel {
       0% {top: -5px;}
       35% {top: -100px;}
@@ -54,62 +35,62 @@ const CarouselWrapper = styled.div`
       100% {top: -195px;}
     }
 
-    @media (max-width: 900px) {
-      @keyframes carousel {
-      0% {top: -5px;}
-      35% {top: -85px;}
-      65% {top: -85px;}
-      100% {top: -165px;}
-      }
+  @media (max-width: 900px) {
+    @keyframes carousel {
+    0% {top: -5px;}
+    35% {top: -85px;}
+    65% {top: -85px;}
+    100% {top: -165px;}
     }
+  }
 
-    @media (max-width: 750px) {
-      @keyframes carousel {
-      0% {top: -5px;}
-      35% {top: -72px;}
-      65% {top: -72px;}
-      100% {top: -143px;}
-      }
+  @media (max-width: 750px) {
+    @keyframes carousel {
+    0% {top: -5px;}
+    35% {top: -72px;}
+    65% {top: -72px;}
+    100% {top: -143px;}
     }
+  }
 
-    @media (max-width: 670px) {
-      @keyframes carousel {
-      0% {top: -5px;}
-      35% {top: -65px;}
-      65% {top: -65px;}
-      100% {top: -125px;}
+  @media (max-width: 670px) {
+    @keyframes carousel {
+    0% {top: -5px;}
+    35% {top: -65px;}
+    65% {top: -65px;}
+    100% {top: -125px;}
     }
-    }
+  }
 
-    @media (max-width: 550px) {
-      top: -2px;
-      @keyframes carousel {
-      0% {top: -2px;}
-      35% {top: -57px;}
-      65% {top: -57px;}
-      100% {top: -111px;}
-      }
+  @media (max-width: 550px) {
+    top: -2px;
+    @keyframes carousel {
+    0% {top: -2px;}
+    35% {top: -57px;}
+    65% {top: -57px;}
+    100% {top: -111px;}
     }
+  }
 
-    @media (max-width: 470px) {
-      top: -2px;
-      @keyframes carousel {
-      0% {top: -2px;}
-      35% {top: -51px;}
-      65% {top: -51px;}
-      100% {top: -100px;}
-      }
+  @media (max-width: 470px) {
+    top: -2px;
+    @keyframes carousel {
+    0% {top: -2px;}
+    35% {top: -51px;}
+    65% {top: -51px;}
+    100% {top: -100px;}
     }
+  }
 
-    @media (max-width: 415px) {
-      top: -1px;
-      @keyframes carousel {
-      0% {top: -1px;}
-      35% {top: -45px;}
-      65% {top: -45px;}
-      100% {top: -90px;}
-      }
+  @media (max-width: 415px) {
+    top: -1px;
+    @keyframes carousel {
+    0% {top: -1px;}
+    35% {top: -45px;}
+    65% {top: -45px;}
+    100% {top: -90px;}
     }
+  }
 
 `;
 
@@ -120,28 +101,19 @@ const CarouselItem = styled.span`
   font-family: 'Helvetica Neue 85 Heavy';
 `;
 
-const Dot = styled.span`
-  color: ${(p) => p.theme.white}
-`;
-
-const carouselItems = [
+const carouselItems: string[] = [
   'Magie',
   'Idee',
   'Zusammenarbeit',
 ];
 
-interface Props {
-  className: String;
-  items: String[];
-}
-
-const Carousel: React.FunctionComponent<Props> = () => (
+const Carousel: React.FunctionComponent = () => (
   <StyledCarousel>
     <CarouselWrapper>
       {carouselItems.map((item) => (
         <CarouselItem key={item}>
           {item}
-          <Dot>.</Dot>
+          <HL color="white">.</HL>
         </CarouselItem>
       ))}
     </CarouselWrapper>

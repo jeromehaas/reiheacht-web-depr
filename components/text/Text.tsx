@@ -267,9 +267,13 @@ const HL = styled.span`
     && css`
       color: ${theme.blue}
     `}
-      ${({ bold }) => bold
+    ${({ color, theme }) => color === 'white'
     && css`
-  font-family: 'Helvetica Neue 65 Medium', serif;
+      color: ${theme.white}
+    `}
+    ${({ bold }) => bold
+    && css`
+      font-family: 'Helvetica Neue 65 Medium', serif;
     `}
 `;
 
