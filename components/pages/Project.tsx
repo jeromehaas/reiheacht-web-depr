@@ -8,6 +8,7 @@ import Spacer from '@/components/layout/Spacer';
 import Head from 'next/head';
 import { H2, P } from '@/components/text/Text';
 import Button from '@/components/buttons/Button';
+import ProjectSwitcher from '@/components/partials/ProjectSwitcher';
 
 interface Props {
   children?: React.ReactNode;
@@ -58,11 +59,13 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
         />
         <Spacer marginBottom="30px" />
         {children}
-        <Spacer marginBottom="60px" />
+        <Spacer marginBottom="90px" />
+        <ProjectSwitcher nextProject={content.switcher.nextProject} previousProject={content.switcher.previousProject} />
+        <Spacer marginBottom="90px" />
         <H2>{content.outro.title}</H2>
         <HorizontalLine animated delay="0.3s" />
         <Button type="link" target="/" text="Sitzplatz buchen" />
-        <Spacer marginBottom="130px" />
+        <Spacer marginBottom="200px" />
       </Section>
       <CloseTriangle position="bottom" />
     </PageWrapper>

@@ -23,6 +23,10 @@ const content = {
   outro: {
     title: <>Möchtest du auch deine eigene <Highlight>Welt</Highlight>?</>,
   },
+  switcher: {
+    nextProject: '/projekte/trinkwasserinitiative',
+    previousProject: '/projekte/smartphone-schnitzeljagd',
+  },
 
 };
 

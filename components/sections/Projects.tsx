@@ -29,12 +29,22 @@ const tileContent = [
   //   link: '/projekte/osterkampagne',
   // },
   {
+    image: '/illustrations/projects/agrarinitiative.png',
+    alt: 'GalloSuisse',
+    title: 'GalloSuisse',
+    description: 'Agrarinitiative',
+    overlayColor: '#C70103',
+    link: '/projekte/agrarinitiative',
+
+  },
+  {
     image: '/illustrations/projects/trinkwasserinitiative.png',
     alt: 'Schweizer Bauernverband',
     title: 'Schweizer Bauernverband',
     description: 'Trinkwasserinitiative',
     overlayColor: '#9EA600',
     link: '/projekte/trinkwasserinitiative',
+
   },
   {
     image: '/illustrations/projects/sbv-div.png',
@@ -43,6 +53,7 @@ const tileContent = [
     description: 'SBV div',
     overlayColor: '#9EA600',
     link: '/projekte/sbv-div',
+
   },
   {
     image: '/illustrations/projects/smartphone-schnitzeljagd.png',
@@ -51,14 +62,7 @@ const tileContent = [
     description: 'Smartphone-Schnitzeljagd',
     overlayColor: '#FC0031',
     link: '/projekte/smartphone-schnitzeljagd',
-  },
-  {
-    image: '/illustrations/projects/agrarinitiative.png',
-    alt: 'GalloSuisse',
-    title: 'GalloSuisse',
-    description: 'Agrarinitiative',
-    overlayColor: '#C70103',
-    link: '/projekte/agrarinitiative',
+
   },
 ];
 

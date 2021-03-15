@@ -22,6 +22,10 @@ const content = {
   outro: {
     title: <>Möchtest du auch eine eigene <Highlight>Welt</Highlight>?</>,
   },
+  switcher: {
+    nextProject: '#',
+    previousProject: '#',
+  },
 
 };
 
