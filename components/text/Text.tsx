@@ -240,7 +240,7 @@ const checkParagraphAnimated = ({ animated, delay }) => {
 
 const P = styled.p`
   font-size: 30px;
-  max-width: 870px;
+  max-width: 910px;
   opacity: 1;
   line-height: 1.6;
   color: red;

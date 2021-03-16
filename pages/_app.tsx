@@ -22,7 +22,7 @@ const App: React.FunctionComponent<Props> = ({ Component, pageProps }) => (
           <title>reiheacht - Hier beginnt die Zusammenarbeit.</title>
           <meta name="description" content="Animation | Storytelling| Design | Illustration | Web | Werbefilm" />
           <link rel="icon" href="/favicon.ico" />
-          <link rel="preload" href="/fonts/5664093/08b57253-2e0d-4c12-9c57-107f6c67bc49.woff2" as="font" crossOrigin="" />
+          {/* <link rel="preload" href="/fonts/5664093/08b57253-2e0d-4c12-9c57-107f6c67bc49.woff2" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/5664093/08edde9d-c27b-4731-a27f-d6cd9b01cd06.woff" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/5664093/08edde9d-c27b-4731-a27f-d6cd9b01cd06.ttf" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/5664103/240c57a0-fdce-440d-9ce3-85e0cb56f470.woff2" as="font" crossOrigin="" />
@@ -39,7 +39,7 @@ const App: React.FunctionComponent<Props> = ({ Component, pageProps }) => (
           <link rel="preload" href="/fonts/5664121/6ed03453-f512-45ba-84bf-fe4ea45d5e6a.ttf" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/5664150/800da3b0-675f-465f-892d-d76cecbdd5b1.woff2" as="font" crossOrigin="" />
           <link rel="preload" href="/fonts/5664150/7b415a05-784a-4a4c-8c94-67e9288312f5.woff" as="font" crossOrigin="" />
-          <link rel="preload" href="/fonts/5664150/7b415a05-784a-4a4c-8c94-67e9288312f5.ttf" as="font" crossOrigin="" />
+          <link rel="preload" href="/fonts/5664150/7b415a05-784a-4a4c-8c94-67e9288312f5.ttf" as="font" crossOrigin="" /> */}
           <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
           <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
           <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
