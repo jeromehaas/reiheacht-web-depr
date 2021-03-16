@@ -3,7 +3,9 @@ import styled, { css } from 'styled-components';
 import Linker from '@/components/buttons/Link';
 
 const getAnimated = ({ animate, delay }) => {
+
   if (animate && delay) {
+
     return css`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
@@ -15,22 +17,27 @@ const getAnimated = ({ animate, delay }) => {
       }
 
     `;
+
   }
+
 };
 
 const getColor = ({ color, theme }) => {
+
   switch (color) {
     case 'orange': return css` background-color: ${theme.orange};`;
     case 'blue': return css` background-color: ${theme.blue};`;
     case 'white': return css` background-color: ${theme.white};  color: ${theme.darkGrey};`;
     default: return css` background-color: ${theme.orange};`;
   }
+
 };
 
 const StyledButton = styled.button`
   position: relative;
   width: auto;
   min-width: 200px;
+  padding: 0;
   border-radius: 5px;
   border: none;
   outline: none;

@@ -10,6 +10,10 @@ const Wrapper = styled.i`
   margin: 0 auto;
   height: 50px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 5;
 
   ${({ direction }) => direction === 'top'
     && css`

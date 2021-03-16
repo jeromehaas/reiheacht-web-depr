@@ -47,7 +47,7 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
   <div>
     <PageWrapper>
       <CloseTriangle position="top" />
-      <Space height="30px" />
+      <Space height="80px" />
       <Section>
         <H2>{content.intro.title}</H2>
         <Space height="30px" />
