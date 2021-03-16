@@ -49,26 +49,21 @@ const StyledProjectTile = styled.div`
 
   ${H3} {
     top: 30px;
+    font-size: 30px;
     opacity: 0;
     position: relative;
     transition: all 0.7s ease;
+    font-family: 'Helvetica Neue 75 Bold'
   }
 
   ${P} {
     top: 30px;
     opacity: 0;
+    font-size: 25px;
     position: relative;
     transition: all 0.7s ease 0.4s;
   }
 
-  @media (max-width: 850px) {
-    width: calc(100% / 2);
-  }
-
-  @media (max-width: 550px) {
-    width: calc(100% / 1);
-    margin-top: 30px;
-  }
 
   &:hover {
 
@@ -93,6 +88,33 @@ const StyledProjectTile = styled.div`
 
 }
 
+@media (max-width: 1000px) {
+    ${H3} { font-size: 25px; };
+    ${P} { font-size: 20px;}
+  }
+
+  @media (max-width: 850px) {
+    width: calc(100% / 2);
+    ${H3} { font-size: 30px; };
+    ${P} { font-size: 25px;
+  }
+
+  @media (max-width: 700px) {
+    ${H3} { font-size: 25px; };
+    ${P} { font-size: 20px;}
+  }
+
+  @media (max-width: 550px) {
+    width: calc(100% / 1);
+    margin-top: 30px;
+  }
+
+  @media (max-width: 450px) {
+    ${H3} { font-size: 25px; };
+    ${P} { font-size: 20px;}
+  }
+
+  }
 `;
 
 interface Props {
