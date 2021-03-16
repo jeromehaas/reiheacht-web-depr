@@ -29,8 +29,8 @@ const TextBlock: React.FunctionComponent<Props> = ({ content, maxWidth }) => {
   const dispatch = useDispatch();
 
   return (
-    <StyledTextBlock maxWidth={maxWidth}>
-      <Reveal keyframes={moveDown} triggerOnce fraction={1}>
+    <Reveal keyframes={moveDown} triggerOnce fraction={1}>
+      <StyledTextBlock maxWidth={maxWidth}>
         <InView onChange={() => dispatch(updateCurrentPosition(content.section))}>
           {({ ref }) => (
             <div ref={ref}>
@@ -41,8 +41,8 @@ const TextBlock: React.FunctionComponent<Props> = ({ content, maxWidth }) => {
             </div>
           )}
         </InView>
-      </Reveal>
-    </StyledTextBlock>
+      </StyledTextBlock>
+    </Reveal>
   );
 
 };

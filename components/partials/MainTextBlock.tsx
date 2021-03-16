@@ -19,10 +19,16 @@ const MoveDownWrapper = styled.div`
   }
 `;
 
+interface ButtonArray {
+  text: string;
+  target: string;
+  delay: string;
+}
+
 interface Props {
   content: {
     title: string;
-    buttons: string[];
+    buttons: ButtonArray[];
     text: string;
     carouselItems: string[]
   }
