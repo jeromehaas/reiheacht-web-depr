@@ -30,7 +30,7 @@ const StyledServiceTile = styled.div`
     left: 0; 
     width: 100%;
     height: 80px;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in-out;
   }
 
 
@@ -40,7 +40,7 @@ const StyledServiceTile = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in-out;
   }
 
   .title {
@@ -59,7 +59,7 @@ const StyledServiceTile = styled.div`
   .listItems {
     padding: 0 30px;
     height: 0px;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in;
     opacity: 0;
   }
 
@@ -68,7 +68,7 @@ const StyledServiceTile = styled.div`
     opacity: 0;
     font-size: 25px;
     position: relative;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in;
     &:nth-child(1) { transition-delay: 0.1s; }
     &:nth-child(2) { transition-delay: 0.2s; }
     &:nth-child(3) { transition-delay: 0.3s; }
@@ -126,6 +126,10 @@ const StyledServiceTile = styled.div`
     &:nth-child(3) { order: unset }
     &:nth-child(3) { order: unset }
     &:nth-child(6) { order: unset }
+    .overlay { height: 60px; }
+    .textWrapper { height: 60px;}
+    .title { height: 60px; }
+
   }
  
   @media (max-width: 450px) {

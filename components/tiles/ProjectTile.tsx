@@ -38,13 +38,13 @@ const StyledProjectTile = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in-out;
   }
 
   .textWrapper  {
     line-height: 1;
     opacity: 0;
-    transition: all 0.7s ease
+    transition: all 0.99s ease-in-out;
   }
 
   ${H3} {
@@ -52,7 +52,7 @@ const StyledProjectTile = styled.div`
     font-size: 30px;
     opacity: 0;
     position: relative;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in;
     font-family: 'Helvetica Neue 75 Bold'
   }
 
@@ -73,6 +73,7 @@ const StyledProjectTile = styled.div`
     }
 
     .textWrapper {
+      margin-top: -30%;
       opacity: 1;
     }
 
@@ -107,6 +108,9 @@ const StyledProjectTile = styled.div`
   @media (max-width: 550px) {
     width: calc(100% / 1);
     margin-top: 30px;
+    .overlay { height: 60px; }
+    .textWrapper { height: 60px;}
+    .title { height: 60px; }
   }
 
   @media (max-width: 450px) {
