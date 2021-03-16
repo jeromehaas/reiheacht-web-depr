@@ -7,20 +7,10 @@ import employeeAnimationBlue from '../../public/animations/employee-blue.json';
 import employeeAnimationOrange from '../../public/animations/employee-orange.json';
 
 const StyledEmployeeTile = styled.div`
-  width: calc(100% / 3);
   height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
-  
-
-  @media (max-width: 850px) {
-    width: calc(100% / 2);
-  }
-
-  @media (max-width: 550px) {
-    width: calc(100% / 1);
-    margin-top: 30px;
-  }
 
   .initial {
     width: 100%;

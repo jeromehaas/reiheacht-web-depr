@@ -7,6 +7,7 @@ import { keyframes } from '@emotion/react';
 const StyledServiceTile = styled.div`
   width: calc(100% / 3);
   height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 
@@ -121,7 +122,6 @@ const StyledServiceTile = styled.div`
   }
 
   @media (max-width: 850px) {
-    width: calc(100% / 2);
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
     &:nth-child(3) { order: 4 }
@@ -135,8 +135,6 @@ const StyledServiceTile = styled.div`
 
 
   @media (max-width: 550px) {
-    width: calc(100% / 1);
-    margin-top: 30px;
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
     &:nth-child(3) { order: unset }
