@@ -1,7 +1,7 @@
 import React from 'react';
 import PageWrapper from '@/components/layout/PageWrapper';
 import styled from 'styled-components';
-import { H2 } from '@/components/text/Text';
+import { H1, HL } from '@/components/text/Text';
 import Button from '@/components/buttons/Button';
 import Spacer from '@/components/layout/Spacer';
 import { Lottie } from '@crello/react-lottie';
@@ -93,17 +93,12 @@ const PageNotFound: React.FunctionComponent<Props> = () => (
       <Lottie
         config={{ animationData: astronaut, loop: true, autoplay: true }}
         playingState="playing"
-        speed={1}
-        width="100%"
+        speed={2}
+        width="100vw"
         direction={1}
       />
       <div className="message">
-        <H2>
-          Oops, hier gehörst
-          <br />
-          {' '}
-          du nicht hin.
-        </H2>
+        <H1>Oops, hier gehörst<br /> du nicht hin<HL color="blue">.</HL></H1>
         <Spacer marginBottom="20px" />
         <Button target="/" type="link" text="Bring mich zurück!" />
       </div>
