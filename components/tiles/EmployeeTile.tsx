@@ -7,20 +7,10 @@ import employeeAnimationBlue from '../../public/animations/employee-blue.json';
 import employeeAnimationOrange from '../../public/animations/employee-orange.json';
 
 const StyledEmployeeTile = styled.div`
-  width: calc(100% / 3);
   height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
-  
-
-  @media (max-width: 850px) {
-    width: calc(100% / 2);
-  }
-
-  @media (max-width: 550px) {
-    width: calc(100% / 1);
-    margin-top: 30px;
-  }
 
   .initial {
     width: 100%;
@@ -37,7 +27,7 @@ const StyledEmployeeTile = styled.div`
   }
 
   .background-animation {
-    background-color: white;
+    background-color:${(p) => p.color};
     position: absolute;
     top: 0;
     right: 0;
@@ -60,7 +50,7 @@ const StyledEmployeeTile = styled.div`
     justify-content: space-between;
     align-items: center;
     transition: ${(p) => p.theme.standardTransition};
-    background-color: ${(p) => p.theme.white};
+    background-color:${(p) => p.theme.white};
 
     @media (max-width: 350px) {
       height: 110px;
@@ -115,6 +105,7 @@ interface Props {
 }
 
 const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
+
   const [animationState, setAnimationState] = useState('inactive');
 
   return (
@@ -122,6 +113,7 @@ const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
     <StyledEmployeeTile
       onMouseEnter={() => setAnimationState('active')}
       onMouseLeave={() => setAnimationState('inactive')}
+      color={content.overlayColor}
     >
 
       <div
@@ -158,5 +150,6 @@ const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
 
     </StyledEmployeeTile>
   );
+
 };
 export default EmployeeTile;

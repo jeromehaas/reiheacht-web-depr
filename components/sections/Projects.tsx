@@ -22,16 +22,16 @@ const tileContent = [
   // },
   // {
   //   image: '/illustrations/projects/osterkampagne.png',
-  //   alt: 'GalloSuisse',
-  //   title: <H3>GalloSuisse</H3>,
+  //   alt: 'Schweizer Bauernverband',
+  //   title: <H3>Schweizer Bauernverband</H3>,
   //   description: <Paragraph>Osterkampagne</Paragraph>,
   //   overlayColor: '#C70103',
   //   link: '/projekte/osterkampagne',
   // },
   {
     image: '/illustrations/projects/agrarinitiative.png',
-    alt: 'GalloSuisse',
-    title: 'GalloSuisse',
+    alt: 'Schweizer Bauernverband',
+    title: 'Schweizer Bauernverband',
     description: 'Agrarinitiative',
     overlayColor: '#C70103',
     link: '/projekte/agrarinitiative',
@@ -50,7 +50,7 @@ const tileContent = [
     image: '/illustrations/projects/sbv-div.png',
     alt: 'Schweizer Bauernverband',
     title: 'Schweizer Bauernverband',
-    description: 'SBV div',
+    description: 'Diverse Erklärfilme',
     overlayColor: '#9EA600',
     link: '/projekte/sbv-div',
 
@@ -68,7 +68,7 @@ const tileContent = [
 
 const textBlockContent = {
   section: 'projects',
-  title: <>Perfekte Aussicht, aus der besten <Highlight>reihe</Highlight>.</>,
+  title: <>Perfekte Aussicht,<br /> aus der besten <Highlight>reihe</Highlight>.</>,
   text: <>Dein Spitzenprogramm – zurücklehnen und geniessen.</>,
 };
 

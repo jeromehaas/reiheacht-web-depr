@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Linker from '@/components/buttons/Link';
+import { Router, useRouter } from 'next/router';
 
 const StyledBackButton = styled.button`
   width: 50px;
@@ -13,10 +14,12 @@ interface Props {
 }
 
 const BackButton: React.FunctionComponent<Props> = ({ content, link }) => (
-  <StyledBackButton>
-    <Linker type="link" target={link}>
+  const router = useRouter();
+
+<StyledBackButton onClick={() => router.back()}>
+  {/* <Linker type="link" target={link}> */}
       {content}
-    </Linker>
+  {/* </Linker> */}
   </StyledBackButton>
 );
 

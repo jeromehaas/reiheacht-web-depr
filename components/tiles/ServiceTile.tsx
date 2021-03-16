@@ -7,6 +7,7 @@ import { keyframes } from '@emotion/react';
 const StyledServiceTile = styled.div`
   width: calc(100% / 3);
   height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 
@@ -23,6 +24,18 @@ const StyledServiceTile = styled.div`
     object-fit: cover;
   }
 
+  .arrow {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    object-fit: contain;
+    transition: all 0.7s ease-in-out;
+
+  }
+
   .overlay {
     position: absolute;
     right: 0;
@@ -30,9 +43,8 @@ const StyledServiceTile = styled.div`
     left: 0; 
     width: 100%;
     height: 80px;
-    transition: all 0.7s ease
+    transition: all 0.7s ease-in-out;
   }
-
 
   .textWrapper {
     width: 100%;
@@ -40,7 +52,7 @@ const StyledServiceTile = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in-out;
   }
 
   .title {
@@ -51,18 +63,25 @@ const StyledServiceTile = styled.div`
     padding: 15px 30px;
   }
 
+  ${H3} {
+    font-size: 30px;
+    font-family: 'Helvetica Neue 75 Bold';
+  }
+
   .listItems {
     padding: 0 30px;
     height: 0px;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in;
     opacity: 0;
   }
 
   ${ListItem} {
+    line-height: 1;
     top: 30px;
     opacity: 0;
+    font-size: 25px;
     position: relative;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in;
     &:nth-child(1) { transition-delay: 0.1s; }
     &:nth-child(2) { transition-delay: 0.2s; }
     &:nth-child(3) { transition-delay: 0.3s; }
@@ -78,7 +97,7 @@ const StyledServiceTile = styled.div`
 
     .textWrapper {
       height: 100%;
-      margin-top: -15%;
+      margin-top: -17.5%;
     }
 
     .listItems {
@@ -91,15 +110,46 @@ const StyledServiceTile = styled.div`
       opacity: 1
     }
 
+    .arrow {
+      transform: rotate(-180deg);
+    }
+
 }
 
-  @media (max-width: 850px) {
-    width: calc(100% / 2);
+  @media (max-width: 1000px) {
+    ${H3} { font-size: 25px; };
+    ${ListItem} { font-size: 20px;}
   }
 
+  @media (max-width: 850px) {
+    ${H3} { font-size: 30px; };
+    ${ListItem} { font-size: 25px;}
+  }
+
+  @media (max-width: 700px) {
+    ${H3} { font-size: 25px; };
+    ${ListItem} { font-size: 20px;}
+  }
+
+
   @media (max-width: 550px) {
-    width: calc(100% / 1);
-    margin-top: 30px;
+    ${H3} { font-size: 30px; };
+    ${ListItem} { font-size: 25px;}
+    .overlay { height: 60px; }
+    .textWrapper { height: 60px;}
+    .title { height: 60px; }
+    .arrow { display: block; }
+
+  }
+ 
+  @media (max-width: 450px) {
+    ${H3} { font-size: 25px; };
+    ${ListItem} { font-size: 20px;}
+  }
+
+  @media (max-width: 370px) {
+    ${H3} { font-size: 22px; };
+    ${ListItem} { font-size: 17px;}
   }
 
 `;
@@ -113,15 +163,15 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
     <div className="initial">
       <img src={content.image} alt={content.alt} />
     </div>
-    <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
+    <div className="overlay" style={{ backgroundColor: content.overlayColor === 'orange' ? '#C23E27' : '#FFFFFF' }}>
       <div className="textWrapper">
         <div className="title">
-          <H3>{content.title}</H3>
+          <H3 color={content.overlayColor === 'orange' ? 'white' : 'darkGrey'}>{content.title}</H3>
         </div>
         <div className="listItems">
           <ul>
             {content.description.map((item, index) => (
-              <ListItem size="normal" key={index}>
+              <ListItem size="normal" key={index} color={content.overlayColor === 'orange' ? '#FFFFFF' : '#1C1C1C'}>
                 {item}
               </ListItem>
             ))}
@@ -130,7 +180,7 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
 
       </div>
     </div>
-
+    <img className="arrow" src={content.overlayColor === 'orange' ? '/icons/arrows/arrow-up-white.svg' : '/icons/arrows/arrow-up-darkgrey.svg'} alt="Pfeil" />
   </StyledServiceTile>
 );
 

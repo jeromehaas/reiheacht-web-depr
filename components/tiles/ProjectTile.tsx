@@ -7,8 +7,8 @@ import { keyframes } from '@emotion/react';
 import Spacer from '@/components/layout/Spacer';
 
 const StyledProjectTile = styled.div`
-  width: calc(100% / 3);
   height: 100%;
+  width: 100%;
   overflow: hidden;
   position: relative;
 
@@ -38,36 +38,42 @@ const StyledProjectTile = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in-out;
   }
 
   .textWrapper  {
     line-height: 1;
     opacity: 0;
-    transition: all 0.7s ease
+    transition: all 0.99s ease-in-out;
   }
 
   ${H3} {
     top: 30px;
+    font-size: 30px;
     opacity: 0;
     position: relative;
-    transition: all 0.7s ease;
+    transition: all 0.7s ease-in;
+    font-family: 'Helvetica Neue 75 Bold'
   }
 
   ${P} {
     top: 30px;
     opacity: 0;
+    font-size: 25px;
     position: relative;
-    transition: all 0.7s ease 0.4s;
+    transition: all 0.7s ease 0.2s;
   }
 
-  @media (max-width: 850px) {
-    width: calc(100% / 2);
-  }
-
-  @media (max-width: 550px) {
-    width: calc(100% / 1);
-    margin-top: 30px;
+  .noreInfoLink {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    right: 30px;
+    opacity: 0;
+    font-family: 'Helvetica Neue 55 Roman';
+    color: ${(p) => p.theme.white};
+    text-decoration: underline;
+    transition: all 0.7s ease 0.2s;
   }
 
   &:hover {
@@ -78,6 +84,7 @@ const StyledProjectTile = styled.div`
     }
 
     .textWrapper {
+      margin-top: -30%;
       opacity: 1;
     }
 
@@ -91,8 +98,44 @@ const StyledProjectTile = styled.div`
       opacity: 1;
   }
 
+  .noreInfoLink {
+    opacity: 1;
+  }
+
 }
 
+@media (max-width: 1000px) {
+    ${H3} { font-size: 25px; };
+    ${P} { font-size: 20px;}
+  }
+
+  @media (max-width: 850px) {
+    ${H3} { font-size: 30px; };
+    ${P} { font-size: 25px;
+  }
+
+  @media (max-width: 700px) {
+    ${H3} { font-size: 25px; };
+    ${P} { font-size: 20px;}
+  }
+
+  @media (max-width: 550px) {
+    .overlay { height: 60px; }
+    .textWrapper { height: 60px;}
+    .title { height: 60px; }
+  }
+
+  @media (max-width: 450px) {
+    ${H3} { font-size: 25px; };
+    ${P} { font-size: 20px;}
+  }
+
+  @media (max-width: 370px) {
+    ${H3} { font-size: 22px; };
+    ${P} { font-size: 17px;}
+  }
+
+  }
 `;
 
 interface Props {
@@ -111,6 +154,7 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
             <H3>{content.title}</H3>
             <Spacer marginBottom="15px" />
             <P size="normal">{content.description}</P>
+            <a href={content.link} className="noreInfoLink">Mehr erfahren</a>
           </div>
         </div>
       </a>

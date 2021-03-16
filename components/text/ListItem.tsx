@@ -6,7 +6,7 @@ interface Props {
 }
 
 const StyledListItem = styled.li`
-  color: ${(p) => p.theme.white};
+  color: red;
   position: relative;
   margin: 0 0 10px 15px;
   line-height: 20px;
@@ -24,12 +24,12 @@ const StyledListItem = styled.li`
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background-color: ${(p) => p.theme.white}
+    background-color: ${(p) => p.color};
   }
 `;
 
-const ListItem: React.FunctionComponent<Props> = ({ children }) => (
-  <StyledListItem>
+const ListItem: React.FunctionComponent<Props> = ({ children, color }) => (
+  <StyledListItem color={color}>
     {children}
   </StyledListItem>
 );

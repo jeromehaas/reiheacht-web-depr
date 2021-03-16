@@ -4,14 +4,34 @@ import Tile from '@/components/tiles/Tile';
 import EmployeeTile from '@/components/tiles/EmployeeTile';
 import ProjectTile from '@/components/tiles/ProjectTile';
 import ServiceTile from '@/components/tiles/ServiceTile';
+import Reveal, { Slide } from 'react-awesome-reveal';
+import { keyframes } from '@emotion/react';
+
+const SlideIn = keyframes`
+  from {left: -100%; opacity: 1; position: relative;}
+  to {left: 0%; opacity: 1; position: relative;}
+`;
 
 const StyledTileSet = styled.div`
   width: 100%;
-  display: flex;
-  flex-direction: row;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   flex-wrap: wrap;
   overflow: hidden;
   line-height: 0;
+
+
+
+  @media (max-width: 850px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 550px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px 0
+  }
+
 `;
 
 const renderSwitch = (tiles, type) => {
@@ -52,7 +72,9 @@ interface Props {
 
 const TileSet: React.FunctionComponent<Props> = ({ tiles, type }) => (
   <StyledTileSet>
-    {renderSwitch(tiles, type)}
+    <Reveal keyframes={SlideIn} triggerOnce cascade duration={500} damping={0.1}>
+      {renderSwitch(tiles, type)}
+    </Reveal>
   </StyledTileSet>
 );
 

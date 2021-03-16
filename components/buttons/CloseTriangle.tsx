@@ -4,12 +4,17 @@ import styled, { css } from 'styled-components';
 import Linker from '@/components/buttons/Link';
 import orangeCloseTriangleIn from '@/public/animations/orange-close-triangle-in.json';
 import blueCloseTriangleIn from '@/public/animations/blue-close-triangle-in.json';
+import { useRouter } from 'next/router';
 
 const Wrapper = styled.i`
   position: absolute;
   margin: 0 auto;
   height: 50px;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 5;
 
   ${({ direction }) => direction === 'top'
     && css`
@@ -31,6 +36,7 @@ interface Props {
 }
 
 const CloseTriangle: React.FunctionComponent<Props> = ({ position, color, target }) => (
+
   <Wrapper direction={position}>
     <Linker type="link" target={target || '/'}>
       <Lottie

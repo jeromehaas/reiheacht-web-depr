@@ -15,8 +15,8 @@ const content = {
     text: <>In Zusammenarbeit mit der swisslocaltravel durften wir einen Trailer für ihre Familienschnitzeljagd umsetzen. Die Herausforderung bestand darin, dass der Trailer das günstige Familienangebot widerspiegelt. Design und Illustrationen wurden von von der swisslocaltravel bereitgestellt. </>,
   },
   projectOverview: {
-    imageLink: '/logos/projects/schweizer-bauernverband.svg',
-    imageAlt: 'Schweizer Bauernverband',
+    imageLink: '/logos/projects/swiss-local-travel.svg',
+    imageAlt: 'Swiss Local Travel',
     title: 'Smartphone-Schnitzeljagd.',
     text: 'Animation',
   },

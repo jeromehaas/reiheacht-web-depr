@@ -50,6 +50,8 @@ const StyledProjectOverview = styled.div`
         max-width: 80%;
         margin: 0 auto;
         padding: 10px 0;
+        width: 100%;
+        max-width: 80%;
       }
 
       .text-content {

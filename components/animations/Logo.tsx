@@ -1,43 +1,71 @@
 import React from 'react';
 import styled from 'styled-components';
+import logoLookLeft from '@/public/animations/logo-look-left.json';
+import logoLookUp from '@/public/animations/logo-look-up.json';
+import { Lottie } from '@crello/react-lottie';
 
 const StyledLogo = styled.div`
-  height: 600px;
   width: 100%;
-  max-height: 500px;
-  position: relative;
+  max-height: 400px;
+  max-width: 400px;
+  margin: 0 auto;
 
-    .head, .eyes {
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      max-height: 100%;
-      max-width: 100%;
-      padding: 100px;
-    }
+  .desktop {display: block}
+  .mobile {display: none}
 
-    @media (max-width: 1100px) {
-      display: none;
-    }
+  @media (max-width: 1100px) {
+    .desktop {display: none}
+    .mobile {display: none};
+  }
 
-    @media (max-width: 800px) {
-      display: flex;
-      height: 300px;
-      .head, .eyes {
-        padding: 60px; 
-      }
-    }
+  @media (max-width: 800px) {
+    margin: 100px auto 0 auto;
+    .desktop {display: none}
+    .mobile {display: block}
+  }
+  
 
 `;
 
 const Logo: React.FunctionComponent = () => (
   <StyledLogo>
-    <img className="eyes" src="/animations/logo_eyes.svg" alt="Logo Augen" />
-    <img className="head" src="/animations/logo_head.svg" alt="Logo Kopf" />
+
+    <div className="desktop">
+      <Lottie
+        config={{ animationData: logoLookLeft, autoplay: true, loop: true }}
+        playingState="playing"
+        speed={1}
+        width="100%"
+        height="100%"
+        style={{ margin: 0 }}
+        direction={1}
+      />
+    </div>
+
+    <div className="mobile">
+      <Lottie
+        config={{ animationData: logoLookUp, autoplay: true, loop: true }}
+        playingState="playing"
+        speed={1}
+        width="100%"
+        height="100%"
+        style={{ margin: 0 }}
+        direction={1}
+      />
+    </div>
+
+    {/* <Lottie
+        config={{ animationData: logoLookUp, autoplay: true }}
+        playingState="playing"
+        speed={1}
+        width="40px"
+        height="40px"
+        style={{ margin: 0 }}
+        direction={1}
+      /> */}
+
+    {/* <img className="eyes" src="/animations/logo_eyes.svg" alt="Logo Augen" />
+    <img className="head" src="/animations/logo_head.svg" alt="Logo Kopf" /> */}
   </StyledLogo>
 
 );

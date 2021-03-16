@@ -132,8 +132,8 @@ const ContactForm: React.FunctionComponent = () => {
   return (
     <StyledContactForm>
       <input type="text" className="name" placeholder="*Name" value={name} onChange={(event) => inputHandler(event, 'name')} />
-      <input type="text" className="email" placeholder="*Email" value={email} onChange={(event) => inputHandler(event, 'email')} />
-      <input type="text" className="phone" placeholder="Telefonnummer" value={phone} onChange={(event) => inputHandler(event, 'phone')} />
+      <input type="email" className="email" placeholder="*Email" value={email} onChange={(event) => inputHandler(event, 'email')} />
+      <input type="number" className="phone" placeholder="Telefonnummer" value={phone} onChange={(event) => inputHandler(event, 'phone')} />
       <textarea className="message" id="" placeholder="*Schiess los!" value={message} onChange={(event) => inputHandler(event, 'message')} />
       <button className="button" type="button" onClick={(event) => formHandler(event)}>
         <Lottie

@@ -14,7 +14,7 @@ const StyledParagraph = styled.p`
   font-family: ${(p) => (p.bold ? 'Helvetica 65 Medium' : 'Helvetica 55 Roman')};
   color: ${(p) => (p.color === 'darkGrey' ? p.theme.darkGrey : p.theme.white)};
   line-height: 160%;
-  max-width: 600px;
+  max-width: 910px;
   opacity: ${(p) => (p.animated ? 0 : 1)};
 
     &.active {
