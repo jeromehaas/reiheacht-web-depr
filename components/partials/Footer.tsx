@@ -77,11 +77,7 @@ const StyledFooter = styled.footer`
 `;
 
 const addressItems = [
-  'reiheacht Marketing Gmbh',
-  'Spillgässli 12',
-  '6205 Eich',
-  'hallo@reiheacht.ch',
-  '+41 79 399 95 12',
+
 ];
 
 const Footer: React.FunctionComponent = () => (
@@ -96,9 +92,11 @@ const Footer: React.FunctionComponent = () => (
       <div className="whiteLine" />
       <div className="wrapper">
         <div className="address">
-          {addressItems.map((item) => (
-            <P size="small" key={item} className="addressItem">{item}</P>
-          ))}
+          <P size="small" className="addressItem">reiheacht Marketing GmbH</P>
+          <P size="small" className="addressItem">Spillgässli 12</P>
+          <P size="small" className="addressItem">6205 Eich</P>
+          <P size="small" className="addressItem"><a href="mailto:hallo@reiheacht.ch">hallo@reiheacht.ch</a></P>
+          <P size="small" className="addressItem"><a href="tel:+41415520600">+41 41 552 06 00</a></P>
         </div>
         <div className="legal">
           <div className="legalLinks" />

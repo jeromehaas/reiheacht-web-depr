@@ -75,6 +75,8 @@ ol, ul {
 
 a {
   cursor: pointer;
+  color: inherit;
+  text-decoration: none;
 }
 
 blockquote, q {
