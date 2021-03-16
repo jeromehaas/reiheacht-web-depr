@@ -61,7 +61,19 @@ const StyledProjectTile = styled.div`
     opacity: 0;
     font-size: 25px;
     position: relative;
-    transition: all 0.7s ease 0.4s;
+    transition: all 0.7s ease 0.2s;
+  }
+
+  .noreInfoLink {
+    position: absolute;
+    bottom: 30px;
+    font-size: 20px;
+    right: 30px;
+    opacity: 0;
+    font-family: 'Helvetica Neue 55 Roman';
+    color: ${(p) => p.theme.white};
+    text-decoration: underline;
+    transition: all 0.7s ease 0.2s;
   }
 
   &:hover {
@@ -84,6 +96,10 @@ const StyledProjectTile = styled.div`
     ${P} {
       top: 5px;
       opacity: 1;
+  }
+
+  .noreInfoLink {
+    opacity: 1;
   }
 
 }
@@ -138,6 +154,7 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
             <H3>{content.title}</H3>
             <Spacer marginBottom="15px" />
             <P size="normal">{content.description}</P>
+            <a href={content.link} className="noreInfoLink">Mehr erfahren</a>
           </div>
         </div>
       </a>
