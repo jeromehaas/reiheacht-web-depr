@@ -113,15 +113,15 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
     <div className="initial">
       <img src={content.image} alt={content.alt} />
     </div>
-    <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
+    <div className="overlay" style={{ backgroundColor: content.overlayColor === 'orange' ? '#C23E27' : '#FFFFFF' }}>
       <div className="textWrapper">
         <div className="title">
-          <H3>{content.title}</H3>
+          <H3 color={content.overlayColor === 'orange' ? 'white' : 'darkGrey'}>{content.title}</H3>
         </div>
         <div className="listItems">
           <ul>
             {content.description.map((item, index) => (
-              <ListItem size="normal" key={index}>
+              <ListItem size="normal" key={index} style={{ color: content.overlayColor === 'orange' ? '#FFFFFF' : '#1C1C1C' }}>
                 {item}
               </ListItem>
             ))}
