@@ -197,8 +197,11 @@ const getParagraphSize = ({ size }) => {
       @media (max-width: 750px) {
         font-size: 25px;
       }
-      @media (max-width: 550px) {
+      @media (max-width: 650px) {
         font-size: 20px;
+      }
+      @media (max-width: 550px) {
+        font-size: 16px;
       }
       `;
     default:

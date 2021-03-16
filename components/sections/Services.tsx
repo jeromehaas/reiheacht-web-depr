@@ -25,14 +25,15 @@ const tileContent = [
     overlayColor: '#C23E27',
   },
   {
-    image: '/illustrations/services/illustration.svg',
+    // image: '/illustrations/services/illustration.svg',
+    image: '/illustrations/services/film.svg',
     alt: 'Film',
     title: 'Film',
     description: ['Animation', 'Erklärfilm', 'Werbefilm', 'Imagefilm'],
     overlayColor: '#C23E27',
   },
   {
-    image: '/illustrations/services/web.svg',
+    image: '/illustrations/services/illustration.svg',
     alt: 'Design',
     title: 'Design',
     description: ['Illustration', 'Layout', 'Webdesign'],
@@ -46,7 +47,7 @@ const tileContent = [
     overlayColor: '#C23E27',
   },
   {
-    image: '/illustrations/services/film.svg',
+    image: '/illustrations/services/web.svg',
     alt: 'Film',
     title: 'Film',
     description: ['Social Media', 'Webentwicklung'],
