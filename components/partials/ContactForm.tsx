@@ -101,7 +101,6 @@ const StyledContactForm = styled.form`
 `;
 
 const ContactForm: React.FunctionComponent = () => {
-
   const dispatch = useDispatch();
   const name = useSelector((state: RootStateOrAny) => state.contactForm.name);
   const email = useSelector((state: RootStateOrAny) => state.contactForm.email);
@@ -111,51 +110,23 @@ const ContactForm: React.FunctionComponent = () => {
   const showError = useSelector((state: RootStateOrAny) => state.contactForm.showError);
 
   const inputHandler = (event: any, type: string): void => {
-
     switch (type) {
-      case 'name': {
-
-        dispatch(updateContactFormName(event.target.value)); break;
-
-      }
-      case 'email': {
-
-        dispatch(updateContactFormEmail(event.target.value)); break;
-
-      }
-      case 'phone': {
-
-        dispatch(updateContactFormPhone(event.target.value)); break;
-
-      }
-      case 'message': {
-
-        dispatch(updateContactFormMessage(event.target.value)); break;
-
-      }
-      default: {
-
-        dispatch(updateContactFormName(event.target.value));
-
-      }
+      case 'name': { dispatch(updateContactFormName(event.target.value)); break; }
+      case 'email': { dispatch(updateContactFormEmail(event.target.value)); break; }
+      case 'phone': { dispatch(updateContactFormPhone(event.target.value)); break; }
+      case 'message': { dispatch(updateContactFormMessage(event.target.value)); break; }
+      default: { dispatch(updateContactFormName(event.target.value)); }
     }
-
   };
 
   const formHandler = (event) => {
-
     event.preventDefault();
     if (name && email && message) {
-
       dispatch(submitContactForm());
       sendMail(name, email, phone, message);
-
     } else {
-
       dispatch(showErrorFormValidation(true));
-
     }
-
   };
 
   return (
@@ -179,7 +150,6 @@ const ContactForm: React.FunctionComponent = () => {
       </div>
     </StyledContactForm>
   );
-
 };
 
 export default ContactForm;
