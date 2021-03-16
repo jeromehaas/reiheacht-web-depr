@@ -25,8 +25,6 @@ const StyledProjectTile = styled.div`
     object-fit: cover;
   }
 
-
-
   .overlay {
     position: absolute;
     top: 100%;

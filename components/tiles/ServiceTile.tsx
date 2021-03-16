@@ -24,6 +24,7 @@ const StyledServiceTile = styled.div`
   }
 
   .arrow {
+    display: none;
     width: 20px;
     height: 20px;
     position: absolute;
@@ -31,6 +32,7 @@ const StyledServiceTile = styled.div`
     right: 30px;
     object-fit: contain;
     transition: all 0.7s ease-in-out;
+
   }
 
   .overlay {
@@ -73,6 +75,7 @@ const StyledServiceTile = styled.div`
   }
 
   ${ListItem} {
+    line-height: 1;
     top: 30px;
     opacity: 0;
     font-size: 25px;
@@ -93,7 +96,7 @@ const StyledServiceTile = styled.div`
 
     .textWrapper {
       height: 100%;
-      margin-top: -30%;
+      margin-top: -17.5%;
     }
 
     .listItems {
@@ -142,6 +145,7 @@ const StyledServiceTile = styled.div`
     .overlay { height: 60px; }
     .textWrapper { height: 60px;}
     .title { height: 60px; }
+    .arrow { display: block; }
 
   }
  
