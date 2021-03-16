@@ -46,7 +46,7 @@ interface Props {
 const Project: React.FunctionComponent<Props> = ({ children, content }) => (
   <div>
     <PageWrapper>
-      <CloseTriangle position="top" />
+      <CloseTriangle position="top" target="/#projects" />
       <Space height="80px" />
       <Section>
         <H2>{content.intro.title}</H2>
@@ -67,10 +67,10 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
         <Space height="90px" />
         <H2>{content.outro.title}</H2>
         <HorizontalLine animated delay="0.3s" />
-        <Button type="link" target="/" text="Sitzplatz buchen" />
+        <Button type="link" target="/#contact" text="Sitzplatz buchen" />
         <Space height="200px" />
       </Section>
-      <CloseTriangle position="bottom" />
+      <CloseTriangle position="bottom" target="/#projects" />
     </PageWrapper>
   </div>
 );

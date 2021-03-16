@@ -11,12 +11,12 @@ interface Props {
 const Legal: React.FunctionComponent<Props> = ({ children }) => (
   <div>
     <PageWrapper color="white">
-      <CloseTriangle position="top" color="blue" />
+      <CloseTriangle position="top" target="/" color="blue" />
       <Spacer marginBottom="30px" />
       <Section>
         {children}
       </Section>
-      <CloseTriangle position="bottom" color="blue" />
+      <CloseTriangle position="bottom" target="/" color="blue" />
     </PageWrapper>
   </div>
 );
