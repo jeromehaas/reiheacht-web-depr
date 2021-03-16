@@ -136,6 +136,14 @@ table {
           font-display: block;
     }
     @font-face{
+        font-family:"Helvetica Neue 75 Bold";
+        src:
+          local('fonts/5664150'), url("/fonts/5664150/800da3b0-675f-465f-892d-d76cecbdd5b1.woff2") format("woff2"),
+          local('fonts/5664150'), url("/fonts/5664150/7b415a05-784a-4a4c-8c94-67e9288312f5.woff") format("woff"),
+          local('fonts/5664150'), url("/fonts/5664150/7b415a05-784a-4a4c-8c94-67e9288312f5.ttf") format("ttf");
+          font-display: block;
+    }
+    @font-face{
         font-family:"Helvetica Neue 76 Bold Italic";
         src:
           local('fonts/5664111'), url("/fonts/5664111/13ab58b4-b5ba-4c95-afde-ab2608fbbbd9.woff2") format("woff2"),
@@ -157,14 +165,6 @@ table {
           local('fonts/5664121'), url("/fonts/5664121/fc4fb6ca-f981-4115-b882-c78e9f08be52.woff2") format("woff2"),
           local('fonts/5664121'), url("/fonts/5664121/6ed03453-f512-45ba-84bf-fe4ea45d5e6a.woff") format("woff"),
           local('fonts/5664121'), url("/fonts/5664121/6ed03453-f512-45ba-84bf-fe4ea45d5e6a.ttf") format("ttf");
-          font-display: block;
-    }
-    @font-face{
-        font-family:"Helvetica Neue 75 Bold";
-        src:
-          local('fonts/5664150') url("/fonts/5664150/800da3b0-675f-465f-892d-d76cecbdd5b1.woff2") format("woff2"),
-          local('fonts/5664150') url("/fonts/5664150/7b415a05-784a-4a4c-8c94-67e9288312f5.woff") format("woff"),
-          local('fonts/5664150') url("/fonts/5664150/7b415a05-784a-4a4c-8c94-67e9288312f5.ttf") format("ttf");
           font-display: block;
     }
 

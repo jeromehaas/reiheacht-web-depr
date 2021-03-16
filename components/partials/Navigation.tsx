@@ -128,6 +128,7 @@ const MobileNavigation = styled.nav`
     padding: 5px;
     font-size: 30px;
     display: inline-block;
+    font-family: 'Helvetica Neue 75 Bold';
 
     @media (max-height: 700px) {
       margin: 5px;
