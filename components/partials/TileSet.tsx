@@ -21,6 +21,8 @@ const StyledTileSet = styled.div`
   overflow: hidden;
   line-height: 0;
 
+
+
   @media (max-width: 850px) {
     grid-template-columns: repeat(2, 1fr);
   }

@@ -124,8 +124,6 @@ const StyledServiceTile = styled.div`
   @media (max-width: 850px) {
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
-    &:nth-child(3) { order: 4 }
-    &:nth-child(6) { order: 5 }
   }
 
   @media (max-width: 700px) {
@@ -137,9 +135,6 @@ const StyledServiceTile = styled.div`
   @media (max-width: 550px) {
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
-    &:nth-child(3) { order: unset }
-    &:nth-child(3) { order: unset }
-    &:nth-child(6) { order: unset }
     .overlay { height: 60px; }
     .textWrapper { height: 60px;}
     .title { height: 60px; }

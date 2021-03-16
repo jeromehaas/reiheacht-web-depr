@@ -64,7 +64,6 @@ const StyledProjectTile = styled.div`
     transition: all 0.7s ease 0.4s;
   }
 
-
   &:hover {
 
     .overlay {
