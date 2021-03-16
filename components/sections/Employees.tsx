@@ -33,7 +33,7 @@ const tileContent = [
     title: 'Jérôme Haas',
     description: 'Web-Entwickler',
     email: 'jerome.haas@reiheacht.ch ',
-    overlayColor: '#0374B6',
+    overlayColor: '#C23E27',
     animationColor: 'blue',
   },
   {

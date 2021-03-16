@@ -37,7 +37,7 @@ const StyledEmployeeTile = styled.div`
   }
 
   .background-animation {
-    background-color: white;
+    background-color:${(p) => p.color};
     position: absolute;
     top: 0;
     right: 0;
@@ -60,7 +60,7 @@ const StyledEmployeeTile = styled.div`
     justify-content: space-between;
     align-items: center;
     transition: ${(p) => p.theme.standardTransition};
-    background-color: ${(p) => p.theme.white};
+    background-color:${(p) => p.theme.white};
 
     @media (max-width: 350px) {
       height: 110px;
@@ -115,6 +115,7 @@ interface Props {
 }
 
 const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
+
   const [animationState, setAnimationState] = useState('inactive');
 
   return (
@@ -122,6 +123,7 @@ const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
     <StyledEmployeeTile
       onMouseEnter={() => setAnimationState('active')}
       onMouseLeave={() => setAnimationState('inactive')}
+      color={content.overlayColor}
     >
 
       <div
@@ -158,5 +160,6 @@ const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
 
     </StyledEmployeeTile>
   );
+
 };
 export default EmployeeTile;
