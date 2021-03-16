@@ -5,7 +5,6 @@ import logoLookUp from '@/public/animations/logo-look-up.json';
 import { Lottie } from '@crello/react-lottie';
 
 const StyledLogo = styled.div`
-  height: 600px;
   width: 100%;
   max-height: 400px;
   max-width: 400px;

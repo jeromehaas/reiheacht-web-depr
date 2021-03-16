@@ -3,7 +3,6 @@ import Legal from '@/components/pages/Legal';
 import { H2, H3, HL } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
 import Spacer from '@/components/layout/Spacer';
-import ListItem from '@/components/text/ListItem';
 import Paragraph from '@/components/text/Paragraph';
 
 const content = [
@@ -39,7 +38,7 @@ const content = [
   },
   {
     title: <>7. Urheberrechte</>,
-    text: <>Alle Inhalte auf reiheacht.ch sind urheberechtlich geschützt. und gehören einzig und allein der reiheacht oder den ausdrücklich genannten Rechtsinhabern. Für eine Verwendung jeglicher Art von Inhalten auf reiheacht.ch ist schriftlich im Voraus eine Zustimmung einzuholen.</>,
+    text: <>Alle Inhalte auf reiheacht.ch sind urheberechtlich geschützt, und gehören einzig und allein der reiheacht oder den ausdrücklich genannten Rechtsinhabern. Für eine Verwendung jeglicher Art von Inhalten auf reiheacht.ch ist schriftlich im Voraus eine Zustimmung einzuholen.</>,
     items: [],
   },
   {
