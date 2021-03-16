@@ -52,12 +52,12 @@ const DesktopNavigation = styled.nav`
   }
 
   .link {
-    margin-right: 50px;
+    margin-right: 60px;
     color: ${(p) => p.theme.white};
     text-decoration: none;
   }
 
-  @media (max-width: 850px) {
+  @media (max-width: 890px) {
     display: none;
   }
   
@@ -150,7 +150,7 @@ const MobileNavigation = styled.nav`
 
 }
 
-  @media (max-width: 850px) {
+  @media (max-width: 890px) {
     display: block;
   }
 
@@ -176,7 +176,7 @@ const navigationItems = [
     type: 'anchor',
   },
   {
-    child: 'Agentur',
+    child: 'Team',
     link: 'employees',
     section: 'employees',
     type: 'anchor',
@@ -198,6 +198,7 @@ const navigationItems = [
 interface Props { }
 
 const Navigation: React.FunctionComponent<Props> = () => {
+
   const dispatch = useDispatch();
   const mobileMenuIsVisible = useSelector((state: RootStateOrAny) => state.navigation.mobile.isVisible);
   const currentPosition = useSelector((state: RootStateOrAny) => state.currentPosition);
@@ -269,6 +270,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
       </MobileNavigation>
     </>
   );
+
 };
 
 export default Navigation;
