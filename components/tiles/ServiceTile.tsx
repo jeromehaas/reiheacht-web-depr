@@ -23,6 +23,16 @@ const StyledServiceTile = styled.div`
     object-fit: cover;
   }
 
+  .arrow {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    object-fit: contain;
+    transition: all 0.7s ease-in-out;
+  }
+
   .overlay {
     position: absolute;
     right: 0;
@@ -32,7 +42,6 @@ const StyledServiceTile = styled.div`
     height: 80px;
     transition: all 0.7s ease-in-out;
   }
-
 
   .textWrapper {
     width: 100%;
@@ -97,6 +106,10 @@ const StyledServiceTile = styled.div`
       opacity: 1
     }
 
+    .arrow {
+      transform: rotate(-180deg);
+    }
+
 }
 
   @media (max-width: 1000px) {
@@ -137,6 +150,11 @@ const StyledServiceTile = styled.div`
     ${ListItem} { font-size: 20px;}
   }
 
+  @media (max-width: 370px) {
+    ${H3} { font-size: 22px; };
+    ${ListItem} { font-size: 17px;}
+  }
+
 `;
 
 interface Props {
@@ -165,7 +183,7 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
 
       </div>
     </div>
-
+    <img className="arrow" src={content.overlayColor === 'orange' ? '/icons/arrows/arrow-up-white.svg' : '/icons/arrows/arrow-up-darkgrey.svg'} alt="Pfeil" />
   </StyledServiceTile>
 );
 

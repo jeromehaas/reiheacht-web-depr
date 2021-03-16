@@ -25,6 +25,8 @@ const StyledProjectTile = styled.div`
     object-fit: cover;
   }
 
+
+
   .overlay {
     position: absolute;
     top: 100%;
@@ -116,6 +118,11 @@ const StyledProjectTile = styled.div`
   @media (max-width: 450px) {
     ${H3} { font-size: 25px; };
     ${P} { font-size: 20px;}
+  }
+
+  @media (max-width: 370px) {
+    ${H3} { font-size: 22px; };
+    ${P} { font-size: 17px;}
   }
 
   }
