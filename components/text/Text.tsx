@@ -255,6 +255,7 @@ const P = styled.p`
     `;
 
 const ListItem = styled(P)`
+  color: ${(p) => p.color} !important;
   position: relative;
   margin: 0 0 10px 15px;
   line-height: 1.2;;
@@ -270,7 +271,7 @@ const ListItem = styled(P)`
     height: 7px;
     line-height: 1.2;
     border-radius: 50%;
-    background-color: ${(p) => p.theme.white}
+    background-color: ${(p) => p.color}
   }
 
 `;

@@ -121,7 +121,7 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
         <div className="listItems">
           <ul>
             {content.description.map((item, index) => (
-              <ListItem size="normal" key={index} style={{ color: content.overlayColor === 'orange' ? '#FFFFFF' : '#1C1C1C' }}>
+              <ListItem size="normal" key={index} color={content.overlayColor === 'orange' ? '#FFFFFF' : '#1C1C1C'}>
                 {item}
               </ListItem>
             ))}
