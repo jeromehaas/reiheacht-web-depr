@@ -28,7 +28,7 @@ const TextBlock: React.FunctionComponent<Props> = ({ content }) => {
           <div ref={ref}>
             <H2>{content.title}</H2>
             <HorizontalLine animated delay="0.3s" />
-            <P>{content.text}</P>
+            <P size="big">{content.text}</P>
             <Space height="30px" />
           </div>
         )}

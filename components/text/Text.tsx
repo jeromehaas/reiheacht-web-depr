@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components';
 interface Props { }
 
 const getTitleColor = ({ theme, color }) => {
+
   switch (color) {
     case 'white':
       return css`
@@ -26,6 +27,7 @@ const getTitleColor = ({ theme, color }) => {
         color: ${theme.white};
       `;
   }
+
 };
 
 const sharedTitleStyle = css`
@@ -149,6 +151,7 @@ const H4 = styled.h4`
  `;
 
 const getParagraphColor = ({ theme, color }) => {
+
   switch (color) {
     case 'white':
       return css`
@@ -171,9 +174,11 @@ const getParagraphColor = ({ theme, color }) => {
         color: ${theme.white};
       `;
   }
+
 };
 
 const getParagraphSize = ({ size }) => {
+
   switch (size) {
     case 'small':
       return css`
@@ -188,12 +193,12 @@ const getParagraphSize = ({ size }) => {
       `;
     case 'big':
       return css`
-      font-size: 25px;
+      font-size: 30px;
       @media (max-width: 750px) {
-        font-size: 20px;
+        font-size: 25px;
       }
       @media (max-width: 550px) {
-        font-size: 16px;
+        font-size: 20px;
       }
       `;
     default:
@@ -207,10 +212,13 @@ const getParagraphSize = ({ size }) => {
       }
       `;
   }
+
 };
 
 const checkParagraphAnimated = ({ animated, delay }) => {
+
   if (animated && delay) {
+
     return css`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
@@ -222,12 +230,14 @@ const checkParagraphAnimated = ({ animated, delay }) => {
         100% {opacity: 1; left: 0px; }
     }
    `;
+
   }
+
 };
 
 const P = styled.p`
-  font-size: 25px;
-  max-width: 600px;
+  font-size: 30px;
+  max-width: 870px;
   opacity: 1;
   line-height: 1.6;
   color: red;

@@ -26,8 +26,8 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => (
   <Reveal keyframes={moveDown} triggerOnce fraction={1}>
     <H1>{content.title}<Carousel items={content.carouselItems} /></H1>
     <HorizontalLine delay="4.5s" animated />
-    <P animated delay="4.5s">{content.text}</P>
-    <Space height="30px" />
+    <P size="big" animated delay="4.5s">{content.text}</P>
+    <Space height="60px" />
     {content.buttons.map((button) => (
       <Button key={button.text} type="anchor" target={button.target} text={button.text} animate delay={button.delay} />
     ))}
