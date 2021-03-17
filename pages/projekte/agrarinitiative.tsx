@@ -12,35 +12,29 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <>Von der Skizze bis zur Animation<Highlight>.</Highlight></>,
-    text: <>Für die kommende Agrarinitiative im Juni 2021 hat uns der Schweizer Bauernverband damit beauftragt verschiedene Illustrationen und  Animationen für Ihre Kampagne zu erstellen.Zur Kommunikation werden  verschiedene Medienkanäle wie Print, Video und Webbanner eingesetzt.</>,
+    title: <>Hühner an die Front.<Highlight>.</Highlight></>,
+    text: <>Passend zum Illustrationsstil der Kampagne des Schweizer Bauernverbands für die kommende Trinkwasserinitiative im Juni 2021 durften wir auch für GalloSuisse drei Hühner visualisieren, die den Figuren aus der Kampagne tatkräftig unter die Arme greifen. </>,
   },
   projectOverview: {
-    imageLink: '/logos/projects/schweizer-bauernverband.svg',
+    imageLink: '/logos/projects/gallosuisse.svg',
     imageAlt: 'Schweizer Bauernverband',
-    title: 'Agrar-Initiative.',
-    text: 'Design, Illustration & Animation',
+    title: 'Agrarinitiative.',
+    text: 'Idee, Design, Illustration',
   },
   outro: {
-    title: <>Du möchtest deine Idee auch zum Leben <Highlight>erwecken</Highlight>?</>,
+    title: <>Ebenfalls an einem mass-geschneidertem Erklärfilm interessiert<Highlight>?</Highlight></>,
   },
   switcher: {
-    nextProject: '/projekte/trinkwasserinitiative',
-    previousProject: '/smartphone-schnitzeljagd',
+    nextProject: '/projekte/extreme-agrarinitiative',
+    previousProject: '/projekte/smartphone-schnitzeljagd',
   },
 
 };
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
-    <Image src="/projects/agrarinitiative/employee.png" alt="Arbeiter" />
-    <Image src="/projects/agrarinitiative/family.png" alt="Familie" />
-    <Image src="/projects/agrarinitiative/foodwaste.png" alt="Foodwaste" />
-    <Image src="/projects/agrarinitiative/import.png" alt="Import" />
-    <Image src="/projects/agrarinitiative/draft.png" alt="Entwurf" />
-    <Image src="/projects/agrarinitiative/illustration.png" alt="Illustration" />
-    <Spacer marginBottom="30px" />
-    <Video link="https://player.vimeo.com/video/520902562" />
+    <Image src="/projects/agrarinitiative/draft.png" alt="Arbeiter" />
+    <Image src="/projects/agrarinitiative/illustration.png" alt="Familie" />
   </Project>
 );
 

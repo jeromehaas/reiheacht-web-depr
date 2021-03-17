@@ -21,7 +21,9 @@ const StyledTileSet = styled.div`
   overflow: hidden;
   line-height: 0;
 
-
+  .test {
+    border: 10px solid green;
+  }
 
   @media (max-width: 850px) {
     grid-template-columns: repeat(2, 1fr);
@@ -40,25 +42,25 @@ const renderSwitch = (tiles, type) => {
     case 'employees':
       return (
         tiles.map((tile, index) => (
-          <EmployeeTile key={index} content={tile}>hello</EmployeeTile>
+          <EmployeeTile key={index} content={tile} />
         ))
       );
     case 'projects':
       return (
         tiles.map((tile, index) => (
-          <ProjectTile key={index} content={tile}>hello</ProjectTile>
+          <ProjectTile key={index} content={tile} />
         ))
       );
     case 'services':
       return (
         tiles.map((tile, index) => (
-          <ServiceTile key={index} content={tile}>hello</ServiceTile>
+          <ServiceTile key={index} content={tile} />
         ))
       );
     default:
       return (
         tiles.map((tile, index) => (
-          <Tile key={index} content={tile}>hello</Tile>
+          <Tile key={index} content={tile} />
         ))
       );
   }
@@ -72,7 +74,7 @@ interface Props {
 
 const TileSet: React.FunctionComponent<Props> = ({ tiles, type }) => (
   <StyledTileSet>
-    <Reveal keyframes={SlideIn} triggerOnce cascade fraction={0} duration={1000} damping={0.25}>
+    <Reveal keyframes={SlideIn} triggerOnce childClassName="test" cascade fraction={0} duration={1000} damping={0.25}>
       {renderSwitch(tiles, type)}
     </Reveal>
   </StyledTileSet>

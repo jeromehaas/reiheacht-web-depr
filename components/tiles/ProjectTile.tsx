@@ -12,6 +12,8 @@ const StyledProjectTile = styled.div`
   overflow: hidden;
   position: relative;
 
+
+
   .initial {
     width: 100%;
     height: 100%;
