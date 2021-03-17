@@ -7,22 +7,19 @@ import Projects from '@/components/sections/Projects';
 import Employees from '@/components/sections/Employees';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/partials/Footer';
+import CookieBanner from '@/components/partials/CookieBanner';
 
 const Home = () => (
   <div>
-
     <PageWrapper>
-
-      <>
-        <Navigation />
-        <Start />
-        <Services />
-        <Projects />
-        <Employees />
-        <Contact />
-        <Footer />
-      </>
-
+      <Navigation />
+      <Start />
+      <Services />
+      <Projects />
+      <Employees />
+      <Contact />
+      <Footer />
+      <CookieBanner />
     </PageWrapper>
   </div>
 );
