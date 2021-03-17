@@ -116,14 +116,20 @@ const StyledServiceTile = styled.div`
 
 }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     ${H3} { font-size: 25px; };
     ${ListItem} { font-size: 20px;}
+    .overlay { height: 60px; }
+    .textWrapper { height: 60px;}
+    .title { height: 60px;
   }
 
   @media (max-width: 850px) {
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
+    .overlay { height: 60px; }
+    .textWrapper { height: 60px;}
+    .title { height: 60px;
   }
 
   @media (max-width: 700px) {

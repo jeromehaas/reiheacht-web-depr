@@ -8,7 +8,7 @@ import Reveal, { Slide } from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
 
 const SlideIn = keyframes`
-  from {left: -100%; opacity: 1; position: relative;}
+  from {left: -300%; opacity: 1; position: relative;}
   to {left: 0%; opacity: 1; position: relative;}
 `;
 
@@ -72,7 +72,7 @@ interface Props {
 
 const TileSet: React.FunctionComponent<Props> = ({ tiles, type }) => (
   <StyledTileSet>
-    <Reveal keyframes={SlideIn} triggerOnce cascade duration={500} damping={0.1}>
+    <Reveal keyframes={SlideIn} triggerOnce cascade fraction={0} duration={1000} damping={0.25}>
       {renderSwitch(tiles, type)}
     </Reveal>
   </StyledTileSet>

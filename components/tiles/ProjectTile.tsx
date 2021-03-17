@@ -152,9 +152,9 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
         <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
           <div className="textWrapper">
             <H3>{content.title}</H3>
-            <Spacer marginBottom="15px" />
+            <Spacer marginBottom="6px" />
             <P size="normal">{content.description}</P>
-            <p className="noreInfoLink">Mehr erfahren</p>
+            <p className="noreInfoLink">Mehr Infos</p>
           </div>
         </div>
       </a>

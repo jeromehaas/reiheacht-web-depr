@@ -154,8 +154,8 @@ const TermsAndConditions: React.FunctionComponent<Props> = () => (
       <Spacer marginBottom="60px" />
       <DownloadButton>
         <div className="wrapper">
-          <a href="/files/agb.pdf" download>
-            <P size="normal" color="darkGrey">Hier downloaden</P>
+          <a href="/files/agb_reiheacht_mrz21.pdf" filename="agb_reiheacht_mrz21" download>
+            <P size="normal" color="darkGrey">Hier herunterladen</P>
           </a>
         </div>
       </DownloadButton>

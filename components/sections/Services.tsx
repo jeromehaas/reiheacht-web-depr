@@ -48,8 +48,8 @@ const tileContent = [
   },
   {
     image: '/illustrations/services/web.svg',
-    alt: 'Film',
-    title: 'Film',
+    alt: 'Web',
+    title: 'Web',
     description: ['Social Media', 'Webentwicklung'],
     overlayColor: 'orange',
   },

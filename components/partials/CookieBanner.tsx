@@ -20,7 +20,7 @@ const StyledCookieBanner = styled.div`
   padding: 10px 30px;
 
   &.visible {
-    transition-delay: 1s;
+    transition-delay: 10s;
     bottom: 0;
   }
 
