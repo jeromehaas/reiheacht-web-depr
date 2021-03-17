@@ -33,7 +33,6 @@ const StyledServiceTile = styled.div`
     right: 30px;
     object-fit: contain;
     transition: all 0.7s ease-in-out;
-
   }
 
   .overlay {
@@ -116,14 +115,20 @@ const StyledServiceTile = styled.div`
 
 }
 
-  @media (max-width: 1000px) {
+  @media (max-width: 1050px) {
     ${H3} { font-size: 25px; };
     ${ListItem} { font-size: 20px;}
+    .overlay { height: 60px; }
+    .textWrapper { height: 60px;}
+    .title { height: 60px;
   }
 
   @media (max-width: 850px) {
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
+    .overlay { height: 60px; }
+    .textWrapper { height: 60px;}
+    .title { height: 60px;}
   }
 
   @media (max-width: 700px) {
@@ -139,7 +144,6 @@ const StyledServiceTile = styled.div`
     .textWrapper { height: 60px;}
     .title { height: 60px; }
     .arrow { display: block; }
-
   }
  
   @media (max-width: 450px) {
@@ -151,7 +155,7 @@ const StyledServiceTile = styled.div`
     ${H3} { font-size: 22px; };
     ${ListItem} { font-size: 17px;}
   }
-
+  }
 `;
 
 interface Props {

@@ -13,7 +13,7 @@ const PlayerWrapper = styled.div`
     width: 100px;
     height: 100px;
     opacity: 0;
-    animation: ${'0.5s ease-in-out 2s 1 forwards fadeIn}'};
+    animation: ${'0.5s ease-in-out 1.5s 1 forwards fadeIn}'};
 
     @keyframes fadeIn {
         0% {opacity: 0; }

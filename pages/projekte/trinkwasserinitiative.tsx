@@ -25,7 +25,7 @@ const content = {
   },
   switcher: {
     nextProject: '/projekte/sbv-div',
-    previousProject: '/projekte/agrarinitiative',
+    previousProject: '/projekte/osterkampagne',
   },
 };
 

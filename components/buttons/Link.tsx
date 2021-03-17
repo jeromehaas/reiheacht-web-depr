@@ -40,9 +40,9 @@ const Linker: React.FunctionComponent<Props> = ({
       case 'link':
         return <Link href={target}><a className={cx('link', className)}>{children}</a></Link>;
       case 'anchor':
-        return <Anchor className={cx('link', className)} to={target} spy smooth="easeInOutQuint" duration={1000} delay={delay} onClick={onClickFunction}>{children}</Anchor>;
+        return <Anchor className={cx('link', className)} to={target} spy smooth="easeInOutQuint" duration={1300} delay={delay} onClick={onClickFunction}>{children}</Anchor>;
       default:
-        return <Anchor className={cx('link', className)} to={target} spy smooth="easeInOutQuint" duration={1000} delay={delay} onClick={onClickFunction}>{children}</Anchor>;
+        return <Anchor className={cx('link', className)} to={target} spy smooth="easeInOutQuint" duration={1300} delay={delay} onClick={onClickFunction}>{children}</Anchor>;
     }
   };
 

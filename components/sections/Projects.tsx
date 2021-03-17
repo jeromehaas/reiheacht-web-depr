@@ -12,30 +12,21 @@ import TileSet from '@/components/partials/TileSet';
 interface Props { }
 
 const tileContent = [
-  // {
-  //   image: '/illustrations/projects/extreme-agrarinitiative.png',
-  //   alt: 'Schweizer Bauernverband',
-  //   title: <H3>Schweizer Bauernverband</H3>,
-  //   description: <Paragraph>Extreme Agrarinitiative</Paragraph>,
-  //   overlayColor: '#9EA600',
-  //   link: '/projekte/#',
-  // },
-  // {
-  //   image: '/illustrations/projects/osterkampagne.png',
-  //   alt: 'Schweizer Bauernverband',
-  //   title: <H3>Schweizer Bauernverband</H3>,
-  //   description: <Paragraph>Osterkampagne</Paragraph>,
-  //   overlayColor: '#C70103',
-  //   link: '/projekte/osterkampagne',
-  // },
   {
-    image: '/illustrations/projects/agrarinitiative.png',
+    image: '/illustrations/projects/extreme-agrarinitiative.png',
     alt: 'Schweizer Bauernverband',
     title: 'Schweizer Bauernverband',
-    description: 'Agrarinitiative',
+    description: 'Extreme Agrarinitiative',
+    overlayColor: '#9EA600',
+    link: '/projekte/extreme-agrarinitiative',
+  },
+  {
+    image: '/illustrations/projects/osterkampagne.png',
+    alt: 'Gallo Suisse',
+    title: 'Gallo Suisse',
+    description: 'Osterkampagne',
     overlayColor: '#C70103',
-    link: '/projekte/agrarinitiative',
-
+    link: '/projekte/osterkampagne',
   },
   {
     image: '/illustrations/projects/trinkwasserinitiative.png',
@@ -63,6 +54,14 @@ const tileContent = [
     overlayColor: '#FC0031',
     link: '/projekte/smartphone-schnitzeljagd',
 
+  },
+  {
+    image: '/illustrations/projects/extreme-agrarinitiative.png',
+    alt: 'Gallo Suisse',
+    title: 'Gallo Suisse',
+    description: 'Agrarinitiative',
+    overlayColor: '#C70103',
+    link: '/projekte/agrarinitiative',
   },
 ];
 

@@ -12,6 +12,8 @@ const StyledProjectTile = styled.div`
   overflow: hidden;
   position: relative;
 
+
+
   .initial {
     width: 100%;
     height: 100%;
@@ -152,9 +154,9 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
         <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
           <div className="textWrapper">
             <H3>{content.title}</H3>
-            <Spacer marginBottom="15px" />
+            <Spacer marginBottom="6px" />
             <P size="normal">{content.description}</P>
-            <a href={content.link} className="noreInfoLink">Mehr erfahren</a>
+            <p className="noreInfoLink">Mehr Infos</p>
           </div>
         </div>
       </a>
