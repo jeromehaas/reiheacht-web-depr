@@ -154,7 +154,7 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
             <H3>{content.title}</H3>
             <Spacer marginBottom="15px" />
             <P size="normal">{content.description}</P>
-            <a href={content.link} className="noreInfoLink">Mehr erfahren</a>
+            <p className="noreInfoLink">Mehr erfahren</p>
           </div>
         </div>
       </a>
