@@ -81,10 +81,10 @@ const StyledServiceTile = styled.div`
     font-size: 25px;
     position: relative;
     transition: all 0.7s ease-in;
-    &:nth-child(1) { transition-delay: 0.1s; }
+    /* &:nth-child(1) { transition-delay: 0.1s; }
     &:nth-child(2) { transition-delay: 0.2s; }
     &:nth-child(3) { transition-delay: 0.3s; }
-    &:nth-child(4) { transition-delay: 0.4s; }
+    &:nth-child(4) { transition-delay: 0.4s; } */
   }
 
   &:hover {
