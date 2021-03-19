@@ -12,9 +12,9 @@ interface Props { }
 const tileContent = [
   {
     image: '/illustrations/services/idea.svg',
-    alt: 'Idee & Konzept',
-    title: 'Idee & Konzept',
-    description: [],
+    alt: 'Planung',
+    title: 'Planung',
+    description: ['Idee', 'Konzept'],
     overlayColor: 'white',
   },
   {
@@ -25,7 +25,6 @@ const tileContent = [
     overlayColor: 'orange',
   },
   {
-    // image: '/illustrations/services/illustration.svg',
     image: '/illustrations/services/film.svg',
     alt: 'Film',
     title: 'Film',
