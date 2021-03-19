@@ -75,19 +75,29 @@ const StyledContactForm = styled.form`
   }
 
   .errorMessage {
+    position: relative;
+    top: -25px;
+    left: calc(100% - 195px);
+    width: 200px;
     background-color: ${(p) => p.theme.white};
-    padding: 7.5px 15px;
-    border-radius: 5px;
+    padding: 5px;
+    border-radius: 10px;
     text-align: center;
     font-size: 0px;
+    overflow: hidden;
     height: 0px;
-    padding: 0 15px;
+    padding: 0px;
     transition: all 0.25s ease;
     &.active {
-      font-size: 20px;
-      padding: 15px;
+      p { font-size: 12px !important; }
+      padding: 5px;
       height: unset;
+        @media (max-width: 500px) {
+          font-size: 8px;
+      }
     }
+
+
   }
 
 .name { grid-area: name; }
@@ -130,25 +140,27 @@ const ContactForm: React.FunctionComponent = () => {
   };
 
   return (
-    <StyledContactForm>
-      <input type="text" className="name" placeholder="*Name" value={name} onChange={(event) => inputHandler(event, 'name')} />
-      <input type="email" className="email" placeholder="*Email" value={email} onChange={(event) => inputHandler(event, 'email')} />
-      <input type="number" className="phone" placeholder="Telefonnummer" value={phone} onChange={(event) => inputHandler(event, 'phone')} />
-      <textarea className="message" id="" placeholder="*Schiess los!" value={message} onChange={(event) => inputHandler(event, 'message')} />
-      <button className="button" type="button" onClick={(event) => formHandler(event)}>
-        <Lottie
-          config={{ animationData: sendButton, autoplay: false }}
-          playingState={isSent ? 'playing' : 'paused'}
-          speed={1}
-          width="100%"
-          height="100%"
-          style={{ margin: '0 auto' }}
-        />
-      </button>
-      <div className={cx(`errorMessage ${showError ? 'active' : null}`)}>
-        <P color="darkGrey" size="small">Fülle zuerst alle *Felder aus.</P>
-      </div>
-    </StyledContactForm>
+    <>
+      <StyledContactForm>
+        <input type="text" className="name" placeholder="*Name" value={name} onChange={(event) => inputHandler(event, 'name')} />
+        <input type="email" className="email" placeholder="*Email" value={email} onChange={(event) => inputHandler(event, 'email')} />
+        <input type="number" className="phone" placeholder="Telefonnummer" value={phone} onChange={(event) => inputHandler(event, 'phone')} />
+        <textarea className="message" id="" placeholder="*Schiess los!" value={message} onChange={(event) => inputHandler(event, 'message')} />
+        <button className="button" type="button" onClick={(event) => formHandler(event)}>
+          <Lottie
+            config={{ animationData: sendButton, autoplay: false }}
+            playingState={isSent ? 'playing' : 'paused'}
+            speed={1}
+            width="100%"
+            height="100%"
+            style={{ margin: '0 auto' }}
+          />
+        </button>
+        <div className={cx(`errorMessage ${showError ? 'active' : null}`)}>
+          <P color="darkGrey" size="small">Fülle zuerst alle *Felder aus.</P>
+        </div>
+      </StyledContactForm>
+    </>
   );
 };
 

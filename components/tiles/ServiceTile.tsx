@@ -115,6 +115,8 @@ const StyledServiceTile = styled.div`
 
 }
 
+
+
   @media (max-width: 1050px) {
     ${H3} { font-size: 25px; };
     ${ListItem} { font-size: 20px;}
