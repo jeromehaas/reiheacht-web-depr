@@ -35,7 +35,7 @@ const textBlockContent = {
 
 const Contact: React.FunctionComponent<Props> = () => (
   <StyledContact>
-    <Section id="contact">
+    <Section hero id="contact">
       <TextBlock content={textBlockContent} maxWidth="500px" />
       <div className="wrapper">
         <ContactForm />
