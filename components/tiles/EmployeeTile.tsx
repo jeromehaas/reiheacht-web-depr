@@ -54,12 +54,10 @@ const StyledEmployeeTile = styled.div`
     transition: ${(p) => p.theme.standardTransition};
     background-color:${(p) => p.theme.white};
 
-    @media (max-width: 350px) {
-      height: 110px;
-      flex-direction: column;
-      justify-content: flex-start;
-      align-items:flex-start
-    } 
+    @media (max-width: 1050px) {
+     height: 60px;
+  }
+ 
 
     .text-wrapper {
       display: flex;
@@ -71,11 +69,7 @@ const StyledEmployeeTile = styled.div`
       h4 { 
         margin-bottom: 5px;
       }
-     
-      /* p {
-        margin: 0px;
-        font-size: 14px;
-      } */
+
      
       h4, li, p  {
         line-height: 1;
@@ -87,12 +81,9 @@ const StyledEmployeeTile = styled.div`
       img {
         width: 30px;
 
-
-      @media (max-width: 350px) {
-        margin-top: 10px;
-        width: 20px;
-      }
-
+        @media (max-width: 1050px) {
+          display: none;
+  }
     } 
 
     }

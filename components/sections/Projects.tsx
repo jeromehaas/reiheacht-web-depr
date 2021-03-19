@@ -24,7 +24,7 @@ const tileContent = [
     image: '/illustrations/projects/osterkampagne.png',
     alt: 'Gallo Suisse',
     title: 'Gallo Suisse',
-    description: 'Osterkampagne',
+    description: 'Ostern 2021',
     overlayColor: '#C70103',
     link: '/projekte/osterkampagne',
   },
@@ -47,6 +47,14 @@ const tileContent = [
 
   },
   {
+    image: '/illustrations/projects/agrarinitiative.png',
+    alt: 'Gallo Suisse',
+    title: 'Gallo Suisse',
+    description: 'Agrarinitiative',
+    overlayColor: '#C70103',
+    link: '/projekte/agrarinitiative',
+  },
+  {
     image: '/illustrations/projects/smartphone-schnitzeljagd.png',
     alt: 'Design',
     title: 'Swisslocaltravel',
@@ -54,14 +62,6 @@ const tileContent = [
     overlayColor: '#FC0031',
     link: '/projekte/smartphone-schnitzeljagd',
 
-  },
-  {
-    image: '/illustrations/projects/extreme-agrarinitiative.png',
-    alt: 'Gallo Suisse',
-    title: 'Gallo Suisse',
-    description: 'Agrarinitiative',
-    overlayColor: '#C70103',
-    link: '/projekte/agrarinitiative',
   },
 ];
 

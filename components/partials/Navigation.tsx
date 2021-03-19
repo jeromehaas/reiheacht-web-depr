@@ -55,6 +55,7 @@ const DesktopNavigation = styled.nav`
     margin-right: 60px;
     color: ${(p) => p.theme.white};
     text-decoration: none;
+    font-family: 'Helvetica Neue 75 Bold';
   }
 
   @media (max-width: 890px) {

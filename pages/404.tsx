@@ -28,6 +28,19 @@ const StyledPageNotFound = styled.div`
      bottom: 0;
   }
 
+  .astronaut {
+    width: 100px;
+    transition: linear;
+    animation: flyOver  15s  infinite forwards;
+    animation-timing-function: linear;
+  }
+
+
+
+  @keyframes flyOver {
+    0% {left: -400px; top: 50%;transform: rotate(0deg) }
+    100% {left: 100%; top: 60%; transform: rotate(360deg) }
+  }
 
   .fourZeroFour {
     position: absolute;
@@ -75,6 +88,7 @@ const StyledPageNotFound = styled.div`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
   }
 `;
 
@@ -90,13 +104,15 @@ const PageNotFound: React.FunctionComponent<Props> = () => (
           <img className="text" src="/illustrations/page-not-found/404.svg" alt="404" />
         </div>
       </div>
-      <Lottie
+      {/* <Lottie
         config={{ animationData: astronaut, loop: true, autoplay: true }}
         playingState="playing"
         speed={2}
         width="100vw"
         direction={1}
-      />
+      /> */}
+
+      <img className="astronaut" src="/animations/mock-astronaut.png" alt="Astronaut" />
       <div className="message">
         <H1>Oops, hier gehörst<br /> du nicht hin<HL color="blue">.</HL></H1>
         <Spacer marginBottom="20px" />

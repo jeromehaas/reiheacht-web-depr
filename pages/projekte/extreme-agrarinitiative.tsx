@@ -16,7 +16,7 @@ const content = {
     text: <>Für die kommende Agrarinitiative im Juni 2021 hat uns der Schweizer Bauernverband damit beauftragt verschiedene Illustrationen und  Animationen für Ihre Kampagne zu erstellen.Zur Kommunikation werden  verschiedene Medienkanäle wie Print, Video und Webbanner eingesetzt.</>,
   },
   projectOverview: {
-    imageLink: '/logos/projects/gallosuisse.svg',
+    imageLink: '/logos/projects/schweizer-bauernverband.svg',
     imageAlt: 'Schweizer Bauernverband',
     title: 'Extreme Agrarinitiative.',
     text: 'Design, Illustration & Animation',

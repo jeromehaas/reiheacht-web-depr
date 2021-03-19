@@ -72,6 +72,17 @@ const StyledButton = styled.button`
     padding: 10px 15px;
   }
 
+  @media (max-width: 750px) {
+   a { font-size: 15px !important }
+   min-width: 150px !important;
+  }
+
+  @media (max-width: 430px) {
+   a { font-size: 12px !important }
+   min-width: 120px !important;
+   margin: 0 15px 15px 0;
+  }
+
   `;
 
 interface Props {

@@ -8,11 +8,12 @@ import Employees from '@/components/sections/Employees';
 import Contact from '@/components/sections/Contact';
 import Footer from '@/components/partials/Footer';
 import CookieBanner from '@/components/partials/CookieBanner';
-import { useCookies } from 'react-cookie';
+import IntroAnimation from '@/components/animations/IntroAnimation';
 
 const Home = () => (
   <div>
     <PageWrapper>
+      <IntroAnimation />
       <Navigation />
       <Start />
       <Services />
