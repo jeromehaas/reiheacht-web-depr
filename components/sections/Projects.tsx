@@ -24,7 +24,7 @@ const tileContent = [
     image: '/illustrations/projects/osterkampagne.png',
     alt: 'Gallo Suisse',
     title: 'Gallo Suisse',
-    description: 'Osterkampagne',
+    description: 'Ostern 2021',
     overlayColor: '#C70103',
     link: '/projekte/osterkampagne',
   },
