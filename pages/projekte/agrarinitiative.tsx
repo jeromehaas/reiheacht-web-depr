@@ -12,7 +12,7 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <>Hühner an die Front.<Highlight>.</Highlight></>,
+    title: <>Hühner an die Front<Highlight>.</Highlight></>,
     text: <>Passend zum Illustrationsstil der Kampagne des Schweizer Bauernverbands für die kommende Trinkwasserinitiative im Juni 2021 durften wir auch für GalloSuisse drei Hühner visualisieren, die den Figuren aus der Kampagne tatkräftig unter die Arme greifen. </>,
   },
   projectOverview: {
