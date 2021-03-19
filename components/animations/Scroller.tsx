@@ -16,7 +16,7 @@ const StyledScroller = styled.div`
   margin: 0 auto;
   width: 100%;
   opacity: 0;
-  animation: appear 1s forwards 5.5s;
+  animation: appear 1s forwards 8.5s;
 
   img {
     width: 45px;

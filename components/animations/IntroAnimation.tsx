@@ -23,7 +23,7 @@ const StyledIntroAnimation = styled.div`
 @keyframes introDisappear {
     0% { opacity: 1; height: 100vh;}
     99% { opacity: 0; height: 100vh;}
-    100% {display: none; z-index: 0;}
+    100% {display: none !important; z-index: -10;}
   }
 }
 
