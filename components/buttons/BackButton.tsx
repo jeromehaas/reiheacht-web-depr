@@ -14,12 +14,11 @@ interface Props {
 }
 
 const BackButton: React.FunctionComponent<Props> = ({ content, link }) => (
-  const router = useRouter();
 
-<StyledBackButton onClick={() => router.back()}>
-  {/* <Linker type="link" target={link}> */}
+  <StyledBackButton>
+    <Linker type="link" target={link}>
       {content}
-  {/* </Linker> */}
+    </Linker>
   </StyledBackButton>
 );
 

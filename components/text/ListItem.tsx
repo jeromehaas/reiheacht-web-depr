@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 interface Props {
   children: React.ReactNode;
+  color?: string;
 }
 
 const StyledListItem = styled.li`

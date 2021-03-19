@@ -27,9 +27,9 @@ interface ButtonArray {
 
 interface Props {
   content: {
-    title: string;
-    buttons: ButtonArray[];
-    text: string;
+    title: any;
+    buttons: any;
+    text: any;
     carouselItems: string[]
   }
 }

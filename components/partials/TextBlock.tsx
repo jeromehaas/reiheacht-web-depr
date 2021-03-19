@@ -22,6 +22,7 @@ const moveDown = keyframes`
 
 interface Props {
   content: any;
+  maxWidth?: string;
 }
 
 const TextBlock: React.FunctionComponent<Props> = ({ content, maxWidth }) => {
