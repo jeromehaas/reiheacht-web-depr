@@ -14,9 +14,8 @@ const SlideIn = keyframes`
 
 const StyledTileSet = styled.div`
   width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
   line-height: 0;
@@ -74,9 +73,9 @@ interface Props {
 
 const TileSet: React.FunctionComponent<Props> = ({ tiles, type }) => (
   <StyledTileSet>
-    <Reveal keyframes={SlideIn} triggerOnce childClassName="test" cascade fraction={0} duration={1000} damping={0.25}>
-      {renderSwitch(tiles, type)}
-    </Reveal>
+    {/* <Reveal keyframes={SlideIn} triggerOnce childClassName="test" cascade fraction={0} duration={1000} damping={0.25}> */}
+    {renderSwitch(tiles, type)}
+    {/* </Reveal> */}
   </StyledTileSet>
 );
 

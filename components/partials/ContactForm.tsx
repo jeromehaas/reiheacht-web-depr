@@ -64,6 +64,11 @@ const StyledContactForm = styled.form`
       color: ${(p) => p.theme.darkGrey};
       font-size: 20px;
       font-family: 'Helvetica Neue 55 Roman', serif;
+
+      @media (max-width: 560px) {
+        font-size: 16px;
+      }
+
     }
   }
 

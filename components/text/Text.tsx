@@ -46,7 +46,7 @@ const H1 = styled.h1`
   font-size: 60px;
  }
 
- @media (max-width: 750px) {
+ @media (max-width: 760px) {
   ${sharedTitleStyle};
   font-size: 50px;
  }
@@ -56,19 +56,24 @@ const H1 = styled.h1`
   font-size: 40px;
  }
 
- @media (max-width: 550px) {
+ @media (max-width: 560px) {
   ${sharedTitleStyle};
   font-size: 35px;
  }
 
- @media (max-width: 470px) {
+ @media (max-width: 480px) {
   ${sharedTitleStyle};
   font-size: 30px;
  }
 
- @media (max-width: 415px) {
+ @media (max-width: 425px) {
   ${sharedTitleStyle};
   font-size: 25px;
+ }
+
+ @media (max-width: 365px) {
+  ${sharedTitleStyle};
+  font-size: 22px;
  }
 `;
 
@@ -78,7 +83,7 @@ const H2 = styled.h2`
   max-width: 660px;
   font-family: 'Helvetica Neue 85 Heavy';
 
-  @media (max-width: 750px) {
+  @media (max-width: 760px) {
   ${sharedTitleStyle};
   font-size: 50px;
  }
@@ -88,19 +93,24 @@ const H2 = styled.h2`
   font-size: 40px;
  }
 
- @media (max-width: 550px) {
+ @media (max-width: 560px) {
   ${sharedTitleStyle};
   font-size: 30px;
  }
 
- @media (max-width: 470px) {
+ @media (max-width: 480px) {
   ${sharedTitleStyle};
   font-size: 25px;
  }
 
- @media (max-width: 415px) {
+ @media (max-width: 425px) {
   ${sharedTitleStyle};
   font-size: 25px;
+ }
+
+ @media (max-width: 365px) {
+  ${sharedTitleStyle};
+  font-size: 22px;
  }
 
 `;
@@ -114,7 +124,7 @@ const H3 = styled.h3`
   font-size: 25px;
  }
 
- @media (max-width: 750px) {
+ @media (max-width: 760px) {
   font-size: 25px;
  }
 
@@ -122,7 +132,7 @@ const H3 = styled.h3`
   font-size: 25px;
  }
 
- @media (max-width: 550px) {
+ @media (max-width: 560px) {
   font-size: 25px;
  }
 
@@ -137,7 +147,7 @@ const H4 = styled.h4`
   font-size: 20px;
  }
 
- @media (max-width: 750px) {
+ @media (max-width: 760px) {
   font-size: 20px;
  }
 
@@ -145,7 +155,7 @@ const H4 = styled.h4`
   font-size: 20px;
  }
 
- @media (max-width: 550px) {
+ @media (max-width: 560px) {
   font-size: 20px;
  }
  `;
@@ -187,30 +197,30 @@ const getParagraphSize = ({ size }) => {
     case 'normal':
       return css`
       font-size: 20px;
-      @media (max-width: 550px) {
+      @media (max-width: 560px) {
         font-size: 16px;
       }
       `;
     case 'big':
       return css`
       font-size: 30px;
-      @media (max-width: 750px) {
+      @media (max-width: 760px) {
         font-size: 25px;
       }
       @media (max-width: 650px) {
         font-size: 20px;
       }
-      @media (max-width: 550px) {
+      @media (max-width: 560px) {
         font-size: 16px;
       }
       `;
     default:
       return css`
        font-size: 25px;
-       @media (max-width: 750px) {
+       @media (max-width: 760px) {
         font-size: 20px;
       }
-      @media (max-width: 550px) {
+      @media (max-width: 560px) {
         font-size: 16px;
       }
       `;
