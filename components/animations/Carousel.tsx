@@ -79,7 +79,7 @@ const CarouselWrapper = styled.div`
     0% {top: -2px;}
     40% {top: -51px;}
     60% {top: -51px;}
-    100% {top: -100px;}
+    100% {top: -102px;}
     }
   }
 
