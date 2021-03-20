@@ -145,6 +145,7 @@ const StyledServiceTile = styled.div`
     width: calc(100% / 1);
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
+    margin-top: 30px;
     .overlay { height: 60px; }
     .textWrapper { height: 60px;}
     .title { height: 60px; }
