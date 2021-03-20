@@ -108,9 +108,6 @@ const StyledServiceTile = styled.div`
       opacity: 1
     }
 
-    .arrow {
-      transform: rotate(-180deg);
-    }
 
 }
 
@@ -126,6 +123,7 @@ const StyledServiceTile = styled.div`
 
   @media (max-width: 850px) {
     width: calc(100% / 2);
+    .arrow { display: block; }
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
     .overlay { height: 60px; }
@@ -149,7 +147,6 @@ const StyledServiceTile = styled.div`
     .overlay { height: 60px; }
     .textWrapper { height: 60px;}
     .title { height: 60px; }
-    .arrow { display: block; }
     &:nth-child(3) { order: unset }
     &:nth-child(3) { order: unset }
     &:nth-child(6) { order: unset }
