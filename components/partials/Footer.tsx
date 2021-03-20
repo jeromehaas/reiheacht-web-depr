@@ -45,7 +45,7 @@ const StyledFooter = styled.footer`
     justify-content: flex-end;
   }
 
-  @media (max-width: 1200px) {
+  @media (max-width: 1275px) {
 
     .wrapper {
       flex-direction: column;
@@ -92,11 +92,11 @@ const Footer: React.FunctionComponent = () => (
       <div className="whiteLine" />
       <div className="wrapper">
         <div className="address">
-          <P size="small" className="addressItem">reiheacht Marketing GmbH</P>
-          <P size="small" className="addressItem">Spillgässli 12</P>
-          <P size="small" className="addressItem">6205 Eich</P>
-          <P size="small" className="addressItem"><a href="mailto:hallo@reiheacht.ch">hallo@reiheacht.ch</a></P>
-          <P size="small" className="addressItem"><a href="tel:+41415520600">+41 41 552 06 00</a></P>
+          <P size="normal" className="addressItem">reiheacht Marketing GmbH</P>
+          <P size="normal" className="addressItem">Spillgässli 12</P>
+          <P size="normal" className="addressItem">6205 Eich</P>
+          <P size="normal" className="addressItem"><a href="mailto:hallo@reiheacht.ch">hallo@reiheacht.ch</a></P>
+          <P size="normal" className="addressItem"><a href="tel:+41415520600">+41 41 552 06 00</a></P>
         </div>
         <div className="legal">
           <div className="legalLinks" />

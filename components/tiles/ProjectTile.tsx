@@ -66,10 +66,10 @@ const StyledProjectTile = styled.div`
     transition: all 0.7s ease 0.2s;
   }
 
-  .noreInfoLink {
+  .moreInfoLink {
     position: absolute;
     bottom: 30px;
-    font-size: 20px;
+    font-size: 25px;
     right: 30px;
     opacity: 0;
     font-family: 'Helvetica Neue 55 Roman';
@@ -100,7 +100,7 @@ const StyledProjectTile = styled.div`
       opacity: 1;
   }
 
-  .noreInfoLink {
+  .moreInfoLink {
     opacity: 1;
   }
 
@@ -109,16 +109,19 @@ const StyledProjectTile = styled.div`
 @media (max-width: 1000px) {
     ${H3} { font-size: 25px; };
     ${P} { font-size: 20px;}
+    .moreInfoLink { font-size: 20px; }
   }
 
   @media (max-width: 850px) {
     ${H3} { font-size: 30px; };
     ${P} { font-size: 25px;
+    .moreInfoLink { font-size: 25px; }
   }
 
   @media (max-width: 700px) {
     ${H3} { font-size: 25px; };
     ${P} { font-size: 20px;}
+    .moreInfoLink { font-size: 20px; }
   }
 
   @media (max-width: 550px) {
@@ -130,11 +133,13 @@ const StyledProjectTile = styled.div`
   @media (max-width: 450px) {
     ${H3} { font-size: 25px; };
     ${P} { font-size: 20px;}
+    .moreInfoLink { font-size: 20px; }
   }
 
   @media (max-width: 370px) {
     ${H3} { font-size: 22px; };
     ${P} { font-size: 17px;}
+    .moreInfoLink { font-size: 17px; }
   }
 
   }
@@ -156,7 +161,7 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
             <H3>{content.title}</H3>
             <Spacer marginBottom="6px" />
             <P size="normal">{content.description}</P>
-            <p className="noreInfoLink">Mehr Infos</p>
+            <p className="moreInfoLink">Mehr Infos</p>
           </div>
         </div>
       </a>
