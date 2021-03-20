@@ -32,7 +32,7 @@ const content = {
 const TrinkwasserInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
     <Video link="https://player.vimeo.com/video/519844178" />
-    <Video link="https://player.vimeo.com/video/5198453698" />
+    <Video link="https://player.vimeo.com/video/519845369" />
   </Project>
 );
 
