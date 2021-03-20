@@ -38,7 +38,7 @@ const StyledPageNotFound = styled.div`
 
 
   @keyframes flyOver {
-    0% {left: -400px; top: 50%;transform: rotate(0deg) }
+    0% {left: -200px; top: 50%;transform: rotate(0deg) }
     100% {left: 100%; top: 60%; transform: rotate(360deg) }
   }
 
@@ -100,7 +100,12 @@ const PageNotFound: React.FunctionComponent<Props> = () => (
       <img className="moon" src="/illustrations/page-not-found/moon.svg" alt="Mond" />
       <div className="fourZeroFour">
         <div className="wrapper">
-          <img className="world" src="/illustrations/page-not-found/world.gif" alt="World" />
+          <img
+            className="world"
+            src="/illustrations/page-not-found/world.png
+          "
+            alt="World"
+          />
           <img className="text" src="/illustrations/page-not-found/404.svg" alt="404" />
         </div>
       </div>
@@ -112,7 +117,7 @@ const PageNotFound: React.FunctionComponent<Props> = () => (
         direction={1}
       /> */}
 
-      <img className="astronaut" src="/animations/mock-astronaut.png" alt="Astronaut" />
+      <img className="astronaut" src="/illustrations/page-not-found/astronaut.png" alt="Astronaut" />
       <div className="message">
         <H1>Oops, hier gehörst<br /> du nicht hin<HL color="blue">.</HL></H1>
         <Spacer marginBottom="20px" />
