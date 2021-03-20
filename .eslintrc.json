@@ -15,14 +15,34 @@
         "ecmaVersion": 12,
         "sourceType": "module"
     },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["src"],
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+      },
     "plugins": [
         "react",
         "@typescript-eslint"
     ],
     "rules": {
-      "indent": ["err", 2],
-      "@typescript-eslint/indent": ["err", 2],
+      "@typescript-eslint/indent": ["error", 2],
+      "react/jsx-one-expression-per-line": "off",
+      "max-len": [2, {"code": 1500, "ignoreUrls": true}],
       "no-use-before-define": "off",
-      "@typescript-eslint/no-use-before-define": ["error"]
+      "import/no-unresolved": "off",
+      "@typescript-eslint/no-use-before-define": ["error"],
+      "react/jsx-props-no-spreading": "off",
+      "consistent-return": "off",
+      "react/prop-types": "off",
+      "padded-blocks": "off",
+      "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+      "jsx-a11y/anchor-is-valid": ["error", {        
+        "components": ["Link"],        
+        "specialLink": ["hrefLeft", "hrefRight"],        
+        "aspects": ["invalidHref", "preferButton"]   
+      }]
     }
 }

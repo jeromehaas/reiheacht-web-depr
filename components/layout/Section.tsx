@@ -4,23 +4,29 @@ import styled from 'styled-components';
 
 interface Props {
   children: React.ReactNode;
+  hero?: Boolean;
+  id?: String;
 }
 
 const StyledSection = styled.div`
   width: 100%;
-  margin-bottom: ${p => p.theme.spacingBig}
+  padding-top: 150px;
+  position: relative;
+  min-height: ${(p) => (p.hero ? 'calc(100vh - 60px)' : null)};
+
+  @media (max-width: 800px) {
+    padding-top: 100px;
+  }
+
 `;
 
-const Section: React.FunctionComponent<Props> = ({ children }) => {
+const Section: React.FunctionComponent<Props> = ({ children, hero, id }) => (
 
-  return (
-    <Limiter>
-      <StyledSection>
-        {children}
-      </StyledSection>
-    </Limiter>
-  );
-
-}
+  <Limiter id={id}>
+    <StyledSection hero={hero}>
+      {children}
+    </StyledSection>
+  </Limiter>
+);
 
 export default Section;

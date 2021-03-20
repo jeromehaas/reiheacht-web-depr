@@ -22,8 +22,14 @@
       "@/components/*": [
         "components/*"
       ],
+      "@/public/*": [
+        "public/*"
+      ],
       "@/styles/*": [
         "styles/*"
+      ],
+      "@/services/*": [
+        "services/*"
       ],
       "@/redux/*": [
         "redux/*"
