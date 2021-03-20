@@ -35,7 +35,7 @@ const tileContent = [
     image: '/illustrations/services/illustration.svg',
     alt: 'Design',
     title: 'Design',
-    description: ['Illustration', 'Layout', 'Webdesign'],
+    description: ['Illustration', 'Layout'],
     overlayColor: 'orange',
   },
   {
@@ -49,7 +49,7 @@ const tileContent = [
     image: '/illustrations/services/web.svg',
     alt: 'Web',
     title: 'Web',
-    description: ['Social Media', 'Webentwicklung'],
+    description: ['Webbanner', 'UI Animation'],
     overlayColor: 'orange',
   },
 ];

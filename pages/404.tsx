@@ -26,13 +26,18 @@ const StyledPageNotFound = styled.div`
   .moon {
      position: absolute;
      bottom: 0;
+     display: block;
   }
 
   .astronaut {
-    width: 100px;
+    width: 200px;
     transition: linear;
     animation: flyOver  15s  infinite forwards;
     animation-timing-function: linear;
+
+    @media (max-width: 700px) {
+      width: 100px;;
+  }
   }
 
 

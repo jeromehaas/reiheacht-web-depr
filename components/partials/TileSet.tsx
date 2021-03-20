@@ -24,14 +24,7 @@ const StyledTileSet = styled.div`
     border: 10px solid green;
   }
 
-  @media (max-width: 850px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
 
-  @media (max-width: 550px) {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 20px 0
-  }
 
 `;
 

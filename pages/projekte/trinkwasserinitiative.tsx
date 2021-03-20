@@ -6,13 +6,14 @@ import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
 import Button from '@/components/buttons/Button';
 import Image from '@/components/partials/Image';
+import Space from '@/components/layout/Space';
 
 interface Props { }
 
 const content = {
   intro: {
-    title: <>Dein Erklärfilm, auf dich zugeschnitten<Highlight>.</Highlight></>,
-    text: <>Für die im Juni 2021 anstehende Trinkwasserinitiative durften wir zwei animierte Erklärfilme zu den Auswirkungen der Trinkwasserinitiative realisieren, welche überwiegend auf ihrer Webseite sowie Youtube eingesetzt werden. Damit sich diese Videos von den bisherigen Erklärfilmen abheben, haben wir hier einen neuen Stil kreiert.</>,
+    title: <>Dein Erklärfilm, auf <br /> dich zugeschnitten<Highlight>.</Highlight></>,
+    text: <>Für die im Juni 2021 anstehende Trinkwasserinitiative durften wir für den Schweizer Bauernverband zwei animierte Erklärfilme zu den Auswirkungen der Trinkwasserinitiative realisieren, welche überwiegend auf ihrer Webseite sowie Youtube eingesetzt werden. Damit sich diese Videos von den bisherigen Erklärfilmen abheben, haben wir hierfür einen neuen Stil kreiert. </>,
   },
   projectOverview: {
     imageLink: '/logos/projects/schweizer-bauernverband.svg',
@@ -32,6 +33,8 @@ const content = {
 const TrinkwasserInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
     <Video link="https://player.vimeo.com/video/519844178" />
+    <Space height="30px" />
+    <Video link="https://player.vimeo.com/video/519845369" />
   </Project>
 );
 

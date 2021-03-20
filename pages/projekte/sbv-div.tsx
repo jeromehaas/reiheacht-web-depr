@@ -8,8 +8,8 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <>Eine ganze Welt, nur für dich<Highlight>.</Highlight></>,
-    text: <>Für verschiedene Erklärfilme zum Thema Schweizer Landwirtschaft haben wir für  den Schweizer Bauernverband eine einzigartige illustrierte Welt voller Tiere und Menschen kreiert, welche jederzeit nach Bedarf modifiziert und erweitert werden kann. Neben den Erklärfilmen werden die Illustrationen auch für Print und andere Medien eingesetzt.</>,
+    title: <>Eine ganze Welt, <br /> nur für dich<Highlight>.</Highlight></>,
+    text: <>Für verschiedene Erklärfilme zum Thema Schweizer Landwirtschaft haben wir für  den Schweizer Bauernverband eine einzigartige illustrierte Welt voller Tiere und Menschen kreiert, welche jederzeit nach Bedarf modifiziert und erweitert werden kann. Neben den Erklärfilmen in den Sprachen Deutsch, Französisch und Italienisch werden die Illustrationen auch für Print und andere Medien eingesetzt.</>,
   },
   projectOverview: {
     imageLink: '/logos/projects/schweizer-bauernverband.svg',
