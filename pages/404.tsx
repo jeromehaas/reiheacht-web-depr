@@ -63,9 +63,9 @@ const StyledPageNotFound = styled.div`
         top: 50%;
         left: 50%;
         display: block;
-        width: 50%;
+        width: 40%;
         transform: translate(-50%, -50%);
-        clip-path: circle(32%);
+
       }
 
       .text {
