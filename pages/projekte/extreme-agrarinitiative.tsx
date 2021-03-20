@@ -12,8 +12,8 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <>Von der Skizze bis zur Animation<Highlight>.</Highlight></>,
-    text: <>Für die kommende Agrarinitiative im Juni 2021 hat uns der Schweizer Bauernverband damit beauftragt verschiedene Illustrationen und  Animationen für Ihre Kampagne zu erstellen.Zur Kommunikation werden  verschiedene Medienkanäle wie Print, Video und Webbanner eingesetzt.</>,
+    title: <>Von der Skizze bis <br />zur Animation<Highlight>.</Highlight></>,
+    text: <>Für die kommende Agrarinitiative im Juni 2021 hat uns der Schweizer Bauernverband damit beauftragt ihre Kampagne gegen die Trinkwasserinitiative zu designen, illustrieren und animieren. Die illustrierten Sujets werden auf verschiedenen Medienkanälen wie Print, Video und Webbanner kommuniziert. </>,
   },
   projectOverview: {
     imageLink: '/logos/projects/schweizer-bauernverband.svg',

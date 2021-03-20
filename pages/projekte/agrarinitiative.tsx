@@ -12,13 +12,13 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <>Hühner an die Front<Highlight>.</Highlight></>,
-    text: <>Passend zum Illustrationsstil der Kampagne des Schweizer Bauernverbands für die kommende Trinkwasserinitiative im Juni 2021 durften wir auch für GalloSuisse drei Hühner visualisieren, die den Figuren aus der Kampagne tatkräftig unter die Arme greifen. </>,
+    title: <>Schweizer Hühner <br />packen mit an<Highlight>.</Highlight></>,
+    text: <>Passend zum Illustrationsstil der Kampagne “Extreme Agrarinitiative” des Schweizer Bauernverbands für die im Juni 2021 anstehende Initiative  durften wir auch für GalloSuisse drei Hühner visualisieren, die den anderen Figuren des SBV tatkräftig unter die Arme greifen.</>,
   },
   projectOverview: {
     imageLink: '/logos/projects/gallosuisse.svg',
     imageAlt: 'Schweizer Bauernverband',
-    title: 'Agrarinitiative.',
+    title: 'Extreme Agrarinitiative.',
     text: 'Idee, Design, Illustration',
   },
   outro: {

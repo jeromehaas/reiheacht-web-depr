@@ -247,7 +247,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                   width="40px"
                   height="40px"
                   style={{ margin: 0 }}
-                  direction={mobileMenuIsVisible === true ? -1 : 1}
+                  direction={mobileMenuIsVisible === true ? 1 : -1}
                 />
               </div>
             </div>

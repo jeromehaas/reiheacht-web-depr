@@ -26,6 +26,7 @@ const StyledPageNotFound = styled.div`
   .moon {
      position: absolute;
      bottom: 0;
+     display: block;
   }
 
   .astronaut {

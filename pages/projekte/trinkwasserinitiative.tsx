@@ -12,8 +12,8 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <>Dein Erklärfilm, auf dich zugeschnitten<Highlight>.</Highlight></>,
-    text: <>Für die im Juni 2021 anstehende Trinkwasserinitiative durften wir zwei animierte Erklärfilme zu den Auswirkungen der Trinkwasserinitiative realisieren, welche überwiegend auf ihrer Webseite sowie Youtube eingesetzt werden. Damit sich diese Videos von den bisherigen Erklärfilmen abheben, haben wir hier einen neuen Stil kreiert.</>,
+    title: <>Dein Erklärfilm, auf <br /> dich zugeschnitten<Highlight>.</Highlight></>,
+    text: <>Für die im Juni 2021 anstehende Trinkwasserinitiative durften wir für den Schweizer Bauernverband zwei animierte Erklärfilme zu den Auswirkungen der Trinkwasserinitiative realisieren, welche überwiegend auf ihrer Webseite sowie Youtube eingesetzt werden. Damit sich diese Videos von den bisherigen Erklärfilmen abheben, haben wir hierfür einen neuen Stil kreiert. </>,
   },
   projectOverview: {
     imageLink: '/logos/projects/schweizer-bauernverband.svg',
