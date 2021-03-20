@@ -74,9 +74,9 @@ interface Props {
 
 const TileSet: React.FunctionComponent<Props> = ({ tiles, type }) => (
   <StyledTileSet>
-    <Reveal keyframes={SlideIn} triggerOnce childClassName="test" cascade fraction={0} duration={1000} damping={0.25}>
-      {renderSwitch(tiles, type)}
-    </Reveal>
+    {/* <Reveal keyframes={SlideIn} triggerOnce childClassName="test" cascade fraction={0} duration={1000} damping={0.25}> */}
+    {renderSwitch(tiles, type)}
+    {/* </Reveal> */}
   </StyledTileSet>
 );
 

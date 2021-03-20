@@ -36,7 +36,7 @@ const StyledIntroAnimation = styled.div`
   svg {
     width: 100%;
     padding: 30px;
-    max-width: 300px;
+    max-width: 600px;
     margin: 0 auto;
 
   }

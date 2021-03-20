@@ -52,10 +52,10 @@ const DesktopNavigation = styled.nav`
   }
 
   .link {
-    margin-right: 60px;
+    margin-right: 50px;
     color: ${(p) => p.theme.white};
     text-decoration: none;
-    font-family: 'Helvetica Neue 75 Bold';
+    font-family: 'Helvetica Neue 65 Medium';
   }
 
   @media (max-width: 890px) {

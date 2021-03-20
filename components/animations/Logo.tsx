@@ -37,7 +37,7 @@ const Logo: React.FunctionComponent = () => (
         speed={1}
         width="100%"
         height="100%"
-        style={{ margin: 0 }}
+        style={{ margin: 0, position: 'relative', left: '6px' }}
         direction={1}
       />
     </div>
