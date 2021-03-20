@@ -8,7 +8,7 @@ import employeeAnimationOrange from '../../public/animations/employee-orange.jso
 
 const StyledEmployeeTile = styled.div`
   height: 100%;
-  width: calc(100% / 2);
+  width: calc(100% / 3);
   overflow: hidden;
   position: relative;
 
@@ -21,7 +21,6 @@ const StyledEmployeeTile = styled.div`
   }
 
   .initial {
-    width: calc(100% / 3);
     height: 100%;
     display: block;
     position: relative;
