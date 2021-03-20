@@ -7,7 +7,6 @@ import { keyframes } from '@emotion/react';
 const StyledServiceTile = styled.div`
   width: calc(100% / 3);
   height: 100%;
-  width: 100%;
   overflow: hidden;
   position: relative;
 
@@ -126,11 +125,14 @@ const StyledServiceTile = styled.div`
   }
 
   @media (max-width: 850px) {
+    width: calc(100% / 2);
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
     .overlay { height: 60px; }
     .textWrapper { height: 60px;}
     .title { height: 60px;}
+    &:nth-child(3) { order: 4 }
+    &:nth-child(6) { order: 5 }
   }
 
   @media (max-width: 700px) {
@@ -140,12 +142,16 @@ const StyledServiceTile = styled.div`
 
 
   @media (max-width: 550px) {
+    width: calc(100% / 1);
     ${H3} { font-size: 30px; };
     ${ListItem} { font-size: 25px;}
     .overlay { height: 60px; }
     .textWrapper { height: 60px;}
     .title { height: 60px; }
     .arrow { display: block; }
+    &:nth-child(3) { order: unset }
+    &:nth-child(3) { order: unset }
+    &:nth-child(6) { order: unset }
   }
  
   @media (max-width: 450px) {

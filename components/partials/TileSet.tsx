@@ -14,9 +14,8 @@ const SlideIn = keyframes`
 
 const StyledTileSet = styled.div`
   width: 100%;
-  height: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   overflow: hidden;
   line-height: 0;

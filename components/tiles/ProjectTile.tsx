@@ -8,7 +8,7 @@ import Spacer from '@/components/layout/Spacer';
 
 const StyledProjectTile = styled.div`
   height: 100%;
-  width: 100%;
+  width: calc(100% / 3);
   overflow: hidden;
   position: relative;
 
@@ -113,6 +113,7 @@ const StyledProjectTile = styled.div`
   }
 
   @media (max-width: 850px) {
+    width: calc(100% / 2);
     ${H3} { font-size: 30px; };
     ${P} { font-size: 25px;
     .moreInfoLink { font-size: 25px; }
@@ -125,6 +126,8 @@ const StyledProjectTile = styled.div`
   }
 
   @media (max-width: 550px) {
+    width: calc(100% / 1);
+    margin-top: 30px;
     .overlay { height: 60px; }
     .textWrapper { height: 60px;}
     .title { height: 60px; }
