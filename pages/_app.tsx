@@ -7,6 +7,10 @@ import { ThemeProvider } from 'styled-components';
 import Variables from '@/styles/Variables';
 import Head from 'next/head';
 import { CookiesProvider } from 'react-cookie';
+import ReactGA from 'react-ga';
+
+const TRACKING_ID = 'G-5V62GPPNLD';
+ReactGA.initialize(TRACKING_ID);
 
 interface Props {
   Component: any;
@@ -51,6 +55,7 @@ const App: React.FunctionComponent<Props> = ({ Component, pageProps }) => (
           <meta name="theme-color" content="#ffffff" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
           <script src="https://cdn.vhx.tv/assets/player.js" />
+
         </Head>
         <Component {...pageProps} />
       </ThemeProvider>
