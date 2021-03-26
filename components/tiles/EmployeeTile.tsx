@@ -86,7 +86,7 @@ const StyledEmployeeTile = styled.div`
       img {
         width: 30px;
 
-        @media (max-width: 900px) {
+        @media (max-width: 300px) {
           display: none;
   }
     } 

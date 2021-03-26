@@ -25,8 +25,8 @@ const content = {
     title: <>Ebenfalls an einem mass-geschneidertem Erklärfilm interessiert<Highlight>?</Highlight></>,
   },
   switcher: {
-    nextProject: '/projekte/extreme-agrarinitiative',
-    previousProject: '/projekte/smartphone-schnitzeljagd',
+    nextProject: '/projekte/smartphone-schnitzeljagd',
+    previousProject: '/projekte/sbv-div',
   },
 
 };

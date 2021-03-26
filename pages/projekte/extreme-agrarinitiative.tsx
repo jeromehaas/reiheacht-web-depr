@@ -26,7 +26,7 @@ const content = {
   },
   switcher: {
     nextProject: '/projekte/osterkampagne',
-    previousProject: '/projekte/agrarinitiative',
+    previousProject: '/projekte/smartphone-schnitzeljagd',
   },
 
 };

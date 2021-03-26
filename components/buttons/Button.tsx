@@ -44,6 +44,7 @@ const StyledButton = styled.button`
   margin: 0 30px 30px 0;
   float: left;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   ${getAnimated};
   ${getColor};
 
@@ -55,7 +56,7 @@ const StyledButton = styled.button`
     && css`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
-      animation: ${(`1s ease-in-out ${delay} 1 forwards moveUp`)};
+      animation: ${(`0.75s ease-in-out ${delay} 1 forwards moveUp`)};
 
       @keyframes moveUp {
         from {top: 60px; opacity: 0;}

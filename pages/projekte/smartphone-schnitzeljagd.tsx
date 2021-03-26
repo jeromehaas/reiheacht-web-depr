@@ -24,8 +24,8 @@ const content = {
     title: <>Darfs ein passender Trailer für dein <Highlight>Produkt</Highlight>?</>,
   },
   switcher: {
-    nextProject: '/projekte/agrarinitiative',
-    previousProject: '/projekte/sbv-div',
+    nextProject: '/projekte/extreme-agrarinitiative',
+    previousProject: '/projekte/agrarinitiative',
   },
 
 };
