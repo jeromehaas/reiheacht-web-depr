@@ -21,7 +21,7 @@ const content = {
     title: <>Möchtest du auch deine eigene <Highlight>Welt</Highlight>?</>,
   },
   switcher: {
-    nextProject: '/projekte/smartphone-schnitzeljagd',
+    nextProject: '/projekte/agrarinitiative',
     previousProject: '/projekte/trinkwasserinitiative',
   },
 
