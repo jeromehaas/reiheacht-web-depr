@@ -56,7 +56,7 @@ const StyledButton = styled.button`
     && css`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
-      animation: ${(`1s ease-in-out ${delay} 1 forwards moveUp`)};
+      animation: ${(`0.75s ease-in-out ${delay} 1 forwards moveUp`)};
 
       @keyframes moveUp {
         from {top: 60px; opacity: 0;}
