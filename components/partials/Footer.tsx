@@ -40,6 +40,10 @@ const StyledFooter = styled.footer`
     line-height: 1;
   }
 
+  .link {
+    font-size: 20px;
+  }
+
   .socialMediaWrapper {
     display: flex;
     justify-content: flex-end;
@@ -74,11 +78,14 @@ const StyledFooter = styled.footer`
 
   }
 
+
+  @media (max-width: 560px) {
+    .link {
+      font-size: 16px;
+    };
+  }
+
 `;
-
-const addressItems = [
-
-];
 
 const Footer: React.FunctionComponent = () => (
   <StyledFooter>

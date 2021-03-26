@@ -44,6 +44,7 @@ const StyledButton = styled.button`
   margin: 0 30px 30px 0;
   float: left;
   cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   ${getAnimated};
   ${getColor};
 
