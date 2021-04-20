@@ -1,5 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
+import { useDispatch, useSelector, RootsOrAny } from 'react-redux';
+import { toggleShowreel } from '@/redux/actions/index';
 
 const StyledPlayButton = styled.button`
   height: 50px;
@@ -45,10 +47,16 @@ const StyledPlayButton = styled.button`
 
 interface Props { }
 
-const PlayButton: React.FunctionComponent<Props> = () => (
-  <StyledPlayButton>
-    <img className="icon" src="/icons/other/play.svg" />
-  </StyledPlayButton>
-);
+const PlayButton: React.FunctionComponent<Props> = () => {
+
+  const dispatch = useDispatch();
+
+  return (
+
+    <StyledPlayButton>
+      <img className="icon" src="/icons/other/play.svg" onClick={() => dispatch(toggleShowreel())} />
+    </StyledPlayButton>
+  );
+};
 
 export default PlayButton;

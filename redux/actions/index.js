@@ -99,7 +99,7 @@ const showErrorFormValidation = (value) => (dispatch) => {
   });
 };
 
-const TOGGLE_SHOWREEL = 'SHOW_SHOWREEL';
+const TOGGLE_SHOWREEL = 'TOGGLE_SHOWREEL';
 const toggleShowreel = () => (dispatch) => {
   dispatch({
     type: TOGGLE_SHOWREEL,
