@@ -17,7 +17,7 @@ const tileContent = [
     image: '/images/employees/marc.png',
     alt: 'Marc Sen',
     title: 'Marc Sen',
-    description: 'Gründer',
+    description: 'Inhaber',
     email: 'marc.sen@reiheacht.ch',
     overlayColor: '#0374B6',
     animationColor: 'orange',
