@@ -4,7 +4,6 @@ import styled, { css } from 'styled-components';
 import Linker from '@/components/buttons/Link';
 import orangeCloseTriangleIn from '@/public/animations/orange-close-triangle-in.json';
 import blueCloseTriangleIn from '@/public/animations/blue-close-triangle-in.json';
-import { useRouter } from 'next/router';
 
 const Wrapper = styled.i`
   position: absolute;
