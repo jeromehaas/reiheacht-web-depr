@@ -5,6 +5,7 @@ import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Carousel from '@/components/animations/Carousel';
 import Space from '@/components/layout/Space';
 import styled from 'styled-components';
+import PlayButton from '@/components/buttons/PlayButton';
 
 const MoveDownWrapper = styled.div`
   top: -60px;
@@ -36,6 +37,7 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => (
     {content.buttons.map((button) => (
       <Button key={button.text} type="anchor" target={button.target} text={button.text} animate delay={button.delay} />
     ))}
+    <PlayButton />
   </MoveDownWrapper>
 );
 

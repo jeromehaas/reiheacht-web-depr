@@ -39,11 +39,14 @@ interface Props {
   position: string;
   color?: string;
   target?: string;
+  onClickAction(): any;
 }
 
-const CloseTriangle: React.FunctionComponent<Props> = ({ position, color, target }) => (
+const CloseTriangle: React.FunctionComponent<Props> = ({
+  position, color, target, onClickAction,
+}) => (
 
-  <Wrapper direction={position}>
+  <Wrapper direction={position} onClick={onClickAction}>
     <Linker type="link" target={target || '/'}>
       <Lottie
         config={{ animationData: color === 'blue' ? blueCloseTriangleIn : orangeCloseTriangleIn, autoplay: true }}
