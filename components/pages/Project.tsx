@@ -64,10 +64,6 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
         {children}
         <Space height="90px" />
         <ProjectSwitcher nextProject={content.switcher.nextProject} previousProject={content.switcher.previousProject} />
-        {/* <Space height="90px" />
-        <H2>{content.outro.title}</H2>
-        <HorizontalLine animated delay="0.3s" />
-        <Button type="link" target="/#contact" text="Sitzplatz buchen" /> */}
         <Space height="200px" />
       </Section>
       <CloseTriangle position="bottom" target="/#projects" />
