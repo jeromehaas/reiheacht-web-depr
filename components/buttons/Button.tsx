@@ -55,12 +55,19 @@ const StyledButton = styled.button`
   @media (max-width: 750px) {
    a { font-size: 15px !important }
    min-width: 150px !important;
+   margin: 0 15px 15px 0;
   }
 
   @media (max-width: 430px) {
    a { font-size: 12px !important }
    min-width: 120px !important;
    margin: 0 15px 15px 0;
+  }
+ 
+  @media (max-width: 370px) {
+    margin: 0 0 10px 0;
+    display: block;
+    width: 100%;
   }
 
   `;

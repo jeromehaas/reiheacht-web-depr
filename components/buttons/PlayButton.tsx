@@ -14,7 +14,7 @@ const StyledPlayButton = styled.button`
   border-radius: 5px;
   border: none;
   outline: none;
-  margin: 0 30px 30px 0;
+  margin: 0 0 30px 0;
   float: left;
   cursor: pointer;
   background-color: transparent;
@@ -41,6 +41,28 @@ const StyledPlayButton = styled.button`
   10% { transform: scale(1.15) }
   20% { transform: scale(1)} 
   100% { transform: scale(1)} 
+  }
+
+  @media (max-width: 750px) {
+    height: 42px;
+    width: 42px;
+  }
+
+  @media (max-width: 430px) {
+    height: 38px;
+    width: 38px;
+
+    .icon {
+      width: 15px;
+      height: auto;
+      animation: heartBeat 4s infinite ease-in-out 5s;
+    }
+  }
+
+  @media (max-width: 370px) {
+    margin: 0 0 15px 0;
+    display: block;
+    width: 100%;
   }
 
 `;
