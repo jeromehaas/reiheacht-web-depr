@@ -6,7 +6,7 @@ import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
 import Button from '@/components/buttons/Button';
 import Image from '@/components/partials/Image';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 
 interface Props { }
 
@@ -39,7 +39,7 @@ const AgrarInitiative: React.FunctionComponent<Props> = () => (
     <Image src="/projects/extreme-agrarinitiative/import.png" alt="Import" />
     <Image src="/projects/extreme-agrarinitiative/draft.png" alt="Entwurf" />
     <Image src="/projects/extreme-agrarinitiative/illustration.png" alt="Illustration" />
-    <Spacer marginBottom="30px" />
+    <Space height="30px" />
     <Video link="https://player.vimeo.com/video/520902562" />
   </Project>
 );

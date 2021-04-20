@@ -3,7 +3,7 @@ import Blog from '@/components/pages/Blog';
 import {
   H2, H3, H4, P,
 } from '@/components/text/Text';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 import Highlight from '@/components/text/Highlight';
 import styled from 'styled-components';
 import Paragraph from '@/components/text/Paragraph';
@@ -158,9 +158,9 @@ const Imprint: React.FunctionComponent<Props> = () => (
             </div>
             <div className="text">
               <P><Highlight>{latestPost.caption}</Highlight></P>
-              <Spacer marginBottom="10px" />
+              <Space height="10px" />
               <H3 color="darkGrey">{latestPost.title}</H3>
-              <Spacer marginBottom="10px" />
+              <Space height="10px" />
               <P color="darkGrey">{latestPost.text}</P>
             </div>
           </TopPost>

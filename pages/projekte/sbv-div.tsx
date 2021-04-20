@@ -2,7 +2,7 @@ import React from 'react';
 import Project from '@/components/pages/Project';
 import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 
 interface Props { }
 
@@ -30,13 +30,13 @@ const content = {
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
     <Video link="https://player.vimeo.com/video/520918592?width=100%&responsive=1" />
-    <Spacer marginBottom="30px" />
+    <Space height="30px" />
     <Video link="https://player.vimeo.com/video/520918534" />
-    <Spacer marginBottom="30px" />
+    <Space height="30px" />
     <Video link="https://player.vimeo.com/video/520918479" />
-    <Spacer marginBottom="30px" />
+    <Space height="30px" />
     <Video link="https://player.vimeo.com/video/521055085" />
-    <Spacer marginBottom="30px" />
+    <Space height="30px" />
   </Project>
 );
 

@@ -3,7 +3,7 @@ import PageWrapper from '@/components/layout/PageWrapper';
 import styled from 'styled-components';
 import { H1, HL } from '@/components/text/Text';
 import Button from '@/components/buttons/Button';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 import { Lottie } from '@crello/react-lottie';
 import astronaut from '../public/animations/astronaut.json';
 
@@ -125,7 +125,7 @@ const PageNotFound: React.FunctionComponent<Props> = () => (
       <img className="astronaut" src="/illustrations/page-not-found/astronaut.png" alt="Astronaut" />
       <div className="message">
         <H1>Oops, hier gehörst<br /> du nicht hin<HL color="blue">.</HL></H1>
-        <Spacer marginBottom="20px" />
+        <Space height="20px" />
         <Button target="/" type="link" text="Bring mich zurück!" />
       </div>
     </StyledPageNotFound>

@@ -6,7 +6,6 @@ import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
 import Button from '@/components/buttons/Button';
 import Image from '@/components/partials/Image';
-import Spacer from '@/components/layout/Spacer';
 
 interface Props { }
 

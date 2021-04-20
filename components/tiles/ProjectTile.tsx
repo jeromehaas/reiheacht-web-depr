@@ -4,7 +4,7 @@ import { H3, H4, P } from '@/components/text/Text';
 import Link from 'next/link';
 import Image from '@/components/partials/Image';
 import { keyframes } from '@emotion/react';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 
 const StyledProjectTile = styled.div`
   height: 100%;
@@ -162,7 +162,7 @@ const ProjectTile: React.FunctionComponent<Props> = ({ content }) => (
         <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
           <div className="textWrapper">
             <H3>{content.title}</H3>
-            <Spacer marginBottom="6px" />
+            <Space height="6px" />
             <P size="normal">{content.description}</P>
             <p className="moreInfoLink">Mehr Infos</p>
           </div>

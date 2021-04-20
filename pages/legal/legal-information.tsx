@@ -2,7 +2,7 @@ import React from 'react';
 import Legal from '@/components/pages/Legal';
 import { H2, H3, HL } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 import Paragraph from '@/components/text/Paragraph';
 
 const content = [
@@ -55,7 +55,7 @@ const LegalInformation: React.FunctionComponent<Props> = () => (
   <>
     <Legal>
       <H2 color="darkGrey">Datenschutzerklärung<HL color="blue">.</HL></H2>
-      <Spacer marginBottom="60px" />
+      <Space height="60px" />
       {content.map((item, index) => (
         <LegalItem key={index} title={item.title} text={item.text} />
       ))}
