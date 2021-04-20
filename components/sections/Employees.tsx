@@ -1,10 +1,9 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
 import {
-  H2, H3, H4, P,
+  H2, H3, H4, P, HL,
 } from '@/components/text/Text';
 
-import Highlight from '@/components/text/Highlight';
 import TextBlock from '@/components/partials/TextBlock';
 import Button from '@/components/buttons/Button';
 import TileSet from '@/components/partials/TileSet';
@@ -13,7 +12,7 @@ interface Props { }
 
 const textBlockContent = {
   section: 'employees',
-  title: <>Dein <Highlight>Team</Highlight>.</>,
+  title: <>Dein <HL color="blue">Team</HL>.</>,
   text: <>Wir warten auf dein Startsignal.</>,
 };
 

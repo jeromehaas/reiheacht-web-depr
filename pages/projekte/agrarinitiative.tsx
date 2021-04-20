@@ -1,8 +1,7 @@
 import React from 'react';
 import Project from '@/components/pages/Project';
-import { H2 } from '@/components/text/Text';
+import { H2, HL } from '@/components/text/Text';
 import Paragraph from '@/components/text/Paragraph';
-import Highlight from '@/components/text/Highlight';
 import Video from '@/components/partials/Video';
 import Button from '@/components/buttons/Button';
 import Image from '@/components/partials/Image';
@@ -11,7 +10,7 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <>Schweizer Hühner <br />packen mit an<Highlight>.</Highlight></>,
+    title: <>Schweizer Hühner <br />packen mit an<HL color="blue">.</HL></>,
     text: <>Passend zum Illustrationsstil der Kampagne “Extreme Agrarinitiative” des Schweizer Bauernverbands für die im Juni 2021 anstehende Initiative  durften wir auch für GalloSuisse drei Hühner visualisieren, die den anderen Figuren des SBV tatkräftig unter die Arme greifen.</>,
   },
   projectOverview: {
@@ -21,7 +20,7 @@ const content = {
     text: 'Idee, Design, Illustration',
   },
   outro: {
-    title: <>Ebenfalls an einem mass-geschneidertem Erklärfilm interessiert<Highlight>?</Highlight></>,
+    title: <>Ebenfalls an einem mass-geschneidertem Erklärfilm interessiert<HL color="blue">?</HL></>,
   },
   switcher: {
     nextProject: '/projekte/smartphone-schnitzeljagd',

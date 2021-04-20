@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
-import { H2, ListItem } from '@/components/text/Text';
-import Highlight from '@/components/text/Highlight';
+import { H2, HL, ListItem } from '@/components/text/Text';
 import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock';
 import Button from '@/components/buttons/Button';
@@ -56,7 +55,7 @@ const tileContent = [
 
 const textBlockContent = {
   section: 'services',
-  title: <>Erwecke deine <br /> Idee zum <Highlight>Leben</Highlight>.</>,
+  title: <>Erwecke deine <br /> Idee zum <HL color="blue">Leben</HL>.</>,
   text: <>Das tun wir den ganzen Tag – und wir lieben es.</>,
 };
 

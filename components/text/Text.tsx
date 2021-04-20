@@ -287,6 +287,7 @@ const ListItem = styled(P)`
 `;
 
 const HL = styled.span`
+    display: inline-block;
     ${({ color, theme }) => color === 'blue'
     && css`
       color: ${theme.blue}

@@ -1,7 +1,6 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
-import { H2 } from '@/components/text/Text';
-import Highlight from '@/components/text/Highlight';
+import { H2, HL } from '@/components/text/Text';
 import Paragraph from '@/components/text/Paragraph';
 import TextBlock from '@/components/partials/TextBlock';
 import Button from '@/components/buttons/Button';
@@ -29,7 +28,7 @@ interface Props { }
 
 const textBlockContent = {
   section: 'contact',
-  title: <>Sag <Highlight>Hallo</Highlight>!</>,
+  title: <>Sag <HL color="blue">Hallo</HL>!</>,
   text: <>Wir morsen zwar sehr gut, es gibt jedoch einfachere Wege, uns zu kontaktieren.<br /> <br />Wir freuen uns.</>,
 };
 

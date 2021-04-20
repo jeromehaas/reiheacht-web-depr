@@ -1,8 +1,6 @@
 import React from 'react';
 import Project from '@/components/pages/Project';
-import { H2, P } from '@/components/text/Text';
-
-import Highlight from '@/components/text/Highlight';
+import { H2, P, HL } from '@/components/text/Text';
 import Video from '@/components/partials/Video';
 import Button from '@/components/buttons/Button';
 import Head from 'next/head';
@@ -11,7 +9,7 @@ interface Props { }
 
 const content = {
   intro: {
-    title: <>Im Einklang, mit <br /> deinem Produkt<Highlight>.</Highlight></>,
+    title: <>Im Einklang, mit <br /> deinem Produkt<HL color="blue">.</HL></>,
     text: <>In Zusammenarbeit mit der swisslocaltravel durften wir einen Trailer für ihre Familienschnitzeljagd umsetzen. Die Herausforderung bestand darin, dass der Trailer das günstige Familienangebot widerspiegelt. Design und Illustrationen wurden von von der swisslocaltravel bereitgestellt. </>,
   },
   projectOverview: {
@@ -21,7 +19,7 @@ const content = {
     text: 'Animation',
   },
   outro: {
-    title: <>Darfs ein passender Trailer für dein <Highlight>Produkt</Highlight>?</>,
+    title: <>Darfs ein passender Trailer für dein <HL color="blue">Produkt</HL>?</>,
   },
   switcher: {
     nextProject: '/projekte/extreme-agrarinitiative',

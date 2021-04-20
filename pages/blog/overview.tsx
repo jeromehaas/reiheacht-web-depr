@@ -1,10 +1,9 @@
 import React from 'react';
 import Blog from '@/components/pages/Blog';
 import {
-  H2, H3, H4, P,
+  H2, H3, H4, P, HL,
 } from '@/components/text/Text';
 import Space from '@/components/layout/Space';
-import Highlight from '@/components/text/Highlight';
 import styled from 'styled-components';
 import Paragraph from '@/components/text/Paragraph';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
@@ -157,7 +156,7 @@ const Imprint: React.FunctionComponent<Props> = () => (
               <img src={latestPost.image} alt={latestPost.imageAlt} />
             </div>
             <div className="text">
-              <P><Highlight>{latestPost.caption}</Highlight></P>
+              <P><HL color="blue">{latestPost.caption}</HL></P>
               <Space height="10px" />
               <H3 color="darkGrey">{latestPost.title}</H3>
               <Space height="10px" />
@@ -177,7 +176,7 @@ const Imprint: React.FunctionComponent<Props> = () => (
                   <img src={post.image} alt={post.imageAlt} />
                 </div>
                 <div className="text">
-                  <P><Highlight>{post.caption}</Highlight></P>
+                  <P><HL>{post.caption}</HL></P>
                   <H4 color="darkGrey">{post.title}</H4>
                   <P color="darkGrey">{post.text}</P>
                   <p style={{ alignSelf: 'flex-end', fontSize: '12px', color: '#1c1c1c' }}>{post.date}</p>
@@ -188,7 +187,7 @@ const Imprint: React.FunctionComponent<Props> = () => (
         </Fade>
       </PostContainer>
 
-      <Spacer marginBottom="150px" />
+      <Space height="150px" />
     </Blog>
   </>
 );
