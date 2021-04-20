@@ -36,7 +36,7 @@ const StyledShowreel = styled.div`
 
 interface Props { }
 
-const ShowReel: React.FunctionComponent<Props> = () => {
+const Showreel: React.FunctionComponent<Props> = () => {
 
   const dispatch = useDispatch();
   const showreelStatus = useSelector((state: RootStateOrAny) => state.showreel.visible);
@@ -58,4 +58,4 @@ const ShowReel: React.FunctionComponent<Props> = () => {
   );
 
 };
-export default ShowReel;
+export default Showreel;
