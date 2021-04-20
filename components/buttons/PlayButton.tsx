@@ -75,8 +75,8 @@ const PlayButton: React.FunctionComponent<Props> = () => {
 
   return (
 
-    <StyledPlayButton>
-      <img className="icon" src="/icons/other/play.svg" onClick={() => dispatch(toggleShowreel())} />
+    <StyledPlayButton onClick={() => dispatch(toggleShowreel())}>
+      <img className="icon" src="/icons/other/play.svg" />
     </StyledPlayButton>
   );
 };
