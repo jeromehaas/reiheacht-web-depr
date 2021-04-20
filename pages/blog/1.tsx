@@ -1,8 +1,7 @@
 import React from 'react';
-import PageWrapper from '@/components/layout/PageWrapper';
 import Blog from '@/components/pages/Blog';
 import {
-  H1, H2, H3, H4, P, HL,
+  H2, H3, P, HL,
 } from '@/components/text/Text';
 import Image from '@/components/partials/Image';
 import styled from 'styled-components';

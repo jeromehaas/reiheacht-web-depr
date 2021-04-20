@@ -1,9 +1,8 @@
 import React from 'react';
 import Legal from '@/components/pages/Legal';
-import { H2, H3, HL } from '@/components/text/Text';
+import { H2, HL } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
 import Space from '@/components/layout/Space';
-import ListItem from '@/components/text/ListItem';
 
 const content = [
   {

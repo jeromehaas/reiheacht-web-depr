@@ -1,9 +1,7 @@
 import React from 'react';
 import Project from '@/components/pages/Project';
-import { H2, P, HL } from '@/components/text/Text';
+import { HL } from '@/components/text/Text';
 import Video from '@/components/partials/Video';
-import Button from '@/components/buttons/Button';
-import Head from 'next/head';
 
 interface Props { }
 

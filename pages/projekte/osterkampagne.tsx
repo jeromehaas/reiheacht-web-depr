@@ -1,9 +1,6 @@
 import React from 'react';
 import Project from '@/components/pages/Project';
-import { H2, HL } from '@/components/text/Text';
-import Paragraph from '@/components/text/Paragraph';
-import Video from '@/components/partials/Video';
-import Button from '@/components/buttons/Button';
+import { HL } from '@/components/text/Text';
 import Image from '@/components/partials/Image';
 
 interface Props { }

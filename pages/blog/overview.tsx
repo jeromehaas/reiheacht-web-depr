@@ -5,10 +5,9 @@ import {
 } from '@/components/text/Text';
 import Space from '@/components/layout/Space';
 import styled from 'styled-components';
-import Paragraph from '@/components/text/Paragraph';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Linker from '@/components/buttons/Link';
-import Reveal, { Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const TopPost = styled.div`
     display: flex;
@@ -148,7 +147,7 @@ const Imprint: React.FunctionComponent<Props> = () => (
 
     <Blog closeTriangleTarget="/">
       <Fade>
-        <H2 color="darkGrey">Trends & News aus der reihe<Highlight>acht</Highlight>.</H2>
+        <H2 color="darkGrey">Trends & News aus der reihe<HL color="blue">acht</HL>.</H2>
         <HorizontalLine className="active" />
         <Linker target={latestPost.link} type="link">
           <TopPost>

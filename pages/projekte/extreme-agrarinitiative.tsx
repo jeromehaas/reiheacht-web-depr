@@ -1,8 +1,7 @@
 import React from 'react';
 import Project from '@/components/pages/Project';
-import { H2, HL } from '@/components/text/Text';
+import { HL } from '@/components/text/Text';
 import Video from '@/components/partials/Video';
-import Button from '@/components/buttons/Button';
 import Image from '@/components/partials/Image';
 import Space from '@/components/layout/Space';
 

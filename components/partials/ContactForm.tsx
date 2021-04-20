@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { useDispatch, useSelector, RootStateOrAny } from 'react-redux';
 import { Lottie } from '@crello/react-lottie';
 import { P } from '@/components/text/Text';
+import cx from 'classnames';
 import {
   updateContactFormName,
   updateContactFormEmail,
@@ -11,7 +12,6 @@ import {
   submitContactForm,
   showErrorFormValidation,
 } from '@/redux/actions/index';
-import cx from 'classnames';
 import { sendMail } from '../../services/mail';
 import sendButton from '../../public/animations/send-button.json';
 

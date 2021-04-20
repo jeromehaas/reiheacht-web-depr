@@ -2,12 +2,9 @@ import React from 'react';
 import PageWrapper from '@/components/layout/PageWrapper';
 import Section from '@/components/layout/Section';
 import CloseTriangle from '@/components/buttons/CloseTriangle';
-import HorizontalLine from '@/components/shapes/HorizontalLine';
 import ProjectOverview from '@/components/partials/ProjectOverview';
 import Space from '@/components/layout/Space';
-import Head from 'next/head';
 import { H2, P } from '@/components/text/Text';
-import Button from '@/components/buttons/Button';
 import ProjectSwitcher from '@/components/partials/ProjectSwitcher';
 
 interface Intro {
