@@ -4,8 +4,6 @@ import Tile from '@/components/tiles/Tile';
 import EmployeeTile from '@/components/tiles/EmployeeTile';
 import ProjectTile from '@/components/tiles/ProjectTile';
 import ServiceTile from '@/components/tiles/ServiceTile';
-import Reveal, { Slide } from 'react-awesome-reveal';
-import { keyframes } from '@emotion/react';
 
 const StyledTileSet = styled.div`
   width: 100%;
