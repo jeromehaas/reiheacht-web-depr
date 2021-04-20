@@ -1,11 +1,8 @@
 import React from 'react';
 import { H1, P } from '@/components/text/Text';
-import Paragraph from '@/components/text/Paragraph';
 import Button from '@/components/buttons/Button';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Carousel from '@/components/animations/Carousel';
-import Reveal from 'react-awesome-reveal';
-import { keyframes } from '@emotion/react';
 import Space from '@/components/layout/Space';
 import styled from 'styled-components';
 
@@ -21,17 +18,11 @@ const MoveDownWrapper = styled.div`
   }
 `;
 
-interface ButtonArray {
-  text: string;
-  target: string;
-  delay: string;
-}
-
 interface Props {
   content: {
-    title: any;
-    buttons: any;
-    text: any;
+    title: string;
+    buttons: any[];
+    text: string;
     carouselItems: string[]
   }
 }

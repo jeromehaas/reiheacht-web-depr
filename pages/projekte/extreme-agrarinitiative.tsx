@@ -1,18 +1,15 @@
 import React from 'react';
 import Project from '@/components/pages/Project';
-import { H2 } from '@/components/text/Text';
-import Paragraph from '@/components/text/Paragraph';
-import Highlight from '@/components/text/Highlight';
+import { HL } from '@/components/text/Text';
 import Video from '@/components/partials/Video';
-import Button from '@/components/buttons/Button';
 import Image from '@/components/partials/Image';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 
 interface Props { }
 
 const content = {
   intro: {
-    title: <>Von der Skizze bis <br />zur Animation<Highlight>.</Highlight></>,
+    title: <>Von der Skizze bis <br />zur Animation<HL color="blue">.</HL></>,
     text: <>Für die kommende Agrarinitiative im Juni 2021 hat uns der Schweizer Bauernverband damit beauftragt ihre Kampagne gegen die Trinkwasserinitiative zu designen, illustrieren und animieren. Die illustrierten Sujets werden auf verschiedenen Medienkanälen wie Print, Video und Webbanner kommuniziert. </>,
   },
   projectOverview: {
@@ -22,11 +19,11 @@ const content = {
     text: 'Design, Illustration & Animation',
   },
   outro: {
-    title: <>Du möchtest deine Idee auch zum Leben <Highlight>erwecken</Highlight>?</>,
+    title: <>Du möchtest deine Idee auch zum Leben <HL color="blue">erwecken</HL>?</>,
   },
   switcher: {
     nextProject: '/projekte/osterkampagne',
-    previousProject: '/projekte/agrarinitiative',
+    previousProject: '/projekte/smartphone-schnitzeljagd',
   },
 
 };
@@ -39,7 +36,7 @@ const AgrarInitiative: React.FunctionComponent<Props> = () => (
     <Image src="/projects/extreme-agrarinitiative/import.png" alt="Import" />
     <Image src="/projects/extreme-agrarinitiative/draft.png" alt="Entwurf" />
     <Image src="/projects/extreme-agrarinitiative/illustration.png" alt="Illustration" />
-    <Spacer marginBottom="30px" />
+    <Space height="30px" />
     <Video link="https://player.vimeo.com/video/520902562" />
   </Project>
 );

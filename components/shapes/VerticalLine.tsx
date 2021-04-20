@@ -26,7 +26,7 @@ interface Props {
   delay?: string;
 }
 
-const VerticalLine: React.FunctionComponent<Props> = ({ className, animated, delay }) => (
+const VerticalLine: React.FunctionComponent<Props> = ({ delay }) => (
   <StyledVerticalLine animated delay={delay} />
 );
 

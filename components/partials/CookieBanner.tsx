@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { P } from '@/components/text/Text';
-import { useCookies } from 'react-cookie';
 import Cookies from 'js-cookie';
-import Linker from '@/components/buttons/Link';
 import Link from 'next/link';
 
 const StyledCookieBanner = styled.div`

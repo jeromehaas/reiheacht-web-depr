@@ -2,12 +2,9 @@ import React from 'react';
 import PageWrapper from '@/components/layout/PageWrapper';
 import Section from '@/components/layout/Section';
 import CloseTriangle from '@/components/buttons/CloseTriangle';
-import HorizontalLine from '@/components/shapes/HorizontalLine';
 import ProjectOverview from '@/components/partials/ProjectOverview';
 import Space from '@/components/layout/Space';
-import Head from 'next/head';
 import { H2, P } from '@/components/text/Text';
-import Button from '@/components/buttons/Button';
 import ProjectSwitcher from '@/components/partials/ProjectSwitcher';
 
 interface Intro {
@@ -64,10 +61,6 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
         {children}
         <Space height="90px" />
         <ProjectSwitcher nextProject={content.switcher.nextProject} previousProject={content.switcher.previousProject} />
-        {/* <Space height="90px" />
-        <H2>{content.outro.title}</H2>
-        <HorizontalLine animated delay="0.3s" />
-        <Button type="link" target="/#contact" text="Sitzplatz buchen" /> */}
         <Space height="200px" />
       </Section>
       <CloseTriangle position="bottom" target="/#projects" />

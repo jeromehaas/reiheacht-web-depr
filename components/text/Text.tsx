@@ -1,7 +1,4 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
-
-interface Props { }
 
 const getTitleColor = ({ theme, color }) => {
 
@@ -287,6 +284,7 @@ const ListItem = styled(P)`
 `;
 
 const HL = styled.span`
+    display: inline-block;
     ${({ color, theme }) => color === 'blue'
     && css`
       color: ${theme.blue}
