@@ -39,7 +39,7 @@ interface Props {
   position: string;
   color?: string;
   target?: string;
-  onClickAction(): any;
+  onClickAction?(): any;
 }
 
 const CloseTriangle: React.FunctionComponent<Props> = ({
