@@ -93,6 +93,7 @@ const StyledContactForm = styled.form`
     height: 0px;
     padding: 0px;
     transition: all 0.25s ease;
+
     &.active {
       p { font-size: 12px !important; }
       padding: 5px;
@@ -101,7 +102,6 @@ const StyledContactForm = styled.form`
           font-size: 8px;
       }
     }
-
 
   }
 
