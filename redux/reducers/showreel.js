@@ -2,7 +2,7 @@ const initialState = {
   visible: false,
 };
 
-const showReel = (state = initialState, actino) => {
+const showreel = (state = initialState, actino) => {
   switch (actino.type) {
     case 'TOGGLE_SHOWREEL':
       return {
@@ -15,4 +15,4 @@ const showReel = (state = initialState, actino) => {
   }
 };
 
-export default showReel;
+export default showreel;

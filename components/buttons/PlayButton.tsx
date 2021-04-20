@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useDispatch, useSelector, RootsOrAny } from 'react-redux';
+import { useDispatch, useSelector, RootStateOrAny } from 'react-redux';
 import { toggleShowreel } from '@/redux/actions/index';
 
 const StyledPlayButton = styled.button`

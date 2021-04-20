@@ -6,7 +6,7 @@ import tiles from '@/redux/reducers/tiles';
 import navigation from '@/redux/reducers/navigation';
 import contactForm from '@/redux/reducers/contact-form';
 import currentPosition from '@/redux/reducers/current-position';
-import showReel from '@/redux/reducers/showReel';
+import showreel from '@/redux/reducers/showReel';
 
 const rootReducer = combineReducers({
   notifier,
@@ -16,7 +16,7 @@ const rootReducer = combineReducers({
   navigation,
   contactForm,
   currentPosition,
-  showReel,
+  showreel,
 });
 
 export default rootReducer;
