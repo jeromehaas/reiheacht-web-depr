@@ -23,6 +23,7 @@ const StyledShowreel = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 
   &.active {
     width: 100vw;
@@ -32,6 +33,35 @@ const StyledShowreel = styled.div`
   }
 
 }
+
+.react-player-wrapper {
+  position: relative;
+  width: 75%;
+  padding-top: 41%;
+}
+
+.close-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 10;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.close-button-image {
+  width: 30px;
+  height: 30px;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 `;
 
 interface Props { }
@@ -44,15 +74,20 @@ const ShowReel: React.FunctionComponent<Props> = () => {
   return (
     <StyledShowreel>
       <div className={`background ${showreelStatus === true ? 'active' : null}`}>
-        <ReactPlayer
-          url="https://player.vimeo.com/video/520902562"
-          className="react-player"
-          controls
-          responsive="1"
-          width="75%"
-          height="75%"
-        />
-        <CloseTriangle position="bottom" onClickAction={() => dispatch(toggleShowreel())} />
+        <div className="react-player-wrapper">
+          <button className="close-button" type="button" onClick={() => dispatch(toggleShowreel())}>
+            <img className="close-button-image" src="/icons/other/close-button.svg" alt="X" />
+          </button>
+          <ReactPlayer
+            url="https://player.vimeo.com/video/520918534"
+            playing={showreelStatus}
+            className="react-player"
+            width="100%"
+            height="100%"
+            controls
+          />
+        </div>
+
       </div>
     </StyledShowreel>
   );
