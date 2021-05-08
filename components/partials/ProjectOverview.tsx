@@ -70,7 +70,6 @@ const StyledProjectOverview = styled.div`
     }
 
   }
-
 `;
 
 interface Props {
