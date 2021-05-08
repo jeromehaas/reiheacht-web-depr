@@ -42,8 +42,8 @@ const StyledShowreel = styled.div`
 
 .close-button {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: -50px;
+  left: 0px;
   z-index: 10;
   background-color: transparent;
   border: none;
