@@ -17,8 +17,7 @@ const StyledPlayButton = styled.button`
   margin: 0 0 30px 0;
   float: left;
   cursor: pointer;
-  background-color: transparent;
-  border: 2px solid ${(p) => p.theme.white};
+  background-color: ${(p) => p.theme.blue};
   display: flex;
   align-items: center;
   justify-content: center;
