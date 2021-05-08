@@ -62,7 +62,7 @@ const tileContent = [
 
 const textBlockContent = {
   section: 'projects',
-  title: <>Perfekte Aussicht,<br /> aus der besten <HL>reihe</HL>.</>,
+  title: <>Perfekte Aussicht,<br /> aus der besten <HL color="blue">reihe</HL>.</>,
   text: <>Dein Spitzenprogramm – zurücklehnen und geniessen.</>,
 };
 
