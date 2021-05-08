@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PageWrapper from '@/components/layout/PageWrapper';
 import Navigation from '@/components/partials/Navigation';
 import Start from '@/components/sections/Start';

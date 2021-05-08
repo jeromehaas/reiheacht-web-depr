@@ -52,7 +52,7 @@ const DesktopNavigation = styled.nav`
   }
 
   .link {
-    margin-right: 50px;
+    margin-right: 40px;
     color: ${(p) => p.theme.white};
     text-decoration: none;
     font-family: 'Helvetica Neue 65 Medium';
@@ -189,12 +189,12 @@ const navigationItems = [
     section: 'contact',
     type: 'anchor',
   },
-  // {
-  //   child: 'Blog',
-  //   link: '/blog/overview',
-  //   section: 'blog',
-  //   type: 'link',
-  // },
+  {
+    child: 'Blog',
+    link: 'https://blog.reiheacht.ch',
+    section: '/',
+    type: 'link',
+  },
 ];
 
 interface Props { }

@@ -21,9 +21,9 @@ const MoveDownWrapper = styled.div`
 
 interface Props {
   content: {
-    title: string;
+    title: any;
     buttons: any[];
-    text: string;
+    text: any;
     carouselItems: string[]
   }
 }

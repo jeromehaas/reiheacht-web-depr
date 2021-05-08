@@ -42,8 +42,8 @@ const StyledShowreel = styled.div`
 
 .close-button {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: -40px;
+  right: 0px;
   z-index: 10;
   background-color: transparent;
   border: none;
@@ -66,7 +66,7 @@ const StyledShowreel = styled.div`
 
 interface Props { }
 
-const ShowReel: React.FunctionComponent<Props> = () => {
+const Showreel: React.FunctionComponent<Props> = () => {
 
   const dispatch = useDispatch();
   const showreelStatus = useSelector((state: RootStateOrAny) => state.showreel.visible);
@@ -79,7 +79,7 @@ const ShowReel: React.FunctionComponent<Props> = () => {
             <img className="close-button-image" src="/icons/other/close-button.svg" alt="X" />
           </button>
           <ReactPlayer
-            url="https://player.vimeo.com/video/520918534"
+            url="https://player.vimeo.com/video/546612359"
             playing={showreelStatus}
             className="react-player"
             width="100%"
@@ -93,4 +93,4 @@ const ShowReel: React.FunctionComponent<Props> = () => {
   );
 
 };
-export default ShowReel;
+export default Showreel;
