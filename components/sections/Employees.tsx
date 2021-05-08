@@ -23,6 +23,15 @@ const tileContent = [
     animationColor: 'orange',
   },
   {
+    image: '/images/employees/andrea.png',
+    alt: 'Andrea Oldani',
+    title: 'Andrea Oldani',
+    description: 'Kommunikation',
+    email: 'andrea.oldani@reiheacht.ch',
+    overlayColor: '#025E94',
+    animationColor: 'orange',
+  },
+  {
     image: '/images/employees/julia.png',
     alt: 'Julia Sen',
     title: 'Julia Sen',

@@ -191,8 +191,8 @@ const navigationItems = [
   },
   {
     child: 'Blog',
-    link: '/blog/overview',
-    section: 'blog',
+    link: 'https://blog.reiheacht.ch',
+    section: '/',
     type: 'link',
   },
 ];
