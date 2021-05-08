@@ -109,7 +109,6 @@ const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 22px;
  }
-
 `;
 
 const H3 = styled.h3`
