@@ -42,8 +42,8 @@ const StyledShowreel = styled.div`
 
 .close-button {
   position: absolute;
-  top: -50px;
-  left: 0px;
+  top: -40px;
+  right: 0px;
   z-index: 10;
   background-color: transparent;
   border: none;
@@ -79,7 +79,7 @@ const Showreel: React.FunctionComponent<Props> = () => {
             <img className="close-button-image" src="/icons/other/close-button.svg" alt="X" />
           </button>
           <ReactPlayer
-            url="https://player.vimeo.com/video/520918534"
+            url="https://player.vimeo.com/video/546612359"
             playing={showreelStatus}
             className="react-player"
             width="100%"
