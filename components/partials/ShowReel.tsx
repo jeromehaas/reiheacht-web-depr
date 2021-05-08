@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import Video from '@/components/partials/Video';
 import ReactPlayer from 'react-player';
 import { useDispatch, useSelector, RootStateOrAny } from 'react-redux';
-import CloseTriangle from '@/components/buttons/CloseTriangle';
 import { toggleShowreel } from '@/redux/actions/index';
 
 const StyledShowreel = styled.div`
@@ -18,7 +16,6 @@ const StyledShowreel = styled.div`
   height: 0vh;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.0);
-  /* transition: all 1.5s ease, width 0s ease 2s, height 0s ease 2s; */
   transition: all 0s ease;
   display: flex;
   align-items: center;
