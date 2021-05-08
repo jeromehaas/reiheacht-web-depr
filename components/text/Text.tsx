@@ -119,7 +119,7 @@ const H3 = styled.h3`
 
   @media (max-width: 800px) {
   font-size: 25px;
- }
+  }
 
  @media (max-width: 760px) {
   font-size: 25px;
