@@ -39,7 +39,7 @@ const tileContent = [
     image: '/illustrations/services/sound.svg',
     alt: 'Sound design',
     title: 'Sound design',
-    description: ['Voice Over', 'Soundeffekte'],
+    description: ['Voice Over', 'Soundeffekte', 'Musik'],
     overlayColor: 'white',
   },
   {
