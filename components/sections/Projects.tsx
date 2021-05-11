@@ -45,7 +45,7 @@ const tileContent = [
     image: '/illustrations/projects/agrarinitiative.png',
     alt: 'Gallo Suisse',
     title: 'Gallo Suisse',
-    description: 'Agrarinitiative',
+    description: 'Extreme Agrarinitiative',
     overlayColor: '#C70103',
     link: '/projekte/agrarinitiative',
   },
