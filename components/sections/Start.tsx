@@ -18,7 +18,7 @@ const content = {
   section: 'home',
   title: <>Hier beginnt<br />die<MarginRight /></>,
   carouselItems: ['Magie', 'Idee', 'Zusammenarbeit'],
-  text: <>reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Lösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst.<br /> <span style={{ display: 'inline-block', marginTop: '15px' }}>Wir bewegen alles und jeden – setz dich in die reiheacht.</span></>,
+  text: <>reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Bewegtbildlösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst.<br /> <span style={{ display: 'inline-block', marginTop: '15px' }}>Wir bewegen alles und jeden – setz dich in die reiheacht.</span></>,
   buttons: [
     { text: 'Sitzplatz buchen', target: 'contact', delay: '7.5s' },
     { text: 'Projekte', target: 'projects', delay: '7.75s' },
