@@ -36,6 +36,7 @@ const StyledCookieBanner = styled.div`
     border-radius: 10px;
     padding: 10px 20px;
     margin-left: 30px;
+    font-family: 'Helvetica Neue 55 Roman', serif;
   }
 
   @media (max-width: 580px) {
