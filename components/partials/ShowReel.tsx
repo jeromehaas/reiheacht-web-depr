@@ -33,13 +33,14 @@ const StyledShowreel = styled.div`
 
 .react-player-wrapper {
   position: relative;
-  width: 75%;
-  padding-top: 41%;
+  width: 65%;
+  padding-top: 35.5%;
+  
 }
 
 .close-button {
   position: absolute;
-  top: -40px;
+  top: 10px;
   right: 0px;
   z-index: 10;
   background-color: transparent;
@@ -55,7 +56,7 @@ const StyledShowreel = styled.div`
 
 .react-player {
   position: absolute;
-  top: 0;
+  top: 50px;
   left: 0;
 }
 
