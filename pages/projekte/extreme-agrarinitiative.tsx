@@ -23,7 +23,7 @@ const content = {
   },
   switcher: {
     nextProject: '/projekte/osterkampagne',
-    previousProject: '/projekte/smartphone-schnitzeljagd',
+    previousProject: '/projekte/reiheacht-showreel',
   },
 
 };

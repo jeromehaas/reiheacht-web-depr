@@ -20,7 +20,7 @@ const content = {
     title: <>Ebenfalls an einem mass-geschneidertem Erklärfilm interessiert<HL color="blue">?</HL></>,
   },
   switcher: {
-    nextProject: '/projekte/smartphone-schnitzeljagd',
+    nextProject: '/projekte/reiheacht-showreel',
     previousProject: '/projekte/sbv-div',
   },
 

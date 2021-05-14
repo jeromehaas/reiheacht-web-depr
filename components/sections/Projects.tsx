@@ -8,6 +8,14 @@ interface Props { }
 
 const tileContent = [
   {
+    image: '/illustrations/projects/reiheacht-logo.png',
+    alt: 'reiheacht',
+    title: 'reiheacht',
+    description: 'Showreel',
+    overlayColor: '#0374B6',
+    link: '/projekte/reiheacht-showreel',
+  },
+  {
     image: '/illustrations/projects/extreme-agrarinitiative.png',
     alt: 'Schweizer Bauernverband',
     title: 'Schweizer Bauernverband',
@@ -49,15 +57,15 @@ const tileContent = [
     overlayColor: '#C70103',
     link: '/projekte/agrarinitiative',
   },
-  {
-    image: '/illustrations/projects/smartphone-schnitzeljagd.png',
-    alt: 'Design',
-    title: 'Swisslocaltravel',
-    description: 'Smartphone-Schnitzeljagd',
-    overlayColor: '#FC0031',
-    link: '/projekte/smartphone-schnitzeljagd',
+  // {
+  //   image: '/illustrations/projects/smartphone-schnitzeljagd.png',
+  //   alt: 'Design',
+  //   title: 'Swisslocaltravel',
+  //   description: 'Smartphone-Schnitzeljagd',
+  //   overlayColor: '#FC0031',
+  //   link: '/projekte/smartphone-schnitzeljagd',
 
-  },
+  // },
 ];
 
 const textBlockContent = {
