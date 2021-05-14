@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Lottie } from '@crello/react-lottie';
 import cx from 'classnames';
@@ -17,15 +17,16 @@ const StyledIntroAnimation = styled.div`
   opacity: 1;
   height: 100vh;
 
- &.active {
+  &.active {
     animation: introDisappear  1s 1 forwards 0.5s;
 
-@keyframes introDisappear {
-    0% { opacity: 1; height: 100vh;}
-    99% { opacity: 0; height: 100vh;}
-    100% {display: none !important; z-index: -10;}
+    @keyframes introDisappear {
+      0% { opacity: 1; height: 100vh;}
+      99% { opacity: 0; height: 100vh;}
+      100% {display: none !important; z-index: -10;}
+    }
+
   }
-}
 
   .innerWrapper {
     width: 100%;
@@ -38,8 +39,8 @@ const StyledIntroAnimation = styled.div`
     padding: 30px;
     max-width: 600px;
     margin: 0 auto;
-
   }
+
 }
 `;
 

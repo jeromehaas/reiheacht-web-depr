@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H3 } from '@/components/text/Text';
-import Link from 'next/link';
 
 const StyledTile = styled.div`
   width: calc(100% / 3);

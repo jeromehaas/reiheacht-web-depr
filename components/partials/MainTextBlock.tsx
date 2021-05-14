@@ -1,13 +1,11 @@
 import React from 'react';
 import { H1, P } from '@/components/text/Text';
-import Paragraph from '@/components/text/Paragraph';
 import Button from '@/components/buttons/Button';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Carousel from '@/components/animations/Carousel';
-import Reveal from 'react-awesome-reveal';
-import { keyframes } from '@emotion/react';
 import Space from '@/components/layout/Space';
 import styled from 'styled-components';
+import PlayButton from '@/components/buttons/PlayButton';
 
 const MoveDownWrapper = styled.div`
   top: -60px;
@@ -21,16 +19,10 @@ const MoveDownWrapper = styled.div`
   }
 `;
 
-interface ButtonArray {
-  text: string;
-  target: string;
-  delay: string;
-}
-
 interface Props {
   content: {
     title: any;
-    buttons: any;
+    buttons: any[];
     text: any;
     carouselItems: string[]
   }
@@ -45,6 +37,7 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => (
     {content.buttons.map((button) => (
       <Button key={button.text} type="anchor" target={button.target} text={button.text} animate delay={button.delay} />
     ))}
+    <PlayButton />
   </MoveDownWrapper>
 );
 

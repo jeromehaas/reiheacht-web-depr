@@ -1,11 +1,8 @@
 import React from 'react';
-import PageWrapper from '@/components/layout/PageWrapper';
 import styled from 'styled-components';
 import { H1, HL } from '@/components/text/Text';
 import Button from '@/components/buttons/Button';
-import Spacer from '@/components/layout/Spacer';
-import { Lottie } from '@crello/react-lottie';
-import astronaut from '../public/animations/astronaut.json';
+import Space from '@/components/layout/Space';
 
 const StyledPageNotFound = styled.div`
   height: 100vh;
@@ -37,10 +34,9 @@ const StyledPageNotFound = styled.div`
 
     @media (max-width: 700px) {
       width: 100px;;
-  }
-  }
+    }
 
-
+  }
 
   @keyframes flyOver {
     0% {left: -200px; top: 50%;transform: rotate(0deg) }
@@ -70,7 +66,6 @@ const StyledPageNotFound = styled.div`
         display: block;
         width: 40%;
         transform: translate(-50%, -50%);
-
       }
 
       .text {
@@ -86,14 +81,11 @@ const StyledPageNotFound = styled.div`
 
   }
 
-
-
   .astronaut {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
   }
 `;
 
@@ -107,25 +99,16 @@ const PageNotFound: React.FunctionComponent<Props> = () => (
         <div className="wrapper">
           <img
             className="world"
-            src="/illustrations/page-not-found/world.png
-          "
+            src="/illustrations/page-not-found/world.png"
             alt="World"
           />
           <img className="text" src="/illustrations/page-not-found/404.svg" alt="404" />
         </div>
       </div>
-      {/* <Lottie
-        config={{ animationData: astronaut, loop: true, autoplay: true }}
-        playingState="playing"
-        speed={2}
-        width="100vw"
-        direction={1}
-      /> */}
-
       <img className="astronaut" src="/illustrations/page-not-found/astronaut.png" alt="Astronaut" />
       <div className="message">
         <H1>Oops, hier gehörst<br /> du nicht hin<HL color="blue">.</HL></H1>
-        <Spacer marginBottom="20px" />
+        <Space height="20px" />
         <Button target="/" type="link" text="Bring mich zurück!" />
       </div>
     </StyledPageNotFound>

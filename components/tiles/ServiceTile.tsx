@@ -1,8 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H3, P, ListItem } from '@/components/text/Text';
-import Reveal, { Slide } from 'react-awesome-reveal';
-import { keyframes } from '@emotion/react';
+import { H3, ListItem } from '@/components/text/Text';
 
 const StyledServiceTile = styled.div`
   width: calc(100% / 3);

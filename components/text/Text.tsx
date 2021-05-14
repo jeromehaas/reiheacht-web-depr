@@ -1,7 +1,4 @@
-import React from 'react';
 import styled, { css } from 'styled-components';
-
-interface Props { }
 
 const getTitleColor = ({ theme, color }) => {
 
@@ -112,7 +109,6 @@ const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 22px;
  }
-
 `;
 
 const H3 = styled.h3`
@@ -122,7 +118,7 @@ const H3 = styled.h3`
 
   @media (max-width: 800px) {
   font-size: 25px;
- }
+  }
 
  @media (max-width: 760px) {
   font-size: 25px;
@@ -287,6 +283,7 @@ const ListItem = styled(P)`
 `;
 
 const HL = styled.span`
+    display: inline-block;
     ${({ color, theme }) => color === 'blue'
     && css`
       color: ${theme.blue}

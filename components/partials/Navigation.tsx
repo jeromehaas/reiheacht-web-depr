@@ -52,7 +52,7 @@ const DesktopNavigation = styled.nav`
   }
 
   .link {
-    margin-right: 50px;
+    margin-right: 40px;
     color: ${(p) => p.theme.white};
     text-decoration: none;
     font-family: 'Helvetica Neue 65 Medium';
@@ -125,15 +125,13 @@ const MobileNavigation = styled.nav`
 
   .link {
     color: inherited;
-    margin: 10px;
+    margin: 5px;
     padding: 5px;
     font-size: 30px;
     display: inline-block;
     font-family: 'Helvetica Neue 75 Bold';
 
     @media (max-height: 700px) {
-      margin: 5px;
-      padding: 5px;
       font-size: 20px;
     }
 
@@ -189,12 +187,12 @@ const navigationItems = [
     section: 'contact',
     type: 'anchor',
   },
-  // {
-  //   child: 'Blog',
-  //   link: '/blog/overview',
-  //   section: 'blog',
-  //   type: 'link',
-  // },
+  {
+    child: 'Blog',
+    link: 'https://blog.reiheacht.ch',
+    section: '/',
+    type: 'link',
+  },
 ];
 
 interface Props { }

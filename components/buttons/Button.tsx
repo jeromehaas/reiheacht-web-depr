@@ -3,34 +3,26 @@ import styled, { css } from 'styled-components';
 import Linker from '@/components/buttons/Link';
 
 const getAnimated = ({ animate, delay }) => {
-
   if (animate && delay) {
-
     return css`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
       animation: ${(`0.5s ease-out ${delay} 1 forwards moveUp`)};
-
       @keyframes moveUp {
         from {top: 60px; opacity: 0;}
         to {top: 0px; opacity: 1;}
       }
-
     `;
-
   }
-
 };
 
 const getColor = ({ color, theme }) => {
-
   switch (color) {
     case 'orange': return css` background-color: ${theme.orange};`;
     case 'blue': return css` background-color: ${theme.blue};`;
     case 'white': return css` background-color: ${theme.white};  color: ${theme.darkGrey};`;
     default: return css` background-color: ${theme.orange};`;
   }
-
 };
 
 const StyledButton = styled.button`
@@ -52,19 +44,6 @@ const StyledButton = styled.button`
     background-color: ${(p) => p.theme.orangeHover};
   }
 
-  ${({ animate, delay }) => animate && delay
-    && css`
-      transition: ${(p) => p.theme.standardTransition};
-      opacity: 0;
-      animation: ${(`0.75s ease-in-out ${delay} 1 forwards moveUp`)};
-
-      @keyframes moveUp {
-        from {top: 60px; opacity: 0;}
-        to {top: 0px; opacity: 1;}
-      }
-
-    `}
-
   a {
     color: red;
     width: 100%;
@@ -76,12 +55,19 @@ const StyledButton = styled.button`
   @media (max-width: 750px) {
    a { font-size: 15px !important }
    min-width: 150px !important;
+   margin: 0 15px 15px 0;
   }
 
   @media (max-width: 430px) {
    a { font-size: 12px !important }
    min-width: 120px !important;
    margin: 0 15px 15px 0;
+  }
+ 
+  @media (max-width: 370px) {
+    margin: 0 0 10px 0;
+    display: block;
+    width: 100%;
   }
 
   `;

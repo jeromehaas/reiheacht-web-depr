@@ -1,9 +1,8 @@
 import React from 'react';
 import Legal from '@/components/pages/Legal';
-import { H2, H3, HL } from '@/components/text/Text';
+import { H2, HL } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
-import Spacer from '@/components/layout/Spacer';
-import ListItem from '@/components/text/ListItem';
+import Space from '@/components/layout/Space';
 
 const content = [
   {
@@ -31,11 +30,11 @@ const Imprint: React.FunctionComponent<Props> = () => (
   <>
     <Legal>
       <H2 color="darkGrey">Impressum<HL color="blue">.</HL></H2>
-      <Spacer marginBottom="60px" />
+      <Space height="60px" />
       {content.map((item, index) => (
         <LegalItem key={index} title={item.title} text={item.text} />
       ))}
-      <Spacer marginBottom="60px" />
+      <Space height="60px" />
 
     </Legal>
   </>

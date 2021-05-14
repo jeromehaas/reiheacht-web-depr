@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import Linker from '@/components/buttons/Link';
-import { Router, useRouter } from 'next/router';
 
 const StyledBackButton = styled.button`
   width: 50px;

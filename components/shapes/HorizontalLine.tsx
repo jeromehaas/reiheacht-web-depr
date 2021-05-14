@@ -26,7 +26,7 @@ interface Props {
   delay?: string;
 }
 
-const HorizontalLine: React.FunctionComponent<Props> = ({ className, animated, delay }) => (
+const HorizontalLine: React.FunctionComponent<Props> = ({ delay }) => (
   <StyledHorizontalLine animated delay={delay} />
 );
 

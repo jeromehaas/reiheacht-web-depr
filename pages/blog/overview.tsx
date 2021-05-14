@@ -1,15 +1,13 @@
 import React from 'react';
 import Blog from '@/components/pages/Blog';
 import {
-  H2, H3, H4, P,
+  H2, H3, H4, P, HL,
 } from '@/components/text/Text';
-import Spacer from '@/components/layout/Spacer';
-import Highlight from '@/components/text/Highlight';
+import Space from '@/components/layout/Space';
 import styled from 'styled-components';
-import Paragraph from '@/components/text/Paragraph';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Linker from '@/components/buttons/Link';
-import Reveal, { Fade } from 'react-awesome-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 const TopPost = styled.div`
     display: flex;
@@ -148,47 +146,46 @@ const Imprint: React.FunctionComponent<Props> = () => (
   <>
 
     <Blog closeTriangleTarget="/">
-      <Fade>
-        <H2 color="darkGrey">Trends & News aus der reihe<Highlight>acht</Highlight>.</H2>
-        <HorizontalLine className="active" />
-        <Linker target={latestPost.link} type="link">
-          <TopPost>
-            <div className="image">
-              <img src={latestPost.image} alt={latestPost.imageAlt} />
-            </div>
-            <div className="text">
-              <P><Highlight>{latestPost.caption}</Highlight></P>
-              <Spacer marginBottom="10px" />
-              <H3 color="darkGrey">{latestPost.title}</H3>
-              <Spacer marginBottom="10px" />
-              <P color="darkGrey">{latestPost.text}</P>
-            </div>
-          </TopPost>
-        </Linker>
-      </Fade>
+
+      <H2 color="darkGrey">Trends & News aus der reihe<HL color="blue">acht</HL>.</H2>
+      <HorizontalLine className="active" />
+      <Linker target={latestPost.link} type="link">
+        <TopPost>
+          <div className="image">
+            <img src={latestPost.image} alt={latestPost.imageAlt} />
+          </div>
+          <div className="text">
+            <P><HL color="blue">{latestPost.caption}</HL></P>
+            <Space height="10px" />
+            <H3 color="darkGrey">{latestPost.title}</H3>
+            <Space height="10px" />
+            <P color="darkGrey">{latestPost.text}</P>
+          </div>
+        </TopPost>
+      </Linker>
+
       <PostContainer>
 
-        <Fade cascade damping={0.2}>
-          {allPosts.map((post, index) => (
+        {allPosts.map((post, index) => (
 
-            <Post key={index}>
-              <Linker target={post.link} type="link">
-                <div className={post.image}>
-                  <img src={post.image} alt={post.imageAlt} />
-                </div>
-                <div className="text">
-                  <P><Highlight>{post.caption}</Highlight></P>
-                  <H4 color="darkGrey">{post.title}</H4>
-                  <P color="darkGrey">{post.text}</P>
-                  <p style={{ alignSelf: 'flex-end', fontSize: '12px', color: '#1c1c1c' }}>{post.date}</p>
-                </div>
-              </Linker>
-            </Post>
-          ))}
-        </Fade>
+          <Post key={index}>
+            <Linker target={post.link} type="link">
+              <div className={post.image}>
+                <img src={post.image} alt={post.imageAlt} />
+              </div>
+              <div className="text">
+                <P><HL>{post.caption}</HL></P>
+                <H4 color="darkGrey">{post.title}</H4>
+                <P color="darkGrey">{post.text}</P>
+                <p style={{ alignSelf: 'flex-end', fontSize: '12px', color: '#1c1c1c' }}>{post.date}</p>
+              </div>
+            </Linker>
+          </Post>
+        ))}
+
       </PostContainer>
 
-      <Spacer marginBottom="150px" />
+      <Space height="150px" />
     </Blog>
   </>
 );

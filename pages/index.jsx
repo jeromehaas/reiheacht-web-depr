@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import PageWrapper from '@/components/layout/PageWrapper';
 import Navigation from '@/components/partials/Navigation';
 import Start from '@/components/sections/Start';
@@ -9,6 +9,7 @@ import Contact from '@/components/sections/Contact';
 import Footer from '@/components/partials/Footer';
 import CookieBanner from '@/components/partials/CookieBanner';
 import IntroAnimation from '@/components/animations/IntroAnimation';
+import Showreel from '@/components/partials/Showreel';
 
 const Home = () => (
   <div>
@@ -22,6 +23,7 @@ const Home = () => (
       <Contact />
       <Footer />
       <CookieBanner />
+      <Showreel />
     </PageWrapper>
   </div>
 );

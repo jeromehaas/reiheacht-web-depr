@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styled from 'styled-components';
 import { P } from '@/components/text/Text';
-import { useCookies } from 'react-cookie';
 import Cookies from 'js-cookie';
-import Linker from '@/components/buttons/Link';
 import Link from 'next/link';
 
 const StyledCookieBanner = styled.div`
@@ -38,6 +36,7 @@ const StyledCookieBanner = styled.div`
     border-radius: 10px;
     padding: 10px 20px;
     margin-left: 30px;
+    font-family: 'Helvetica Neue 55 Roman', serif;
   }
 
   @media (max-width: 580px) {

@@ -1,10 +1,10 @@
 import React from 'react';
 import Legal from '@/components/pages/Legal';
 import {
-  H2, H3, P, HL,
+  H2, P, HL,
 } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
-import Spacer from '@/components/layout/Spacer';
+import Space from '@/components/layout/Space';
 import styled from 'styled-components';
 
 const DownloadButton = styled.div`
@@ -16,7 +16,6 @@ const DownloadButton = styled.div`
     justify-content: flex-end;
     align-items: center;
   }
-
 
   a {
     text-decoration: underline;
@@ -147,11 +146,11 @@ const TermsAndConditions: React.FunctionComponent<Props> = () => (
   <>
     <Legal>
       <H2 color="darkGrey">AGB<HL color="blue">.</HL></H2>
-      <Spacer marginBottom="60px" />
+      <Space height="60px" />
       {content.map((item, index) => (
         <LegalItem key={index} title={item.title} text={item.text} />
       ))}
-      <Spacer marginBottom="60px" />
+      <Space height="60px" />
       <DownloadButton>
         <div className="wrapper">
           <a href="/files/agb_reiheacht_mrz21.pdf" download>
@@ -159,7 +158,7 @@ const TermsAndConditions: React.FunctionComponent<Props> = () => (
           </a>
         </div>
       </DownloadButton>
-      <Spacer marginBottom="90px" />
+      <Space height="90px" />
     </Legal>
   </>
 );

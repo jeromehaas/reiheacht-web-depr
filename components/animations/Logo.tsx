@@ -23,13 +23,11 @@ const StyledLogo = styled.div`
     .desktop {display: none}
     .mobile {display: block}
   }
-  
 
 `;
 
 const Logo: React.FunctionComponent = () => (
   <StyledLogo>
-
     <div className="desktop">
       <Lottie
         config={{ animationData: logoLookLeft, autoplay: true, loop: true }}
@@ -41,7 +39,6 @@ const Logo: React.FunctionComponent = () => (
         direction={1}
       />
     </div>
-
     <div className="mobile">
       <Lottie
         config={{ animationData: logoLookUp, autoplay: true, loop: true }}
@@ -53,21 +50,7 @@ const Logo: React.FunctionComponent = () => (
         direction={1}
       />
     </div>
-
-    {/* <Lottie
-        config={{ animationData: logoLookUp, autoplay: true }}
-        playingState="playing"
-        speed={1}
-        width="40px"
-        height="40px"
-        style={{ margin: 0 }}
-        direction={1}
-      /> */}
-
-    {/* <img className="eyes" src="/animations/logo_eyes.svg" alt="Logo Augen" />
-    <img className="head" src="/animations/logo_head.svg" alt="Logo Kopf" /> */}
   </StyledLogo>
-
 );
 
 export default Logo;

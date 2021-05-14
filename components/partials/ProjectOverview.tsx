@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import Paragraph from '@/components/text/Paragraph';
 import VerticalLine from '@/components/shapes/VerticalLine';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import { H3, P } from '@/components/text/Text';
@@ -71,7 +70,6 @@ const StyledProjectOverview = styled.div`
     }
 
   }
-
 `;
 
 interface Props {

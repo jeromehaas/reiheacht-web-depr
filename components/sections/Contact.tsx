@@ -1,12 +1,8 @@
 import React from 'react';
 import Section from '@/components/layout/Section';
-import { H2 } from '@/components/text/Text';
-import Highlight from '@/components/text/Highlight';
-import Paragraph from '@/components/text/Paragraph';
+import { HL } from '@/components/text/Text';
 import TextBlock from '@/components/partials/TextBlock';
-import Button from '@/components/buttons/Button';
 import ContactForm from '@/components/partials/ContactForm';
-import Image from '@/components/partials/Image';
 import Logo from '@/components/animations/Logo';
 import styled from 'styled-components';
 
@@ -29,7 +25,7 @@ interface Props { }
 
 const textBlockContent = {
   section: 'contact',
-  title: <>Sag <Highlight>Hallo</Highlight>!</>,
+  title: <>Sag <HL color="blue">Hallo</HL>!</>,
   text: <>Wir morsen zwar sehr gut, es gibt jedoch einfachere Wege, uns zu kontaktieren.<br /> <br />Wir freuen uns.</>,
 };
 
