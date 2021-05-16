@@ -8,7 +8,7 @@ interface Props { }
 
 const tileContent = [
   {
-    image: '/illustrations/projects/reiheacht-logo.png',
+    image: '/illustrations/projects/reiheacht.png',
     alt: 'reiheacht',
     title: 'reiheacht',
     description: 'Showreel',
