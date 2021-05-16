@@ -47,7 +47,6 @@ const tileContent = [
     description: 'Diverse Erklärfilme',
     overlayColor: '#9EA600',
     link: '/projekte/sbv-div',
-
   },
   {
     image: '/illustrations/projects/agrarinitiative.png',
