@@ -7,7 +7,7 @@ import Linker from '@/components/buttons/Link';
 const StyledPlayButton = styled.button`
       transition: ${(p) => p.theme.standardTransition};
       opacity: 0;
-      animation: 0.5s ease-out 8s 1 forwards moveUp;
+      animation: 0.5s ease-out 7.5s 1 forwards moveUp;
       background-color: ${(p) => p.theme.blue};
       position: relative;
       width: auto;
