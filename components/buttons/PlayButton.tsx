@@ -2,64 +2,51 @@ import React from 'react';
 import styled from 'styled-components';
 import { useDispatch, useSelector, RootStateOrAny } from 'react-redux';
 import { toggleShowreel } from '@/redux/actions/index';
+import Linker from '@/components/buttons/Link';
 
 const StyledPlayButton = styled.button`
-  height: 50px;
-  width: 50px;
-  border: 1px solid ${(p) => p.theme.white};
-  position: relative;
-  width: auto;
-  display: inline-block;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: none;
-  outline: none;
-  margin: 0 0 30px 0;
-  float: left;
-  cursor: pointer;
-  background-color: ${(p) => p.theme.blue};
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: 0.5s ease-out 8s 1 forwards moveUp;
-  opacity: 0;
-  
-  .icon {
-    width: 20px;
-    height: auto;  
-    animation: heartBeat 4s infinite ease-in-out 5s;
+      transition: ${(p) => p.theme.standardTransition};
+      opacity: 0;
+      animation: 0.5s ease-out 7.5s 1 forwards moveUp;
+      background-color: ${(p) => p.theme.blue};
+      position: relative;
+      width: auto;
+      min-width: 200px;
+      padding: 0;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+      margin: 0 30px 30px 0;
+      float: left;
+      cursor: pointer;
+
+      a {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        padding: 10px 15px;
+      }
+
+      @keyframes moveUp {
+        from {top: 60px; opacity: 0;}
+        to {top: 0px; opacity: 1;}
+      }
+
+
+@media (max-width: 750px) {
+   a { font-size: 15px !important }
+   min-width: 150px !important;
+   margin: 0 15px 15px 0;
   }
 
-  @keyframes moveUp {
-     from {top: 60px; opacity: 0;}
-     to {top: 0px; opacity: 1;}
+  @media (max-width: 555px) {
+   a { font-size: 12px !important }
+   min-width: 120px !important;
+   margin: 0 15px 15px 0;
   }
-
-  @keyframes heartBeat {
-  0% { transform: scale(1) }
-  10% { transform: scale(1.15) }
-  20% { transform: scale(1)} 
-  100% { transform: scale(1)} 
-  }
-
-  @media (max-width: 750px) {
-    height: 42px;
-    width: 42px;
-  }
-
-  @media (max-width: 430px) {
-    height: 38px;
-    width: 38px;
-
-    .icon {
-      width: 15px;
-      height: auto;
-      animation: heartBeat 4s infinite ease-in-out 5s;
-    }
-  }
-
-  @media (max-width: 370px) {
-    margin: 0 0 15px 0;
+ 
+  @media (max-width: 465px) {
+    margin: 0 0 10px 0;
     display: block;
     width: 100%;
   }
@@ -74,8 +61,11 @@ const PlayButton: React.FunctionComponent<Props> = () => {
 
   return (
 
-    <StyledPlayButton onClick={() => dispatch(toggleShowreel())}>
-      <img className="icon" src="/icons/other/play.svg" />
+    <StyledPlayButton>
+      <Linker type="anchor" target="" onClickFunction={() => dispatch(toggleShowreel())}>
+        Showreel
+      </Linker>
+
     </StyledPlayButton>
   );
 };
