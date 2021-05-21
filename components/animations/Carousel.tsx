@@ -16,8 +16,8 @@ const StyledCarousel = styled.span`
   @media (max-width: 670px) { width: 420px; }
   @media (max-width: 560px) { width: 350px; }
   @media (max-width: 480px) { width: 300px; }
-  @media (max-width: 425px) { width: 250px; }
-  @media (max-width: 365px) { width: 230px; }
+  @media (max-width: 425px) { width: 260px; }
+  @media (max-width: 370px) { width: 230px; }
 
 `;
 
