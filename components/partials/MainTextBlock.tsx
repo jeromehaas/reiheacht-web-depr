@@ -34,10 +34,10 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => (
     <HorizontalLine delay="7s" animated />
     <P size="big" animated delay="7s">{content.text}</P>
     <Space height="60px" />
+    <PlayButton />
     {content.buttons.map((button) => (
       <Button key={button.text} type="anchor" target={button.target} text={button.text} animate delay={button.delay} />
     ))}
-    <PlayButton />
   </MoveDownWrapper>
 );
 

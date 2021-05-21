@@ -45,7 +45,6 @@ const StyledButton = styled.button`
   }
 
   a {
-    color: red;
     width: 100%;
     height: 100%;
     display: inline-block;
@@ -58,13 +57,13 @@ const StyledButton = styled.button`
    margin: 0 15px 15px 0;
   }
 
-  @media (max-width: 430px) {
+  @media (max-width: 555px) {
    a { font-size: 12px !important }
    min-width: 120px !important;
    margin: 0 15px 15px 0;
   }
  
-  @media (max-width: 370px) {
+  @media (max-width: 465px) {
     margin: 0 0 10px 0;
     display: block;
     width: 100%;
