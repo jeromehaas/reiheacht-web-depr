@@ -25,8 +25,8 @@ const tileContent = [
   },
   {
     image: '/illustrations/projects/osterkampagne.png',
-    alt: 'Gallo Suisse',
-    title: 'Gallo Suisse',
+    alt: 'GalloSuisse',
+    title: 'GalloSuisse',
     description: 'Ostern 2021',
     overlayColor: '#C70103',
     link: '/projekte/osterkampagne',
@@ -50,8 +50,8 @@ const tileContent = [
   },
   {
     image: '/illustrations/projects/agrarinitiative.png',
-    alt: 'Gallo Suisse',
-    title: 'Gallo Suisse',
+    alt: 'GalloSuisse',
+    title: 'GalloSuisse',
     description: 'Extreme Agrarinitiative',
     overlayColor: '#C70103',
     link: '/projekte/agrarinitiative',
