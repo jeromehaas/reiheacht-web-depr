@@ -118,7 +118,7 @@ const MobileNavigation = styled.nav`
     overflow: hidden;
     background-color: ${(p) => p.theme.darkGrey};
     align-items: center;
-    z-index: 5;
+    z-index: 10;
     padding-top: 75px;
     transition: all 1s ease-in-out;
     box-shadow: ${(p) => p.theme.boxShadow};
