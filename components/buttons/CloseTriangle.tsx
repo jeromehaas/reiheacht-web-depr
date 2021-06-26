@@ -18,7 +18,7 @@ const Wrapper = styled.i`
 
   ${({ direction }) => direction === 'top'
     && css`
-      top: -15px;
+      top: 45px;
     `};
  
   ${({ direction }) => direction === 'bottom'
