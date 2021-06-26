@@ -9,8 +9,8 @@ import PlayButton from '@/components/buttons/PlayButton';
 
 const MoveDownWrapper = styled.div`
   top: -60px;
-  opacity: 0;
-  animation: slideDown  1s forwards 3s;
+  opacity: 1;
+  /* animation: slideDown  1s forwards 3s; */
   position: relative;
 
   @keyframes slideDown {
@@ -24,19 +24,18 @@ interface Props {
     title: any;
     buttons: any[];
     text: any;
-    carouselItems: string[]
   }
 }
 
 const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => (
   <MoveDownWrapper>
-    <H1>{content.title}<Carousel items={content.carouselItems} /></H1>
-    <HorizontalLine delay="7s" animated />
-    <P size="big" animated delay="7s">{content.text}</P>
+    <H1>{content.title}</H1>
+    <HorizontalLine />
+    <P size="big">{content.text}</P>
     <Space height="60px" />
     <PlayButton />
     {content.buttons.map((button) => (
-      <Button key={button.text} type="anchor" target={button.target} text={button.text} animate delay={button.delay} />
+      <Button key={button.text} type="anchor" target={button.target} text={button.text} />
     ))}
   </MoveDownWrapper>
 );

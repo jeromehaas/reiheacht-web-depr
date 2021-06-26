@@ -105,27 +105,13 @@ const CarouselWrapper = styled.div`
 
 `;
 
-const CarouselItem = styled.span`
-  display: block;
-  line-height: 1;
-  margin-bottom: 20px;
-  font-family: 'Helvetica Neue 85 Heavy';
-`;
-
 interface Props {
   items: string[];
 }
 
 const Carousel: React.FunctionComponent<Props> = ({ items }) => (
   <StyledCarousel>
-    <CarouselWrapper>
-      {items.map((item) => (
-        <CarouselItem key={item}>
-          {item}
-          <HL color="white">.</HL>
-        </CarouselItem>
-      ))}
-    </CarouselWrapper>
+    <CarouselWrapper />
   </StyledCarousel>
 );
 
