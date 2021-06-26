@@ -6,6 +6,7 @@ import Video from '@/components/partials/Video';
 import Button from '@/components/buttons/Button';
 import Image from '@/components/partials/Image';
 import Space from '@/components/layout/Space';
+import Head from '@/components/partials/Head';
 
 interface Props { }
 
@@ -31,6 +32,7 @@ const content = {
 
 const TrinkwasserInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
+    <Head title="Motion Design Erklärfilme für den Sbv | reiheacht" description="Motion Design Erklärfilm zur Trinkwasserinitiative für den Schweizer Bauernverband, illustriert und animiert von der reiheacht" />
     <Video link="https://player.vimeo.com/video/519844178" />
     <Space height="30px" />
     <Video link="https://player.vimeo.com/video/519845369" />

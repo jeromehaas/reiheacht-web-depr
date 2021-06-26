@@ -4,6 +4,7 @@ import { HL } from '@/components/text/Text';
 import Video from '@/components/partials/Video';
 import Image from '@/components/partials/Image';
 import Space from '@/components/layout/Space';
+import Head from '@/components/partials/Head';
 
 interface Props { }
 
@@ -30,6 +31,7 @@ const content = {
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
+    <Head title="Illustration und Design für GalloSuisse | reiheacht" description="Passend zum Illustrationsstil der Kampagne “Extreme Agrarinitiative” desSchweizer Bauernverbands hat die reiheacht auch für GalloSuisse drei Hühner illustriert" />
     <Image src="/projects/extreme-agrarinitiative/employee.png" alt="Arbeiter" />
     <Image src="/projects/extreme-agrarinitiative/family.png" alt="Familie" />
     <Image src="/projects/extreme-agrarinitiative/foodwaste.png" alt="Foodwaste" />

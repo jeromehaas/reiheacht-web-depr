@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '@/components/pages/Project';
 import { HL } from '@/components/text/Text';
 import Video from '@/components/partials/Video';
+import Head from '@/components/partials/Head';
 
 interface Props { }
 
@@ -28,6 +29,7 @@ const content = {
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
+    <Head title="Motion Design Showreel | reiheacht" description="Das reiheacht Showreel – Ein Auswahl unserer Besten Motion Design Animationen" />
     <Video link="https://player.vimeo.com/video/546612359" />
   </Project>
 );
