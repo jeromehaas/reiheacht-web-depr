@@ -159,33 +159,33 @@ const MobileNavigation = styled.nav`
 const navigationItems = [
   {
     child: 'Home',
-    link: 'home',
+    link: '../#home',
     section: 'home',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Leistungen',
-    link: 'services',
+    link: '../#services',
     section: 'services',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Projekte',
-    link: 'projects',
+    link: '../#projects',
     section: 'projects',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Team',
-    link: 'employees',
+    link: '../#employees',
     section: 'employees',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Kontakt',
-    link: 'contact',
+    link: '../#contact',
     section: 'contact',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Blog',
@@ -197,7 +197,7 @@ const navigationItems = [
 
 interface Props { }
 
-const Navigation: React.FunctionComponent<Props> = () => {
+const JumpNavigation: React.FunctionComponent<Props> = () => {
 
   const dispatch = useDispatch();
   const mobileMenuIsVisible = useSelector((state: RootStateOrAny) => state.navigation.mobile.isVisible);
@@ -273,4 +273,4 @@ const Navigation: React.FunctionComponent<Props> = () => {
 
 };
 
-export default Navigation;
+export default JumpNavigation;

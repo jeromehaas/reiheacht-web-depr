@@ -6,6 +6,7 @@ import ProjectOverview from '@/components/partials/ProjectOverview';
 import Space from '@/components/layout/Space';
 import { H2, P } from '@/components/text/Text';
 import ProjectSwitcher from '@/components/partials/ProjectSwitcher';
+import JumpNavigation from '@/components/partials/JumpNavigation';
 
 interface Intro {
   title: React.ReactNode;
@@ -43,6 +44,7 @@ interface Props {
 const Project: React.FunctionComponent<Props> = ({ children, content }) => (
   <div>
     <PageWrapper>
+      <JumpNavigation />
       <CloseTriangle position="top" target="/#projects" />
       <Space height="80px" />
       <Section>

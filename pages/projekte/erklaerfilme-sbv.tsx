@@ -3,6 +3,7 @@ import Project from '@/components/pages/Project';
 import { HL } from '@/components/text/Text';
 import Video from '@/components/partials/Video';
 import Space from '@/components/layout/Space';
+import Head from '@/components/partials/Head';
 
 interface Props { }
 
@@ -29,6 +30,7 @@ const content = {
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
+    <Head title="Motion Design Erklärfilme Schweizer Bauernverband | reiheacht" description="Tauche ein in eine von der reiheacht illustrierten und animierten Bauernhofwelt voller Tiere und Menschen zu verschiedenen Landwirtschaftsthemen" />
     <Video link="https://player.vimeo.com/video/520918592?width=100%&responsive=1" />
     <Space height="30px" />
     <Video link="https://player.vimeo.com/video/520918534" />

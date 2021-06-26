@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '@/components/pages/Project';
 import { HL } from '@/components/text/Text';
 import Video from '@/components/partials/Video';
+import Head from '@/components/partials/Head';
 
 interface Props { }
 
@@ -27,11 +28,12 @@ const content = {
 };
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
-  <>
-    <Project content={content}>
-      <Video link="https://player.vimeo.com/video/520907425" />
-    </Project>
-  </>
+
+  <Project content={content}>
+    <Head title="" description="" />
+    <Video link="https://player.vimeo.com/video/520907425" />
+  </Project>
+
 );
 
 export default AgrarInitiative;

@@ -46,7 +46,7 @@ const tileContent = [
     title: 'Schweizer Bauernverband',
     description: 'Diverse Erklärfilme',
     overlayColor: '#9EA600',
-    link: '/projekte/sbv-div',
+    link: '/projekte/erklaerfilme-sbv',
   },
   {
     image: '/illustrations/projects/agrarinitiative.png',
