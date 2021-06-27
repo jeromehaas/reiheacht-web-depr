@@ -13,7 +13,7 @@ interface Props { }
 
 const Videokonzeption: React.FunctionComponent<Props> = () => (
   <Service>
-    <Head title="" description="" />
+    <Head title="Idee & Videokonzeption | reiheacht" description="Ein gutes Konzept bildet das Fundament um deine Idee mit Motion Design oder Video zum Leben zu erwecken" />
     <H1>Videokonzeption<HL color="blue">.</HL></H1>
     <HorizontalLine />
     <Space height="50px" />

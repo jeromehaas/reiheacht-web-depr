@@ -13,11 +13,11 @@ interface Props { }
 
 const WerbeUndImagefilm: React.FunctionComponent<Props> = () => (
   <Service>
-    <Head title="" description="" />
+    <Head title="Werbe- und Imagefilm | reiheacht" description="Videoproduktion für Werbe- & Imagefilme, von der Idee über die Konzeption bis hin zum finalen Video für TV, Internet oder Kino" />
     <H1>Werbe- & Imagefilm<HL color="blue">.</HL></H1>
     <HorizontalLine />
     <Space height="50px" />
-    <Image src="/images/services/werbe-und-imagefilm.png" alt="Erklärvideo" />
+    <Image src="/images/services/werbe-und-imagefilm.png" alt="Werbe- und Imagefilm" />
     <Quote content="Reale Menschen, reale Bilder." />
     <Space height="20px" />
     <H2 color="white" fullWidth>Echte Menschen</H2>

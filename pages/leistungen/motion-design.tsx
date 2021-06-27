@@ -16,7 +16,7 @@ interface Props { }
 
 const MotionDesign: React.FunctionComponent<Props> = () => (
   <Service>
-    <Head title="" description="" />
+    <Head title="Motion Design für deine Botschaft | reiheacht" description="Kreative Motion Design Lösungen für ein einmaliges Markenerlebnis" />
     <H1>Motion Design<HL color="blue">.</HL></H1>
     <HorizontalLine />
     <Space height="50px" />
@@ -31,7 +31,7 @@ const MotionDesign: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Einfach gesagt ist es Grafikdesign in Bewegung, mit dessen Einsatz die Botschaft auf kreative Weise verstärkt wird. Es erlaubt, das Auge des Zuschauenden noch gezielter zu führen.</P>
     <Space height="20px" />
-    <Image src="/images/services/storytelling-illustrations.png" alt="Storytelling Illustrations" />
+    <Image src="/images/services/storytelling-illustrations.png" alt="Storytelling Ilustrationen" />
     <Space height="20px" />
     <P fullWidth>Menschen konsumieren heute viele verschiedene Inhalte auf diversen Geräten in kürzester Zeit. Das macht Motion Design zur perfekten Wahl, um schnell, kurz und knackig seine gewünschte Botschaft an den Mann und die Frau zu bringen.</P>
     <Space height="20px" />

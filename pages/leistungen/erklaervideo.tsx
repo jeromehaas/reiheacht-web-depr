@@ -13,7 +13,7 @@ interface Props { }
 
 const Erklaervideo: React.FunctionComponent<Props> = () => (
   <Service>
-    <Head title="" description="" />
+    <Head title="Motion Design Erklärfilme für deine Produkte | reiheacht" description="Komplexe Themen durch animierte Erklärfilme einfach erklärt" />
     <H1>Erklärvideo<HL color="blue">.</HL></H1>
     <HorizontalLine />
     <Space height="50px" />

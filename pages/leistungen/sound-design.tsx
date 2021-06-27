@@ -13,11 +13,11 @@ interface Props { }
 
 const SoundDesign: React.FunctionComponent<Props> = () => (
   <Service>
-    <Head title="" description="" />
+    <Head title="Sound Design für Motion Design und Werbefilm | reiheacht" description="Erwecke in deinen Videos Emotionen mit Musik, Voice Over und Soundeffekten" />
     <H1>Sound Design<HL color="blue">.</HL></H1>
     <HorizontalLine />
     <Space height="50px" />
-    <Image src="/images/services/sound-design.png" alt="Videokonzeption" />
+    <Image src="/images/services/sound-design.png" alt="Sound Design" />
     <Quote content="Gewisse Klänge rufen gewisse Emotionen hervor." />
     <Space height="20px" />
     <H2 color="white" fullWidth>Den richtigen Ton treffen</H2>
