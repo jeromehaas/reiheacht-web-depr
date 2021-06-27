@@ -77,7 +77,7 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 50px; 
-  max-width: 660px;
+  max-width: ${(p) => (p.fullWidth ? '100%' : '660px')};
   font-family: 'Helvetica Neue 85 Heavy';
 
   @media (max-width: 760px) {
@@ -246,7 +246,7 @@ const checkParagraphAnimated = ({ animated, delay }) => {
 
 const P = styled.p`
   font-size: 30px;
-  max-width: 910px;
+  max-width: ${(p) => (p.fullWidth ? '100%' : '910px')};
   opacity: 1;
   line-height: 1.6;
   color: red;

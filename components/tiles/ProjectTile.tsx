@@ -26,6 +26,17 @@ const StyledProjectTile = styled.div`
     object-fit: cover;
   }
 
+  .arrow {
+    display: none;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    object-fit: contain;
+    transition: all 0.7s ease-in-out;
+  }
+
   .overlay {
     position: absolute;
     top: 100%;

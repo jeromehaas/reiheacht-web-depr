@@ -1,12 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { H3, ListItem } from '@/components/text/Text';
+import { H3, P } from '@/components/text/Text';
+import Link from 'next/link';
+import Image from '@/components/partials/Image';
+import Space from '@/components/layout/Space';
 
 const StyledServiceTile = styled.div`
-  width: calc(100% / 3);
   height: 100%;
+  width: calc(100% / 3);
   overflow: hidden;
   position: relative;
+
+
 
   .initial {
     width: 100%;
@@ -34,131 +39,122 @@ const StyledServiceTile = styled.div`
 
   .overlay {
     position: absolute;
+    top: 100%;
     right: 0;
     bottom: 0;
-    left: 0; 
+    left: 0;
     width: 100%;
-    height: 80px;
-    transition: all 0.7s ease-in-out;
-  }
-
-  .textWrapper {
-    width: 100%;
-    height: 80px;
+    height: 100%;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
     transition: all 0.7s ease-in-out;
   }
 
-  .title {
-    height: 80px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 15px 30px;
+  .textWrapper  {
+    line-height: 1;
+    opacity: 0;
+    transition: all 0.99s ease-in-out;
   }
 
   ${H3} {
+    top: 30px;
     font-size: 30px;
-    font-family: 'Helvetica Neue 75 Bold';
-  }
-
-  .listItems {
-    padding: 0 30px;
-    height: 0px;
-    transition: all 0.7s ease-in;
     opacity: 0;
+    position: relative;
+    transition: all 0.7s ease-in;
+    font-family: 'Helvetica Neue 75 Bold'
   }
 
-  ${ListItem} {
-    line-height: 1;
+  ${P} {
     top: 30px;
     opacity: 0;
     font-size: 25px;
     position: relative;
-    transition: all 0.7s ease-in;
-    /* &:nth-child(1) { transition-delay: 0.1s; }
-    &:nth-child(2) { transition-delay: 0.2s; }
-    &:nth-child(3) { transition-delay: 0.3s; }
-    &:nth-child(4) { transition-delay: 0.4s; } */
+    transition: all 0.7s ease 0.2s;
+  }
+
+  .moreInfoLink {
+    position: absolute;
+    bottom: 30px;
+    font-size: 25px;
+    right: 30px;
+    opacity: 0;
+    font-family: 'Helvetica Neue 55 Roman';
+    color: ${(p) => p.theme.white};
+    text-decoration: underline;
+    transition: all 0.7s ease 0.2s;
   }
 
   &:hover {
 
     .overlay {
-      bottom: 0;
+      top: 0px;
       height: 100%;
     }
 
     .textWrapper {
-      height: 100%;
-      margin-top: -17.5%;
-    }
-
-    .listItems {
-      max-height: unset;
+      margin-top: -30%;
       opacity: 1;
     }
 
-    ${ListItem} {
+    ${H3} {
       top: 5px;
-      opacity: 1
+      opacity: 1;
     }
 
+    ${P} {
+      top: 5px;
+      opacity: 1;
+  }
+
+  .moreInfoLink {
+    opacity: 1;
+  }
 
 }
 
-
-
-  @media (max-width: 1050px) {
+@media (max-width: 1000px) {
     ${H3} { font-size: 25px; };
-    ${ListItem} { font-size: 20px;}
-    .overlay { height: 60px; }
-    .textWrapper { height: 60px;}
-    .title { height: 60px;
+    ${P} { font-size: 20px;}
+    .moreInfoLink { font-size: 20px; }
   }
 
   @media (max-width: 850px) {
     width: calc(100% / 2);
-    .arrow { display: block; }
     ${H3} { font-size: 30px; };
-    ${ListItem} { font-size: 25px;}
-    .overlay { height: 60px; }
-    .textWrapper { height: 60px;}
-    .title { height: 60px;}
-    &:nth-child(3) { order: 4 }
-    &:nth-child(6) { order: 5 }
+    ${P} { font-size: 25px;
+    .moreInfoLink { font-size: 25px; }
   }
 
   @media (max-width: 700px) {
     ${H3} { font-size: 25px; };
-    ${ListItem} { font-size: 20px;}
+    ${P} { font-size: 20px;}
+    .moreInfoLink { font-size: 20px; }
   }
-
 
   @media (max-width: 550px) {
     width: calc(100% / 1);
-    ${H3} { font-size: 30px; };
-    ${ListItem} { font-size: 25px;}
     margin-top: 30px;
     .overlay { height: 60px; }
     .textWrapper { height: 60px;}
     .title { height: 60px; }
-    &:nth-child(3) { order: unset }
-    &:nth-child(3) { order: unset }
-    &:nth-child(6) { order: unset }
   }
- 
+
   @media (max-width: 450px) {
     ${H3} { font-size: 25px; };
-    ${ListItem} { font-size: 20px;}
+    ${P} { font-size: 20px;}
+    .moreInfoLink { font-size: 20px; }
   }
 
   @media (max-width: 370px) {
     ${H3} { font-size: 22px; };
-    ${ListItem} { font-size: 17px;}
+    ${P} { font-size: 17px;}
+    .moreInfoLink { font-size: 17px; }
   }
+
   }
 `;
 
@@ -169,26 +165,20 @@ interface Props {
 const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
   <StyledServiceTile>
     <div className="initial">
-      <img src={content.image} alt={content.alt} />
+      <Image src={content.image} alt={content.alt} />
     </div>
-    <div className="overlay" style={{ backgroundColor: content.overlayColor === 'orange' ? '#C23E27' : '#FFFFFF' }}>
-      <div className="textWrapper">
-        <div className="title">
-          <H3 color={content.overlayColor === 'orange' ? 'white' : 'darkGrey'}>{content.title}</H3>
+    <Link href={content.link}>
+      <a>
+        <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
+          <div className="textWrapper">
+            <H3 color={content.overlayColor === 'orange' ? 'white' : 'darkGrey'}>{content.title}</H3>
+            <Space height="6px" />
+            <p className="moreInfoLink" style={{ color: `${content.overlayColor === 'orange' ? 'white' : '#1C1C1C'}` }}>Mehr Infos</p>
+          </div>
         </div>
-        <div className="listItems">
-          <ul>
-            {content.description.map((item, index) => (
-              <ListItem size="normal" key={index} color={content.overlayColor === 'orange' ? '#FFFFFF' : '#1C1C1C'}>
-                {item}
-              </ListItem>
-            ))}
-          </ul>
-        </div>
+      </a>
+    </Link>
 
-      </div>
-    </div>
-    <img className="arrow" src={content.overlayColor === 'orange' ? '/icons/arrows/arrow-up-white.svg' : '/icons/arrows/arrow-up-darkgrey.svg'} alt="Pfeil" />
   </StyledServiceTile>
 );
 
