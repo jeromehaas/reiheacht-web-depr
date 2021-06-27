@@ -8,6 +8,7 @@ import Head from '@/components/partials/Head';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Space from '@/components/layout/Space';
 import Quote from '@/components/text/Quote';
+import NextLink from 'next/link';
 
 interface Props { }
 
@@ -26,7 +27,7 @@ const Storytelling: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Grosse Unternehmen wie Apple, Google oder Adidas setzen nicht nur ihre Produkte gekonnt in Szene, sie erzählen eine Geschichte um ihr Produkt herum. So erzeugen sie eine authentische Verbindung und verankern ihre Botschaft in den Köpfen ihrer Zielgruppe.</P>
     <Space height="20px" />
-    <P fullWidth> Trotz dessen ist dies ein oft vernachlässigter Aspekt in der Planung und Konzeption eines Animations-, Werbe- oder Imagefilm.</P>
+    <P fullWidth> Trotz dessen ist dies ein oft vernachlässigter Aspekt in der Planung und Konzeption eines <NextLink href="/leistungen/motion-design"><a style={{ textDecoration: 'underline' }}>Animations-</a></NextLink>, <NextLink href="/leistungen/werbe-und-imagefilm"><a style={{ textDecoration: 'underline' }}>Werbe- oder Imagefilm</a></NextLink>.</P>
     <Space height="20px" />
     <P fullWidth>Niemand möchte eine emotionslose Ansprache über Produkte oder Dienstleistungen hören. Verpacke dein Produkt besser in eine fesselnde Geschichte, welche deine Marke, Kultur, Werte und Stil widerspiegeln.</P>
     <Space height="20px" />

@@ -8,6 +8,7 @@ import Head from '@/components/partials/Head';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Space from '@/components/layout/Space';
 import Quote from '@/components/text/Quote';
+import NextLink from 'next/link';
 
 interface Props { }
 

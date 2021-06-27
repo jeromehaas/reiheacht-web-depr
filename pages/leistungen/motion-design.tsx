@@ -11,6 +11,7 @@ import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Space from '@/components/layout/Space';
 import Quote from '@/components/text/Quote';
 import Logo from 'components/animations/Logo';
+import NextLink from 'next/link';
 
 interface Props { }
 
@@ -37,13 +38,13 @@ const MotionDesign: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <H2 fullWidth>Bunt und vielfältig</H2>
     <Space height="20px" />
-    <P fullWidth>Motion Design ist sehr vielseitig und wird in vielen Bereichen eingesetzt, nicht nur für Werbezwecke. Du kannst damit brave Präsentationen und langweilige Jahreszahlen aufpeppen, komplexe Animationen auf deiner Webseite einbauen, es für Schulungen und Anleitungen einsetzen oder schwierige Themen einfacher erklären. Und das ist nur die Spitze des Eisbergs.</P>
+    <P fullWidth>Motion Design ist sehr vielseitig und wird in vielen Bereichen eingesetzt, nicht nur für Werbezwecke. Du kannst damit brave Präsentationen und langweilige Jahreszahlen aufpeppen, komplexe Animationen auf deiner Webseite einbauen, es für Schulungen und Anleitungen einsetzen oder schwierige Themen <NextLink href="/leistungen/erklaervideo"><a style={{ textDecoration: 'underline' }}> einfacher erklären</a></NextLink>. Und das ist nur die Spitze des Eisbergs.</P>
     <Space height="20px" />
     <H2 fullWidth>Massgeschneiderte Illustrationen & Designs</H2>
     <Space height="20px" />
-    <P fullWidth>Um alle und alles zu bewegen, braucht es verschiedene grafische Elemente. Falls noch keine bestehen, erstellen wir in enger Zusammenarbeit mit dir, einzigartige, auf dich zugeschnittene Illustrationen und Grafiken. So stellen wir sicher, dass deine packend erzählte Botschaft auf kreative Art und Weise deine Zielgruppe erreicht. Wir erschaffen ganze Welten voller Figuren, Icons und vieles mehr.</P>
+    <P fullWidth>Um alle und alles zu bewegen, braucht es verschiedene grafische Elemente. Falls noch keine bestehen, erstellen wir in enger Zusammenarbeit mit dir, einzigartige, auf dich zugeschnittene Illustrationen und Grafiken. So stellen wir sicher, dass deine packend erzählte Botschaft auf kreative Art und Weise deine Zielgruppe erreicht. Wir erschaffen <NextLink href="/projekte/erklaerfilme-sbv"><a style={{ textDecoration: 'underline' }}>ganze Welten</a></NextLink>  voller Figuren, Icons und vieles mehr.</P>
     <Space height="20px" />
-    <P fullWidth>Zudem kannst du alle von der reiheacht erstellten Designs und Illustrationen auch für deine Printkampagne einsetzen. Schlage zwei Fliegen mit einer Klappe!</P>
+    <P fullWidth>Zudem kannst du alle von der reiheacht erstellten Designs und Illustrationen auch für deine  <NextLink href="/projekte/extreme-agrarinitiative"><a style={{ textDecoration: 'underline' }}>Printkampagne</a></NextLink> einsetzen. Schlage zwei Fliegen mit einer Klappe!</P>
     <Space height="20px" />
     <Image src="/images/services/massgeschneiderte-illustrationen.png" alt="Massgeschneiderte Illustrationen" />
     <Space height="20px" />

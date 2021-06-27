@@ -8,6 +8,7 @@ import Head from '@/components/partials/Head';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import Space from '@/components/layout/Space';
 import Quote from '@/components/text/Quote';
+import NextLink from 'next/link';
 
 interface Props { }
 
@@ -26,7 +27,7 @@ const SoundDesign: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Wir können damit eine gewünschte Atmosphäre erschaffen oder eine Animation verstärken.</P>
     <Space height="20px" />
-    <P fullWidth>In Spielfilmen sowie Werbe- oder Imagefilmen längst im Einsatz, wird es im Motion Design oft noch vernachlässigt. Bei realen Bildern erwarten und kennen wir die natürlichen Geräusche. Wir wissen, wie Fahrzeuge im Verkehr, Fusstritte oder singende Vögel zu klingen haben. Da Animationen von Grund auf kreiert werden und oft abstrakte Formen enthalten, deren Geräusche wir nicht unbedingt kennen, bedarf es einer Vertonung. Es kann kein Audio direkt von der Quelle aufgezeichnet werden. </P>
+    <P fullWidth>In Spielfilmen sowie Werbe- oder Imagefilmen längst im Einsatz, wird es im Motion Design oft noch vernachlässigt. Bei realen Bildern erwarten und kennen wir die natürlichen Geräusche. Wir wissen, wie Fahrzeuge im Verkehr, Fusstritte oder singende Vögel zu klingen haben. Da <NextLink href="/leistungen/motion-design"><a style={{ textDecoration: 'underline' }}>Animationen</a></NextLink> von Grund auf kreiert werden und oft abstrakte Formen enthalten, deren Geräusche wir nicht unbedingt kennen, bedarf es einer Vertonung. Es kann kein Audio direkt von der Quelle aufgezeichnet werden. </P>
     <Space height="20px" />
     <H2 fullWidth>Storytelling mit Audio</H2>
     <Space height="20px" />
