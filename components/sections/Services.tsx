@@ -13,6 +13,7 @@ const tileContent = [
     title: 'Planung',
     description: ['Idee', 'Konzept'],
     overlayColor: 'white',
+    link: '#hello',
   },
   {
     image: '/illustrations/services/storytelling.svg',
@@ -20,6 +21,7 @@ const tileContent = [
     title: 'Storytelling',
     description: ['Drehbuch', 'Storyboard'],
     overlayColor: 'orange',
+    link: '#hello',
   },
   {
     image: '/illustrations/services/film.svg',
@@ -27,6 +29,7 @@ const tileContent = [
     title: 'Film',
     description: ['Motion Design', 'Erklärfilm', 'Werbefilm', 'Imagefilm'],
     overlayColor: 'white',
+    link: '#hello',
   },
   {
     image: '/illustrations/services/illustration.svg',
@@ -34,6 +37,7 @@ const tileContent = [
     title: 'Design',
     description: ['Illustration', 'Layout'],
     overlayColor: 'orange',
+    link: '#hello',
   },
   {
     image: '/illustrations/services/sound.svg',
@@ -41,6 +45,7 @@ const tileContent = [
     title: 'Sound design',
     description: ['Voice Over', 'Soundeffekte', 'Musik'],
     overlayColor: 'white',
+    link: '#hello',
   },
   {
     image: '/illustrations/services/web.svg',
@@ -48,6 +53,7 @@ const tileContent = [
     title: 'Web',
     description: ['Webbanner', 'UI Animation'],
     overlayColor: 'orange',
+    link: '#hello',
   },
 ];
 
