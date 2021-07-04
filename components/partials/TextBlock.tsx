@@ -5,7 +5,7 @@ import Reveal from 'react-awesome-reveal';
 import { keyframes } from '@emotion/react';
 import { InView } from 'react-intersection-observer';
 import Space from '@/components/layout/Space';
-import { H2, P } from '@/components/text/Text';
+import { H4, P } from '@/components/text/Text';
 import HorizontalLine from '@/components/shapes/HorizontalLine';
 import styled from 'styled-components';
 
@@ -35,7 +35,7 @@ const TextBlock: React.FunctionComponent<Props> = ({ content, maxWidth }) => {
         <InView onChange={() => dispatch(updateCurrentPosition(content.section))}>
           {({ ref }) => (
             <div ref={ref}>
-              <H2>{content.title}</H2>
+              <H4>{content.title}</H4>
               <HorizontalLine animated delay="0.3s" />
               <P size="large">{content.text}</P>
               <Space height="30px" />

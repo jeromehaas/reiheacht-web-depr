@@ -1,6 +1,6 @@
 import React from 'react';
 import Legal from '@/components/pages/Legal';
-import { H2, HL } from '@/components/text/Text';
+import { H4, HL } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
 import Space from '@/components/layout/Space';
 
@@ -29,7 +29,7 @@ interface Props { }
 const Imprint: React.FunctionComponent<Props> = () => (
   <>
     <Legal>
-      <H2 color="darkGrey">Impressum<HL color="blue">.</HL></H2>
+      <H4 color="darkGrey">Impressum<HL color="blue">.</HL></H4>
       <Space height="60px" />
       {content.map((item, index) => (
         <LegalItem key={index} title={item.title} text={item.text} />

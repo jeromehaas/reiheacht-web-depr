@@ -1,7 +1,7 @@
 import React from 'react';
 import Blog from '@/components/pages/Blog';
 import {
-  H2, H3, H4, P, HL,
+  H4, H3, P, HL,
 } from '@/components/text/Text';
 import Space from '@/components/layout/Space';
 import styled from 'styled-components';
@@ -147,7 +147,7 @@ const Imprint: React.FunctionComponent<Props> = () => (
 
     <Blog closeTriangleTarget="/">
 
-      <H2 color="darkGrey">Trends & News aus der reihe<HL color="blue">acht</HL>.</H2>
+      <H4 color="darkGrey">Trends & News aus der reihe<HL color="blue">acht</HL>.</H4>
       <HorizontalLine className="active" />
       <Linker target={latestPost.link} type="link">
         <TopPost>

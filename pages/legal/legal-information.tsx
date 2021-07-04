@@ -1,6 +1,6 @@
 import React from 'react';
 import Legal from '@/components/pages/Legal';
-import { H2, HL } from '@/components/text/Text';
+import { H4, HL } from '@/components/text/Text';
 import LegalItem from '@/components/text/LegalItem';
 import Space from '@/components/layout/Space';
 import Paragraph from '@/components/text/Paragraph';
@@ -54,7 +54,7 @@ interface Props { }
 const LegalInformation: React.FunctionComponent<Props> = () => (
   <>
     <Legal>
-      <H2 color="darkGrey">Datenschutzerklärung<HL color="blue">.</HL></H2>
+      <H4 color="darkGrey">Datenschutzerklärung<HL color="blue">.</HL></H4>
       <Space height="60px" />
       {content.map((item, index) => (
         <LegalItem key={index} title={item.title} text={item.text} />
