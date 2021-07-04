@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { P, HL, H4 } from '@/components/text/Text';
+import { P, HL, H2 } from '@/components/text/Text';
 
 interface Props {
   content: string;
@@ -15,7 +15,7 @@ const StyledQuote = styled.div`
 
 const Quote: React.FunctionComponent<Props> = ({ content }) => (
   <StyledQuote>
-    <H4 fullWidth><HL color="blue">«</HL>{ content }<HL color="blue">»</HL></H4>
+    <H2 fullWidth><HL color="blue">«</HL>{ content }<HL color="blue">»</HL></H2>
   </StyledQuote>
 );
 

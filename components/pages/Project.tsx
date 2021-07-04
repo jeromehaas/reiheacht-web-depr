@@ -4,7 +4,7 @@ import Section from '@/components/layout/Section';
 import CloseTriangle from '@/components/buttons/CloseTriangle';
 import ProjectOverview from '@/components/partials/ProjectOverview';
 import Space from '@/components/layout/Space';
-import { H4, P } from '@/components/text/Text';
+import { H2, P } from '@/components/text/Text';
 import ProjectSwitcher from '@/components/partials/ProjectSwitcher';
 import JumpNavigation from '@/components/partials/JumpNavigation';
 
@@ -48,7 +48,7 @@ const Project: React.FunctionComponent<Props> = ({ children, content }) => (
       <CloseTriangle position="top" target="/#projects" />
       <Space height="80px" />
       <Section>
-        <H4>{content.intro.title}</H4>
+        <H2>{content.intro.title}</H2>
         <Space height="30px" />
         <P>{content.intro.text}</P>
         <Space height="30px" />

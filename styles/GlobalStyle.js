@@ -167,11 +167,6 @@ table {
           font-display: block;
     }
 
-  .link--service {
-    color: #0374B6;
-    font-family: "Helvetica Neue 65 Medium" !important; 
-  }
-
 
 
 
