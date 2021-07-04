@@ -31,7 +31,7 @@ const MainTextBlock: React.FunctionComponent<Props> = ({ content }) => (
   <MoveDownWrapper>
     <H1>{content.title}</H1>
     <HorizontalLine />
-    <P size="big">{content.text}</P>
+    <P fullWidth size="big">{content.text}</P>
     <Space height="60px" />
     <PlayButton />
     {content.buttons.map((button) => (
