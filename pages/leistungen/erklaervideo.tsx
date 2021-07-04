@@ -34,9 +34,9 @@ const Erklaervideo: React.FunctionComponent<Props> = () => (
     <P fullWidth>Motion Design besteht vor allem aus einfachen und abstrakten Formen. Im Gegensatz werden in Erklärvideos üblicherweise animierte Menschen, Tiere und Welten eingesetzt, welche eine natürliche Umgebung fantasievoll und witzig nachempfinden.</P>
     <Space height="20px" />
     <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die Welt hinaustragen.</P>
-    <Space height="20px" />
-    <P fullWidth>Wir freuen uns auf die Zusammenarbeit!</P>
-    <P fullWidth>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" style={{ textDecoration: 'underline' }}>hallo@reiheacht.ch</a></P>
+    <Space height="60px" />
+    <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
+    <P fullWidth superbold>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" className="service-email-link">hallo@reiheacht.ch</a></P>
     <Space height="60px" />
   </Service>
 

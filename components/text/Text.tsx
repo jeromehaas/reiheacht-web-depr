@@ -302,13 +302,17 @@ const P = styled.p`
     && css`
       font-family: 'Helvetica Neue 65 Medium', serif;
     `}
-    `;
+	 ${({ superbold }) => superbold
+	 && css`
+		 font-family: 'Helvetica Neue 75 Bold', serif !important;
+	 `}
+	 `;
 
 const ListItem = styled(P)`
   color: ${(p) => p.color} !important;
   position: relative;
   margin: 0 0 10px 15px;
-  line-height: 1.2;;
+  line-height: 1.2;
 
   &::before {
     content: ' ';

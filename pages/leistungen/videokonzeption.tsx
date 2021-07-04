@@ -32,17 +32,16 @@ const Videokonzeption: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Eine gute Planung und Konzeption bilden die Basis für ein erfolgreiches Projekt. Je besser geplant wird, desto besser werden Zeit und Budget eingehalten. Was zunächst wie ein vermeidbarer Aufwand wirkt, spart in Wirklichkeit am Ende Verzögerungen, Fragen, Unklarheiten und Zusatzkosten ein.</P>
     <Space height="20px" />
-    <P fullWidth>Darum gilt es, bereits in der Konzeptionsphase Ziele, Termine, Meilensteine und Zielgruppen und die richtige Videoart zu definieren, sprich <NextLink href="/leistungen/sound-design"><a style={{ textDecoration: 'underline' }}>Motion Design</a></NextLink>, <NextLink href="/leistungen/erklaervideo"><a style={{ textDecoration: 'underline' }}>Erklärvideo</a></NextLink>, <NextLink href="/leistungen/werbe-und-imagefilm"><a style={{ textDecoration: 'underline' }}> Werbe- oder Imagefilm</a></NextLink>.</P>
+    <P fullWidth>Darum gilt es, bereits in der Konzeptionsphase Ziele, Termine, Meilensteine und Zielgruppen und die richtige Videoart zu definieren, sprich <NextLink href="/leistungen/sound-design"><a className="service-link">Motion Design</a></NextLink>, <NextLink href="/leistungen/erklaervideo"><a className="service-link">Erklärvideo</a></NextLink>, <NextLink href="/leistungen/werbe-und-imagefilm"><a className="service-link"> Werbe- oder Imagefilm</a></NextLink>.</P>
     <Space height="20px" />
-    <P fullWidth>Dazu kommen noch viele weitere Punkte, nur um einige zu nennen, wie Bildformate, Sprachen, Design, <NextLink href="/leistungen/sound-design"><a style={{ textDecoration: 'underline' }}>Sound Design</a></NextLink>, Bewilligungen, Rechte, den passenden Voice Over Artist und Schauspieler Casting.</P>
+    <P fullWidth>Dazu kommen noch viele weitere Punkte, nur um einige zu nennen, wie Bildformate, Sprachen, Design, <NextLink href="/leistungen/sound-design"><a className="service-link">Sound Design</a></NextLink>, Bewilligungen, Rechte, den passenden Voice Over Artist und Schauspieler Casting.</P>
     <Space height="20px" />
     <H25 fullWidth>Ziel: Zielgruppe wirksam treffen</H25>
     <Space height="20px" />
     <P fullWidth>Mit der richtigen Vorbereitung und Planung sind wir für alle Probleme gewappnet und haben stets Lösungen bereit, welche es erst möglich machen, bei deinem Zielpublikum die grösstmögliche Wirkung zu erzielen.</P>
-    <Space height="20px" />
-    <Space height="20px" />
-    <P fullWidth>Wir freuen uns auf die Zusammenarbeit!</P>
-    <P fullWidth>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" style={{ textDecoration: 'underline' }}>hallo@reiheacht.ch</a></P>
+    <Space height="60px" />
+    <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
+    <P fullWidth superbold>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" className="service-email-link">hallo@reiheacht.ch</a></P>
     <Space height="60px" />
   </Service>
 );

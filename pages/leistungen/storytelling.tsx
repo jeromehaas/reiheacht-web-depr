@@ -27,7 +27,7 @@ const Storytelling: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Grosse Unternehmen wie Apple, Google oder Adidas setzen nicht nur ihre Produkte gekonnt in Szene, sie erzählen eine Geschichte um ihr Produkt herum. So erzeugen sie eine authentische Verbindung und verankern ihre Botschaft in den Köpfen ihrer Zielgruppe.</P>
     <Space height="20px" />
-    <P fullWidth> Trotz dessen ist dies ein oft vernachlässigter Aspekt in der Planung und Konzeption eines <NextLink href="/leistungen/motion-design"><a style={{ textDecoration: 'underline' }}>Animations-</a></NextLink>, <NextLink href="/leistungen/werbe-und-imagefilm"><a style={{ textDecoration: 'underline' }}>Werbe- oder Imagefilm</a></NextLink>.</P>
+    <P fullWidth> Trotz dessen ist dies ein oft vernachlässigter Aspekt in der Planung und Konzeption eines <NextLink href="/leistungen/motion-design"><a className="service-link">Animations-</a></NextLink>, <NextLink href="/leistungen/werbe-und-imagefilm"><a className="service-link">Werbe- oder Imagefilm</a></NextLink>.</P>
     <Space height="20px" />
     <P fullWidth>Niemand möchte eine emotionslose Ansprache über Produkte oder Dienstleistungen hören. Verpacke dein Produkt besser in eine fesselnde Geschichte, welche deine Marke, Kultur, Werte und Stil widerspiegeln.</P>
     <Space height="20px" />
@@ -44,9 +44,9 @@ const Storytelling: React.FunctionComponent<Props> = () => (
     <P fullWidth>Um auf einen Blick erkennen zu können, ob eine Geschichte funktioniert oder nicht, bedarf es je nach Umfang eines Projektes oft eines Storyboards mit einzelnen Bildabfolgen der Umsetzung. So kann schon vor der eigentlichen Videoproduktion gewährleistet werden, dass sich das Video in die gewünschte Richtung bewegt und wir unsere Ziele erreichen.</P>
     <Space height="20px" />
     <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die Welt hinaustragen.</P>
-    <Space height="20px" />
-    <P fullWidth>Wir freuen uns auf die Zusammenarbeit!</P>
-    <P fullWidth>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" style={{ textDecoration: 'underline' }}>hallo@reiheacht.ch</a></P>
+    <Space height="60px" />
+    <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
+    <P fullWidth superbold>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" className="service-email-link">hallo@reiheacht.ch</a></P>
     <Space height="60px" />
   </Service>
 
