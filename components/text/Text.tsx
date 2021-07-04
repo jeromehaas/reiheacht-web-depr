@@ -113,23 +113,23 @@ const H2 = styled.h2`
 
 const H25 = styled.h2`
   ${sharedTitleStyle};
-  font-size: 50px; 
+  font-size: 35px; 
   max-width: ${(p) => (p.fullWidth ? '100%' : '660px')};
   font-family: 'Helvetica Neue 85 Heavy';
 
   @media (max-width: 760px) {
   ${sharedTitleStyle};
-  font-size: 50px;
+  font-size: 30px;
  }
 
  @media (max-width: 670px) {
   ${sharedTitleStyle};
-  font-size: 40px;
+  font-size: 25px;
  }
 
  @media (max-width: 560px) {
   ${sharedTitleStyle};
-  font-size: 30px;
+  font-size: 25px;
  }
 
  @media (max-width: 480px) {
