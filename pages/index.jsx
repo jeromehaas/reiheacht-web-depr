@@ -16,7 +16,6 @@ const Home = () => (
   <div>
     <PageWrapper>
       <Head title="Motion Design & Werbefilm Agentur aus Luzern" description="Wir sind reiheacht. Wir erwecken deine Botschaft mit kreativen Motion Design- und Filmlösungen zum Leben." />
-      <IntroAnimation />
       <Navigation />
       <Start />
       <Services />
