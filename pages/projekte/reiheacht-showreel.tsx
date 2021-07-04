@@ -12,7 +12,7 @@ const content = {
     text: <></>,
   },
   projectOverview: {
-    imageLink: '/logos/projects/reiheacht.svg',
+    imageLink: '/projects/reiheacht-showreel/reiheacht.svg',
     imageAlt: 'reiheacht',
     title: 'Showreel.',
     text: 'Animation, Design, Illustration',

@@ -8,42 +8,42 @@ interface Props { }
 
 const tileContent = [
   {
-    image: '/illustrations/services/idea.svg',
+    image: '/illustrations/services/idea.jpg',
     alt: 'Videokonzeption',
     title: 'Videokonzeption',
     overlayColor: 'white',
     link: 'leistungen/videokonzeption',
   },
   {
-    image: '/illustrations/services/storytelling.svg',
+    image: '/illustrations/services/storytelling.jpg',
     alt: 'Storytelling',
     title: 'Storytelling',
     overlayColor: 'orange',
     link: '/leistungen/storytelling',
   },
   {
-    image: '/illustrations/services/illustration.svg',
+    image: '/illustrations/services/illustration.jpg',
     alt: 'Motion Design',
     title: 'Motion Design',
     overlayColor: 'white',
     link: '/leistungen/motion-design',
   },
   {
-    image: '/illustrations/services/film.svg',
+    image: '/illustrations/services/film.jpg',
     alt: 'Erklär Video',
     title: 'Erklärvideo',
     overlayColor: 'orange',
     link: '/leistungen/erklaervideo',
   },
   {
-    image: '/illustrations/services/web.svg',
+    image: '/illustrations/services/web.jpg',
     alt: 'Werbe- & Imagefilm',
     title: 'Werbe- & Imagefilm',
     overlayColor: 'white',
     link: '/leistungen/werbe-und-imagefilm',
   },
   {
-    image: '/illustrations/services/sound.svg',
+    image: '/illustrations/services/sound.jpg',
     alt: 'Sound-Design',
     title: 'Sound-Design',
     overlayColor: 'orange',

@@ -167,7 +167,15 @@ table {
           font-display: block;
     }
 
+.service-link {
+	color: #0374B6 !important;
+	text-decoration: none;
+}
 
+.service-email-link {
+	color: #C23E27 !important;
+	text-decoration: none;
+}
 
 
 `;
