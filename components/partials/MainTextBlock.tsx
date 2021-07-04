@@ -6,11 +6,13 @@ import Carousel from '@/components/animations/Carousel';
 import Space from '@/components/layout/Space';
 import styled from 'styled-components';
 import PlayButton from '@/components/buttons/PlayButton';
+import Reveal from 'react-awesome-reveal';
+import { keyframes } from '@emotion/react';
 
 const MoveDownWrapper = styled.div`
   top: -60px;
   opacity: 1;
-  /* animation: slideDown  1s forwards 3s; */
+  animation: slideDown  0.5s forwards;
   position: relative;
 
   @keyframes slideDown {
