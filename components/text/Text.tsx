@@ -197,6 +197,13 @@ const getParagraphSize = ({ size }) => {
         font-size: 16px;
       }
       `;
+    case 'large':
+      return css`
+      font-size: 25px;
+      @media (max-width: 560px) {
+        font-size: 16px;
+      }
+      `;
     case 'big':
       return css`
       font-size: 30px;

@@ -29,7 +29,7 @@ const Wrapper = styled.i`
 
     .link {
       display: block;
-      height: 60px;
+      height: 65px;
       overflow: hidden;
     }
 

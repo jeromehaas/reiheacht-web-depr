@@ -11,8 +11,6 @@ const StyledServiceTile = styled.div`
   overflow: hidden;
   position: relative;
 
-
-
   .initial {
     width: 100%;
     height: 100%;
@@ -74,6 +72,7 @@ const StyledServiceTile = styled.div`
     font-size: 25px;
     position: relative;
     transition: all 0.7s ease 0.2s;
+    color: ${(p) => p.theme.blue}
   }
 
   .moreInfoLink {
@@ -169,7 +168,7 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
     </div>
     <Link href={content.link}>
       <a>
-        <div className="overlay" style={{ backgroundColor: content.overlayColor }}>
+        <div className="overlay" style={{ backgroundColor: content.overlayColor === 'orange' ? '#C23E27' : '#FFFFFF' }}>
           <div className="textWrapper">
             <H3 color={content.overlayColor === 'orange' ? 'white' : 'darkGrey'}>{content.title}</H3>
             <Space height="6px" />
