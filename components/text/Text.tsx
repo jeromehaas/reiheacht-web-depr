@@ -111,6 +111,43 @@ const H2 = styled.h2`
  }
 `;
 
+const H25 = styled.h2`
+  ${sharedTitleStyle};
+  font-size: 50px; 
+  max-width: ${(p) => (p.fullWidth ? '100%' : '660px')};
+  font-family: 'Helvetica Neue 85 Heavy';
+
+  @media (max-width: 760px) {
+  ${sharedTitleStyle};
+  font-size: 50px;
+ }
+
+ @media (max-width: 670px) {
+  ${sharedTitleStyle};
+  font-size: 40px;
+ }
+
+ @media (max-width: 560px) {
+  ${sharedTitleStyle};
+  font-size: 30px;
+ }
+
+ @media (max-width: 480px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
+ }
+
+ @media (max-width: 425px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
+ }
+
+ @media (max-width: 365px) {
+  ${sharedTitleStyle};
+  font-size: 22px;
+ }
+`;
+
 const H3 = styled.h3`
   ${sharedTitleStyle};
   font-family: 'Helvetica Neue 65 Medium', serif;
@@ -323,6 +360,7 @@ const HL = styled.span`
 export {
   H1,
   H2,
+  H25,
   H3,
   H4,
   P,
