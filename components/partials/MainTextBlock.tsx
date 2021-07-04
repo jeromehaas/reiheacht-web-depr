@@ -11,12 +11,12 @@ import { keyframes } from '@emotion/react';
 
 const MoveDownWrapper = styled.div`
   top: -60px;
-  opacity: 1;
-  animation: slideDown  0.5s forwards;
+  opacity: 0;
+  animation: slideDown  0.5s forwards 0.25s;
   position: relative;
 
   @keyframes slideDown {
-    0% {top: -60px; opacity: 0.1; }
+    0% {top: -60px; opacity: 0; }
     100% {top: 0px; opacity: 1; }
   }
 `;

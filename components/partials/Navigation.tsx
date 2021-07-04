@@ -8,6 +8,7 @@ import { Fade } from 'react-awesome-reveal';
 import cx from 'classnames';
 import Linker from '@/components/buttons/Link';
 import hamburger from '@/public/animations/hamburger.json';
+import navlogo from '@/public/animations/nav-logo.json';
 import Limiter from 'components/layout/Limiter';
 
 const DesktopNavigation = styled.nav`
@@ -25,7 +26,7 @@ const DesktopNavigation = styled.nav`
     color: white !important;
     animation-name: moveDown;
     animation-duration: 0.5s;  
-    animation-delay: 0.1s;
+    animation-delay: 0.25s;
     animation-direction: forwards;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -81,7 +82,7 @@ const MobileNavigation = styled.nav`
     color: white !important;
     animation-name: moveDown;
     animation-duration: 0.5s;
-    animation-delay: 0s;
+    animation-delay: 0.25s;
     animation-direction: forwards;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -224,7 +225,14 @@ const Navigation: React.FunctionComponent<Props> = () => {
                 ))}
               </div>
               <Linker type="anchor" target="home" delay={0}>
-                <img className="logo" src="/logos/logo-white.svg" alt="reiheacht" />
+                <Lottie
+                  config={{ animationData: navlogo, autoplay: true, loop: true }}
+                  playingState="playing"
+                  speed={1}
+                  height="50px"
+                  style={{ marginTop: '20px' }}
+                  direction={1}
+                />
               </Linker>
             </div>
           </Limiter>
@@ -235,7 +243,15 @@ const Navigation: React.FunctionComponent<Props> = () => {
           <Limiter>
             <div className="container">
               <Anchor to="home" spy smooth duration={1000}>
-                <img className="logo" src="/logos/logo-white.svg" alt="reiheacht" />
+                <Lottie
+                  config={{ animationData: navlogo, autoplay: true, loop: true }}
+                  playingState="playing"
+                  speed={1}
+                  width="175px"
+                  height="50px"
+                  style={{ marginTop: '0', marginLeft: '-17px' }}
+                  direction={1}
+                />
               </Anchor>
               <div aria-hidden="true" onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
                 <Lottie
@@ -244,7 +260,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                   speed={1}
                   width="40px"
                   height="40px"
-                  style={{ margin: 0 }}
+                  style={{ margin: '0' }}
                   direction={mobileMenuIsVisible === true ? 1 : -1}
                 />
               </div>
