@@ -15,7 +15,7 @@ interface Props { }
 const Storytelling: React.FunctionComponent<Props> = () => (
   <Service>
     <Head title="Storytelling für Motion Design Werbe- und Imagefilm | reiheacht" description="Erreiche deine Zielgruppe mit packendem Storytelling für Motion Design, Werbe- & Imagefilm" />
-    <H1>Videokonzeption<HL color="blue">.</HL></H1>
+    <H1>Storytelling<HL color="blue">.</HL></H1>
     <HorizontalLine />
     <Space height="50px" />
     <Image src="/images/services/storytelling.png" alt="Storytelling" />
@@ -42,8 +42,8 @@ const Storytelling: React.FunctionComponent<Props> = () => (
     <H25 fullWidth>Alles im Blickfeld mit einem Storyboard</H25>
     <Space height="20px" />
     <P fullWidth>Um auf einen Blick erkennen zu können, ob eine Geschichte funktioniert oder nicht, bedarf es je nach Umfang eines Projektes oft eines Storyboards mit einzelnen Bildabfolgen der Umsetzung. So kann schon vor der eigentlichen Videoproduktion gewährleistet werden, dass sich das Video in die gewünschte Richtung bewegt und wir unsere Ziele erreichen.</P>
-    <Space height="20px" />
-    <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die Welt hinaustragen.</P>
+    <Space height="60px" />
+    <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die W</P>
     <Space height="60px" />
     <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
     <P fullWidth superbold>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" className="service-email-link">hallo@reiheacht.ch</a></P>

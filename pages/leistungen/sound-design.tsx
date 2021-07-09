@@ -27,7 +27,7 @@ const SoundDesign: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Wir können damit eine gewünschte Atmosphäre erschaffen oder eine Animation verstärken.</P>
     <Space height="20px" />
-    <P fullWidth>In Spielfilmen sowie Werbe- oder Imagefilmen längst im Einsatz, wird es im Motion Design oft noch vernachlässigt. Bei realen Bildern erwarten und kennen wir die natürlichen Geräusche. Wir wissen, wie Fahrzeuge im Verkehr, Fusstritte oder singende Vögel zu klingen haben. Da <NextLink href="/leistungen/motion-design"><a className="service-link">Animationen</a></NextLink> von Grund auf kreiert werden und oft abstrakte Formen enthalten, deren Geräusche wir nicht unbedingt kennen, bedarf es einer Vertonung. Es kann kein Audio direkt von der Quelle aufgezeichnet werden. </P>
+    <P fullWidth>In Spielfilmen sowie <NextLink href="/leistungen/werbe-und-imagefilm"><a className="service-link">Werbe- oder Imagefilmen</a></NextLink> längst im Einsatz, wird es im Motion Design oft noch vernachlässigt. Bei realen Bildern erwarten und kennen wir die natürlichen Geräusche. Wir wissen, wie Fahrzeuge im Verkehr, Fusstritte oder singende Vögel zu klingen haben. Da <NextLink href="/leistungen/motion-design"><a className="service-link">Animationen</a></NextLink> von Grund auf kreiert werden und oft abstrakte Formen enthalten, deren Geräusche wir nicht unbedingt kennen, bedarf es einer Vertonung. Es kann kein Audio direkt von der Quelle aufgezeichnet werden. </P>
     <Space height="20px" />
     <H25 fullWidth>Storytelling mit Audio</H25>
     <Space height="20px" />
@@ -46,7 +46,7 @@ const SoundDesign: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <H3 fullWidht>Musik</H3>
     <P fullWidth>Die Musik gemischt mit den Hintergrundgeräuschen definiert die Atmosphäre des Videos.</P>
-    <Space height="20px" />
+    <Space height="60px" />
     <P fullWidth>In der reiheacht hört man nicht nur das Popcorn poppen.</P>
     <Space height="60px" />
     <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
