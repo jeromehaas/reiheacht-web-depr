@@ -229,7 +229,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                   config={{ animationData: navlogo, autoplay: true, loop: true }}
                   playingState="playing"
                   speed={1}
-                  height="50px"
+                  height="40px"
                   style={{ marginTop: '20px' }}
                   direction={1}
                 />
@@ -248,7 +248,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                   playingState="playing"
                   speed={1}
                   width="175px"
-                  height="50px"
+                  height="40px"
                   style={{ marginTop: '0', marginLeft: '-17px' }}
                   direction={1}
                 />
