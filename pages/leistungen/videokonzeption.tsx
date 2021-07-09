@@ -40,6 +40,8 @@ const Videokonzeption: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Mit der richtigen Vorbereitung und Planung sind wir für alle Probleme gewappnet und haben stets Lösungen bereit, welche es erst möglich machen, bei deinem Zielpublikum die grösstmögliche Wirkung zu erzielen.</P>
     <Space height="60px" />
+    <P fullWidth>Profitiere von unserer langjährigen Erfahrung bei der Konzeption und Planung. Denn unser Ziel ist dein Ziel: Deine Idee wirksam zum Leben zu erwecken, damit du dich gemütlich mit einer Tüte Popcorn zurücklehnen und geniessen kannst.</P>
+    <Space height="60px" />
     <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
     <P fullWidth superbold>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" className="service-email-link">hallo@reiheacht.ch</a></P>
     <Space height="60px" />

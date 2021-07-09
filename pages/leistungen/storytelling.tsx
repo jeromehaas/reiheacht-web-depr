@@ -15,7 +15,7 @@ interface Props { }
 const Storytelling: React.FunctionComponent<Props> = () => (
   <Service>
     <Head title="Storytelling für Motion Design Werbe- und Imagefilm | reiheacht" description="Erreiche deine Zielgruppe mit packendem Storytelling für Motion Design, Werbe- & Imagefilm" />
-    <H1>Videokonzeption<HL color="blue">.</HL></H1>
+    <H1>Storytelling<HL color="blue">.</HL></H1>
     <HorizontalLine />
     <Space height="50px" />
     <Image src="/images/services/storytelling.png" alt="Storytelling" />
