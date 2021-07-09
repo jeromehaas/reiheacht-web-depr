@@ -31,9 +31,9 @@ const Erklaervideo: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <H25 fullWidth>Illustrierte Figuren und ganze Welten</H25>
     <Space height="20px" />
-    <P fullWidth>Motion Design besteht vor allem aus einfachen und abstrakten Formen. Im Gegensatz werden in Erklärvideos üblicherweise animierte Menschen, Tiere und Welten eingesetzt, welche eine natürliche Umgebung fantasievoll und witzig nachempfinden.</P>
-    <Space height="20px" />
-    <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die Welt hinaustragen.</P>
+    <P fullWidth><NextLink href="/leistungen/motion-design"><a className="service-link">Motion Design</a></NextLink> besteht vor allem aus einfachen und abstrakten Formen. Im Gegensatz werden in Erklärvideos üblicherweise animierte Menschen, Tiere und Welten eingesetzt, welche eine natürliche Umgebung fantasievoll und witzig nachempfinden.</P>
+    <Space height="60px" />
+    <P fullWidth>Setz dich mit einer Tüte Popcorn in die reiheacht und zeige deiner Zielgruppe, warum dein Produkt die Probleme deiner Zielgruppe aus der Welt schaffen wird. </P>
     <Space height="60px" />
     <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
     <P fullWidth superbold>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" className="service-email-link">hallo@reiheacht.ch</a></P>
