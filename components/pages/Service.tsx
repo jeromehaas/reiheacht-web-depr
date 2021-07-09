@@ -15,9 +15,12 @@ interface Props {
 const Service: React.FunctionComponent<Props> = ({ children }) => (
   <PageWrapper>
     <JumpNavigation />
+    <CloseTriangle position="top" target="/#services" />
     <Section>
       {children}
     </Section>
+    <Space height="100px" />
+    <CloseTriangle position="bottom" target="/#services" />
   </PageWrapper>
 );
 
