@@ -32,7 +32,7 @@ const Videokonzeption: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Eine gute Planung und Konzeption bilden die Basis für ein erfolgreiches Projekt. Je besser geplant wird, desto besser werden Zeit und Budget eingehalten. Was zunächst wie ein vermeidbarer Aufwand wirkt, spart in Wirklichkeit am Ende Verzögerungen, Fragen, Unklarheiten und Zusatzkosten ein.</P>
     <Space height="20px" />
-    <P fullWidth>Darum gilt es, bereits in der Konzeptionsphase Ziele, Termine, Meilensteine und Zielgruppen und die richtige Videoart zu definieren, sprich <NextLink href="/leistungen/sound-design"><a className="service-link">Motion Design</a></NextLink>, <NextLink href="/leistungen/erklaervideo"><a className="service-link">Erklärvideo</a></NextLink>, <NextLink href="/leistungen/werbe-und-imagefilm"><a className="service-link"> Werbe- oder Imagefilm</a></NextLink>.</P>
+    <P fullWidth>Darum gilt es, bereits in der Konzeptionsphase Ziele, Termine, Meilensteine und Zielgruppen und die richtige Videoart zu definieren, sprich <NextLink href="/leistungen/motion-design"><a className="service-link">Motion Design</a></NextLink>, <NextLink href="/leistungen/erklaervideo"><a className="service-link">Erklärvideo</a></NextLink>, <NextLink href="/leistungen/werbe-und-imagefilm"><a className="service-link"> Werbe- oder Imagefilm</a></NextLink>.</P>
     <Space height="20px" />
     <P fullWidth>Dazu kommen noch viele weitere Punkte, nur um einige zu nennen, wie Bildformate, Sprachen, Design, <NextLink href="/leistungen/sound-design"><a className="service-link">Sound Design</a></NextLink>, Bewilligungen, Rechte, den passenden Voice Over Artist und Schauspieler Casting.</P>
     <Space height="20px" />
