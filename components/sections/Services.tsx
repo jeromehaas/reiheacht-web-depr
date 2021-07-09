@@ -12,7 +12,7 @@ const tileContent = [
     alt: 'Videokonzeption',
     title: 'Videokonzeption',
     overlayColor: 'white',
-    link: 'leistungen/videokonzeption',
+    link: '/leistungen/videokonzeption',
   },
   {
     image: '/illustrations/services/storytelling.jpg',
