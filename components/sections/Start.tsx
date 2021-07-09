@@ -10,7 +10,7 @@ interface Props { }
 const content = {
   section: 'home',
   title: <>Hallo, wir sind <HL color="blue">reiheacht</HL>, eine Motion Design und Werbefilm Agentur aus Luzern<HL color="blue">.</HL></>,
-  text: <>reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Motion Design- und Filmlösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst. Wir bringen deine Botschaft in Bewegung und machen diese zu einer unvergesslichen Markenerfahrung.<br /> <span style={{ display: 'inline-block', marginTop: '15px' }}>Wir bewegen alle und alles – setz dich in die reiheacht.</span></>,
+  text: <>reiheacht ist eine digitale Kreativagentur, die mit Innovation und Zusammenarbeit einzigartige Motion Design- und Filmlösungen anbietet, damit du deine Marke da stärken kannst, wo du deine Kunden am besten erreichst. Wir bringen deine Botschaft in Bewegung und machen diese zu einer unvergesslichen Markenerfahrung.<br /><br /> <span style={{ display: 'inline-block', marginTop: '15px' }}>Wir bewegen alle und alles – setz dich in die reiheacht.</span></>,
   buttons: [
     { text: 'Projekte', target: 'projects' },
     { text: 'Sitzplatz buchen', target: 'contact' },
