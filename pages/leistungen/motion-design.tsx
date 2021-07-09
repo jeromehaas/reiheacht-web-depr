@@ -61,7 +61,7 @@ const MotionDesign: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Wie das funktioniert? Ganz einfach: Wir stellen dir die gewünschte Animation als Code in Form einer json-Datei oder als Gif zur Verfügung, welche du auf deiner Webseite einpflegen kannst. Fertig.</P>
     <Space height="40px" />
-    <span style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)' }}>
+    <span style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridGap: '30px' }}>
       <Image src="/gifs/motion-design-gif-3.gif" alt="Stop Illustration" />
       <Lottie
         config={{ animationData: logoLookLeft, autoplay: true, loop: true }}
