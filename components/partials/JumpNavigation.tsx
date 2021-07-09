@@ -230,7 +230,8 @@ const JumpNavigation: React.FunctionComponent<Props> = () => {
                   playingState="playing"
                   speed={1}
                   height="40px"
-                  style={{ marginTop: '20px', width: '140px !important' }}
+                  width="140px"
+                  style={{ marginTop: '20px', width: '140px' }}
                   direction={1}
                 />
               </Linker>
