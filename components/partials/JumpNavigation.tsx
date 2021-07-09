@@ -8,8 +8,8 @@ import { Fade } from 'react-awesome-reveal';
 import cx from 'classnames';
 import Linker from '@/components/buttons/Link';
 import hamburger from '@/public/animations/hamburger.json';
-import navlogo from '@/public/animations/nav-logo.json';
 import Limiter from 'components/layout/Limiter';
+import navlogo from '@/public/animations/nav-logo.json';
 
 const DesktopNavigation = styled.nav`
   position: relative; 
@@ -26,7 +26,7 @@ const DesktopNavigation = styled.nav`
     color: white !important;
     animation-name: moveDown;
     animation-duration: 0.5s;  
-    animation-delay: 0.25s;
+    animation-delay: 0.1s;
     animation-direction: forwards;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -82,7 +82,7 @@ const MobileNavigation = styled.nav`
     color: white !important;
     animation-name: moveDown;
     animation-duration: 0.5s;
-    animation-delay: 0.25s;
+    animation-delay: 0s;
     animation-direction: forwards;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
@@ -160,33 +160,33 @@ const MobileNavigation = styled.nav`
 const navigationItems = [
   {
     child: 'Home',
-    link: 'home',
+    link: '../#home',
     section: 'home',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Leistungen',
-    link: 'services',
+    link: '../#services',
     section: 'services',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Projekte',
-    link: 'projects',
+    link: '../#projects',
     section: 'projects',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Team',
-    link: 'employees',
+    link: '../#employees',
     section: 'employees',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Kontakt',
-    link: 'contact',
+    link: '../#contact',
     section: 'contact',
-    type: 'anchor',
+    type: 'link',
   },
   {
     child: 'Blog',
@@ -198,7 +198,7 @@ const navigationItems = [
 
 interface Props { }
 
-const Navigation: React.FunctionComponent<Props> = () => {
+const JumpNavigation: React.FunctionComponent<Props> = () => {
 
   const dispatch = useDispatch();
   const mobileMenuIsVisible = useSelector((state: RootStateOrAny) => state.navigation.mobile.isVisible);
@@ -260,7 +260,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                   speed={1}
                   width="40px"
                   height="40px"
-                  style={{ margin: '0' }}
+                  style={{ margin: 0 }}
                   direction={mobileMenuIsVisible === true ? 1 : -1}
                 />
               </div>
@@ -278,7 +278,7 @@ const Navigation: React.FunctionComponent<Props> = () => {
                 className={currentPosition === item.section ? 'current' : null}
                 onClickFunction={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}
               >
-                <span className="link">{item.child}</span>
+                <span className="link" onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>{item.child}</span>
               </Linker>
             ))}
           </Fade>
@@ -289,4 +289,4 @@ const Navigation: React.FunctionComponent<Props> = () => {
 
 };
 
-export default Navigation;
+export default JumpNavigation;

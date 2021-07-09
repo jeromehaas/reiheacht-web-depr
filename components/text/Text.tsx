@@ -77,7 +77,7 @@ const H1 = styled.h1`
 const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 50px; 
-  max-width: 660px;
+  max-width: ${(p) => (p.fullWidth ? '100%' : '660px')};
   font-family: 'Helvetica Neue 85 Heavy';
 
   @media (max-width: 760px) {
@@ -93,6 +93,43 @@ const H2 = styled.h2`
  @media (max-width: 560px) {
   ${sharedTitleStyle};
   font-size: 30px;
+ }
+
+ @media (max-width: 480px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
+ }
+
+ @media (max-width: 425px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
+ }
+
+ @media (max-width: 365px) {
+  ${sharedTitleStyle};
+  font-size: 22px;
+ }
+`;
+
+const H25 = styled.h2`
+  ${sharedTitleStyle};
+  font-size: 35px; 
+  max-width: ${(p) => (p.fullWidth ? '100%' : '660px')};
+  font-family: 'Helvetica Neue 85 Heavy';
+
+  @media (max-width: 760px) {
+  ${sharedTitleStyle};
+  font-size: 30px;
+ }
+
+ @media (max-width: 670px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
+ }
+
+ @media (max-width: 560px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
  }
 
  @media (max-width: 480px) {
@@ -197,6 +234,13 @@ const getParagraphSize = ({ size }) => {
         font-size: 16px;
       }
       `;
+    case 'large':
+      return css`
+      font-size: 25px;
+      @media (max-width: 560px) {
+        font-size: 16px;
+      }
+      `;
     case 'big':
       return css`
       font-size: 30px;
@@ -246,7 +290,7 @@ const checkParagraphAnimated = ({ animated, delay }) => {
 
 const P = styled.p`
   font-size: 30px;
-  max-width: 910px;
+  max-width: ${(p) => (p.fullWidth ? '100%' : '910px')};
   opacity: 1;
   line-height: 1.6;
   color: red;
@@ -258,13 +302,17 @@ const P = styled.p`
     && css`
       font-family: 'Helvetica Neue 65 Medium', serif;
     `}
-    `;
+	 ${({ superbold }) => superbold
+	 && css`
+		 font-family: 'Helvetica Neue 75 Bold', serif !important;
+	 `}
+	 `;
 
 const ListItem = styled(P)`
   color: ${(p) => p.color} !important;
   position: relative;
   margin: 0 0 10px 15px;
-  line-height: 1.2;;
+  line-height: 1.2;
 
   &::before {
     content: ' ';
@@ -301,6 +349,7 @@ const HL = styled.span`
 export {
   H1,
   H2,
+  H25,
   H3,
   H4,
   P,

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import Head from '@/components/partials/Head';
 
 const getPageWrapperColor = ({ theme, color }) => {
   switch (color) {

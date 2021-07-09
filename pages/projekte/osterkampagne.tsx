@@ -2,6 +2,7 @@ import React from 'react';
 import Project from '@/components/pages/Project';
 import { HL } from '@/components/text/Text';
 import Image from '@/components/partials/Image';
+import Head from '@/components/partials/Head';
 
 interface Props { }
 
@@ -28,6 +29,7 @@ const content = {
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
+    <Head title="Illustration und Design für GalloSuisse | reiheacht" description="Von der Idee bis zur finalen Illustration für die Osterkampagne." />
     <Image src="/projects/osterkampagne/draft.png" alt="Entwurf" />
     <Image src="/projects/osterkampagne/illustration.png" alt="Illustration" />
   </Project>
