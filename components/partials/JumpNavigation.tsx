@@ -230,7 +230,7 @@ const JumpNavigation: React.FunctionComponent<Props> = () => {
                   playingState="playing"
                   speed={1}
                   height="40px"
-                  style={{ marginTop: '20px' }}
+                  style={{ marginTop: '20px', width: '140px !important' }}
                   direction={1}
                 />
               </Linker>
@@ -247,7 +247,7 @@ const JumpNavigation: React.FunctionComponent<Props> = () => {
                   config={{ animationData: navlogo, autoplay: true, loop: true }}
                   playingState="playing"
                   speed={1}
-                  width="175px"
+                  width="140px"
                   height="40px"
                   style={{ marginTop: '0', marginLeft: '-17px' }}
                   direction={1}
