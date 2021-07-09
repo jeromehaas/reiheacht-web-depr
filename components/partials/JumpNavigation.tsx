@@ -9,6 +9,7 @@ import cx from 'classnames';
 import Linker from '@/components/buttons/Link';
 import hamburger from '@/public/animations/hamburger.json';
 import Limiter from 'components/layout/Limiter';
+import navlogo from '@/public/animations/nav-logo.json';
 
 const DesktopNavigation = styled.nav`
   position: relative; 
@@ -224,7 +225,14 @@ const JumpNavigation: React.FunctionComponent<Props> = () => {
                 ))}
               </div>
               <Linker type="anchor" target="home" delay={0}>
-                <img className="logo" src="/logos/logo-white.svg" alt="reiheacht" />
+                <Lottie
+                  config={{ animationData: navlogo, autoplay: true, loop: true }}
+                  playingState="playing"
+                  speed={1}
+                  height="40px"
+                  style={{ marginTop: '20px' }}
+                  direction={1}
+                />
               </Linker>
             </div>
           </Limiter>
@@ -235,7 +243,15 @@ const JumpNavigation: React.FunctionComponent<Props> = () => {
           <Limiter>
             <div className="container">
               <Anchor to="home" spy smooth duration={1000}>
-                <img className="logo" src="/logos/logo-white.svg" alt="reiheacht" />
+                <Lottie
+                  config={{ animationData: navlogo, autoplay: true, loop: true }}
+                  playingState="playing"
+                  speed={1}
+                  width="175px"
+                  height="40px"
+                  style={{ marginTop: '0', marginLeft: '-17px' }}
+                  direction={1}
+                />
               </Anchor>
               <div aria-hidden="true" onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>
                 <Lottie
@@ -262,7 +278,7 @@ const JumpNavigation: React.FunctionComponent<Props> = () => {
                 className={currentPosition === item.section ? 'current' : null}
                 onClickFunction={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}
               >
-                <span className="link">{item.child}</span>
+                <span className="link" onClick={() => dispatch(toggleMobileNavigation(mobileMenuIsVisible))}>{item.child}</span>
               </Linker>
             ))}
           </Fade>
