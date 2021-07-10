@@ -37,8 +37,8 @@ const tileContent = [
   },
   {
     image: '/illustrations/services/web.jpg',
-    alt: 'Werbe- & Imagefilm',
-    title: 'Werbe- & Imagefilm',
+    alt: 'Werbefilm',
+    title: 'Werbefilm',
     overlayColor: 'white',
     link: '/leistungen/werbe-und-imagefilm',
   },

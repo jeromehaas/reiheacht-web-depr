@@ -21,9 +21,9 @@ const WerbeUndImagefilm: React.FunctionComponent<Props> = () => (
     <Image src="/images/services/werbe-und-imagefilm.png" alt="Werbe- und Imagefilm" />
     <Quote content="Reale Menschen, reale Bilder." />
     <Space height="20px" />
-    <H25 color="white" fullWidth>Echte Menschen</H25>
+    <H25 color="white" fullWidth>Welche Videoform soll es sein?</H25>
     <Space height="20px" />
-    <P fullWidth>Es ist essentiell zu wissen, welches die beste Videoart für deine einzigartige Botschaft ist. Ist das Hauptziel deine Marke zu vermenschlichen, dein Team   bei ihrer täglichen Tätigkeit zu präsentieren oder Menschen im Umgang mit deinem Produkt zu zeigen, so sollte die Wahl einen Werbe- oder Imagefilm fallen.</P>
+    <P fullWidth>Es ist essenziell zu wissen, welches die beste Videoform für deine einzigartige Botschaft ist. Ist das Hauptziel deine Marke zu vermenschlichen, dein Team bei ihrer täglichen Tätigkeit zu präsentieren oder Menschen im Umgang mit deinem Produkt zu zeigen? Dann wird die Wahl meistens auf einen Werbe- oder Imagefilm fallen. Der Vorgang ist im Vergleich zu animierten Videos sehr ähnlich. Es unterscheidet sich grösstenteils lediglich in der Produktion. <NextLink href="/leistungen/videokonzeption"><a className="service-link">Planung</a></NextLink>, <NextLink href="/leistungen/storytelling"><a className="service-link">Storytelling</a></NextLink> und <NextLink href="/leistungen/sound-design"><a className="service-link">Sound Design</a></NextLink>  sollten auch für diese Videoform nicht vernachlässigt werden.</P>
     <Space height="20px" />
     <H25 fullWidth>Action & Cut</H25>
     <Space height="20px" />
@@ -31,7 +31,11 @@ const WerbeUndImagefilm: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <H25 color="white" fullWidth>Eine würzige Mischung</H25>
     <Space height="20px" />
-    <P fullWidth>So ziemlich kein Werbe- oder Imagefilm kommt ganz ohne Motion Design aus, sei es Text oder dein hübsches Logo, welche animiert werden.</P>
+    <P fullWidth>Fast jeder Werbe- oder Imagefilm macht Gebrauch von <NextLink href="/leistungen/motion-design"><a className="service-link">Motion Design</a></NextLink>. Spiel- oder Dokumentarfilme setzen es vor allem für ihre Intros und Outros ein. Und das aus gutem Grund. Ein animierter Text kann eine Aussage des Voice Over Artists verstärken und in den Fokus rücken. Eine hübsche Logoanimation am Ende rundet nicht nur dein Video ab, sondern lässt die Welt auch wissen, wer hinter deinem Wunderwerk steht. Du siehst, das eine schliesst das andere nicht aus. Man kann viele verschiedene Stile miteinander vermischen.</P>
+    <Space height="20px" />
+    <H25 color="white" fullWidth>Was denn nun, Animation oder Realfilm?</H25>
+    <Space height="20px" />
+    <P fullWidth>Diese Frage ist nicht pauschal zu beantworten. Realfilme eignen sich um Empathie zu erzeugen, Animationen können dabei helfen, ein komplexeres Thema aufzugreifen. Es gibt kein richtig oder falsch, jede Videoform kann funktionieren und hängt vom Konzept und der Botschaft ab.</P>
     <Space height="60px" />
     <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die Welt hinaustragen.</P>
     <Space height="60px" />
