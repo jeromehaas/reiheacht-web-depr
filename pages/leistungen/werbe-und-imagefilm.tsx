@@ -27,14 +27,12 @@ const WerbeUndImagefilm: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <H25 fullWidth>Action & Cut</H25>
     <Space height="20px" />
-    <P fullWidth>Für diese Art von Video braucht es somit echte Kameraarbeit vor Ort oder an einem Filmset mit echten Menschen.</P>
+    <P fullWidth>Für diese Form von Video braucht es echte Kameraarbeit vor Ort oder an einem Filmset mit einem Filmteam, professionellen SchauspielerInnen oder Laien. Während professionelle Schauspielende dein Video, ja, professionell wirken lassen. Es kann jedoch deinem Publikum helfen, eine stärkere Verbindung zu deinem Unternehmen aufzubauen, wenn du deine Mitarbeitenden einsetzt, welche auch tagtäglich dein Unternehmen repräsentieren. Das Video gewinnt an Authentizität.</P>
     <Space height="20px" />
-    <P fullWidth>if your brand doesn’t combine animation with live action, knowing which is the best fit for your unique message is critical. If the main goal is to humanize your brand, live action is a good choice. Instead of paid actors, consider featuring key executives, real employees, and other partners or customers. Live-action allows you to communicate in much the same way you would in person, and having actual representatives of your company in your video will help your audience forge a stronger connection with your organization.</P>
-    <Space height="20px" />
-    <H25 color="white" fullWidth>Eine gesunde Mischung</H25>
+    <H25 color="white" fullWidth>Eine würzige Mischung</H25>
     <Space height="20px" />
     <P fullWidth>So ziemlich kein Werbe- oder Imagefilm kommt ganz ohne Motion Design aus, sei es Text oder dein hübsches Logo, welche animiert werden.</P>
-    <Space height="20px" />
+    <Space height="60px" />
     <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die Welt hinaustragen.</P>
     <Space height="60px" />
     <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
