@@ -43,7 +43,7 @@ const Storytelling: React.FunctionComponent<Props> = () => (
     <Space height="20px" />
     <P fullWidth>Um auf einen Blick erkennen zu können, ob eine Geschichte funktioniert oder nicht, bedarf es je nach Umfang eines Projektes oft eines Storyboards mit einzelnen Bildabfolgen der Umsetzung. So kann schon vor der eigentlichen Videoproduktion gewährleistet werden, dass sich das Video in die gewünschte Richtung bewegt und wir unsere Ziele erreichen.</P>
     <Space height="60px" />
-    <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die W</P>
+    <P fullWidth>Setz dich in die reiheacht und lass uns zusammen deine Botschaft, in einer fesselnden Geschichte verpackt, in die Welt hinaustragen.</P>
     <Space height="60px" />
     <P fullWidth superbold>Wir freuen uns auf die Zusammenarbeit!</P>
     <P fullWidth superbold>Kontaktiere uns per E-Mail auf <a href="mailto:hallo@reiheacht.ch" className="service-email-link">hallo@reiheacht.ch</a></P>
