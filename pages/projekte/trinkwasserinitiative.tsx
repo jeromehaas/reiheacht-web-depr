@@ -25,7 +25,7 @@ const content = {
     title: <>Ebenfalls an einem massgeschneidertem Erklärfilm <HL color="blue">interessiert</HL>?</>,
   },
   switcher: {
-    nextProject: '/projekte/sbv-div',
+    nextProject: '/projekte/erklaerfilme-sbv',
     previousProject: '/projekte/osterkampagne',
   },
 };
