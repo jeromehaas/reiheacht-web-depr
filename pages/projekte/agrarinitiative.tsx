@@ -22,7 +22,7 @@ const content = {
   },
   switcher: {
     nextProject: '/projekte/reiheacht-showreel',
-    previousProject: '/projekte/sbv-div',
+    previousProject: '/projekte/erklaerfilme-sbv',
   },
 
 };
