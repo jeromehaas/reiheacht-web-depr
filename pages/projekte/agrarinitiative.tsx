@@ -9,7 +9,7 @@ interface Props { }
 const content = {
   intro: {
     title: <>Schweizer Hühner <br />packen mit an<HL color="blue">.</HL></>,
-    text: <>Passend zum Illustrationsstil der Kampagne “Extreme Agrarinitiative” des Schweizer Bauernverbands für die im Juni 2021 anstehende Initiative  durften wir auch für GalloSuisse drei Hühner visualisieren, die den anderen Figuren des SBV tatkräftig unter die Arme greifen.</>,
+    text: <>Passend zum Illustrationsstil der Kampagne “Extreme Agrarinitiative” des Schweizer Bauernverbands durften wir auch für GalloSuisse drei Hühner visualisieren, die den anderen Figuren des SBV tatkräftig unter die Arme greifen.</>,
   },
   projectOverview: {
     imageLink: '/logos/projects/gallosuisse.svg',
