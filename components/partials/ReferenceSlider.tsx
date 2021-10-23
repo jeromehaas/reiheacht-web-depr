@@ -12,6 +12,7 @@ const StyledReferenceSlider = styled.div`
 
   .references-carousel__item {
 		padding: 120px;
+		padding-bottom: 0;
 		cursor: pointer;
 	}
 	
@@ -176,7 +177,7 @@ const StyledReferenceSlider = styled.div`
 const ReferenceSlider = () => {
 
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
