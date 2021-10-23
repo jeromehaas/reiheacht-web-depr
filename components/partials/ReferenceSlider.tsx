@@ -221,14 +221,6 @@ const ReferenceSlider = () => {
             </div>
           </div>
         ))}
-        {/* <div className="references-carousel__item">
-          <P className="references-carousel__quote" fontWeight="light" size="big">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </P>
-          <div className="references-carousel__author">
-            <P className="references-carousel__name" size="large">Sandra Helfenstein</P>
-            <P className="references-carousel__role" size="small">Stv. Leiterin Kommunikation</P>
-            <img className="references-carousel__logo" src="/icons/reference-slider/personas/sbv/logo-sbv.svg" />
-          </div>
-        </div> */}
 
       </Slider>
     </StyledReferenceSlider>
