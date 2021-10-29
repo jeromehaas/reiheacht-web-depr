@@ -41,13 +41,13 @@ const ProjectSwitcher: React.FunctionComponent<Props> = ({ previousProject, next
   <StyledProjectSwitcher>
     <div className="previous">
       <Linker type="link" target={previousProject}>
-        <Image src="/icons/arrows/arrow-left.svg" alt="left" />
+        <Image src="/icon/arrows/arrow-left.svg" alt="left" />
       </Linker>
       <P size="small">Vorheriges Projekt</P>
     </div>
     <div className="next">
       <Linker type="link" target={nextProject}>
-        <Image src="/icons/arrows/arrow-right.svg" alt="right" />
+        <Image src="/icon/arrows/arrow-right.svg" alt="right" />
       </Linker>
       <P size="small">Nächstes Projekt</P>
     </div>

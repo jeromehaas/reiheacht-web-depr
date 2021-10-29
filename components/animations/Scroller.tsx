@@ -38,7 +38,7 @@ const Scroller: React.FunctionComponent = () => (
   <StyledScroller>
     <P size="small">Popcorn nicht vergessen.</P>
     <Linker type="anchor" target="services">
-      <Image src="/icons/arrows/arrow-down.svg" alt="Pfeil" />
+      <Image src="/icon/arrows/arrow-down.svg" alt="Pfeil" />
     </Linker>
   </StyledScroller>
 );

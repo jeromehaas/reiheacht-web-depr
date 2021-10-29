@@ -140,7 +140,7 @@ const EmployeeTile: React.FunctionComponent<Props> = ({ content }) => {
         </div>
         <div className="icon-wrapper">
           <a href={`mailto:${content.email}`}>
-            <img src="/icons/other/email.svg" alt="E-Mail Icon" />
+            <img src="/icon/other/email.svg" alt="E-Mail Icon" />
           </a>
         </div>
       </div>

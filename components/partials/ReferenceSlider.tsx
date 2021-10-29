@@ -39,13 +39,13 @@ const StyledReferenceSlider = styled.div`
 		&:before { 
 			left: -80px;
 			top: -20px;
-			background-image: url('/icons/reference-slider/quote-start.svg'); 
+			background-image: url('/icon/reference-slider/quote-start.svg'); 
 		}	
 		
 		&:after { 
 			right: -80px;
 			bottom: -20px;
-			background-image: url('/icons/reference-slider/quote-end.svg'); 
+			background-image: url('/icon/reference-slider/quote-end.svg'); 
 		}	
 
 	}
@@ -103,8 +103,8 @@ const StyledReferenceSlider = styled.div`
 		opacity: 1;
 	}
 
-	.slick-prev:before { background-image: url('/icons/reference-slider/arrow-left.svg'); }	
-	.slick-next:before { background-image: url('/icons/reference-slider/arrow-right.svg'); }	
+	.slick-prev:before { background-image: url('/icon/reference-slider/arrow-left.svg'); }	
+	.slick-next:before { background-image: url('/icon/reference-slider/arrow-right.svg'); }	
 
 	@media (max-width: 1100px) {
 
