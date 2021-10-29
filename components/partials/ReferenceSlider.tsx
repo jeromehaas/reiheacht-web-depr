@@ -189,22 +189,40 @@ const ReferenceSlider = () => {
 
   const data = [
     {
-      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      name: 'Sandra Helfenstein',
-      role: 'Stv. Leiterin Kommunikation',
-      image: '/icons/reference-slider/personas/sbv/logo-sbv.svg',
+      quote: 'reiheacht hat es geschafft meine Ideen 1:1 umzusetzen. Ich bin sehr glücklich über das Resultat! Unser Maskottchen «Sporty» gibt es nun als Icon und als sportliche Illustrationen. Tolle Arbeit – vielen Dank!',
+      name: 'Sportcard | Michèle Bucher',
+      role: 'Leiterin Werbung',
+      image: '/logos/testimonials/sportcard.svg',
     },
     {
-      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      name: 'Heinz Markus',
-      role: 'CTO',
-      image: '/icons/reference-slider/personas/sbv/logo-sbv.svg',
+      quote: 'Lesen ist out. Wer sich informieren will, schaut heute ein Video. Das Angebot von reiheacht eignet sich perfekt, um Informationen zielgruppengerecht zu visualisieren.',
+      name: 'Schweizer Bauernverband | Sandra Helfenstein',
+      role: 'Co-Leiterin Kommunikation',
+      image: '/logos/testimonials/sbv.svg',
     },
     {
-      quote: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      name: 'Franziska Wetterstein',
-      role: 'Buchaltung & Administration',
-      image: '/icons/reference-slider/personas/sbv/logo-sbv.svg',
+      quote: 'Dank der persönlichen Beratung haben wir für unser Crowdfunding Projekt schnell die passende Lösung gefunden. Emotionale Bilder die bewegen haben zum Erfolg für die Realisierung beigetragen. Herzlichen Dank.',
+      name: 'SwissLocalTravel GmbH | Lukas Bregenzer',
+      role: 'Inhaber',
+      image: '/logos/testimonials/swiss-local-travel.svg',
+    },
+    {
+      quote: 'reiheacht hat uns vom Storyboard über das Drehen bis hin zur fertigen Produktion sehr kompetent unterstützt. Dank seiner freundlichen, humorvollen und professionellen Art und Weise war die Zusammenarbeit mit Marc je derzeit sehr angenehm.',
+      name: 'ITpoint | Natasa Kovacevic',
+      role: 'Leiterin Marketing',
+      image: '/logos/testimonials/it-point.svg',
+    },
+    {
+      quote: 'Herzlichen Dank an das reiheacht Team, welches uns von A - Z professionell unterstützt und beraten hat. Wir freuen uns auf eine weitere Zusammenarbeit.',
+      name: 'GCZ | ThomasRüttimann',
+      role: 'Materialchef',
+      image: '/logos/testimonials/gcz.svg',
+    },
+    {
+      quote: 'Unkomplizierte und sehr speditive Zusammenarbeit. Kann ich nur weiterempfehlen. Falls ich wieder ein Video brauche, komme ich definitiv wieder auf euch zu.',
+      name: 'hairbreak | Inhaberin',
+      role: '',
+      image: '/logos/testimonials/hairbreak.svg',
     },
   ];
 
