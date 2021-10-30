@@ -1,57 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
   <url>
     <loc>https://reiheacht.ch/</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
+    <loc>https://reiheacht.ch/leistungen/videokonzeption</loc>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://reiheacht.ch/leistungen/storytelling</loc>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://reiheacht.ch/leistungen/motion-design</loc>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://reiheacht.ch/leistungen/erklaervideo</loc>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://reiheacht.ch/leistungen/werbe-und-imagefilm</loc>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://reiheacht.ch/leistungen/sound-design</loc>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
     <loc>https://reiheacht.ch/projekte/reiheacht-showreel</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://reiheacht.ch/projekte/extreme-agrarinitiative</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://reiheacht.ch/projekte/osterkampagne</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://reiheacht.ch/projekte/trinkwasserinitiative</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://reiheacht.ch/projekte/sbv-div</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <loc>https://reiheacht.ch/projekte/erklaerfilme-sbv</loc>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://reiheacht.ch/projekte/agrarinitiative</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://reiheacht.ch/legal/imprint</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://reiheacht.ch/legal/legal-information</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
     <loc>https://reiheacht.ch/legal/terms-and-conditions</loc>
-    <lastmod>2021-06-26T12:23:40+00:00</lastmod>
+    <lastmod>2021-07-09T14:02:50+00:00</lastmod>
     <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://reiheacht.ch/files/agb_reiheacht_mrz21.pdf</loc>
+    <lastmod>1980-01-01T00:00:01+00:00</lastmod>
+    <priority>0.64</priority>
   </url>
 
 </urlset>

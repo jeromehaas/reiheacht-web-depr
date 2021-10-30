@@ -11,6 +11,7 @@ import CookieBanner from '@/components/partials/CookieBanner';
 import IntroAnimation from '@/components/animations/IntroAnimation';
 import Showreel from '@/components/partials/Showreel';
 import Head from '@/components/partials/Head';
+import ReferenceSlider from '@/components/partials/ReferenceSlider';
 
 const Home = () => (
   <div>
@@ -20,6 +21,7 @@ const Home = () => (
       <Start />
       <Services />
       <Projects />
+      <ReferenceSlider />
       <Employees />
       <Contact />
       <Footer />
