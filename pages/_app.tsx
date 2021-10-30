@@ -9,6 +9,9 @@ import Head from 'next/head';
 import { CookiesProvider } from 'react-cookie';
 import ReactGA from 'react-ga';
 
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
 const TRACKING_ID = 'G-5V62GPPNLD';
 ReactGA.initialize(TRACKING_ID);
 

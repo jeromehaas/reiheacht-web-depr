@@ -134,7 +134,7 @@ const ServiceTile: React.FunctionComponent<Props> = ({ content }) => (
         <div className="overlay" style={{ backgroundColor: content.overlayColor === 'orange' ? '#C23E27' : '#FFFFFF' }}>
           <div className="textWrapper">
             <H3 color={content.overlayColor === 'orange' ? 'white' : 'darkGrey'}>{content.title}</H3>
-            <img className="serviceArrow" src={`${content.overlayColor === 'orange' ? '/icons/arrows/double-arrow-right-white.svg' : '/icons/arrows/double-arrow-right-black.svg'}`} alt="E-Mail Icon" />
+            <img className="serviceArrow" src={`${content.overlayColor === 'orange' ? '/icon/arrows/double-arrow-right-white.svg' : '/icon/arrows/double-arrow-right-black.svg'}`} alt="E-Mail Icon" />
           </div>
         </div>
       </a>

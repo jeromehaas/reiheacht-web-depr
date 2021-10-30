@@ -74,7 +74,7 @@ const Showreel: React.FunctionComponent<Props> = () => {
       <div className={`background ${showreelStatus === true ? 'active' : null}`}>
         <div className="react-player-wrapper">
           <button className="close-button" type="button" onClick={() => dispatch(toggleShowreel())}>
-            <img className="close-button-image" src="/icons/other/close-button.svg" alt="X" />
+            <img className="close-button-image" src="/icon/other/close-button.svg" alt="X" />
           </button>
           <ReactPlayer
             url="https://player.vimeo.com/video/546612359"
