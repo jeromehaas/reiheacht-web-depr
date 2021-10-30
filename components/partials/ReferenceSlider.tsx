@@ -123,7 +123,8 @@ const StyledReferenceSlider = styled.div`
 			"name"
 			"role"
 			"logo";
-				grid-template-columns: auto auto 60px;
+			grid-template-columns: auto;
+    	grid-template-rows: auto auto auto;
 		}
 
 		.references-carousel__logo {
