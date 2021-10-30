@@ -34,6 +34,7 @@ const StyledReferenceSlider = styled.div`
 			background-size: contain;
 			background-repeat: no-repeat;
 			background-size: contain;
+			
 		}
 		
 		&:before { 
@@ -119,10 +120,10 @@ const StyledReferenceSlider = styled.div`
 		@media (max-width: 850px) {
 		.references-carousel__author {
 			grid-template-areas: 
-				"logo"
-				"name"
-				"role";
-				grid-template-columns: auto;
+			"name"
+			"role"
+			"logo";
+				grid-template-columns: auto auto 60px;
 		}
 
 		.references-carousel__logo {
@@ -131,7 +132,7 @@ const StyledReferenceSlider = styled.div`
 			border-left: unset;
 			padding-left: 0;
 			margin-left: 0;
-			padding-bottom: 15px;
+			padding-top: 15px;
 
 			&:after {
 				content: "xxx";
@@ -167,7 +168,7 @@ const StyledReferenceSlider = styled.div`
 	}	
 
 	.references-carousel__item {
-		padding: 80px;
+		padding: 80px 80px 0;
 		cursor: pointer;
 	}
 	}
@@ -183,8 +184,9 @@ const ReferenceSlider = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 10000,
+    autoplaySpeed: 8000,
     pauseOnHover: true,
+    cssEase: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
   };
 
   const data = [
