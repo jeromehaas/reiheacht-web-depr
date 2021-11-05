@@ -13,7 +13,6 @@ const StyledReferenceSlider = styled.div`
   .references-carousel__item {
 		padding: 120px;
 		padding-bottom: 0;
-		cursor: pointer;
 	}
 	
 	.slick-slider {
@@ -170,7 +169,6 @@ const StyledReferenceSlider = styled.div`
 
 	.references-carousel__item {
 		padding: 80px 80px 0;
-		cursor: pointer;
 	}
 	}
 
