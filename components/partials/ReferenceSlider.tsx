@@ -210,7 +210,7 @@ const ReferenceSlider = () => {
       image: '/logos/testimonials/swiss-local-travel.svg',
     },
     {
-      quote: 'reiheacht hat uns vom Storyboard über das Drehen bis hin zur fertigen Produktion sehr kompetent unterstützt. Dank seiner freundlichen, humorvollen und professionellen Art und Weise war die Zusammenarbeit mit Marc je derzeit sehr angenehm.',
+      quote: 'reiheacht hat uns vom Storyboard über das Drehen bis hin zur fertigen Produktion sehr kompetent unterstützt. Dank seiner freundlichen, humorvollen und professionellen Art und Weise war die Zusammenarbeit mit Marc jederzeit sehr angenehm.',
       name: 'Natasa Kovacevic',
       role: 'Leiterin Marketing',
       image: '/logos/testimonials/it-point.svg',
