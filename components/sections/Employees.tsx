@@ -35,7 +35,7 @@ const tileContent = [
     image: '/images/employees/julia.png',
     alt: 'Julia Sen',
     title: 'Julia Sen',
-    description: 'Sb. Administration',
+    description: 'Administration',
     email: 'julia.sen@reiheacht.ch ',
     overlayColor: '#0374B6',
     animationColor: 'orange',
