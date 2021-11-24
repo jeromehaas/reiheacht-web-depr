@@ -25,9 +25,9 @@ const StyledReferenceSlider = styled.div`
 		 &.slick-current,
 		 &.slick-active {
 					opacity: 1;
-					transition: all 0.75s ease .2s !important;
+					transition: all 0.75s ease .0s !important;
 					z-index: 10000;
-					transition-delay: .2s;
+					transition-delay: .0s;
 					color: white;
 		 }
 	}
