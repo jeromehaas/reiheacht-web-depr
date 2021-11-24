@@ -17,7 +17,7 @@ const StyledReferenceSlider = styled.div`
 	
 	.slick-slide {
 		opacity: 0;
-		transition: all 0.75s ease .0s !important;
+		transition: all 0.25s ease .0s !important;
 		transition-delay: 0s;
 		color: transparent;
 
@@ -25,7 +25,7 @@ const StyledReferenceSlider = styled.div`
 		 &.slick-current,
 		 &.slick-active {
 					opacity: 1;
-					transition: all 0.75s ease .0s !important;
+					transition: all 0.25s ease .0s !important;
 					z-index: 10000;
 					transition-delay: .0s;
 					color: white;
@@ -241,7 +241,7 @@ const ReferenceSlider = () => {
     initialSlide: startSlideIndex,
     autoplaySpeed: 10000,
     pauseOnHover: true,
-    cssEase: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
+    cssEase: 'cubic-bezier( 0.645, 0.045, 0.355, 1 )',
   };
 
   return (
