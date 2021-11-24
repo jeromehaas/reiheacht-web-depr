@@ -189,91 +189,7 @@ const StyledReferenceSlider = styled.div`
 
 const ReferenceSlider = () => {
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 750,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 8000,
-    pauseOnHover: true,
-    cssEase: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
-  };
-
   const data = [
-    {
-      quote: 'reiheacht hat es geschafft meine Ideen 1:1 umzusetzen. Ich bin sehr glücklich über das Resultat! Unser Maskottchen «Sporty» gibt es nun als Icon und als sportliche Illustrationen. Tolle Arbeit – vielen Dank!',
-      name: 'Michèle Bucher',
-      role: 'Leiterin Werbung',
-      image: '/logos/testimonials/sportcard.svg',
-    },
-    {
-      quote: 'Lesen ist out. Wer sich informieren will, schaut heute ein Video. Das Angebot von reiheacht eignet sich perfekt, um Informationen zielgruppengerecht zu visualisieren.',
-      name: 'Sandra Helfenstein',
-      role: 'Co-Leiterin Kommunikation',
-      image: '/logos/testimonials/sbv.svg',
-    },
-    {
-      quote: 'Dank der persönlichen Beratung haben wir für unser Crowdfunding Projekt schnell die passende Lösung gefunden. Emotionale Bilder die bewegen haben zum Erfolg für die Realisierung beigetragen. Herzlichen Dank.',
-      name: 'Lukas Bregenzer',
-      role: 'Inhaber',
-      image: '/logos/testimonials/swiss-local-travel.svg',
-    },
-    {
-      quote: 'reiheacht hat uns vom Storyboard über das Drehen bis hin zur fertigen Produktion sehr kompetent unterstützt. Dank seiner freundlichen, humorvollen und professionellen Art und Weise war die Zusammenarbeit mit Marc jederzeit sehr angenehm.',
-      name: 'Natasa Kovacevic',
-      role: 'Leiterin Marketing',
-      image: '/logos/testimonials/it-point.svg',
-    },
-    {
-      quote: 'Herzlichen Dank an das reiheacht Team, welches uns von A - Z professionell unterstützt und beraten hat. Wir freuen uns auf eine weitere Zusammenarbeit.',
-      name: 'Thomas Rüttimann',
-      role: 'Materialchef',
-      image: '/logos/testimonials/gcz.svg',
-    },
-    {
-      quote: 'Unkomplizierte und sehr speditive Zusammenarbeit. Kann ich nur weiterempfehlen. Falls ich wieder ein Video brauche, komme ich definitiv wieder auf euch zu.',
-      name: 'Jessica Glaus',
-      role: 'Inhaberin',
-      image: '/logos/testimonials/hairbreak.svg',
-    },
-    {
-      quote: 'reiheacht hat es geschafft meine Ideen 1:1 umzusetzen. Ich bin sehr glücklich über das Resultat! Unser Maskottchen «Sporty» gibt es nun als Icon und als sportliche Illustrationen. Tolle Arbeit – vielen Dank!',
-      name: 'Michèle Bucher',
-      role: 'Leiterin Werbung',
-      image: '/logos/testimonials/sportcard.svg',
-    },
-    {
-      quote: 'Lesen ist out. Wer sich informieren will, schaut heute ein Video. Das Angebot von reiheacht eignet sich perfekt, um Informationen zielgruppengerecht zu visualisieren.',
-      name: 'Sandra Helfenstein',
-      role: 'Co-Leiterin Kommunikation',
-      image: '/logos/testimonials/sbv.svg',
-    },
-    {
-      quote: 'Dank der persönlichen Beratung haben wir für unser Crowdfunding Projekt schnell die passende Lösung gefunden. Emotionale Bilder die bewegen haben zum Erfolg für die Realisierung beigetragen. Herzlichen Dank.',
-      name: 'Lukas Bregenzer',
-      role: 'Inhaber',
-      image: '/logos/testimonials/swiss-local-travel.svg',
-    },
-    {
-      quote: 'reiheacht hat uns vom Storyboard über das Drehen bis hin zur fertigen Produktion sehr kompetent unterstützt. Dank seiner freundlichen, humorvollen und professionellen Art und Weise war die Zusammenarbeit mit Marc jederzeit sehr angenehm.',
-      name: 'Natasa Kovacevic',
-      role: 'Leiterin Marketing',
-      image: '/logos/testimonials/it-point.svg',
-    },
-    {
-      quote: 'Herzlichen Dank an das reiheacht Team, welches uns von A - Z professionell unterstützt und beraten hat. Wir freuen uns auf eine weitere Zusammenarbeit.',
-      name: 'Thomas Rüttimann',
-      role: 'Materialchef',
-      image: '/logos/testimonials/gcz.svg',
-    },
-    {
-      quote: 'Unkomplizierte und sehr speditive Zusammenarbeit. Kann ich nur weiterempfehlen. Falls ich wieder ein Video brauche, komme ich definitiv wieder auf euch zu.',
-      name: 'Jessica Glaus',
-      role: 'Inhaberin',
-      image: '/logos/testimonials/hairbreak.svg',
-    },
     {
       quote: 'reiheacht hat es geschafft meine Ideen 1:1 umzusetzen. Ich bin sehr glücklich über das Resultat! Unser Maskottchen «Sporty» gibt es nun als Icon und als sportliche Illustrationen. Tolle Arbeit – vielen Dank!',
       name: 'Michèle Bucher',
@@ -312,11 +228,27 @@ const ReferenceSlider = () => {
     },
   ];
 
+  const clonedData = [...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data];
+  const startSlideIndex = clonedData.length / 2;
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 750,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    initialSlide: startSlideIndex,
+    autoplaySpeed: 10000,
+    pauseOnHover: true,
+    cssEase: 'cubic-bezier(0.165, 0.840, 0.440, 1.000)',
+  };
+
   return (
     <StyledReferenceSlider>
       <Slider {...settings}>
 
-        { data.map((item) => (
+        { clonedData.map((item) => (
           <div className="references-carousel__item" key={item.name}>
             <P className="references-carousel__quote" fontWeight="light" size="big">{ item.quote }</P>
             <div className="references-carousel__author">
