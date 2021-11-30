@@ -242,6 +242,14 @@ const ReferenceSlider = () => {
     autoplaySpeed: 10000,
     pauseOnHover: true,
     cssEase: 'cubic-bezier( 0.645, 0.045, 0.355, 1 )',
+    responsive: [
+      {
+        breakpoint: 800,
+        settings: {
+          speed: 350,
+        },
+      },
+    ],
   };
 
   return (
