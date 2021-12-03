@@ -148,7 +148,7 @@ const StyledReferenceSlider = styled.div`
 			padding-top: 15px;
 
 			&:after {
-				content: "xxx";
+				content: "";
 				width: 30px;
 				height: 30px;
 				display: block;
@@ -176,7 +176,7 @@ const StyledReferenceSlider = styled.div`
 		&:after { 
 			right: -40px;
 			bottom: -20px;
-		}	
+		}
 
 	}	
 
@@ -244,9 +244,10 @@ const ReferenceSlider = () => {
     cssEase: 'cubic-bezier( 0.645, 0.045, 0.355, 1 )',
     responsive: [
       {
-        breakpoint: 800,
+        breakpoint: 1100,
         settings: {
           speed: 350,
+          cssEase: 'cubic-bezier( 0.455, 0.03, 0.515, 0.955 )',
         },
       },
     ],
