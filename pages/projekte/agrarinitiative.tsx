@@ -22,14 +22,14 @@ const content = {
   },
   switcher: {
     nextProject: '/projekte/reiheacht-showreel',
-    previousProject: '/projekte/sbv-div',
+    previousProject: '/projekte/erklaerfilme-sbv',
   },
 
 };
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
-    <Head title="Motion Design und Illustrationen für den Sbv | reiheacht" description="Schaue dir die bekannten Sujets zur Kampagne Extreme Agrarinitiative an, illustriert und animiert von der reiheacht" />
+    <Head title="Illustration und Design für GalloSuisse | reiheacht" description="Passend zum Illustrationsstil der Kampagne “Extreme Agrarinitiative” des Schweizer Bauernverbands hat die reiheacht auch für GalloSuisse drei Hühner illustriert" />
     <Image src="/projects/agrarinitiative/draft.png" alt="Arbeiter" />
     <Image src="/projects/agrarinitiative/illustration.png" alt="Familie" />
   </Project>

@@ -26,7 +26,7 @@ const content = {
   },
   switcher: {
     nextProject: '/projekte/erklaerfilme-sbv',
-    previousProject: '/projekte/osterkampagne',
+    previousProject: '/projekte/adventsaktion',
   },
 };
 

@@ -24,12 +24,12 @@ const tileContent = [
     link: '/projekte/extreme-agrarinitiative',
   },
   {
-    image: '/illustrations/projects/osterkampagne.png',
-    alt: 'GalloSuisse',
-    title: 'GalloSuisse',
-    description: 'Ostern 2021',
-    overlayColor: '#C70103',
-    link: '/projekte/osterkampagne',
+    image: '/illustrations/projects/adventsaktion.jpg',
+    alt: 'HotellerieSuisse',
+    title: 'HotellerieSuisse',
+    description: 'Adventskampagne 2021',
+    overlayColor: '#DA291C',
+    link: '/projekte/adventsaktion',
   },
   {
     image: '/illustrations/projects/trinkwasserinitiative.png',
@@ -38,7 +38,6 @@ const tileContent = [
     description: 'Trinkwasserinitiative',
     overlayColor: '#9EA600',
     link: '/projekte/trinkwasserinitiative',
-
   },
   {
     image: '/illustrations/projects/sbv-div.png',
@@ -52,19 +51,10 @@ const tileContent = [
     image: '/illustrations/projects/agrarinitiative.png',
     alt: 'GalloSuisse',
     title: 'GalloSuisse',
-    description: 'Extreme Agrarinitiative',
+    description: 'Agrarinitiative',
     overlayColor: '#C70103',
     link: '/projekte/agrarinitiative',
   },
-  // {
-  //   image: '/illustrations/projects/smartphone-schnitzeljagd.png',
-  //   alt: 'Design',
-  //   title: 'Swisslocaltravel',
-  //   description: 'Smartphone-Schnitzeljagd',
-  //   overlayColor: '#FC0031',
-  //   link: '/projekte/smartphone-schnitzeljagd',
-
-  // },
 ];
 
 const textBlockContent = {

@@ -226,9 +226,15 @@ const ReferenceSlider = () => {
       role: 'Inhaberin',
       image: '/logos/testimonials/hairbreak.svg',
     },
+    {
+      quote: 'reiheacht hat die Creatives für unsere Adventskampagne 2021 schnell und unkompliziert gestaltet. Unsere Illustrationen aus früheren Projekten haben sie geschickt weiterentwickelt, so dass wir viele Variationen umsetzen konnten. ',
+      name: 'Dorothea Portmann',
+      role: 'Fachspezialistin Kommunikation',
+      image: '/logos/testimonials/hotellerie-suisse.svg',
+    },
   ];
 
-  const clonedData = [...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data];
+  const clonedData = [...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data];
   const startSlideIndex = clonedData.length / 2;
 
   const settings = {

@@ -23,7 +23,7 @@ const content = {
     title: <>Du möchtest deine Idee auch zum Leben <HL color="blue">erwecken</HL>?</>,
   },
   switcher: {
-    nextProject: '/projekte/osterkampagne',
+    nextProject: '/projekte/adventsaktion',
     previousProject: '/projekte/reiheacht-showreel',
   },
 
@@ -31,7 +31,7 @@ const content = {
 
 const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
-    <Head title="Illustration und Design für GalloSuisse | reiheacht" description="Passend zum Illustrationsstil der Kampagne “Extreme Agrarinitiative” desSchweizer Bauernverbands hat die reiheacht auch für GalloSuisse drei Hühner illustriert" />
+    <Head title="Motion Design und Illustrationen für den Sbv | reiheacht" description="Schaue dir die bekannten Sujets zur Kampagne Extreme Agrarinitiative an, illustriert und animiert von der reiheacht" />
     <Image src="/projects/extreme-agrarinitiative/employee.png" alt="Arbeiter" />
     <Image src="/projects/extreme-agrarinitiative/family.png" alt="Familie" />
     <Image src="/projects/extreme-agrarinitiative/foodwaste.png" alt="Foodwaste" />

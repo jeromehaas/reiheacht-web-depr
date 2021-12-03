@@ -160,31 +160,31 @@ const MobileNavigation = styled.nav`
 const navigationItems = [
   {
     child: 'Home',
-    link: '../#home',
+    link: '/#home',
     section: 'home',
     type: 'link',
   },
   {
     child: 'Leistungen',
-    link: '../#services',
+    link: '/#services',
     section: 'services',
     type: 'link',
   },
   {
     child: 'Projekte',
-    link: '../#projects',
+    link: '/#projects',
     section: 'projects',
     type: 'link',
   },
   {
     child: 'Team',
-    link: '../#employees',
+    link: '/#employees',
     section: 'employees',
     type: 'link',
   },
   {
     child: 'Kontakt',
-    link: '../#contact',
+    link: '/#contact',
     section: 'contact',
     type: 'link',
   },
