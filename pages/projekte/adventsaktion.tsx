@@ -34,7 +34,7 @@ const AgrarInitiative: React.FunctionComponent<Props> = () => (
     <Head title="Illustration und Motion Design für HotellerieSuisse | reiheacht" description="Illustrationen und Animationen in vielen Formaten für die HotellerieSuisse" />
     <Image src="/projects/hotellerie-suisse/landingpage.jpg" alt="Landingpage" />
     <Space height="30px" />
-    <Image src="/projects/hotellerie-suisse/inserat.jpg" alt="Inserat" />
+    <Image src="/projects/hotellerie-suisse/inserat.png" alt="Inserat" />
     <Space height="30px" />
     <span style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gridGap: '30px' }}>
       <Image src="/projects/hotellerie-suisse/booster.gif" alt="Booster" />
