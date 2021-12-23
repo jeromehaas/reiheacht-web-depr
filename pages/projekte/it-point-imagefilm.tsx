@@ -38,7 +38,7 @@ const AgrarInitiative: React.FunctionComponent<Props> = () => (
     <Space height="30px" />
     <H3>Englische Version</H3>
     <Space height="15px" />
-    <Video link="https://player.vimeo.com/video/659304521?h=a6712c882a" />
+    <Video link="https://player.vimeo.com/video/659304695?h=3d65df8cd6" />
   </Project>
 );
 
