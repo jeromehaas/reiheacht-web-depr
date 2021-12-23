@@ -14,6 +14,21 @@ const tileContent = [
     description: 'Showreel',
     overlayColor: '#0374B6',
     link: '/projekte/reiheacht-showreel',
+  }, {
+    image: '/illustrations/projects/it-point.png',
+    alt: 'ITpoint',
+    title: 'ITpoint',
+    description: 'Imagefilm 2021',
+    overlayColor: '#E1003B',
+    link: '/projekte/it-point-imagefilm',
+  },
+  {
+    image: '/illustrations/projects/altuna-box.png',
+    alt: 'Altuna Box',
+    title: 'Altuna Box',
+    description: '3D Motion Design',
+    overlayColor: '#9EA600',
+    link: '/projekte/altuna-box',
   },
   {
     image: '/illustrations/projects/extreme-agrarinitiative.png',
@@ -30,6 +45,14 @@ const tileContent = [
     description: 'Adventskampagne 2021',
     overlayColor: '#DA291C',
     link: '/projekte/adventsaktion',
+  },
+  {
+    image: '/illustrations/projects/osterkampagne.png',
+    alt: 'GalloSuisse',
+    title: 'GalloSuisse',
+    description: 'Ostern 2021',
+    overlayColor: '#C70103',
+    link: '/projekte/osterkampagne',
   },
   {
     image: '/illustrations/projects/trinkwasserinitiative.png',
