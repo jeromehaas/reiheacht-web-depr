@@ -21,7 +21,7 @@ const content = {
     title: <>Ebenfalls an einem mass-geschneidertem Erklärfilm interessiert<HL color="blue">?</HL></>,
   },
   switcher: {
-    nextProject: '/projekte/extreme-agrarinitiative',
+    nextProject: '/projekte/it-point-imagefilm',
     previousProject: '/projekte/agrarinitiative',
   },
 

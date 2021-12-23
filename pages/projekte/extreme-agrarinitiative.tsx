@@ -24,7 +24,7 @@ const content = {
   },
   switcher: {
     nextProject: '/projekte/adventsaktion',
-    previousProject: '/projekte/reiheacht-showreel',
+    previousProject: '/projekte/altuna-box',
   },
 
 };
@@ -33,10 +33,15 @@ const AgrarInitiative: React.FunctionComponent<Props> = () => (
   <Project content={content}>
     <Head title="Motion Design und Illustrationen für den Sbv | reiheacht" description="Schaue dir die bekannten Sujets zur Kampagne Extreme Agrarinitiative an, illustriert und animiert von der reiheacht" />
     <Image src="/projects/extreme-agrarinitiative/employee.png" alt="Arbeiter" />
+    <Space height="30px" />
     <Image src="/projects/extreme-agrarinitiative/family.png" alt="Familie" />
+    <Space height="30px" />
     <Image src="/projects/extreme-agrarinitiative/foodwaste.png" alt="Foodwaste" />
+    <Space height="30px" />
     <Image src="/projects/extreme-agrarinitiative/import.png" alt="Import" />
+    <Space height="30px" />
     <Image src="/projects/extreme-agrarinitiative/draft.png" alt="Entwurf" />
+    <Space height="30px" />
     <Image src="/projects/extreme-agrarinitiative/illustration.png" alt="Illustration" />
     <Space height="30px" />
     <Video link="https://player.vimeo.com/video/520902562" />
