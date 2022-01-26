@@ -30,10 +30,10 @@ const content = [
   {
     title: <>1.	Geltungsbereich</>,
     text: <>
-      a) Für sämtliche Verträge zwischen der Reihe 8 Marketing GmbH (Reihe 8) und dem Auftraggeber gelten die folgenden Allgemeinen Geschäftsbedingungen (AGB). Die AGB sind auf unbestimmte Zeit gültig, solange sie nicht von der Reihe 8 ausdrücklich in schriftlicher Form geändert wurden. <br />
+      a) Für sämtliche Verträge zwischen der reiheacht Marketing GmbH (reiheacht) und dem Auftraggeber gelten die folgenden Allgemeinen Geschäftsbedingungen (AGB). Die AGB sind auf unbestimmte Zeit gültig, solange sie nicht von der reiheacht ausdrücklich in schriftlicher Form geändert wurden. <br />
       b) Sofern die AGB nicht umgehend nach Erhalt abgelehnt werden, gelten sie als angenommen. <br />
-      c) Abweichungen gelten nur, wenn sie von der Reihe 8 schriftlich bestätigt wurden. In kundenbezogenen Offerten werden alle Leistungen/Gegenleistungen definiert, hauptsächlich die zu erbringenden Leistungen, Umfang, Dauer und Vergütung.  <br />
-      d) Die Reihe 8 bietet Ihren Auftraggeber ein umfassendes Angebot im Bereich des Online Marketings an. Die Kernleistungen umfassen Konzeption, Drehbuch, Storyboard, div. Bewegtbildumsetzungen (Realfilm, Animation), Webentwicklung sowie Design und Illustration.  <br />
+      c) Abweichungen gelten nur, wenn sie von der reiheacht schriftlich bestätigt wurden. In kundenbezogenen Offerten werden alle Leistungen/Gegenleistungen definiert, hauptsächlich die zu erbringenden Leistungen, Umfang, Dauer und Vergütung.  <br />
+      d) Die reiheacht bietet Ihren Auftraggeber ein umfassendes Angebot im Bereich des Online Marketings an. Die Kernleistungen umfassen Konzeption, Drehbuch, Storyboard, div. Bewegtbildumsetzungen (Realfilm, Animation), Webentwicklung sowie Design und Illustration.  <br />
       e) Bei einer Annahme der Offerte gilt diese gemäss dem schweizerischen Obligationenrecht als verbindlicher Auftrag, sofern dies innerhalb der geregelten Frist stattfindet. Die Annahme der Offerte durch den Auftraggeber kann schriftlich per E-Mail oder Briefpost erfolgen.  <br />
     </>,
     items: [],
@@ -44,7 +44,7 @@ const content = [
     text: <>
       a) Eine Anpassung der vereinbarten Leistungen gemäss Offerte kann im gegenseitigen Einverständnis erfolgen. <br />
       b) Kommt es zu einer Kürzung von vertraglich vereinbarten Leistungsaufwänden, so wird eine angemessene Entschädigung vereinbart.<br />
-      c) Die Reihe 8 behält sich vor Drittanbieter und externe Experten beizuziehen, sofern es der Leistungserbringung dient. <br />
+      c) Die reiheacht behält sich vor Drittanbieter und externe Experten beizuziehen, sofern es der Leistungserbringung dient. <br />
     </>,
     items: [],
   },
@@ -52,7 +52,7 @@ const content = [
     title: <>3.	Dienstleistungen
     </>,
     text: <>
-      a) Die vertraglich vereinbarten Leistungen werden durch die Reihe 8 professionell, sorgfältig und nach bestem Wissen und Gewissen erbracht. <br />
+      a) Die vertraglich vereinbarten Leistungen werden durch die reiheacht professionell, sorgfältig und nach bestem Wissen und Gewissen erbracht. <br />
       b) Vom Auftraggeber anvertraute Informationen werden stets vertraulich behandelt.<br />
       c) Termine sind nur dann verbindlich, wenn dies ausdrücklich schriftlich festgehalten wurde und nur unter der Voraussetzung, dass der Auftraggeber die notwendigen Unterlagen termingerecht zur Verfügung stellt und jegliche vereinbarte Termine einhält.<br />
     </>,
@@ -61,9 +61,9 @@ const content = [
   {
     title: <>4.	Verpflichtungen Auftraggeber</>,
     text: <>
-      a) Damit eine sachgemässe Abwicklung des Auftrages möglich ist, verpflichtet sich der Auftraggeber zur Auftragsbeteiligung und stellt alle notwendigen Informationen und Daten rechtzeitig der Reihe 8 zur Verfügung. <br />
+      a) Damit eine sachgemässe Abwicklung des Auftrages möglich ist, verpflichtet sich der Auftraggeber zur Auftragsbeteiligung und stellt alle notwendigen Informationen und Daten rechtzeitig der reiheacht zur Verfügung. <br />
       b) Verschiebungen eines festgelegten Termins durch mangelnde Beteiligung des Auftraggebers gehen zu dessen Lasten.<br />
-      c) Liegen gesetzliche Vorschriften vor, so muss der Auftraggeber die Reihe 8 darüber informieren. <br />
+      c) Liegen gesetzliche Vorschriften vor, so muss der Auftraggeber die reiheacht darüber informieren. <br />
     </>,
     items: [],
   },
@@ -72,18 +72,18 @@ const content = [
     text: <>
       a) Nach Auftragsabschluss erfolgt die Rechnungsstellung. Die Rechnung ist ohne Abzug innerhalb von 30 Tagen zu begleichen.<br />
       b) Sofern keine Pauschale vereinbart wurde, werden die Leistungen nach Aufwand abgerechnet. <br />
-      c) Das Nutzungsrecht wird erst bei Begleichung der vollständigen Rechnung an den Auftraggeber übergeben. Bei Zahlungsverzug behält sich die Reihe 8 vor, Leistungen und Werke zurückzubehalten.<br />
+      c) Das Nutzungsrecht wird erst bei Begleichung der vollständigen Rechnung an den Auftraggeber übergeben. Bei Zahlungsverzug behält sich die reiheacht vor, Leistungen und Werke zurückzubehalten.<br />
       d) Sofern nichts anderes vereinbart, gelten folgende Zahlungsbestimmungen: <ListItem>- 50% bei Auftragserteilung</ListItem><ListItem>- 50% bei Projektübergabe / Projektabschluss</ListItem>
-      e) Zieht der Auftraggeber einen bereits erteilten Auftrag zurück, kann die Reihe 8 eine Ausfallentschädigung von 35% verrechnen.<br />
+      e) Zieht der Auftraggeber einen bereits erteilten Auftrag zurück, kann die reiheacht eine Ausfallentschädigung von 35% verrechnen.<br />
     </>,
     items: [],
   },
   {
     title: <>6.	Urheberrecht und Nutzungsrecht</>,
     text: <>
-      a) Die Urheberrechte geschaffener Werke der Reihe 8 gehören ausschliesslich der Reihe 8.<br />
-      b) Von Reihe 8 geschaffene Werke können jederzeit zur Eigenwerbung eingesetzt werden.<br />
-      c) Ohne ausdrückliche Zustimmung dürfen von Reihe 8 geschaffene Werke in keiner Weise verändert oder angepasst werden. Der Auftraggeber besitzt lediglich das Nutzerrecht.<br />
+      a) Die Urheberrechte geschaffener Werke der reiheacht gehören ausschliesslich der reiheacht.<br />
+      b) Von reiheacht geschaffene Werke können jederzeit zur Eigenwerbung eingesetzt werden.<br />
+      c) Ohne ausdrückliche Zustimmung dürfen von reiheacht geschaffene Werke in keiner Weise verändert oder angepasst werden. Der Auftraggeber besitzt lediglich das Nutzerrecht.<br />
       d) Sofern keine schriftliche Bestätigung vorliegt, dürfen die Nutzungsrechte nicht an Dritte übertragen werden.<br />
     </>,
     items: [],
@@ -91,9 +91,9 @@ const content = [
   {
     title: <>7.	Haftungsausschluss</>,
     text: <>
-      a) Die Reihe 8 haftet für vorsätzlich durch Absicht oder durch Grobfahrlässigkeit entstandene Schäden.<br />
-      b) Die Reihe 8 haftet nicht für Leistungsausfälle oder Leistungsverzögerungen, die durch eine höhere Gewalt (Krieg, Naturkatastrophen, Feuer, behördliche Anordnungen, Ausfall Kommunikationsnetze unserer Anbieter etc). entstanden sind. Der Auftraggeber trägt die volle Verantwortung betreffend Korrektheit, Aktualität und Vollständigkeit von Reihe 8 abgelieferter Werke.<br />
-      c) Die Reihe 8 übernimmt keinerlei Haftung für Datenverluste oder Datenwiederbeschaffung.<br />
+      a) Die reiheacht haftet für vorsätzlich durch Absicht oder durch Grobfahrlässigkeit entstandene Schäden.<br />
+      b) Die reiheacht haftet nicht für Leistungsausfälle oder Leistungsverzögerungen, die durch eine höhere Gewalt (Krieg, Naturkatastrophen, Feuer, behördliche Anordnungen, Ausfall Kommunikationsnetze unserer Anbieter etc). entstanden sind. Der Auftraggeber trägt die volle Verantwortung betreffend Korrektheit, Aktualität und Vollständigkeit von reiheacht abgelieferter Werke.<br />
+      c) Die reiheacht übernimmt keinerlei Haftung für Datenverluste oder Datenwiederbeschaffung.<br />
     </>,
     items: [],
   },
@@ -111,23 +111,23 @@ const content = [
   {
     title: <>9.	 Vertragsauflösung</>,
     text: <>
-      a) Der Auftraggeber hat, sofern nichts anderes vereinbart, jederzeit das Recht, vom Vertragsverhältnis zurückzutreten. Nimmt dieser dieses Recht in Anspruch, so hat dieser der Reihe 8 die bisher geleisteten Aufwände zu vergüten.<br />
+      a) Der Auftraggeber hat, sofern nichts anderes vereinbart, jederzeit das Recht, vom Vertragsverhältnis zurückzutreten. Nimmt dieser dieses Recht in Anspruch, so hat dieser der reiheacht die bisher geleisteten Aufwände zu vergüten.<br />
     </>,
     items: [],
   },
   {
     title: <>10.	Recht und Gerichtsstand</>,
     text: <>
-      a) Grundsätzlich ist das Schweizer Recht anwendbar. Gerichtsstand ist der Sitz der Reihe 8 Marketing GmbH. <br />
+      a) Grundsätzlich ist das Schweizer Recht anwendbar. Gerichtsstand ist der Sitz der reiheacht Marketing GmbH. <br />
     </>,
     items: [],
   },
   {
     title: <>11. Schlussbestimmungen</>,
     text: <>
-      a) Die Reihe 8 behält sich vor, diese AGB jederzeit nach bestem Wissen und Gewissen anzupassen. <br />
+      a) Die reiheacht behält sich vor, diese AGB jederzeit nach bestem Wissen und Gewissen anzupassen. <br />
       b) Jede Partei darf während der Dauer der Zusammenarbeit sowie 12 Monate nach Beendigung des Vertrages keine Mitarbeiter einer anderen Partei abwerben.<br />
-      c) Für sämtliche Streitereien aufgrund dieser Vereinbarungen ist der Gerichtsstand am Sitz der Reihe 8 zuständig. Anwendbar ist das Schweizer Recht. <br />
+      c) Für sämtliche Streitereien aufgrund dieser Vereinbarungen ist der Gerichtsstand am Sitz der reiheacht zuständig. Anwendbar ist das Schweizer Recht. <br />
       d) Sind oder werden einzelne Bestimmungen dieses Vertrages unwirksam, so wird dadurch die Wirksamkeit der übrigen Bestimmungen nicht berührt. Anstelle der unwirksamen oder undurchführbaren Bestimmung soll eine Bestimmung eintreten, die dem wirtschaftlichen Zweck der unwirksamen möglichst nahekommt.<br />
     </>,
     items: [],

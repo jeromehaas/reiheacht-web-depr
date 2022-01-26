@@ -232,6 +232,12 @@ const ReferenceSlider = () => {
       role: 'Fachspezialistin Kommunikation',
       image: '/logos/testimonials/hotellerie-suisse.svg',
     },
+    {
+      quote: 'Marc hat uns von der Konzeption bis zum fertigen Werbevideo professionell und kreativ unterstützt. Wir sind begeistert vom Ergebnis und würden reiheacht wieder wählen. ',
+      name: 'Daniel Gares',
+      role: 'Leiter Verkauf & Marketing',
+      image: '/logos/testimonials/altuna.svg',
+    },
   ];
 
   const clonedData = [...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data, ...data];
