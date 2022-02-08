@@ -74,6 +74,43 @@ const H1 = styled.h1`
  }
 `;
 
+const H15 = styled.h1`
+  ${sharedTitleStyle};
+  font-size: 50px; 
+  max-width: ${(p) => (p.fullWidth ? '100%' : '660px')};
+  font-family: 'Helvetica Neue 85 Heavy';
+
+  @media (max-width: 760px) {
+  ${sharedTitleStyle};
+  font-size: 50px;
+ }
+
+ @media (max-width: 670px) {
+  ${sharedTitleStyle};
+  font-size: 40px;
+ }
+
+ @media (max-width: 560px) {
+  ${sharedTitleStyle};
+  font-size: 30px;
+ }
+
+ @media (max-width: 480px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
+ }
+
+ @media (max-width: 425px) {
+  ${sharedTitleStyle};
+  font-size: 25px;
+ }
+
+ @media (max-width: 365px) {
+  ${sharedTitleStyle};
+  font-size: 22px;
+ }
+`;
+
 const H2 = styled.h2`
   ${sharedTitleStyle};
   font-size: 50px; 
@@ -348,6 +385,7 @@ const HL = styled.span`
 
 export {
   H1,
+  H15,
   H2,
   H25,
   H3,
