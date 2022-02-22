@@ -14,7 +14,16 @@ const tileContent = [
     description: 'Showreel',
     overlayColor: '#0374B6',
     link: '/projekte/reiheacht-showreel',
-  }, {
+  },
+  {
+    image: '/illustrations/projects/sporty.png',
+    alt: 'Sportcard',
+    title: 'Sportcard',
+    description: 'Sporty als Chatbot',
+    overlayColor: '#0071A6',
+    link: '/projekte/sporty',
+  },
+  {
     image: '/illustrations/projects/it-point.png',
     alt: 'ITpoint',
     title: 'ITpoint',
