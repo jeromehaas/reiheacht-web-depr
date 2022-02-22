@@ -24,7 +24,7 @@ const content = {
   },
   switcher: {
     nextProject: '/projekte/altuna-box',
-    previousProject: '/projekte/reiheacht-showreel',
+    previousProject: '/projekte/sporty',
   },
 
 };
